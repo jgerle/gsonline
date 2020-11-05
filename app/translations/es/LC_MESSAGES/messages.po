@@ -31,8 +31,8 @@ msgid "Error: the translation service failed."
 msgstr "Error el servicio de traducciones ha fallado."
 
 #: app/auth/email.py:8
-msgid "[Microblog] Reset Your Password"
-msgstr "[Microblog] Nueva Contraseña"
+msgid "[GSonline] Reset Your Password"
+msgstr "[GSonline] Nueva Contraseña"
 
 #: app/auth/forms.py:10 app/auth/forms.py:17 app/main/forms.py:10
 msgid "Username"
@@ -171,8 +171,8 @@ msgid "Translate"
 msgstr "Traducir"
 
 #: app/templates/base.html:4
-msgid "Welcome to Microblog"
-msgstr "Bienvenido a Microblog"
+msgid "Welcome to GSonline"
+msgstr "Bienvenido a GSonline"
 
 #: app/templates/base.html:21
 msgid "Home"

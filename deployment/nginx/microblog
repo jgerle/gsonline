@@ -13,12 +13,12 @@ server {
     server_name _;
 
     # location of the self-signed SSL certificate
-    ssl_certificate /home/ubuntu/microblog/certs/cert.pem;
-    ssl_certificate_key /home/ubuntu/microblog/certs/key.pem;
+    ssl_certificate /home/ubuntu/gsonline/certs/cert.pem;
+    ssl_certificate_key /home/ubuntu/gsonline/certs/key.pem;
 
     # write access and error logs to /var/log
-    access_log /var/log/microblog_access.log;
-    error_log /var/log/microblog_error.log;
+    access_log /var/log/gsonline_access.log;
+    error_log /var/log/gsonline_error.log;
 
     location / {
         # forward application requests to the gunicorn server
@@ -31,7 +31,7 @@ server {
 
     location /static {
         # handle static files directly, without forwarding to the application
-        alias /home/ubuntu/microblog/app/static;
+        alias /home/ubuntu/gsonline/app/static;
         expires 30d;
     }
 }

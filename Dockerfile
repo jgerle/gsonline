@@ -2,7 +2,7 @@ FROM python:3.9-alpine
 
 RUN adduser -D gsonline
 
-WORKDIR /home/microblog
+WORKDIR /home/gsonline
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
