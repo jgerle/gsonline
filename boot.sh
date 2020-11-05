@@ -10,4 +10,4 @@ while true; do
     sleep 5
 done
 flask translate compile
-exec gunicorn -b :5000 --access-logfile - --error-logfile - gsonline:app
+exec gunicorn -b :5000 --worker-tmp-dir /dev/shm --workers=2 --threads=4 --worker-class=gthread --access-logfile - --error-logfile - gsonline:app
