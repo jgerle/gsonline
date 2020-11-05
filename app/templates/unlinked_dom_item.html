@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+{% if breadcrumbs %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+    {% for item in breadcrumbs %}
+        <li class="breadcrumb-item"><a href="{{ item.link }}">{{ item.title }}</a></li> 
+    {% endfor %}
+      <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
+    </ol>
+</nav>
+{% endif %}
+
+<h1>{{ item_type }}: {{ item.name }}</h1>
+
+<div class="row mb-3">
+
+    <div class="col">
+      <div class="card h-100">
+        <h5 class="card-header">Beschreibung</h5>
+        <div class="card-body">
+          {{ item.description }}
+        </div>
+        <div class="card-footer text-center"></div>
+      </div>
+    </div>
+
+</div>
+
+{% endblock %}

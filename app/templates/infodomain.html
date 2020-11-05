@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ url_for('main.organization', org_id=org.id) }}">{{ org.name }}</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ infodomain.name }}</li>
+    </ol>
+</nav>
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>Informationsverbund <i>{{ infodomain.name }}</i></h1>
+        <p>{{ infodomain.description }}</p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Struktur</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('main.model_infodomain', id=infodomain.id) }}">Modellierung Prozesse</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('main.model_systems', id=infodomain.id) }}">Modellierung Systeme</a>
+        </li>             
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Checklisten</a>
+        </li>
+        </ul>
+    </div>
+
+    <div class="card-body">
+    <div class="row">
+    <div class="col">
+        {% with %}
+            {% set header = "Geschäftsprozesse" %}
+            {% set items = cprocs %}
+            {% set urltype1 = 'main.coreprocess' %}
+            {% set urltype2 = 'main.coreprocesses' %}
+            {% set url_add = 'main.add_coreprocess' %}
+            {% set btn_name = "Prozess anlegen" %}
+            
+            {% include '_infodomain_card.html' %}
+
+        {% endwith %}    
+    </div>
+    <div class="col">
+        {% with %}
+            {% set header = "Anwendungen" %}
+            {% set items = apps %}
+            {% set urltype1 = 'main.application' %}
+            {% set urltype2 = 'main.applications' %}
+            {% set url_add = 'main.add_application' %}
+            {% set btn_name = "Anwendung anlegen" %}
+            
+            {% include '_infodomain_card.html' %}
+            
+        {% endwith %}
+    </div>
+    <div class="col">
+        {% with %}
+            {% set header = "IT-Systeme" %}
+            {% set items = systems %}
+            {% set urltype1 = 'main.system' %}
+            {% set urltype2 = 'main.systems' %}
+            {% set url_add = 'main.add_system' %}
+            {% set btn_name = "IT System anlegen" %}
+            
+            {% include '_infodomain_card.html' %}
+            
+        {% endwith %}        
+    </div>
+    <div class="col">
+        {% with %}
+            {% set header = "Netze / Verbindungen" %}
+            {% set items = networks %}
+            {% set urltype1 = 'main.network' %}
+            {% set urltype2 = 'main.networks' %}
+            {% set url_add = 'main.add_network' %}
+            {% set btn_name = "Netz / Verb. anlegen" %}
+            
+            {% include '_infodomain_card.html' %}
+            
+        {% endwith %}
+    </div>
+</div>
+<div class="row mt-2">
+    <div class="col">
+        {% with %}
+            {% set header = "Räume" %}
+            {% set items = rooms %}
+            {% set urltype1 = 'main.room' %}
+            {% set urltype2 = 'main.rooms' %}
+            {% set url_add = 'main.add_room' %}
+            {% set btn_name = "Raum anlegen" %}
+            
+            {% include '_infodomain_card.html' %}
+            
+        {% endwith %}
+    </div>
+    <div class="col">
+        {% with %}
+            {% set header = "Personen" %}
+            {% set items = persons %}
+            {% set urltype1 = 'main.person' %}
+            {% set urltype2 = 'main.persons' %}
+            {% set url_add = 'main.add_person' %}
+            {% set btn_name = "Person anlegen" %}
+            
+            {% include '_infodomain_card.html' %}
+            
+        {% endwith %}
+    </div>
+    <div class="col">
+        {% with %}
+            {% set header = "Dokumente" %}
+            {% set items = documents %}
+            {% set urltype1 = 'main.document' %}
+            {% set urltype2 = 'main.documents' %}
+            {% set url_add = 'main.add_document' %}
+            {% set btn_name = "Dokument anlegen" %}
+            
+            {% include '_infodomain_card.html' %}
+            
+        {% endwith %}        
+    </div>
+    <div class="col"></div>
+</div> 
+
+</div> 
+{% endblock %}

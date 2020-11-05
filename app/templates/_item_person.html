@@ -1,0 +1,5 @@
+    <tr>
+        <td>{{ item.id }}</td>
+        <td><b><a href="{{ url_for('main.'+item_type, id=item.id) }}">{{ item.name }} </a></b></td>
+        <td>{{ item.description }}</td>
+    </tr>

@@ -1,0 +1,13 @@
+    <tr>
+        <td>{{ item.id }}</td>
+        <td><b><a href="{{ url_for('main.'+item_type, id=item.id) }}">{{ item.name }} </a></b></td>
+        <td>{{ item.description }}</td>
+        <td>{% if item.gsmodelapp %}
+            {% for item in item.gsmodelapp %}
+                <a href="{{ url_for('main.buildingblock', id=item.buildingblock.id) }}" class="badge badge-info">{{ item.buildingblock.name }}</a>
+            {% endfor %}
+            {% else %}
+            <p>n/a</p>
+            {% endif %}
+        </td>
+    </tr>

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ url_for('main.catalogues') }}">Grundschutz-Kompendium 2020</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ bbgroup.shorthand }}: {{ bbgroup.name }}</li>
+        </ol>
+    </nav>
+
+    <h1>{{ bbgroup.shorthand }}: {{ bbgroup.name }}</h1>
+
+    <h5>Bausteine</h5>
+    {% if buildingblocks %}
+    <table class="table table-sm table-striped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Prio</th>
+                <th>Anforderungen</th>
+<!--                <th>&nbsp;</th>
+                <th>&nbsp;</th>-->
+              </tr>
+        </thead>
+        <tbody>
+    {% for buildingblock in buildingblocks %}
+        <tr>
+            <td>{{ bbgroup.shorthand }}.{{ buildingblock.order }}</td>
+            <td><a href="{{ url_for('main.buildingblock', id=buildingblock.id) }}">{{ buildingblock.name }}</a>{% if buildingblock.description %}<br/><small class="text-muted">{{ buildingblock.description }}</small>{% endif %}</td>
+            <td>{{ buildingblock.prio.name }}</td>
+            <td>{{ buildingblock.requirements|length }}</td>
+<!--            <td><button class="btn btn-primary btn-sm" type="submit" value="Bearbeiten" title="Eintrag bearbeiten" disabled><i class="fas fa-edit"></i></button></td>
+            <td><form action="{{ url_for('main.del_buildingblock', id=buildingblock.id) }}" method="POST">{{ bbdelform.hidden_tag() }}<button class="btn btn-outline-danger btn-sm" type="submit" value="Löschen" title="Eintrag löschen"><i class="fas fa-trash-alt"></i></button></form></td>-->
+        </tr>
+    {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <p>Keine Bausteine</p>
+    {% endif %}
+
+<p><a href="{{ url_for('main.add_buildingblock', bbgid=bbgroup.id) }}"><i class="fas fa-cubes" title="{{ _('Baustein hinzufügen') }}"></i> Baustein hinzufügen</a></p>
+{% endblock %}

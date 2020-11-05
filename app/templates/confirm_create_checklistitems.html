@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<div class="row justify-content-center">
+    <div class="col-sm">
+        <h5>Checkliste befüllen</h5>
+        <p>Es sind keine Einträge in dieser Checklisten vorhanden. Bitte das automatische Anlegen anhand der vorliegenden Modellierung bestätigen.</p>
+        <form action="{{ url_for('main.autocreate_checklistitems', checklist_id=checklist_id) }}" method="post">
+            <button type="submit" name="confirm" value="confirm" class="btn btn-primary">Bestätigen</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

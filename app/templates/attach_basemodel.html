@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<div class="row justify-content-center">
+    <div class="col-sm">
+        <h5>Grundschutzprofil anwenden</h5>
+        <p>Bitte Anlegen des vorgefertigten Grundschutz-Profils (aktuell nur Prozesse) bestätigen:</p>
+        <form action="{{ url_for('main.create_basemodel', id=dom_id) }}" method="post">
+            <button type="submit" name="confirm" value="confirm">Bestätigen</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

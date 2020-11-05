@@ -1,0 +1,6 @@
+<tr>
+    <td><small>{{ buildingblock.order }}</small></td>
+    <td><small><a href="{{ url_for('main.buildingblock', id=buildingblock.id) }}">{{ buildingblock.name }}</a>{% if buildingblock.description %}<br/><small class="text-muted">{{ buildingblock.description }}</small>{% endif %}</small></td>
+    <td><small>{{ buildingblock.prio.name }}</small></td>
+    <td>{{ form.implementation_decision}}</td>
+</tr>

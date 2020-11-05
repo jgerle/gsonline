@@ -1,0 +1,8 @@
+.breadcrumb {
+    padding: 2px 15px !important;
+    margin-top: 10px;
+}
+
+.no-label label {
+    display: none;
+}

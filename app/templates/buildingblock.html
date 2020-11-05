@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% set deactivated = namespace(value=0) %}
+
+{% block app_content %}
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ url_for('main.catalogues') }}">Grundschutz-Kompendium 2020</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="{{ url_for('main.buildingblockgroup', id=bbgroup.id) }}">{{ bbgroup.shorthand }}: {{ bbgroup.name }}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ bbgroup.shorthand }}.{{ buildingblock.order }} {{ bbgroup.name }}</li>
+        </ol>
+    </nav>
+
+    <h1>{{ bbgroup.shorthand }}.{{ buildingblock.order }} {{ buildingblock.name }} ({{ buildingblock.prio.name }})</h1>
+    {% if buildingblock.description %}
+    <dl>
+        <dt>Beschreibung</dt>
+        <dd>{{ buildingblock.description }}</dd>
+    </dl>
+    {% endif %}
+
+    <h5>Anforderungen</h5>
+    {% if requirements %}
+    <table class="table table-sm table-striped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Level</th>
+              </tr>
+        </thead>
+        <tbody>
+    {% for requirement in requirements %}
+        {% if requirement.is_active %}
+        <tr>
+            <td>{{ bbgroup.shorthand }}.{{ buildingblock.order }}.A{{ requirement.order }}</td>
+            <td>{{ requirement.name }}{% if requirement.description %}<br/><small class="text-muted">{{ requirement.description }}</small>{% endif %}</td>
+            <td>{{ requirement.protection_level.name }}</td>
+        </tr>
+        {% else %}
+            {% set deactivated.value = deactivated.value + 1 %}
+        {% endif %}
+    {% endfor %}
+        </tbody>
+    </table>
+    {% if deactivated.value > 0 %}
+    <p><mark>Es gibt {{ deactivated.value }} entfallene(s) Element(e).</mark></p>
+    {% endif %}
+    {% else %}
+        <p>Keine Anforderungen</p>
+    {% endif %}
+<p><a href="{{ url_for('main.add_requirement', bbid=buildingblock.id) }}"><i class="fas fa-cubes" title="{{ _('Baustein hinzufügen') }}"></i> Anforderung hinzufügen</a></p>
+{% endblock %}

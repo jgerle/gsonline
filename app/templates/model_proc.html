@@ -1,0 +1,74 @@
+{% extends "base.html" -%}
+{% import 'bootstrap/wtf.html' as wtf -%}
+
+{% block app_content -%}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ url_for('main.organization', org_id=infodomain.org_id) }}">{{ infodomain.organization.name }}</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ infodomain.name }}</li>
+    </ol>
+</nav>
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>Model des Informationsverbundes <i>{{infodomain.name}}</i></h1>
+        <p>Allgemeine Bausteine, die für die gesamte Unternehmung relevant sind (Prozesse, Regeln, Konzepte)</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('main.infodomain', infodomain_id=infodomain.id) }}">Struktur</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Modellierung Prozesse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('main.model_systems', id=infodomain.id) }}">Modellierung Systeme</a>
+                </li>        
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Checklisten</a>
+                </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-2 float-right"><button type="button" class="btn btn-outline-success">Bearbeiten</button></div>
+                        <p class="ml-1">Alle ausgewählten Grundschutz Bausteine.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        {% with layer='ISMS' -%}
+                            {% include '_model_bb_card.html' -%}
+                        {% endwith-%}
+                        <div class="my-2"></div>
+                        {% with layer='ORP' -%}
+                            {% include '_model_bb_card.html' -%}
+                        {% endwith-%}
+                        <div class="my-2"></div>
+                        {% with layer='DER' -%}
+                            {% include '_model_bb_card.html' -%}
+                        {% endwith-%}             
+                    </div>
+                    <div class="col">
+                        {% with layer='OPS' -%}
+                            {% include '_model_bb_card.html'-%}
+                        {% endwith-%}
+                        <div class="my-2"></div>
+                        {% with layer='CON'-%}
+                            {% include '_model_bb_card.html'-%}
+                        {% endwith-%}                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">&nbsp;</div>
+{% endblock-%}

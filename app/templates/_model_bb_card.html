@@ -1,0 +1,21 @@
+            <div class="card">
+                <div class="card-body p-3">
+                    <h5 class="card-title">{{layer}}</h5>
+                    <table class="table table-sm table-hover mb-0">
+                        <tr>
+                            <th>#</td>
+                            <th><small>Baustein</small></td>
+                            <th><small>Prio</small></td>
+                        </tr>                    
+                        {% for entry in gsmodel-%}
+                        {% if entry.buildingblock.buildingblockgroup.shorthand==layer-%}
+                        <tr>
+                            <td style="width: 10%"><small>{{ entry.buildingblock.order }}</small></td>
+                            <td><small><a href="{{ url_for('main.buildingblock', id=entry.buildingblock.id) }}">{{ entry.buildingblock.name }}</a></small></td>
+                            <td style="width: 10%"><small>{{ entry.buildingblock.prio.name }}</small></td>
+                        </tr>
+                        {% endif-%}
+                        {% endfor-%}
+                    </table>                         
+                </div>
+            </div>

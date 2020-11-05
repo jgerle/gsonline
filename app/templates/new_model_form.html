@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>Modellierung des Informationsverbundes <i>{{infodomain.name}}</i></h1>
+    <p>Auswahl der Bausteine, die auf den gesamten Informationsverbund angewendet werden sollen. Hierbei handelt es sich im wesentlichen um Prozesse, Dokumentation und Schulung</p>
+    <form class="no-label" method="post" role="form">
+    {{ form.hidden_tag() }}
+    {{ wtf.form_errors(form, hiddens="only") }}
+    <input type="submit">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">ISMS</h5>
+                    <table class="table table-sm table-hover">
+                        {% for buildingblock in buildingblocks %}
+                        {% if buildingblock.buildingblockgroup.shorthand=='ISMS' %}
+                        <tr>
+                            {% include '_model_bb_table.html' %}
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                    </table>                         
+                </div>
+            </div>
+            <p>&nbsp;</p>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">ORP</h5>
+                    <table class="table table-sm table-hover">
+                        {% for buildingblock in buildingblocks %}
+                        {% if buildingblock.buildingblockgroup.shorthand=='ORP' %}
+                        <tr>
+                            {% include '_model_bb_table.html' %}
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                    </table>                         
+                </div>
+            </div>            
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">OPS</h5>
+                    <table class="table table-sm table-hover">
+                        {% for buildingblock in buildingblocks %}
+                        {% if buildingblock.buildingblockgroup.shorthand=='OPS' %}
+                        <tr>
+                            {% include '_model_bb_table.html' %}
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                    </table>                    
+                </div>
+            </div>        
+        </div>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">DER</h5>
+                    <table class="table table-sm table-hover">
+                        {% for buildingblock in buildingblocks %}
+                        {% if buildingblock.buildingblockgroup.shorthand=='DER' %}
+                        <tr>
+                            {% include '_model_bb_table.html' %}
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                    </table>                         
+                </div>
+            </div>           
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">CON</h5>
+                    <table class="table table-sm table-hover">
+                        {% for buildingblock in buildingblocks %}
+                        {% if buildingblock.buildingblockgroup.shorthand=='CON' %}
+                        <tr>
+                            {% include '_model_bb_table.html' %}
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                    </table>                         
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+    <div class="row">&nbsp;</div>
+{% endblock %}

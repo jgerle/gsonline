@@ -1,0 +1,75 @@
+{% extends "base.html" -%}
+{% import 'bootstrap/wtf.html' as wtf -%}
+
+{% block app_content -%}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{ url_for('main.organization', org_id=infodomain.org_id) }}">{{ infodomain.organization.name }}</a></li>
+      <li class="breadcrumb-item"><a href="{{ url_for('main.infodomain', infodomain_id=infodomain.id) }}">{{ infodomain.name }}</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
+    </ol>
+</nav>
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>Checklisten</h1>
+        <p>Sortiert und gefiltert nach Prio R1-R2 und Anforderungsniveau Basis, Standard, Hoch.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">R1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">R2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">R3</a>
+                </li>        
+                </ul>
+            </div>
+            <div class="card-body">
+                <table class="table-sm table-striped table-hover w-100">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Bezeichnung</th>
+                        <th scope="col">Prio</th>
+                        <th scope="col">Anforderungen</th>
+                        <td>Basis</td>
+                        <td>Standard</td>
+                        <td>Hoch</td>
+                    </tr>
+                    {% for checklist in checklists -%}
+                    {% set count = namespace(value=0) -%}
+                    {% set count.value = count.value + checklist.base_count|int -%}
+                    {% set count.value = count.value + checklist.standard_count|int -%}
+                    {% set count.value = count.value + checklist.high_count|int -%}
+                    <tr>
+                        <td>{{loop.index}}</td>
+                        <td>{{checklist.name}}</td>
+                        <td>{{checklist.prio}}</td>
+                        <td>{%  if (count.value) > 0 -%}
+                                    {{count.value}}
+                                {% else -%}
+                                    <a href="{{ url_for('main.autocreate_checklistitems', checklist_id=checklist.id) }}"><i class="fas fa-magic"></i></a>
+                                {% endif -%}
+                        </td>
+                        <td>{{checklist.base_count|int -}}</td>
+                        <td>{{checklist.standard_count|int -}}</td>
+                        <td>{{checklist.high_count|int -}}</td>
+                    </tr>
+                    {% endfor -%}
+                </table>
+            </div>
+            <div class="card-footer">
+                FOOTER
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock-%}

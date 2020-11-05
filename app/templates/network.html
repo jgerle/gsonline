@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+{% if breadcrumbs %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+    {% for item in breadcrumbs %}
+        <li class="breadcrumb-item"><a href="{{ item.link }}">{{ item.title }}</a></li> 
+    {% endfor %}
+      <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
+    </ol>
+</nav>
+{% endif %}
+
+<h1>Anwendung: {{ application.name }}</h1>
+
+<div class="row mb-3">
+
+    <div class="col">
+      <div class="card h-100">
+        <h5 class="card-header">Beschreibung</h5>
+        <div class="card-body">
+          {{ application.description }}
+        </div>
+        <div class="card-footer text-center"></div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-header">
+          <h5>Benötigte Systeme</h5>
+        </div>
+        <div class="card-body">
+          <p>Folgende Systeme werden zur Ausführung dieser Anwendung benötigt:</p>
+              {% if application.systems %}
+              <table class="table-sm table-striped table-bordered table-hover" style="width: 100%;">
+                  {% for system in application.systems %}
+                      <tr><td><a href="{{ url_for('main.system', id=system.system.id) }}">{{ system.system.name }}</a></td></tr>
+                  {% endfor %}
+              </table>
+              {% else %}
+                  <small>Keine Einträge</small>
+              {% endif %}
+              <div class="mt-3"><button data-toggle="modal" data-target="#loginModal" class="btn btn-outline-success btn-sm"><i class="fas fa-plus"></i> System verknüpfen</button></div>
+        </div>
+        <div class="card-footer text-center"></div>
+      </div>
+    </div>
+
+</div>
+
+<div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog" >
+      <div class="modal-content">
+        <div class="modal-body">{{ wtf.quick_form(sysrelationform) }}
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}

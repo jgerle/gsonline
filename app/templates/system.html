@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+{% if breadcrumbs %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+    {% for item in breadcrumbs %}
+        <li class="breadcrumb-item"><a href="{{ item.link }}">{{ item.title }}</a></li> 
+    {% endfor %}
+      <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
+    </ol>
+</nav>
+{% endif %}
+
+<h1>System: {{ system.name }}</h1>
+
+<div class="row mb-3">
+
+    <div class="col">
+      <div class="card h-100">
+        <h5 class="card-header">Beschreibung</h5>
+        <div class="card-body">
+          {{ system.description }}
+        </div>
+        <div class="card-footer text-center"></div>
+      </div>
+      <div class="card h-100 mt-2">
+        <h5 class="card-header">Verknüpfte GS Bausteine</h5>
+        <div class="card-body">
+            {% if buildingblocks %}
+            <table class="table-sm table-striped table-bordered table-hover" style="width: 100%;">
+                {% for buildingblock in buildingblocks %}
+                    <tr>
+                      <td><a href="{{ url_for('main.buildingblock', id=buildingblock.buildingblock.id) }}">{{ buildingblock.buildingblock.buildingblockgroup.shorthand }}.{{ buildingblock.buildingblock.order }} {{ buildingblock.buildingblock.name }}</a></td></tr>
+                {% endfor %}
+            </table>
+            {% else %}
+                <small>Keine Einträge</small>
+            {% endif %}
+          <div class="mt-3"><button data-toggle="modal" data-target="#BbRelModal" class="btn btn-outline-success btn-sm"><i class="fas fa-plus"></i> Baustein verknüpfen</button></div>
+        </div>
+        <div class="card-footer text-center"></div>
+      </div>      
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <h5 class="card-header">Benötigte Netze / Verbindungen</h5>
+        <div class="card-body">
+          <p>Folgende Netze oder Verbindungen sind mit diesem System verbunden:</p>
+              {% if system.networks %}
+              <table class="table-sm table-striped table-bordered table-hover" style="width: 100%;">
+                  {% for network in system.networks %}
+                      <tr>
+                        <td><a href="{{ url_for('main.network', id=network.network.id) }}">{{ network.network.name }}</a></td></tr>
+                  {% endfor %}
+              </table>
+              {% else %}
+                  <small>Keine Einträge</small>
+              {% endif %}
+              <div class="mt-3"><button data-toggle="modal" data-target="#NetRelModal" class="btn btn-outline-success btn-sm"><i class="fas fa-plus"></i> Netz / Verbindung verknüpfen</button></div>
+        </div>
+        <div class="card-footer text-center"></div>
+      </div>
+    </div>
+
+</div>
+
+<div class="modal fade" id="NetRelModal" role="dialog">
+    <div class="modal-dialog" >
+      <div class="modal-content">
+        <div class="modal-body">{{ wtf.quick_form(netrelationform) }}
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade" id="BbRelModal" role="dialog">
+    <div class="modal-dialog" >
+      <div class="modal-content">
+        <div class="modal-body">{{ wtf.quick_form(bbrelationform) }}
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+<div class="card h-100">
+    <h5 class="card-header">
+        {{ header }}
+    </h5>
+    <div class="card-body">
+        {% if items %}
+        <table class="table table-sm table-hover" style="width: 100%;">
+            {% for item in items %}
+                <tr><td><small><a href="{{ url_for(urltype1, id=item.id) }}">{{ item.name }}</a></small></td></tr>
+            {% endfor %}
+        </table>
+        {% else %}
+            Keine Einträge
+        {% endif %}
+        {% if items %}
+        <small><a href="{{ url_for(urltype2, infodomain_id=infodomain.id) }}">Alle ansehen</a></small>
+        {% endif %}
+    </div>
+    <div class="card-footer text-center">
+        <form method="POST" action="{{ url_for(url_add) }}">
+            {{ form.hidden_tag() }}
+            <input type="hidden" name="dom_id" value="{{ infodomain.id }}">
+            <button type="submit" class="btn btn-outline-success btn-sm"><i class="fas fa-plus"></i> {{ btn_name }}</button>
+        </form>
+    </div>
+</div>  
