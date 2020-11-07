@@ -1,33 +1,55 @@
-{% extends "base.html" %}
-{% import 'bootstrap/wtf.html' as wtf %}
+{% extends "layouts/base.html" -%}
+{% import 'bootstrap/wtf.html' as wtf -%}
 
-{% block app_content %}
+{% block title -%} {{ title }} {% endblock -%} 
 
-{% if breadcrumbs %}
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-    {% for item in breadcrumbs %}
-        <li class="breadcrumb-item"><a href="{{ item.link }}">{{ item.title }}</a></li> 
-    {% endfor %}
-      <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
-    </ol>
-</nav>
-{% endif %}
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets -%}{% endblock stylesheets -%}
 
-<h1>{{ item_type }}: {{ item.name }}</h1>
+{% block content -%}
 
-<div class="row mb-3">
-
-    <div class="col">
-      <div class="card h-100">
-        <h5 class="card-header">Beschreibung</h5>
-        <div class="card-body">
-          {{ item.description }}
-        </div>
-        <div class="card-footer text-center"></div>
-      </div>
+{% with messages = get_flashed_messages() -%}
+{% if messages -%}
+<div class="row">
+    <div class="col-md-12">
+    {% for message in messages -%}
+    <div class="alert alert-info" role="alert">{{ message }}</div>
+    {% endfor -%}
     </div>
-
 </div>
+{% endif -%}
+{% endwith -%}
 
-{% endblock %}
+<div class="row">
+    <div class="col-md-12">
+
+                <div class="card">
+                    <div class="card-header card-header-primary">
+                        <h4 class="card-title">{{ item_type }}: {{ item.name }}</h4>
+                    </div>
+                    <div class="card-body text-left table-responsive">
+
+                      <div class="row mb-3">
+
+                          <div class="col">
+                            <div class="card">
+                              <h5 class="card-header">Beschreibung</h5>
+                              <div class="card-body">
+                                {{ item.description }}
+                              </div>
+                              <div class="card-footer text-center"></div>
+                            </div>
+                          </div>
+
+                      </div>
+
+                    </div>
+                </div>
+
+    </div><!-- div col-md-12 -->
+</div><!-- div row -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE -->
+{% block javascripts -%}{% endblock javascripts -%}

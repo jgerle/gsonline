@@ -1,35 +1,72 @@
-{% extends "base.html" %}
-{% import 'bootstrap/wtf.html' as wtf %}
+{% extends "layouts/base.html" -%}
+{% import 'bootstrap/wtf.html' as wtf -%}
 
-{% block app_content %}
-    <h1>Kataloge</h1>
-    {% for catalogue in catalogues %}
-    <p>{{ catalogue.name }}</p>
-    {% endfor %}
+{% block title -%} {{ title }} {% endblock -%} 
 
-    <h5>Bausteingruppen</h5>
-    {% if bbgroups %}
-    <table class="table table-sm table-striped table-bordered table-hover">
-        <thead>
-            <tr>
-                <th scope="col">&nbsp;</th>
-                <th scope="col">Name</th>
-                <th scope="col">Bausteine</th>
-              </tr>
-        </thead>
-        <tbody>
-    {% for bbgroup in bbgroups %}
-        <tr>
-            <td><a href="{{ url_for('main.buildingblockgroup', id=bbgroup.id) }}">{{ bbgroup.shorthand }}</a></td>
-            <td><a href="{{ url_for('main.buildingblockgroup', id=bbgroup.id) }}">{{ bbgroup.name }}</a>{% if bbgroup.description %}<br/><small class="text-muted">{{ bbgroup.description }}</small>{% endif %}</td>
-            <td>{% if bbgroup.buildingblocks|length > 0 %}<a href="{{ url_for('main.buildingblockgroup', id=bbgroup.id) }}">{{ bbgroup.buildingblocks|length }}</a>{% else %}-{%endif%}</td>
-        </tr>
-    {% endfor %}
-        </tbody>
-    </table>
-    {% else %}
-        <p>Keine Bausteingruppen</p>
-    {% endif %}
-<p><a class="btn btn-primary btn-sm" href="{{ url_for('main.add_catalogue') }}"><i class="fas fa-book-open" title="{{ _('Katalog hinzufügen') }}"></i> Katalog hinzufügen</a></p>
-<p><a class="btn btn-primary btn-sm" href="{{ url_for('main.add_buildingblockgroup') }}"><i class="fas fa-cubes" title="{{ _('Bausteingruppe hinzufügen') }}"></i> Bausteingruppe hinzufügen</a></p>
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets -%}{% endblock stylesheets -%}
+
+{% set deactivated = namespace(value=0) %}
+
+{% block content -%}
+
+{% with messages = get_flashed_messages() -%}
+{% if messages -%}
+<div class="row">
+    <div class="col-md-12">
+    {% for message in messages -%}
+    <div class="alert alert-info" role="alert">{{ message }}</div>
+    {% endfor -%}
+    </div>
+</div>
+{% endif -%}
+{% endwith -%}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header card-header-primary">
+                <h4 class="card-title">Kataloge</h4>
+            </div>
+            <div class="card-body text-left table-responsive">
+
+                {% for catalogue in catalogues %}
+                <p>{{ catalogue.name }}</p>
+                {% endfor %}
+
+                <div class="card">
+                    <div class="card-header card-header-primary">
+                        <h4 class="card-title">Schichten und Bausteine</h4>
+                    </div>
+                    <div class="card-body text-left table-responsive">
+                        {% if bbgroups %}
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">&nbsp;</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Bausteine</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                        {% for bbgroup in bbgroups %}
+                            <tr>
+                                <td><a href="{{ url_for('main.buildingblockgroup', id=bbgroup.id) }}">{{ bbgroup.shorthand }}</a></td>
+                                <td><a href="{{ url_for('main.buildingblockgroup', id=bbgroup.id) }}">{{ bbgroup.name }}</a>{% if bbgroup.description %}<br/><small class="text-muted">{{ bbgroup.description }}</small>{% endif %}</td>
+                                <td>{% if bbgroup.buildingblocks|length > 0 %}<a href="{{ url_for('main.buildingblockgroup', id=bbgroup.id) }}">{{ bbgroup.buildingblocks|length }}</a>{% else %}-{%endif%}</td>
+                            </tr>
+                        {% endfor %}
+                            </tbody>
+                        </table>
+                        {% else %}
+                            <p>Keine Bausteingruppen</p>
+                        {% endif %}
+                    </div>
+                </div>                        
+                <p><a class="btn btn-primary btn-sm" href="{{ url_for('main.add_catalogue') }}">Katalog hinzufügen</a></p>
+                <p><a class="btn btn-primary btn-sm" href="{{ url_for('main.add_buildingblockgroup') }}">Bausteingruppe hinzufügen</a></p>
+            </div>
+        </div>
+    </div><!-- div col-md-12 -->
+</div><!-- div row -->
 {% endblock %}

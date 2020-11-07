@@ -1,13 +1,32 @@
-{% extends "base.html" %}
+{% extends "layouts/base.html" -%}
+{% import 'bootstrap/wtf.html' as wtf -%}
 
-{% block app_content %}
-<div class="row justify-content-center">
-    <div class="col-sm">
-        <h5>Checkliste befüllen</h5>
-        <p>Es sind keine Einträge in dieser Checklisten vorhanden. Bitte das automatische Anlegen anhand der vorliegenden Modellierung bestätigen.</p>
-        <form action="{{ url_for('main.autocreate_checklistitems', checklist_id=checklist_id) }}" method="post">
-            <button type="submit" name="confirm" value="confirm" class="btn btn-primary">Bestätigen</button>
-        </form>
+{% block title -%} {{ title }} {% endblock -%}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets -%}{% endblock stylesheets -%}
+
+{% block content -%}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header card-header-primary">
+                <h4 class="card-title">Checkliste befüllen</h4>
+            </div>
+            <div class="card-body text-left table-responsive">
+                <div class="row justify-content-center">
+                    <div class="col-sm">
+                        <h5>Checkliste befüllen</h5>
+                        <p>Es sind keine Einträge in dieser Checklisten vorhanden. Bitte das automatische Anlegen anhand der vorliegenden Modellierung bestätigen.</p>
+                        <form action="{{ url_for('main.autocreate_checklistitems', checklist_id=checklist_id) }}" method="post">
+                            <button type="submit" name="confirm" value="confirm" class="btn btn-primary">Bestätigen</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
 {% endblock %}

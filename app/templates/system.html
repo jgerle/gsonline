@@ -1,72 +1,91 @@
-{% extends "base.html" %}
-{% import 'bootstrap/wtf.html' as wtf %}
+{% extends "layouts/base.html" -%}
+{% import 'bootstrap/wtf.html' as wtf -%}
 
-{% block app_content %}
+{% block title -%} {{ title }} {% endblock -%} 
 
-{% if breadcrumbs %}
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-    {% for item in breadcrumbs %}
-        <li class="breadcrumb-item"><a href="{{ item.link }}">{{ item.title }}</a></li> 
-    {% endfor %}
-      <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
-    </ol>
-</nav>
-{% endif %}
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets -%}{% endblock stylesheets -%}
 
-<h1>System: {{ system.name }}</h1>
+{% block content -%}
 
-<div class="row mb-3">
-
-    <div class="col">
-      <div class="card h-100">
-        <h5 class="card-header">Beschreibung</h5>
-        <div class="card-body">
-          {{ system.description }}
-        </div>
-        <div class="card-footer text-center"></div>
-      </div>
-      <div class="card h-100 mt-2">
-        <h5 class="card-header">Verknüpfte GS Bausteine</h5>
-        <div class="card-body">
-            {% if buildingblocks %}
-            <table class="table-sm table-striped table-bordered table-hover" style="width: 100%;">
-                {% for buildingblock in buildingblocks %}
-                    <tr>
-                      <td><a href="{{ url_for('main.buildingblock', id=buildingblock.buildingblock.id) }}">{{ buildingblock.buildingblock.buildingblockgroup.shorthand }}.{{ buildingblock.buildingblock.order }} {{ buildingblock.buildingblock.name }}</a></td></tr>
-                {% endfor %}
-            </table>
-            {% else %}
-                <small>Keine Einträge</small>
-            {% endif %}
-          <div class="mt-3"><button data-toggle="modal" data-target="#BbRelModal" class="btn btn-outline-success btn-sm"><i class="fas fa-plus"></i> Baustein verknüpfen</button></div>
-        </div>
-        <div class="card-footer text-center"></div>
-      </div>      
+{% with messages = get_flashed_messages() -%}
+{% if messages -%}
+<div class="row">
+    <div class="col-md-12">
+    {% for message in messages -%}
+    <div class="alert alert-info" role="alert">{{ message }}</div>
+    {% endfor -%}
     </div>
-
-    <div class="col">
-      <div class="card h-100">
-        <h5 class="card-header">Benötigte Netze / Verbindungen</h5>
-        <div class="card-body">
-          <p>Folgende Netze oder Verbindungen sind mit diesem System verbunden:</p>
-              {% if system.networks %}
-              <table class="table-sm table-striped table-bordered table-hover" style="width: 100%;">
-                  {% for network in system.networks %}
-                      <tr>
-                        <td><a href="{{ url_for('main.network', id=network.network.id) }}">{{ network.network.name }}</a></td></tr>
-                  {% endfor %}
-              </table>
-              {% else %}
-                  <small>Keine Einträge</small>
-              {% endif %}
-              <div class="mt-3"><button data-toggle="modal" data-target="#NetRelModal" class="btn btn-outline-success btn-sm"><i class="fas fa-plus"></i> Netz / Verbindung verknüpfen</button></div>
-        </div>
-        <div class="card-footer text-center"></div>
-      </div>
-    </div>
-
 </div>
+{% endif -%}
+{% endwith -%}
+
+<div class="row">
+    <div class="col-md-12">
+
+                <div class="card">
+                    <div class="card-header card-header-primary">
+                        <h4 class="card-title">System: {{ system.name }}</h4>
+                    </div>
+                    <div class="card-body text-left table-responsive">
+
+                      <div class="row">
+
+                          <div class="col">
+                            <div class="card">
+                              <h5 class="card-header">Beschreibung</h5>
+                              <div class="card-body">
+                                {{ system.description }}
+                              </div>
+                              <div class="card-footer text-center"></div>
+                            </div>
+                            <div class="card mt-2">
+                              <h5 class="card-header">Verknüpfte GS Bausteine</h5>
+                              <div class="card-body">
+                                  {% if buildingblocks -%}
+                                  <table class="table-sm table-striped table-bordered table-hover" style="width: 100%;">
+                                      {% for buildingblock in buildingblocks -%}
+                                          <tr>
+                                            <td><a href="{{ url_for('main.buildingblock', id=buildingblock.buildingblock.id) }}">{{ buildingblock.buildingblock.buildingblockgroup.shorthand }}.{{ buildingblock.buildingblock.order }} {{ buildingblock.buildingblock.name }}</a></td></tr>
+                                      {% endfor -%}
+                                  </table>
+                                  {% else -%}
+                                      <small>Keine Einträge</small>
+                                  {% endif -%}
+                                <div class="mt-3"><button data-toggle="modal" data-target="#BbRelModal" class="btn btn-success btn-sm"><i class="material-icons">link</i> Baustein verknüpfen</button></div>
+                              </div>
+                              <div class="card-footer text-center"></div>
+                            </div>      
+                          </div>
+
+                          <div class="col">
+                            <div class="card">
+                              <h5 class="card-header">Benötigte Netze / Verbindungen</h5>
+                              <div class="card-body">
+                                <p>Folgende Netze oder Verbindungen sind mit diesem System verbunden:</p>
+                                    {% if system.networks -%}
+                                    <table class="table-sm table-striped table-bordered table-hover" style="width: 100%;">
+                                        {% for network in system.networks -%}
+                                            <tr>
+                                              <td><a href="{{ url_for('main.network', id=network.network.id) }}">{{ network.network.name }}</a></td></tr>
+                                        {% endfor -%}
+                                    </table>
+                                    {% else -%}
+                                        <small>Keine Einträge</small>
+                                    {% endif -%}
+                                    <div class="mt-3"><button data-toggle="modal" data-target="#NetRelModal" class="btn btn-success btn-sm"><i class="material-icons">link</i> Netz / Verbindung verknüpfen</button></div>
+                              </div>
+                              <div class="card-footer text-center"></div>
+                            </div>
+                          </div>
+
+                      </div>
+
+                    </div>
+                </div>
+
+    </div><!-- div col-md-12 -->
+</div><!-- div row -->
 
 <div class="modal fade" id="NetRelModal" role="dialog">
     <div class="modal-dialog" >
@@ -84,4 +103,8 @@
       </div>
     </div>
 </div>
-{% endblock %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE -->
+{% block javascripts -%}{% endblock javascripts -%}

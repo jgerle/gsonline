@@ -1,0 +1,35 @@
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="/static/assets/img/sidebar-1.jpg">
+      <div class="logo">
+        <a target="_blank" rel="noopener noreferrer" 
+           href="/" class="simple-text logo-normal">
+          GSonline
+        </a>
+      </div>
+      
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          {% if current_user.is_authenticated %}
+          <li class="nav-item {% if 'index' in segment %} active {% endif %}">
+            <a class="nav-link" href="/">
+              <i class="material-icons">home</i>
+              <p>Startseite</p>
+            </a>
+          </li>
+          <li class="nav-item {% if 'organizations' in segment %} active {% endif %}">
+            <a class="nav-link" href="{{ url_for('main.organizations') }}">
+              <i class="material-icons">home_work</i>
+              <p>Organisationen</p>
+            </a>
+          </li>
+          <li class="nav-item {% if 'catalogues' in segment %} active {% endif %}">
+            <a class="nav-link" href="{{ url_for('main.catalogues') }}">
+              <i class="material-icons">library_books</i>
+              <p>BSI GS Kompendium</p>
+            </a>
+          </li>  
+          {% endif %}
+        </ul>
+      </div>
+      
+
+    </div>

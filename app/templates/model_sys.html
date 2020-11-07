@@ -1,74 +1,92 @@
-{% extends "base.html" -%}
-{% import 'bootstrap/wtf.html' as wtf -%}
+{% extends "layouts/base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
 
-{% block app_content -%}
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="{{ url_for('main.organization', org_id=infodomain.org_id) }}">{{ infodomain.organization.name }}</a></li>
-      <li class="breadcrumb-item active" aria-current="page">{{ infodomain.name }}</li>
-    </ol>
-</nav>
+{% block title %} {{ title }} {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
 
 <div class="row">
     <div class="col-md-12">
-        <h1>System-Model des Informationsverbundes <i>{{infodomain.name}}</i></h1>
-        <p>Bausteine, die für die technischen Systeme der Unternehmung relevant sind.</p>
-    </div>
-</div>
 
-<div class="row">
-    <div class="col">
-        <div class="card">
-            <div class="card-header">
-                <ul class="nav nav-tabs card-header-tabs">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('main.infodomain', infodomain_id=infodomain.id) }}">Struktur</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('main.model_infodomain', id=infodomain.id) }}">Modellierung Prozesse</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Modellierung Systeme</a>
-                </li>        
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('main.dom_checklists', dom_id=infodomain.id) }}">Checklisten</a>
-                </li>
-                </ul>
-            </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col">
-                        <div class="mb-2 float-right"><button type="button" class="btn btn-outline-success">Bearbeiten</button></div>
-                        <p class="ml-1">Die Auswahl dieser Bausteine ergibt sich aus den erfassten Systemen und deren Verknüpfungen zum Grundschutz Kompendium.</p>
+                <div class="card">
+                    <div class="card-header card-header-primary">
+                        <h4 class="card-title ">System-Schicht des Informationsverbundes <i>{{infodomain.name}}</i></h4>
+                        <p class="card-category">Spezifische Bausteine, die für die technischen Systeme der Unternehmung relevant sind.</p>
+                    </div>
+                    <div class="card-body text-left">
+                        <div class="card">
+                            <div class="card-header card-header-tabs card-header-info">
+                                <div class="nav-tabs-navigation">
+                                    <div class="nav-tabs-wrapper">
+                                    <span class="nav-tabs-title">Schritte:</span>
+                                    <ul class="nav nav-tabs" data-tabs="tabs">
+                                        <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('main.infodomain', infodomain_id=infodomain.id) }}">
+                                            <i class="material-icons">device_hub</i> Strukturanalyse
+                                            <div class="ripple-container"></div>
+                                        <div class="ripple-container"></div></a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('main.model_infodomain', id=infodomain.id) }}">
+                                            <i class="material-icons">mediation</i> Modellierung Prozesse
+                                            <div class="ripple-container"></div>
+                                        <div class="ripple-container"></div></a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link active show" href="{{ url_for('main.model_systems', id=infodomain.id) }}">
+                                            <i class="material-icons">devices_other</i> Modellierung Systeme
+                                            <div class="ripple-container"></div>
+                                        <div class="ripple-container"></div></a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('main.dom_checklists', dom_id=infodomain.id) }}">
+                                            <i class="material-icons">check_circle_outline</i> Checklisten
+                                            <div class="ripple-container"></div>
+                                        <div class="ripple-container"></div></a>
+                                        </li>                        
+                                    </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <p>Die Auswahl dieser Bausteine ergibt sich aus den erfassten Systemen und deren Verknüpfungen zum Grundschutz Kompendium.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        {% with layer='APP' -%}
+                                            {% include '_model_bb_card.html' -%}
+                                        {% endwith-%}
+                                        <div class="my-2"></div>
+                                        {% with layer='SYS' -%}
+                                            {% include '_model_bb_card.html' -%}
+                                        {% endwith-%}
+                                    </div>
+                                    <div class="col">
+                                        {% with layer='NET' -%}
+                                            {% include '_model_bb_card.html' -%}
+                                        {% endwith-%}
+                                        <div class="my-2"></div>
+                                        {% with layer='INF' -%}
+                                            {% include '_model_bb_card.html'-%}
+                                        {% endwith-%}
+                                        <div class="my-2"></div>
+                                        {% with layer='CON'-%}
+                                            {% include '_model_bb_card.html'-%}
+                                        {% endwith-%}                 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        {% with layer='APP' -%}
-                            {% include '_model_bb_card.html' -%}
-                        {% endwith-%}
-                        <div class="my-2"></div>
-                        {% with layer='SYS' -%}
-                            {% include '_model_bb_card.html' -%}
-                        {% endwith-%}
-                    </div>
-                    <div class="col">
-                        {% with layer='NET' -%}
-                            {% include '_model_bb_card.html' -%}
-                        {% endwith-%}
-                        <div class="my-2"></div>
-                        {% with layer='INF' -%}
-                            {% include '_model_bb_card.html'-%}
-                        {% endwith-%}
-                        <div class="my-2"></div>
-                        {% with layer='CON'-%}
-                            {% include '_model_bb_card.html'-%}
-                        {% endwith-%}                 
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
-<div class="row">&nbsp;</div>
-{% endblock-%}
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE -->
+{% block javascripts -%}{% endblock javascripts -%}

@@ -1,56 +1,78 @@
-{% extends "base.html" %}
-{% import 'bootstrap/wtf.html' as wtf %}
+{% extends "layouts/base.html" -%}
+{% import 'bootstrap/wtf.html' as wtf -%}
 
-{% block app_content %}
+{% block title -%} {{ title }} {% endblock -%} 
 
-{% if breadcrumbs %}
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-    {% for item in breadcrumbs %}
-        <li class="breadcrumb-item"><a href="{{ item.link }}">{{ item.title }}</a></li> 
-    {% endfor %}
-      <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
-    </ol>
-</nav>
-{% endif %}
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets -%}{% endblock stylesheets -%}
 
-<h1>Prozess: {{ coreprocess.name }}</h1>
+{% block content -%}
 
-<div class="row mb-3">
-
-    <div class="col">
-      <div class="card h-100">
-        <h5 class="card-header">Beschreibung</h5>
-        <div class="card-body">
-          {{ coreprocess.description }}
-        </div>
-        <div class="card-footer text-center"></div>
-      </div>
+{% with messages = get_flashed_messages() -%}
+{% if messages -%}
+<div class="row">
+    <div class="col-md-12">
+    {% for message in messages -%}
+    <div class="alert alert-info" role="alert">{{ message }}</div>
+    {% endfor -%}
     </div>
-
-    <div class="col">
-      <div class="card h-100">
-        <div class="card-header">
-          <h5>Benötigte Anwendungen</h5>
-        </div>
-        <div class="card-body">
-          <p>Folgende Anwendungen werden zur Ausführung dieses Prozesses benötigt:</p>
-              {% if coreprocess.applications %}
-              <table class="table-sm table-striped table-bordered table-hover" style="width: 100%;">
-                  {% for app in coreprocess.applications %}
-                      <tr><td><a href="{{ url_for('main.application', id=app.application_id) }}">{{ app.application.name }}</a></td></tr>
-                  {% endfor %}
-              </table>
-              {% else %}
-                  <small>Keine Einträge</small>
-              {% endif %}
-              <div class="mt-3"><button data-toggle="modal" data-target="#loginModal" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Anwendung hinzufügen</button></div>
-        </div>
-        <div class="card-footer text-center"></div>
-      </div>
-    </div>
-
 </div>
+{% endif -%}
+{% endwith -%}
+
+<div class="row">
+    <div class="col-md-12">
+
+                <div class="card">
+                    <div class="card-header card-header-primary">
+                        <h4 class="card-title">Prozess: {{ title }}</h4>
+                        <!--<p class="card-category"> Here is a subtitle for this table</p>-->
+                    </div>
+                    <div class="card-body text-left table-responsive">
+
+                      <div class="row">
+
+                          <div class="col">
+                            <div class="card">
+                              <div class="card-header">
+                                <h5 class="card-title">Beschreibung</h5>
+                              </div>
+                              <div class="card-body">
+                                {{ coreprocess.description }}
+                              </div>
+                              <div class="card-footer text-center"></div>
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card">
+                              <div class="card-header">
+                                <h5 class="card-title">Benötigte Anwendungen</h5>
+                              </div>
+                              <div class="card-body">
+                                <p>Folgende Anwendungen werden zur Ausführung dieses Prozesses benötigt:</p>
+                                {% if coreprocess.applications -%}
+                                <table class="table-sm table-striped table-bordered table-hover" style="width: 100%;">
+                                    {% for app in coreprocess.applications -%}
+                                        <tr><td><a href="{{ url_for('main.application', id=app.application_id) }}">{{ app.application.name }}</a></td></tr>
+                                    {% endfor -%}
+                                </table>
+                                {% else -%}
+                                    <small>Keine Einträge</small>
+                                {% endif -%}
+                                <div class="mt-3"><button data-toggle="modal" data-target="#loginModal" class="btn btn-success btn-sm"><i class="material-icons">add_circle_outline</i> Anwendung hinzufügen</button></div>
+                              </div>
+                              <div class="card-footer text-center"></div>
+                            </div>
+                          </div>
+
+                      </div>
+
+                    </div>
+                </div>
+
+    </div><!-- div col-md-12 -->
+</div><!-- div row -->
 
 <div class="modal fade" id="loginModal" role="dialog">
     <div class="modal-dialog" >
@@ -60,4 +82,8 @@
       </div>
     </div>
 </div>
-{% endblock %}
+
+{% endblock content -%}
+
+<!-- Specific Page JS goes HERE -->
+{% block javascripts -%}{% endblock javascripts -%}

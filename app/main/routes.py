@@ -304,7 +304,11 @@ def infodomain(infodomain_id):
     rooms = Room.query.filter_by(dom_id=infodomain_id).limit(5).all()
     persons = Person.query.filter_by(dom_id=infodomain_id).limit(5).all()
     documents = Document.query.filter_by(dom_id=infodomain_id).limit(5).all()
-    return render_template('infodomain.html', title=_('Informationsverbund'),
+
+    breadcrumbs = [{'link': url_for('main.organization', org_id=org.id), 'title': org.name}]
+
+    return render_template('infodomain.html', title=_('Informationsverbund ' + infodomain.name),
+                           breadcrumbs=breadcrumbs,
                            form=form,
                            infodomain=infodomain,
                            org=org,
@@ -925,7 +929,7 @@ def dom_checklists(dom_id):
         .outerjoin(itemcounter_base_subquery, Checklist.id == itemcounter_base_subquery.c.checklist_id) \
         .outerjoin(itemcounter_standard_subquery, Checklist.id == itemcounter_standard_subquery.c.checklist_id) \
         .outerjoin(itemcounter_high_subquery, Checklist.id == itemcounter_high_subquery.c.checklist_id) \
-        .outerjoin(prio_subquery, Checklist.gsmodelbase_id == prio_subquery.c.id).filter_by(prio='R1') \
+        .outerjoin(prio_subquery, Checklist.gsmodelbase_id == prio_subquery.c.id).filter_by(prio='R2') \
         .all()
 
     if checklists is None or len (checklists) == 0:

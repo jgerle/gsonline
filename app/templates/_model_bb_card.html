@@ -4,15 +4,15 @@
                     <table class="table table-sm table-hover mb-0">
                         <tr>
                             <th>#</td>
-                            <th><small>Baustein</small></td>
-                            <th><small>Prio</small></td>
+                            <th>Baustein</td>
+                            <th>Prio</td>
                         </tr>                    
                         {% for entry in gsmodel-%}
                         {% if entry.buildingblock.buildingblockgroup.shorthand==layer-%}
                         <tr>
-                            <td style="width: 10%"><small>{{ entry.buildingblock.order }}</small></td>
-                            <td><small><a href="{{ url_for('main.buildingblock', id=entry.buildingblock.id) }}">{{ entry.buildingblock.name }}</a></small></td>
-                            <td style="width: 10%"><small>{{ entry.buildingblock.prio.name }}</small></td>
+                            <td style="width: 10%">{{ entry.buildingblock.order }}</td>
+                            <td><a href="{{ url_for('main.buildingblock', id=entry.buildingblock.id) }}">{{ entry.buildingblock.name }}</a></td>
+                            <td style="width: 10%">{{ entry.buildingblock.prio.name }}</td>
                         </tr>
                         {% endif-%}
                         {% endfor-%}

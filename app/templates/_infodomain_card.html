@@ -1,26 +1,21 @@
-<div class="card h-100">
-    <h5 class="card-header">
-        {{ header }}
-    </h5>
-    <div class="card-body">
+<div class="card">
+    <div class="card-header card-header-primary">
+        <a href="{{ url_for(urltype2, infodomain_id=infodomain.id) }}"><h4 class="card-title ">{{ header }}</h4></a>
+    </div>
+    <div class="card-body table-responsive">
         {% if items %}
-        <table class="table table-sm table-hover" style="width: 100%;">
+        <table class="table table-hover" style="width: 100%;">
             {% for item in items %}
-                <tr><td><small><a href="{{ url_for(urltype1, id=item.id) }}">{{ item.name }}</a></small></td></tr>
+                <tr><td><a href="{{ url_for(urltype1, id=item.id) }}">{{ item.name }}</a></td></tr>
             {% endfor %}
         </table>
         {% else %}
             Keine Einträge
         {% endif %}
-        {% if items %}
-        <small><a href="{{ url_for(urltype2, infodomain_id=infodomain.id) }}">Alle ansehen</a></small>
-        {% endif %}
-    </div>
-    <div class="card-footer text-center">
         <form method="POST" action="{{ url_for(url_add) }}">
             {{ form.hidden_tag() }}
             <input type="hidden" name="dom_id" value="{{ infodomain.id }}">
-            <button type="submit" class="btn btn-outline-success btn-sm"><i class="fas fa-plus"></i> {{ btn_name }}</button>
+            <button type="submit" class="btn btn-outline-success btn-sm"><span class="material-icons">add_circle_outline</span> {{ btn_name }}</button>{% if items %}<a href="{{ url_for(urltype2, infodomain_id=infodomain.id) }}" class="btn btn-outline-primary btn-sm"><span class="material-icons">reorder</span> Alle</a>{% endif %}
         </form>
     </div>
 </div>  
