@@ -20,6 +20,30 @@
                         <div class="card">
                             <div class="card-header card-header-tabs card-header-info">
                                 <div class="nav-tabs-navigation">
+                                    <!-- BEGIN Checklist Prio -->
+                                    <div class="float-right">
+                                    <ul class="nav nav-tabs" data-tabs="tabs">
+                                        <li class="nav-item">
+                                        <a class="nav-link {% if prio=='R1' -%} active show{% endif -%}" href="{{ url_for('main.dom_checklists', dom_id=infodomain.id, prio='R1') }}">
+                                            <i class="material-icons">check_circle_outline</i> R1
+                                            <div class="ripple-container"></div>
+                                        <div class="ripple-container"></div></a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link {% if prio=='R2' -%} active show{% endif -%}" href="{{ url_for('main.dom_checklists', dom_id=infodomain.id, prio='R2') }}">
+                                            <i class="material-icons">check_circle_outline</i> R2
+                                            <div class="ripple-container"></div>
+                                        <div class="ripple-container"></div></a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link {% if prio=='R3' -%} active show{% endif -%}" href="{{ url_for('main.dom_checklists', dom_id=infodomain.id, prio='R3') }}">
+                                            <i class="material-icons">check_circle_outline</i> R3
+                                            <div class="ripple-container"></div>
+                                        <div class="ripple-container"></div></a>
+                                        </li>                     
+                                    </ul>
+                                    </div>
+                                    <!-- END Checklist Prio -->
                                     <div class="nav-tabs-wrapper">
                                     <span class="nav-tabs-title">Schritte:</span>
                                     <ul class="nav nav-tabs" data-tabs="tabs">
@@ -42,7 +66,7 @@
                                         <div class="ripple-container"></div></a>
                                         </li>
                                         <li class="nav-item">
-                                        <a class="nav-link active show" href="{{ url_for('main.dom_checklists', dom_id=infodomain.id) }}">
+                                        <a class="nav-link active" href="{{ url_for('main.dom_checklists', dom_id=infodomain.id) }}">
                                             <i class="material-icons">check_circle_outline</i> Checklisten
                                             <div class="ripple-container"></div>
                                         <div class="ripple-container"></div></a>

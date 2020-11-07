@@ -902,6 +902,13 @@ def model_systems(id):
 def dom_checklists(dom_id):
     infodomain = Infodomain.query.filter_by(id=dom_id).first_or_404()
 
+    if request.args.get('prio') == "R3":
+        prio = 'R3'
+    elif request.args.get('prio') == "R2":
+        prio = 'R2'
+    else:
+        prio = 'R1'
+
     itemcounter_base_subquery = db.session.query(ChecklistItem.checklist_id, db.func.count(Requirement.protection_level).label('base_count')) \
         .filter(Requirement.protection_level=='BASE')\
         .outerjoin(Requirement, ChecklistItem.requirement_id==Requirement.id) \
@@ -929,13 +936,13 @@ def dom_checklists(dom_id):
         .outerjoin(itemcounter_base_subquery, Checklist.id == itemcounter_base_subquery.c.checklist_id) \
         .outerjoin(itemcounter_standard_subquery, Checklist.id == itemcounter_standard_subquery.c.checklist_id) \
         .outerjoin(itemcounter_high_subquery, Checklist.id == itemcounter_high_subquery.c.checklist_id) \
-        .outerjoin(prio_subquery, Checklist.gsmodelbase_id == prio_subquery.c.id).filter_by(prio='R2') \
+        .outerjoin(prio_subquery, Checklist.gsmodelbase_id == prio_subquery.c.id).filter_by(prio=prio) \
         .all()
 
     if checklists is None or len (checklists) == 0:
         return redirect(url_for('main.create_checklists', dom_id=infodomain.id))
 
-    return render_template('checklists.html', title="Checklisten", infodomain=infodomain, checklists=checklists)
+    return render_template('checklists.html', title="Checklisten", infodomain=infodomain, checklists=checklists, prio=prio)
 
 @bp.route('/infodomain/<dom_id>/create_checklists', methods=['GET', 'POST'])
 @login_required
