@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+SYS.2.1 Allgemeiner Client
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_6209.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_6209.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">SYS.2.1 Allgemeiner Client</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>SYS.2.1 Allgemeiner Client</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#6209_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#6209_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#6209_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#6209_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#6209_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#6209_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#6209_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#6209_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#6209_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#6209_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#6209_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#6209_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#6209_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="6209_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="6209_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Als „Allgemeiner Client“ wird ein IT-System mit einem beliebigen Betriebssystem bezeichnet, das die Trennung von Benutzern zulässt und nicht dazu dient, Server-Dienste bereitzustellen. Auf einem Client sollten mindestens eine Administrator- und eine Benutzer-Umgebung eingerichtet werden können. Typischerweise ist ein solches IT-System vernetzt und in ein Client-Server-Netz eingebunden. Das IT-System kann auf einer beliebigen Plattform betrieben werden. Dabei kann es sich beispielsweise um einen PC mit oder ohne Festplatte, um ein mobiles oder stationäres Gerät, aber auch um eine Linux-Workstation oder einen Apple Mac handeln. Das IT-System verfügt in der Regel über Laufwerke für auswechselbare Datenträger, weitere Schnittstellen für den Datenaustausch sowie andere Peripheriegeräte.</p>
+</p>
+<a name="6209_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Ziel dieses Bausteins ist der Schutz von Informationen, die auf jeglicher Art von Clients, unabhängig vom verwendeten Betriebssystem, erstellt, gelesen, bearbeitet, gespeichert oder versendet werden.</p>
+</p>
+<a name="6209_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein SYS.2.1 <span style="font-style: italic">Allgemeiner Client </span>ist für alle Client-IT-Systeme mit beliebigem Betriebssystem anzuwenden.</p>
+<p>In der Regel werden Client-Systeme unter einem Betriebssystem ausgeführt, das jeweils eigene Sicherheitsmaßnahmen erfordert. Für verbreitete Client-Betriebssysteme sind spezifische Bausteine in der Schicht SYS.2 <span style="font-style: italic">Desktop-Systeme</span> vorhanden, die auf dem vorliegenden Baustein aufbauen und zusätzlich anzuwenden sind. Falls für eingesetzte Client-Systeme kein spezifischer Baustein existiert, müssen die Anforderungen dieses Bausteins geeignet angepasst werden. Sicherheitsempfehlungen für mobile Endgeräte mit festem Betriebssystem, wie Smartphones oder Tablets, sind in der Schicht SYS.3 <span style="font-style: italic">Mobile Devices</span> zu finden.</p>
+<p>Falls ein Client weitere Schnittstellen zum Datenaustausch hat, wie z. B. USB, Bluetooth, LAN oder WLAN, müssen diese gemäß den Sicherheitsvorgaben der Institution so abgesichert werden, wie es in den entsprechenden Bausteinen beschrieben ist. Hierzu sind Anforderungen beispielsweise in SYS.4.5 <span style="font-style: italic">Wechseldatenträger</span> oder NET.2.2 <span style="font-style: italic">WLAN-Nutzung</span> zu finden.</p>
+</p>
+<a name="6209_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein SYS.2.1 <span style="font-style: italic">Allgemeiner Client</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Schadprogramme</h3>
+<p>
+<p>Schadprogramme werden mit dem Ziel entwickelt, unerwünschte und schädliche Funktionen auf IT-Systemen auszuführen. Sie werden meist „heimlich“ aktiv, d. h. ohne dass die Benutzer davon wissen oder darin einwilligen. Je nach Ausprägung bieten sie einem Angreifer umfangreiche Kommunikations- und Steuerungsmöglichkeiten mit vielen unterschiedlichen Funktionen. Unter anderem könnten sie gezielt Passwörter auslesen, IT-Systeme fernsteuern, Schutzsoftware deaktivieren oder Daten ausspionieren.</p>
+<p>Clients sind besonders anfällig für Schadsoftware. Sie werden direkt von den Benutzern bedient und sind somit oft das Einfallstor für schädliche Inhalte jeglicher Art. Besuchen die Benutzer infizierte Webseiten, öffnen E-Mails mit schädlichem Inhalt von privaten E-Mail-Konten oder kopieren Schadsoftware über lokale Datenträger auf den Client, verbreitet sich so die Schadsoftware über die Clients in das Netz der Institution. Zentrale Schutzmechanismen, wie z. B. ein Virenschutz auf dem Datei- oder E-Mail-Server, können so oft umgangen werden.</p>
+</p>
+<h3>2.2 Datenverlust durch lokale Datenhaltung</h3>
+<p>
+<p>Trotz regelmäßiger, gegensätzlicher Empfehlung speichern viele Benutzer auch wichtige Daten ausschließlich lokal ab. Beispielsweise werden Daten häufig, statt auf einem zentralen Dateiserver, in lokalen Benutzerverzeichnissen abgelegt. Auch E-Mails werden häufig nur lokal archiviert. So können etwa bei Hardwaredefekten leicht Daten verloren gehen. Werden institutionskritische Daten zerstört oder verfälscht, können dadurch Geschäftsprozesse und Fachaufgaben verzögert oder sogar ganz verhindert werden. Insgesamt kann der Verlust gespeicherter Daten neben einem Arbeitsausfall und den Kosten für eine Wiederbeschaffung auch zu langfristigen Konsequenzen wie beispielsweise Vertrauenseinbußen bei Kunden und Partnern sowie einem negativen Eindruck in der Öffentlichkeit führen. Durch die von den durch Datenverluste verursachten direkten und indirekten Schäden können Institutionen im Extremfall in ihrer Existenz bedroht sein.</p>
+<p>Werden wichtige Daten ausschließlich lokal gehalten, können andere Benutzer außerdem nicht darauf zugreifen, etwa im Vertretungsfall bei Urlaub oder Krankheit.</p>
+<p>Auch wenn grundsätzliche Vorgaben zur zentralen Speicherung eingehalten werden, werden oftmals zusätzlich lokale Kopien der zentral gespeicherten Daten angelegt. Dies führt nicht nur häufig zu inkonsistenten Versionsständen, sondern auch dazu, dass Daten entweder vorschnell oder nicht wie notwendig gelöscht werden.</p>
+</p>
+<h3>2.3 Hardware-Defekte durch Fehlbedienung</h3>
+<p>
+<p>Anders als bei zentralen IT-Systemen wie Servern, arbeiten Client-Benutzer direkt am Endgerät. Dadurch könnten sie den Client unter Umständen gewollt oder ungewollt beschädigen. Beispielsweise könnten sie gegen auf dem Boden stehende IT-Systeme treten, Monitore umwerfen, über Kabel stolpern oder Getränke in Tastaturen gießen. Oft ist es nicht ausreichend, Hardware erst bei einem Defekt zu ersetzen. Bei einem Festplattendefekt können z. B. gespeicherte Daten meist nicht wiederhergestellt werden. Außerdem kann das IT-System bis zum Abschluss der Reparatur nicht eingesetzt werden. Fällt ein mobiles Gerät unterwegs aus, kann die Arbeit erst nach der Rückkehr in die Institution fortgesetzt werden.</p>
+</p>
+<h3>2.4 Software-Schwachstellen oder -Fehler</h3>
+<p>
+<p>Für jede Art von Software gilt: Je komplexer sie ist, desto häufiger können Programmier- oder Designfehler auftreten. Unter Software-Schwachstellen werden Programmfehler verstanden, die den Benutzern oft (noch) nicht bekannt sind und die ein Sicherheitsrisiko für das System darstellen. Nahezu täglich werden neue Sicherheitslücken in lange genutzter, aber auch in neuer Software gefunden.</p>
+<p>Auf Clients werden in der Regel eine Vielzahl verschiedener Applikationen installiert. Dadurch vermehren sich gleichzeitig auch die Schwachstellen, von denen das System betroffen sein kann. Hinzu kommt, dass eine typischerweise größere Anzahl an Clients viel schwerer gewartet und aktualisiert werden kann als beispielsweise eine nur geringe Anzahl an Servern.</p>
+<p>Werden Softwarefehler nicht erkannt oder nicht umgehend behoben, kann das schwerwiegende Folgen haben. So kann eine Software-Schwachstelle in einer viel genutzten Standardsoftware schnell dazu führen, dass weltweit Sicherheitsprobleme für sämtliche Institutionen entstehen.</p>
+</p>
+<h3>2.5 Unberechtigte IT-Nutzung</h3>
+<p>
+<p>Die Identifikation und Authentisierung von Benutzern soll verhindern, dass ein Client unberechtigt verwendet wird. Aber auch IT-Systeme, bei denen sich Benutzer über Benutzer-IDs und Passwörter identifizieren und authentisieren müssen, können unberechtigt genutzt werden, wenn es einem Angreifer gelingt, die Zugangsdaten auszuspähen oder zu erraten. Wird keine Bildschirmsperre aktiviert, kann der Client auch bei kurzzeitiger Abwesenheit unberechtigt genutzt werden.</p>
+</p>
+<h3>2.6 Installation nicht benötigter Betriebssystemkomponenten und Applikationen</h3>
+<p>
+<p>Bei der Installation eines Betriebssystems besteht in der Regel die Möglichkeit, optionale Software zu installieren. Auch im laufenden Betrieb wird regelmäßig Software installiert und getestet. Mit jeder weiteren Anwendung steigen nicht nur Rechen- und Speicherlast eines Clients stetig, sondern auch die Wahrscheinlichkeit für darin verborgene Schwachstellen. Nicht benötigte Software unterliegt außerdem häufig keinem regelmäßigen Patchmanagement, sodass auch bekannte Sicherheitslücken nicht zeitnah geschlossen werden. Dadurch können Angreifer auch solche Schwachstellen ausnutzen, die schon lange bekannt sind.</p>
+</p>
+<h3>2.7 Abhören von Räumen mittels Mikrofon und Kamera</h3>
+<p>
+<p>Viele Clients verfügen über ein Mikrofon und eine Kamera. Hierzu gehören auch Intelligente Persönliche Assistenten (IPA) oder Sprachassistenten, die die Umgebung permanent abhören und nach Nennung eines geräteabhängigen Aktivierungsworts bestimmte Funktionen ausführen, wie Musik abspielen, Kontakte anrufen, die Beleuchtung steuern oder das Raumklima verändern. Diese Mikrofone und Kameras können von jedem verwendet werden, der über entsprechende Zugriffsrechte verfügt, bei vernetzten Systemen auch von Externen. Werden diese Rechte nicht sorgfältig vergeben, können Unbefugte Mikrofon oder Kamera dazu missbrauchen, um über das Internet Räume abzuhören oder unbemerkt Besprechungen aufzuzeichnen. Werden die Gespräche, z. B. von IPAs, an Dritte über Datenverbindungen übermittelt, könnten diese unter Umständen abgehört werden. Die aufgezeichneten Gespräche könnten auch bei den Betreibern des IPA abgespeichert und weiterverarbeitet werden.</p>
+</p>
+<h3>2.8 Fehlerhafte Administration oder Nutzung von Geräten und Systemen</h3>
+<p>
+<p>Moderne Client-Betriebssysteme sind komplexe Systeme, deren Sicherheit im Wesentlichen durch ihre Konfiguration bestimmt wird. Dadurch können insbesondere Fehlkonfiguration von Komponenten die Sicherheit beeinträchtigen, sodass das IT-System fehlerhaft funktioniert oder kompromittiert wird. Grundsätzlich beinhaltet jede Schnittstelle an einem IT-System nicht nur die Möglichkeit, darüber bestimmte Dienste des IT-Systems berechtigt zu nutzen, sondern auch das Risiko, dass Unbefugte auf das IT-System zugreifen. Wenn etwa durch Fehlkonfiguration der Authentisierungsmechanismen Benutzerkennungen und zugehörige Passwörter ausgespäht werden können, ist eine unberechtigte Nutzung der damit geschützten Anwendungen oder IT-Systeme denkbar.</p>
+<p>Auch eine fehlerhafte oder nicht ordnungsgemäße Nutzung von Geräten, Systemen und Anwendungen kann die Sicherheit beeinträchtigen, vor allem, wenn vorhandene Sicherheitsmaßnahmen missachtet oder umgangen werden. So können beispielsweise zu großzügig vergebene Rechte, leicht zu erratende Passwörter, nicht ausreichend geschützte Datenträger mit Sicherungskopien oder bei vorübergehender Abwesenheit nicht gesperrte Arbeitsplätze zu Sicherheitsvorfällen führen. Eine weitere Folge der fehlerhaften Bedienung von IT-Systemen oder Anwendungen kann das versehentlich Löschen oder Verändern von Daten sein. Dabei ist es ebenfalls möglich, dass vertrauliche Informationen in die Hände Dritter gelangen, beispielsweise wenn Zugriffsrechte falsch gesetzt werden.</p>
+</p>
+<a name="6209_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die spezifischen Anforderungen des Bausteins SYS.2.1 <span style="font-style: italic">Allgemeiner Client</span> aufgeführt. Grundsätzlich ist der IT-Betrieb für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Erfüllung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt. </p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>IT-Betrieb</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+Benutzer,
+Haustechnik
+</td>
+</tr>
+</table>
+<a name="6209_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein SYS.2.1<em>Allgemeiner Client</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>SYS.2.1.A1 Sichere Benutzerauthentisierung (B)</h4>
+<p>Um den Client zu nutzen, MÜSSEN sich die Benutzer gegenüber dem IT-System authentisieren. Sollen die Benutzer hierfür Passwörter verwenden, MÜSSEN sichere Passwörter gewählt werden. Die Passwörter MÜSSEN der Passwort-Richtlinie der Institution entsprechen (siehe ORP.4 <span style="font-style: italic">Identitäts- und Berechtigungsmanagement</span>).</p>
+</li>
+<li><h4>SYS.2.1.A2 Rollentrennung (B)</h4>
+<p>Der Client MUSS so eingerichtet werden, dass normale Tätigkeiten nicht mit Administratorrechten ausgeübt werden. NUR Administratoren DÜRFEN Administratorrechte erhalten. Es DÜRFEN NUR Administratoren die Systemkonfiguration ändern, Anwendungen installieren bzw. entfernen oder Systemdateien modifizieren bzw. löschen können. Benutzer DÜRFEN NUR ausschließlich lesenden Zugriff auf Systemdateien haben. </p>
+<p>Ablauf, Rahmenbedingungen und Anforderungen an administrative Aufgaben sowie die Aufgabentrennungen zwischen den verschiedenen Rollen der Benutzer des IT-Systems SOLLTEN in einem Benutzer- und Administrationskonzept festgeschrieben werden.</p>
+</li>
+<li><h4>SYS.2.1.A3 Aktivieren von Autoupdate-Mechanismen (B)</h4>
+<p>Automatische Update-Mechanismen (Autoupdate) MÜSSEN aktiviert werden, sofern nicht andere Mechanismen wie regelmäßige manuelle Wartung oder ein zentrales Softwareverteilungssystem für Updates eingesetzt werden. Wenn für Autoupdate-Mechanismen ein Zeitintervall vorgegeben werden kann, SOLLTE mindestens täglich automatisch nach Updates gesucht und diese installiert werden.</p>
+</li>
+<li><h4>SYS.2.1.A4 Regelmäßige Datensicherung (B)</h4>
+<p>Clients MÜSSEN in das Datensicherungskonzept der Institution einbezogen werden. Es MÜSSEN Regelungen getroffen werden, welche lokal abgespeicherten Daten wie, von wem, wann und wie regelmäßig gesichert werden. Es MÜSSEN mindestens diejenigen Daten regelmäßig gesichert werden, die nicht aus anderen Informationen abgeleitet werden können. Bei vertraulichen und ausgelagerten Backups SOLLTEN die gesicherten Daten verschlüsselt gespeichert werden. Für eingesetzte Software SOLLTE separat entschieden werden, ob sie von der regelmäßigen Datensicherung erfasst werden muss. Die Benutzer SOLLTEN über die Regelungen zur Datensicherung informiert werden. Es MUSS regelmäßig getestet werden, ob die Datensicherung wie gewünscht funktioniert, vor allem, ob gesicherte Daten problemlos zurückgespielt werden können.</p>
+</li>
+<li><h4>SYS.2.1.A5 Verwendung einer Bildschirmsperre [Benutzer] (B)</h4>
+<p>Damit Unbefugte nicht auf aktive Clients zugreifen können, MUSS eine Bildschirmsperre verwendet werden. Sie SOLLTE sich sowohl manuell vom Benutzer aktivieren lassen als auch nach einer vorgegebenen Zeit der Inaktivität automatisch gestartet werden. Es MUSS sichergestellt sein, dass die Bildschirmsperre erst nach einer erfolgreichen Benutzerauthentisierung deaktiviert werden kann. </p>
+</li>
+<li><h4>SYS.2.1.A6 Einsatz von Viren-Schutzprogrammen (B)</h4>
+<p>Abhängig vom installierten Betriebssystem und von anderen vorhandenen Schutzmechanismen des Clients MUSS geprüft werden, ob Viren-Schutzprogramme eingesetzt werden sollen. Soweit vorhanden, MÜSSEN konkrete Aussagen, ob ein Virenschutz notwendig ist, aus den Betriebssystem-Bausteinen des IT-Grundschutz-Kompendiums berücksichtigt werden. Die entsprechenden Signaturen eines Viren-Schutzprogrammes MÜSSEN regelmäßig aktualisiert werden. Neben Echtzeit- und On-Demand-Scans MUSS eine eingesetzte Lösung ermöglichen, auch komprimierte Daten nach Schadprogrammen zu durchsuchen.</p>
+<p>Viren-Schutzprogramme auf den Clients MÜSSEN so konfiguriert sein, dass die Benutzer weder sicherheitsrelevante Änderungen an den Einstellungen vornehmen können noch die Viren-Schutzprogramme deaktivieren können.</p>
+</li>
+<li><h4>SYS.2.1.A7 Protokollierung auf Clients (B)</h4>
+<p>Es MUSS entschieden werden, welche Informationen auf Clients mindestens protokolliert werden sollen, wie lange die Protokolldaten aufbewahrt werden und wer unter welchen Voraussetzungen die Protokolldaten einsehen darf. Generell MÜSSEN alle sicherheitsrelevanten Systemereignisse protokolliert werden. Es SOLLTE geprüft werden, ob die Speicherung der Protokolldaten auf den jeweiligen Clients selbst ausreichend ist oder ob eine zentrale Speicherung erfolgen soll.</p>
+</li>
+<li><h4>SYS.2.1.A8 Absicherung des Bootvorgangs (B)</h4>
+<p>Der Startvorgang des IT-Systems („Booten“) MUSS gegen Manipulation abgesichert werden. Es MUSS festgelegt werden, von welchen Medien gebootet werden darf. Es SOLLTE entschieden werden, ob und wie der Bootvorgang kryptografisch geschützt werden soll. Es MUSS sichergestellt werden, dass nur Administratoren die Clients von einem anderen als den voreingestellten Laufwerken oder externen Speichermedien booten können. NUR Administratoren DÜRFEN von eingebauten optischen oder externen Speichermedien booten können. Die Konfigurationseinstellungen des Bootvorgangs DÜRFEN NUR durch Administratoren verändert werden können. Alle nicht benötigten Funktionen in der Firmware MÜSSEN deaktiviert werden.</p>
+</li>
+</ul>
+<a name="6209_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein SYS.2.1<em>Allgemeiner Client</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>SYS.2.1.A9 Festlegung einer Sicherheitsrichtlinie für Clients (S)</h4>
+<p>Ausgehend von der allgemeinen Sicherheitsrichtlinie der Institution SOLLTEN die Anforderungen an allgemeine Clients konkretisiert werden. Die Richtlinie SOLLTE allen Benutzern sowie allen Personen, die an der Beschaffung und dem Betrieb der Clients beteiligt sind, bekannt und Grundlage für deren Arbeit sein. Die Umsetzung der in der Richtlinie geforderten Inhalte SOLLTE regelmäßig überprüft werden. Die Ergebnisse SOLLTEN sinnvoll dokumentiert werden.</p>
+</li>
+<li><h4>SYS.2.1.A10 Planung des Einsatzes von Clients (S)</h4>
+<p>Damit Clients sicher betrieben werden können, SOLLTE im Vorfeld geplant werden, wo und wie diese eingesetzt werden sollen. Die Planung SOLLTE dabei nicht nur Aspekte betreffen, die typischerweise mit dem Begriff „Sicherheit“ verknüpft werden, sondern auch normale betriebliche Aspekte, die Anforderungen im Bereich der Sicherheit nach sich ziehen. Neben Client-Typ-spezifischen Anforderungsprofilen SOLLTEN Vorgaben zur Authentisierung und Benutzerverwaltung definiert werden. Alle Entscheidungen, die in der Planungsphase getroffen wurden, SOLLTEN so dokumentiert werden, dass sie zu einem späteren Zeitpunkt nachvollzogen werden können. </p>
+</li>
+<li><h4>SYS.2.1.A11 Beschaffung von Clients (S)</h4>
+<p>Bevor Clients beschafft werden, SOLLTE eine Anforderungsliste erstellt werden, anhand derer die am Markt erhältlichen Produkte bewertet werden. Die jeweiligen Hersteller von IT- und Betriebssystem SOLLTEN für den gesamten geplanten Nutzungszeitraum Patches für Schwachstellen zeitnah zur Verfügung stellen. Die zu beschaffenden Systeme SOLLTEN über eine Firmware-Konfigurationsoberfläche für UEFI SecureBoot und, sofern vorhanden, für das TPM verfügen, die eine Kontrolle durch den Eigentümer (Institution) gewährleistet und so den selbstverwalteten Betrieb von SecureBoot und des TPM ermöglicht.</p>
+</li>
+<li><h4>SYS.2.1.A12 Kompatibilitätsprüfung von Software (S)</h4>
+<p>Bevor zusätzliche Software beschafft wird, SOLLTE geprüft werden, ob die Software mit dem eingesetzten Betriebssystem in der vorliegenden Konfiguration kompatibel ist. Die Kompatibilitätsprüfung SOLLTE in das Freigabeverfahren der Software aufgenommen werden. Gibt es vom Softwarehersteller oder aus anderen Fachkreisen keine verbindliche Information zur Kompatibilität, SOLLTE die Kompatibilität in einer Testumgebung geprüft werden. Vor einer beabsichtigten Hardwareänderung oder bei einer Betriebssystemmigration SOLLTE die Kompatibilität der Treibersoftware für alle betroffenen Komponenten gewährleistet werden.</p>
+</li>
+<li><h4>SYS.2.1.A13 Zugriff auf Ausführungsumgebungen mit unbeobachtbarer Codeausführung (S)</h4>
+<p>Der Zugriff auf Ausführungsumgebungen mit unbeobachtbarer Codeausführung (z. B. durch das Betriebssystem speziell abgesicherte Speicherbereiche, Firmwarebereiche etc.) SOLLTE nur durch Benutzer mit administrativen Berechtigungen möglich sein. Die entsprechenden Einstellungen im BIOS bzw. der UEFI-Firmware SOLLTEN durch ein Passwort vor unberechtigten Veränderungen geschützt werden. Wird die Kontrolle über die Funktionen an das Betriebssystem delegiert, SOLLTEN auch dort nur Benutzer mit administrativen Berechtigungen auf die Funktionen zugreifen dürfen.</p>
+</li>
+<li><h4>SYS.2.1.A14 Updates und Patches für Firmware, Betriebssystem und Anwendungen (S)</h4>
+<p>Administratoren SOLLTEN sich regelmäßig über bekannt gewordene Schwachstellen in Firmwares, Betriebssystemen und Anwendungen informieren. Die identifizierten Schwachstellen SOLLTEN so schnell wie möglich behoben werden. Generell SOLLTE darauf achtet werden, dass Patches und Updates nur aus vertrauenswürdigen Quellen bezogen werden. Falls notwendig, SOLLTEN die betreffenden Anwendungen beziehungsweise das Betriebssystem nach dem Update neu gestartet werden. </p>
+<p>Solange keine entsprechenden Patches zur Verfügung stehen, SOLLTEN abhängig von der Schwere der Schwachstellen andere geeignete Maßnahmen zum Schutz des IT-Systems getroffen werden.</p>
+</li>
+<li><h4>SYS.2.1.A15 Sichere Installation und Konfiguration von Clients (S)</h4>
+<p>Es SOLLTE festgelegt werden, welche Komponenten des Betriebssystems, welche Fachanwendungen und welche weiteren Tools installiert werden sollen. Die Installation und Konfiguration der IT-Systeme SOLLTE nur von autorisierten Personen (Administratoren oder vertraglich gebundenen Dienstleistern) nach einem definierten Prozess durchgeführt werden. Alle Installations- und Konfigurationsschritte SOLLTEN so dokumentiert werden, dass die Installation und Konfiguration durch einen sachkundigen Dritten anhand der Dokumentation nachvollzogen und wiederholt werden kann (siehe auch SYS.2.1.A40 <span style="font-style: italic">Betriebsdokumentation</span>).</p>
+<p>Die Grundeinstellungen von Clients SOLLTEN überprüft und bei Bedarf entsprechend den Vorgaben der Sicherheitsrichtlinie angepasst werden. Erst nachdem die Installation und die Konfiguration abgeschlossen sind, SOLLTE der Client mit dem Internet verbunden werden.</p>
+</li>
+<li><h4>SYS.2.1.A16 Deaktivierung und Deinstallation nicht benötigter Komponenten und Kennungen (S)</h4>
+<p>Nach der Installation SOLLTE überprüft werden, welche Komponenten der Firmware sowie des Betriebssystems und welche Anwendungen und weiteren Tools auf den Clients installiert und aktiviert sind. Nicht benötigte Module, Programme, Dienste, Benutzerkennungen und Schnittstellen SOLLTEN deaktiviert oder ganz deinstalliert werden. Außerdem SOLLTEN nicht benötigte Laufzeitumgebungen, Interpretersprachen und Compiler deinstalliert werden. Entsprechende nicht benötigte, jedoch fest mit dem IT-System verbundene Komponenten SOLLTEN deaktiviert werden. Auch in der Firmware vorhandene und nicht benötigte Komponenten (z. B. Diebstahlschutz, Fernwartung) SOLLTEN abgeschaltet werden. Es SOLLTE verhindert werden, dass diese Komponenten wieder reaktiviert werden können. Die getroffenen Entscheidungen SOLLTEN nachvollziehbar dokumentiert werden.</p>
+</li>
+<li><h4>SYS.2.1.A17 Einsatzfreigabe für Clients (S)</h4>
+<p>Bevor der Client im produktiven Betrieb eingesetzt und bevor er an ein produktives Netz angeschlossen wird, SOLLTE eine Einsatzfreigabe erfolgen. Diese SOLLTE dokumentiert werden. Für die Einsatzfreigabe SOLLTE die Installations- und Konfigurationsdokumentation und die Funktionsfähigkeit der IT-Systeme in einem Test geprüft werden. Die Einsatzfreigabe SOLLTE durch eine in der Institution dafür autorisierte Stelle erfolgen.</p>
+</li>
+<li><h4>SYS.2.1.A18 Nutzung von TLS [Benutzer] (S)</h4>
+<p>Kommunikationsverbindungen SOLLTEN, soweit möglich, durch Verschlüsselung geschützt werden. Benutzer SOLLTEN darauf achten, dass zur Verschlüsselung von Webseiten TLS verwendet wird. </p>
+<p>Der IT-Betrieb SOLLTE dafür sorgen, dass die eingesetzten Client-Produkte eine sichere Version von TLS unterstützen. Die Clients SOLLTEN kryptografische Algorithmen und Schlüssellängen verwenden, die dem Stand der Technik und den Sicherheitsanforderungen der Institution entsprechen. </p>
+<p>Neue Zertifikate SOLLTEN erst nach Überprüfung des „Fingerprints“ aktiviert werden. Die Validierung von Zertifikaten SOLLTE in Anwendungsprogrammen wie Browsern und E-Mail-Clients aktiviert werden. Session Renegotiation und TLS-Kompression SOLLTEN deaktiviert werden.</p>
+</li>
+<li><h4>SYS.2.1.A19 Restriktive Rechtevergabe (S)</h4>
+<p>Der verfügbare Funktionsumfang des IT-Systems SOLLTE für einzelne Benutzer oder Benutzergruppen so eingeschränkt werden, dass sie nur genau die Rechte besitzen und nur auf die Funktionen zugreifen können, die sie für ihre Aufgabenwahrnehmung benötigen („Need-to-know-Prinzip“). Zugriffsberechtigungen SOLLTEN hierfür möglichst restriktiv vergeben werden. Es SOLLTE regelmäßig überprüft werden, ob die Berechtigungen, insbesondere für Systemverzeichnisse und -dateien, den Vorgaben der Sicherheitsrichtlinie entsprechen. Auf Systemdateien SOLLTEN möglichst nur die Systemadministratoren zugreifen können. Der Kreis der zugriffsberechtigten Administratoren SOLLTE möglichst klein gehalten werden. Auch System-Verzeichnisse SOLLTEN nur die notwendigen Privilegien für die Benutzer zur Verfügung stellen. </p>
+</li>
+<li><h4>SYS.2.1.A20 Schutz der Administrationsschnittstellen (S)</h4>
+<p>Abhängig davon, ob Clients lokal, über das Netz oder über zentrale, netzbasierte Tools administriert werden, SOLLTEN geeignete Sicherheitsvorkehrungen getroffen werden. Die zur Administration verwendeten Methoden SOLLTEN in der Sicherheitsrichtlinie festgelegt. Die Administration SOLLTE entsprechend der Sicherheitsrichtlinie durchgeführt werden. Die Administration über das Netz SOLLTE über sichere Protokolle erfolgen.</p>
+</li>
+<li><h4>SYS.2.1.A21 Verhinderung der unautorisierten Nutzung von Rechnermikrofonen und Kameras (S)</h4>
+<p>Der Zugriff auf Mikrofon und Kamera eines Clients SOLLTE nur durch den Benutzer selbst möglich sein, solange er lokal am IT-System arbeitet. Wenn vorhandene Mikrofone oder Kameras nicht genutzt und deren Missbrauch verhindert werden soll, SOLLTEN diese, wenn möglich, ausgeschaltet, abgedeckt (nur Kamera), deaktiviert oder physisch vom Gerät getrennt werden. Es SOLLTE geregelt werden, wie Kameras und Mikrofone in Clients genutzt und wie die Rechte vergeben werden.</p>
+</li>
+<li><h4>SYS.2.1.A22 Abmelden nach Aufgabenerfüllung [Benutzer] (S)</h4>
+<p>Es SOLLTEN alle Benutzer verpflichtet werden, sich nach Aufgabenerfüllung vom IT-System bzw. von der IT-Anwendung abzumelden. Ist für einen Benutzer absehbar, dass er seine Arbeit nur kurz unterbrechen muss, SOLLTE er die Bildschirmsperre aktivieren, statt sich abzumelden (siehe auch SYS.2.1.A5 <span style="font-style: italic">Verwendung einer Bildschirmsperre</span>).</p>
+</li>
+<li><h4>SYS.2.1.A23 Bevorzugung von Client-Server-Diensten (S)</h4>
+<p>Wenn möglich, SOLLTEN zum Informationsaustausch dedizierte Serverdienste genutzt und direkte Verbindungen zwischen Clients vermieden werden. Falls dies nicht möglich ist, SOLLTE festgelegt werden, welche Client-zu-Client-Dienste (oft auch als „Peer-to-Peer“ bezeichnet) genutzt und welche Informationen darüber ausgetauscht werden dürfen. Falls erforderlich, SOLLTEN die Benutzer für die Nutzung solcher Dienste geschult werden. Direkte Verbindungen zwischen Clients SOLLTEN sich nur auf das LAN beschränken. Auto-Discovery-Protokolle SOLLTEN auf das notwendige Maß beschränkt werden.</p>
+</li>
+<li><h4>SYS.2.1.A24 Umgang mit externen Medien und Wechseldatenträgern (S)</h4>
+<p>Es SOLLTE verhindert werden, dass über Wechsellaufwerke oder externe Schnittstellen unkontrolliert Software auf den Clients installiert werden kann oder unberechtigt Daten von den Clients kopiert werden können. Auf externe Schnittstellen SOLLTE NUR restriktiv zugegriffen werden können. Es SOLLTE generell verhindert werden, dass von den Clients auf Daten oder Wechseldatenträger aus nicht vertrauenswürdigen Quellen zugegriffen wird. </p>
+</li>
+<li><h4>SYS.2.1.A25 Mitarbeiterrichtlinie zur sicheren IT-Nutzung [Benutzer] (S)</h4>
+<p>Es SOLLTE eine Richtlinie erstellt werden, in der für alle Mitarbeiter transparent beschrieben wird, welche Rahmenbedingungen bei der IT-Nutzung eingehalten werden müssen und welche Sicherheitsmaßnahmen zu ergreifen sind. Die Richtlinie SOLLTE folgende Punkte abdecken:</p>
+<ul><li>Sicherheitsziele der Institution,</li><li>wichtige Begriffe,</li><li>Aufgaben und Rollen mit Bezug zur Informationssicherheit,</li><li>Ansprechpartner zu Fragen der Informationssicherheit sowie</li><li>von den Mitarbeitern umzusetzende und einzuhaltende Sicherheitsmaßnahmen.</li></ul>
+<p>Die Richtlinie SOLLTE allen Benutzern zur Kenntnis gegeben werden. Jeder neue Benutzer SOLLTE die Kenntnisnahme der Richtlinie bestätigen, bevor er die Informationstechnik nutzen darf. Nach größeren Änderungen an der Richtlinie oder nach spätestens zwei Jahren SOLLTEN Benutzer die Richtlinie erneut bestätigen. </p>
+</li>
+<li><h4>SYS.2.1.A26 Schutz vor Ausnutzung von Schwachstellen in Anwendungen (S)</h4>
+<p>Um die Ausnutzung von Schwachstellen in Anwendungen zu erschweren, SOLLTEN ASLR und DEP/NX im Betriebssystem aktiviert und von den Anwendungen genutzt werden. Sicherheitsfunktionen des Kernels und der Standardbibliotheken wie z. B. Heap- und Stackschutz SOLLTEN NICHT deaktiviert werden.</p>
+</li>
+<li><h4>SYS.2.1.A27 Geregelte Außerbetriebnahme eines Clients (S)</h4>
+<p>Bei der Außerbetriebnahme eines Clients SOLLTE sichergestellt werden, dass keine wichtigen Daten, die eventuell auf den verbauten Datenträgern gespeichert sind, verloren gehen und dass keine schutzbedürftigen Daten zurückbleiben. Es SOLLTE einen Überblick darüber geben, welche Daten wo auf den IT-Systemen gespeichert sind. Es SOLLTE eine Checkliste erstellt werden, die bei der Außerbetriebnahme eines IT-Systems abgearbeitet werden kann. Diese Checkliste SOLLTE mindestens Aspekte zur Datensicherung weiterhin benötigter Daten und dem anschließenden sicheren Löschen aller Daten umfassen.</p>
+</li>
+</ul>
+<a name="6209_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein SYS.2.1<em>Allgemeiner Client</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>SYS.2.1.A28 Verschlüsselung der Clients (H)</h4>
+<p>Wenn vertrauliche Informationen auf den Clients gespeichert werden, SOLLTEN mindestens die schutzbedürftigen Dateien sowie ausgewählte Dateisystembereiche oder besser die gesamte Festplatte verschlüsselt werden. Hierfür SOLLTE ein eigenes Konzept erstellt und die Details der Konfiguration besonders sorgfältig dokumentiert werden. In diesem Zusammenhang SOLLTEN die Authentisierung (z. B. Passwort, PIN, Token), die Ablage der Wiederherstellungsinformationen, die zu verschlüsselnden Laufwerke, die Schreibrechte auf unverschlüsselte Datenträger und die Art und Weise, wie sichergestellt wird, dass die Wiederherstellungsinformationen nur berechtigten Personen zugänglich sind, geregelt werden. Auch verschlüsselte Dateien, Partitionen oder Datenträger SOLLTEN regelmäßig gesichert werden, ohne den Nutzen der Verschlüsselung zu untergraben. Das verwendete Schlüsselmaterial DARF NICHT im Klartext auf den Clients gespeichert sein.</p>
+<p>Benutzer SOLLTEN darüber aufgeklärt werden, wie sie sich bei Verlust eines Authentisierungsmittels zu verhalten haben.</p>
+</li>
+<li><h4>SYS.2.1.A29 Systemüberwachung und Monitoring der Clients (H)</h4>
+<p>Die Clients SOLLTEN in ein geeignetes Systemüberwachungs- bzw. Monitoringkonzept eingebunden werden, das den Systemzustand und die Funktionsfähigkeit der Clients laufend überwacht und Fehlerzustände sowie die Überschreitung definierter Grenzwerte an das Betriebspersonal meldet.</p>
+</li>
+<li><h4>SYS.2.1.A30 Einrichten einer Referenzinstallation für Clients (H)</h4>
+<p>Für Clients SOLLTE eine Referenzinstallation erstellt werden, in der die Grundkonfiguration und alle Konfigurationsänderungen, Updates und Patches vor dem Einspielen auf den Client von den Benutzern vorab getestet werden können. Darüber hinaus SOLLTE eine solche Referenzinstallation auch dazu genutzt werden, die Clients vereinfacht zu installieren und wieder neu aufzusetzen, indem eine entsprechend vorkonfigurierte Installation auf geeignete Art und Weise auf die zu installierenden Clients überspielt wird. Für verschiedene, typische und häufig wiederkehrende Testfälle SOLLTEN Checklisten erstellt werden, die beim Testlauf abgearbeitet werden können. Zusätzlich SOLLTEN alle Tests so dokumentiert werden, dass sie zu einem späteren Zeitpunkt nachvollzogen werden können.</p>
+</li>
+<li><h4>SYS.2.1.A31 Einrichtung lokaler Paketfilter (H)</h4>
+<p>Auf jedem Client SOLLTEN, zusätzlich zu den eingesetzten zentralen Sicherheitsgateways, lokale Paketfilter eingesetzt werden. Als Strategie zur Paketfilter-Implementierung SOLLTE eine Whitelist-Strategie gewählt werden.</p>
+</li>
+<li><h4>SYS.2.1.A32 Einsatz zusätzlicher Maßnahmen zum Schutz vor Exploits (H)</h4>
+<p>Auf den Clients SOLLTEN zusätzliche Maßnahmen zum expliziten Schutz vor Exploits (Angriffe, um Systemlücken auszunutzen) getroffen werden. Wenn notwendige Schutzmaßnahmen nicht mit Bordmitteln umgesetzt werden können, SOLLTEN zusätzliche geeignete Sicherheitsprodukte eingesetzt werden. Sollte es nicht möglich sein, entsprechende Maßnahmen mit Bordmitteln oder einem geeigneten Sicherheitsprodukt umzusetzen, SOLLTEN andere geeignete (in der Regel organisatorische) Sicherheitsmaßnahmen ergriffen werden.</p>
+</li>
+<li><h4>SYS.2.1.A33 Application Whitelisting (H)</h4>
+<p>Es SOLLTE über Application Whitelisting sichergestellt werden, dass nur erlaubte Programme und Skripte ausgeführt werden können. Die Regeln SOLLTEN so eng wie möglich gefasst werden. Falls Pfade und Hashes nicht explizit angegeben werden können, SOLLTEN alternativ auch zertifikatsbasierte oder Pfad-Regeln genutzt werden.</p>
+</li>
+<li><h4>SYS.2.1.A34 Einsatz von Anwendungsisolation (H)</h4>
+<p>Anwendungen, mit denen externe Daten bzw. Daten aus unsicheren Quellen bearbeitet werden, SOLLTEN ausschließlich in einer vom Betriebssystem isolierten Ablaufumgebung betrieben werden. </p>
+</li>
+<li><h4>SYS.2.1.A35 Aktive Verwaltung der Wurzelzertifikate (H)</h4>
+<p>Im Zuge der Beschaffung und Installation des Clients SOLLTE dokumentiert werden, welche Wurzelzertifikate für den Betrieb des Clients notwendig sind. Auf dem Client SOLLTEN lediglich die für den Betrieb notwendigen und vorab dokumentierten Wurzelzertifikate enthalten sein. Es SOLLTE regelmäßig überprüft werden, ob die vorhandenen Wurzelzertifikate noch den Vorgaben der Institution entsprechen. Es SOLLTEN alle auf dem IT-System vorhandenen Zertifikatsspeicher in die Prüfung einbezogen werden (z. B. UEFI-Zertifikatsspeicher, Zertifikatsspeicher von Web-Browsern etc.).</p>
+</li>
+<li><h4>SYS.2.1.A36 Selbstverwalteter Einsatz von SecureBoot und TPM (H)</h4>
+<p>Auf UEFI-kompatiblen Systemen SOLLTEN Bootloader, Kernel sowie alle benötigten Firmware-Komponenten durch selbstkontrolliertes Schlüsselmaterial signiert und nicht benötigtes Schlüsselmaterial SOLLTE entfernt werden. Sofern das Trusted Platform Module (TPM) nicht benötigt wird, SOLLTE es deaktiviert werden.</p>
+</li>
+<li><h4>SYS.2.1.A37 Verwendung von Mehr-Faktor-Authentisierung (H)</h4>
+<p>Bei höherem Schutzbedarf SOLLTE eine sichere Mehr-Faktor-Authentisierung für die Anmeldung am Client eingerichtet werden, z. B. mit kryptografischen Zertifikaten, Chipkarten oder Token.</p>
+</li>
+<li><h4>SYS.2.1.A38 Einbindung in die Notfallplanung (H)</h4>
+<p>Die Clients SOLLTEN im Notfallmanagementprozess berücksichtigt werden. Die Clients SOLLTEN hinsichtlich der Geschäftsprozesse oder Fachaufgaben, für die sie benötigt werden, für den Wiederanlauf priorisiert werden. Es SOLLTEN geeignete Notfallmaßnahmen vorgesehen werden, indem mindestens Wiederanlaufpläne erstellt, Bootmedien zur Systemwiederherstellung generiert sowie Passwörter und kryptografische Schlüssel sicher hinterlegt werden.</p>
+</li>
+<li><h4>SYS.2.1.A39 Unterbrechungsfreie und stabile Stromversorgung [Haustechnik] (H)</h4>
+<p>Bei erhöhten Anforderungen an die Verfügbarkeit von stationären Clients SOLLTEN diese an eine unterbrechungsfreie Stromversorgung (USV) angeschlossen werden. Die USV SOLLTE hinsichtlich Leistung und Stützzeit ausreichend dimensioniert sein. Wenn Änderungen an den Endgeräten (Verbrauchern) durchgeführt wurden, SOLLTE erneut geprüft werden, ob die Stützzeit ausreichend ist. Sowohl für die USV-Geräte als auch die Clients SOLLTE ein Überspannungsschutz vorhanden sein. </p>
+<p>Die tatsächliche Kapazität der Batterie und damit die Stützzeit der USV SOLLTE regelmäßig getestet werden. Die USV SOLLTE regelmäßig gewartet werden.</p>
+</li>
+<li><h4>SYS.2.1.A40 Betriebsdokumentation (H)</h4>
+<p>Die Durchführung betrieblicher Aufgaben an Clients bzw. Clientgruppen SOLLTE nachvollziehbar anhand der Fragen „Wer?“, „Wann?“ und „Was?“ dokumentiert werden. Aus der Dokumentation SOLLTEN insbesondere Konfigurationsänderungen nachvollziehbar sein. Auch sicherheitsrelevante Aufgaben (z. B. wer befugt ist, neue Festplatten einzubauen) SOLLTEN dokumentiert werden. Alles, was automatisch dokumentiert werden kann, SOLLTE auch automatisch dokumentiert werden. Die Dokumentation SOLLTE vor unbefugtem Zugriff und Verlust geschützt werden.</p>
+</li>
+<li><h4>SYS.2.1.A41 Verhinderung der Überlastung der lokalen Festplatte (H)</h4>
+<p>Es SOLLTE überlegt werden, Quotas einzurichten, die den verwendeten Speicherplatz auf der lokalen Festplatte begrenzen. Alternativ SOLLTEN Mechanismen des verwendeten Datei- oder Betriebssystemsystems genutzt werden, die den Benutzer bei einem bestimmten Füllstand der Festplatte warnen oder nur noch dem Systemadministrator Schreibrechte einräumen.</p>
+</li>
+</ul>
+<a name="6209_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Für den Baustein SYS.2.1 <span style="font-style: italic">Allgemeiner Client</span> sind keine weiterführende Informationen vorhanden.</p>
+<a name="6209_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein SYS.2.1 <em>Allgemeiner Client</em> von Bedeutung.</p>
+<ul>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.15 Abhören</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.20 Informationen oder Produkte aus unzuverlässiger Quelle</li>
+<li>G 0.21 Manipulation von Hard- oder Software</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.25 Ausfall von Geräten oder Systemen</li>
+<li>G 0.26 Fehlfunktion von Geräten oder Systemen</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.31 Fehlerhafte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.36 Identitätsdiebstahl</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.40 Verhinderung von Diensten (Denial of Service)</li>
+<li>G 0.45 Datenverlust</li>
+<li>G 0.46 Integritätsverlust schützenswerter Informationen</li>
+<li>G 0.43 Einspielen von Nachrichten</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.14</th>
+<th>G 0.15</th>
+<th>G 0.19</th>
+<th>G 0.20</th>
+<th>G 0.21</th>
+<th>G 0.22</th>
+<th>G 0.23</th>
+<th>G 0.25</th>
+<th>G 0.26</th>
+<th>G 0.28</th>
+<th>G 0.30</th>
+<th>G 0.31</th>
+<th>G 0.36</th>
+<th>G 0.39</th>
+<th>G 0.40</th>
+<th>G 0.43</th>
+<th>G 0.45</th>
+<th>G 0.46</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SYS.2.1.A1</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A5</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A9</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A13</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A14</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A15</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A16</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A17</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A18</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.2.1.A19</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A20</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A21</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A22</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A23</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A24</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A25</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A26</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A27</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A28</td>
+<td>C</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A29</td>
+<td>A</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A30</td>
+<td>CIA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A31</td>
+<td>CIA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A32</td>
+<td>CIA</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A33</td>
+<td>CI</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A34</td>
+<td>CIA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A35</td>
+<td>CI</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A36</td>
+<td>CI</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A37</td>
+<td>C</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A38</td>
+<td>A</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A39</td>
+<td>A</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A40</td>
+<td>A</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.1.A41</td>
+<td>A</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

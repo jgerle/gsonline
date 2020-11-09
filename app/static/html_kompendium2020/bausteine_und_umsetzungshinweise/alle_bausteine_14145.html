@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+NET.1.2 Netzmanagement
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_14145.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_14145.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">NET.1.2 Netzmanagement</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>NET.1.2 Netzmanagement</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#14145_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#14145_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#14145_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#14145_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#14145_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#14145_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#14145_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#14145_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#14145_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#14145_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#14145_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#14145_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#14145_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="14145_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="14145_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Ein zuverlässiges Netzmanagement ist Grundvoraussetzung für den sicheren und effizienten Betrieb moderner Netze. Dazu ist es erforderlich, dass das Netzmanagement alle Netzkomponenten umfassend integriert. Außerdem müssen geeignete Maßnahmen umgesetzt werden, um die Netzmanagement-Kommunikation und -infrastruktur zu schützen.</p>
+<p>Das Netzmanagement umfasst viele wichtige Funktionen wie z. B. die Netzüberwachung, die Konfiguration der Komponenten, die Behandlung von Ereignissen und die Protokollierung. Eine weitere wichtige Funktion ist das Reporting, das als gemeinsame Plattform für Netz und IT-Systeme angelegt werden kann. Alternativ kann es dediziert als einheitliche Plattform oder als Bestandteil der einzelnen Netzmanagement-Komponenten realisiert werden.</p>
+<p>Die Netzmanagement-Infrastruktur besteht aus zentralen Management-Systemen, wie z. B. einem SNMP-Server, Administrations-Endgeräten mit Software für Managementzugriffe und dezentralen Managementagenten. Außerdem gehören dedizierte Managementwerkzeuge wie z. B. Probes bzw. spezifische Messgeräte sowie Managementprotokolle wie z. B. SNMP oder SSH dazu. Auch Managementschnittstellen wie dedizierte Ethernet-Ports oder Konsolen-Ports sind Bestandteil einer Netzmanagement-Infrastruktur.</p>
+</p>
+<a name="14145_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Ziel dieses Bausteins ist es, die Informationssicherheit als integralen Bestandteil des Netzmanagements zu etablieren.</p>
+</p>
+<a name="14145_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein NET.1.2 <span style="font-style: italic">Netzmanagement</span> ist auf jedes Netzmanagement-System (Management-System und zu verwaltende IT-System) anzuwenden, das im Informationsverbund eingesetzt wird. </p>
+<p>Dieser Baustein betrachtet die notwendigen Komponenten und konzeptionellen Aufgaben zum Netzmanagement. Anforderungen zum Systemmanagement für vernetzte Clients und Server werden hier nicht beschrieben.</p>
+<p>Der vorliegende Baustein beschreibt, wie das Netzmanagement aufgebaut und abgesichert sowie die zugehörige Kommunikation geschützt werden können. Details bezüglich der Absicherung von Netzkomponenten, insbesondere deren Management-Schnittstellen, werden in den Bausteinen der Bausteinschichten NET.2 <span style="font-style: italic">Funknetze</span> und NET.3 <span style="font-style: italic">Netzkomponenten</span> behandelt.</p>
+<p>Die in diesem Baustein thematisierte Protokollierung sollte in ein übergreifendes Protokollierungs- und Archivierungskonzept eingebunden sein (siehe OPS.1.1.5 <span style="font-style: italic">Protokollierung</span> und OPS.1.2.2<span style="font-style: italic"> Archivierung</span>).</p>
+</p>
+<a name="14145_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein NET.1.2 <span style="font-style: italic">Netzmanagement</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Unberechtigter Zugriff auf zentrale Netzmanagement-Komponenten</h3>
+<p>
+<p>Gelingt es Angreifern auf Netzmanagement-Lösungen zuzugreifen, z. B. durch ungepatchte Sicherheitslücken oder eine ungenügende Netztrennung, können sie alle dort angeschlossenen Netzkomponenten kontrollieren und neu konfigurieren. So können sie z. B. auf schützenswerte Informationen zugreifen, den Netzverkehr umleiten oder auch das gesamte Netz nachhaltig stören. </p>
+</p>
+<h3>2.2 Unberechtigter Zugriff auf einzelne Netzkomponenten</h3>
+<p>
+<p>Wenn es Angreifern gelingt, auf einzelne Netzkomponenten zuzugreifen, können sie die jeweilige Komponente kontrollieren und manipulieren. Jeder über die Netzkomponente geleitete Datenverkehr kann somit kompromittiert werden. Darüber hinaus können weiterführende Angriffe vorbereitet werden, um tiefer in das Netz der Institution einzudringen. </p>
+</p>
+<h3>2.3 Unberechtigte Eingriffe in die Netzmanagement-Kommunikation</h3>
+<p>
+<p>Wird die Netzmanagement-Kommunikation abgehört und manipuliert, können auf diesem Weg aktive Netzkomponenten fehlkonfiguriert bzw. kontrolliert werden. Dadurch kann die Netzintegrität verletzt und die Verfügbarkeit der Netzinfrastruktur eingeschränkt werden. Außerdem können die übertragenen Daten mitgeschnitten und eingesehen werden.</p>
+</p>
+<h3>2.4 Unzureichende Zeitsynchronisation der Netzmanagement-Komponenten</h3>
+<p>
+<p>Wird die Systemzeit der Netzmanagement-Komponenten unzureichend synchronisiert, können die Protokollierungsdaten eventuell nicht miteinander korreliert werden. Auch kann die Korrelation eventuell zu fehlerhaften Aussagen führen, da die unterschiedlichen Zeitstempel von Ereignissen keine gemeinsame Basis aufweisen. So kann nicht geeignet auf Ereignisse reagiert werden. Probleme können zudem nicht beseitigt werden. Dadurch können beispielsweise Sicherheitsvorfälle und Datenabflüsse unerkannt bleiben.</p>
+</p>
+<a name="14145_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die spezifischen Anforderungen für den Baustein NET.1.2 <span style="font-style: italic">Netzmanagement </span>aufgeführt. Grundsätzlich ist der IT-Betrieb für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Umsetzung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt.</p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>IT-Betrieb</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+Informationssicherheitsbeauftragter (ISB),
+Leiter IT,
+Leiter Netze,
+Vorgesetzte
+</td>
+</tr>
+</table>
+<a name="14145_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein NET.1.2<em>Netzmanagement</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>NET.1.2.A1 Planung des Netzmanagements (B)</h4>
+<p>Die Netzmanagement-Infrastruktur MUSS geeignet geplant werden. Dabei SOLLTEN alle in der Sicherheitsrichtlinie und Anforderungsspezifikation genannten Punkte sowie das Rollen- und Berechtigungskonzept berücksichtigt werden. Es MÜSSEN mindestens folgende Themen berücksichtigt werden:</p>
+<ul><li>zu trennende Bereiche für das Netzmanagement,</li><li>Zugriffsmöglichkeiten auf die Server für das Management,</li><li>Kommunikation für den Zugriff auf das Management,</li><li>eingesetzte Protokolle, z. B. IPv4 und IPv6,</li><li>Anforderungen an Management-Werkzeuge,</li><li>Schnittstellen, um erfasste Ereignis- oder Alarmmeldungen weiterzuleiten,</li><li>Protokollierung, inklusive erforderlicher Schnittstellen zu einer zentralen Protokollierungslösung,</li><li>Reporting und Schnittstellen zu übergreifenden Lösungen sowie</li><li>korrespondierende Anforderungen an die einzubindenden Netzkomponenten.</li></ul>
+</li>
+<li><h4>NET.1.2.A2 Anforderungsspezifikation für das Netzmanagement [Leiter IT] (B)</h4>
+<p>Ausgehend von NET.1.2.A1 <span style="font-style: italic">Planung des Netzmanagements</span> MÜSSEN Anforderungen an die Netzmanagement-Infrastruktur und -Prozesse spezifiziert werden. Dabei MÜSSEN alle wesentlichen Elemente für das Netzmanagement berücksichtigt werden. Auch SOLLTE die Richtlinie für das Netzmanagement beachtet werden.</p>
+</li>
+<li><h4>NET.1.2.A3 Rollen- und Berechtigungskonzept für das Netzmanagement (B)</h4>
+<p>Es MUSS ein Rollen- und Berechtigungskonzept für das Netzmanagement erstellt, umgesetzt und gepflegt werden. Das Konzept MUSS die speziellen Tätigkeiten und den zugehörigen Zugriff auf Informationen im Netzmanagement abbilden.</p>
+</li>
+<li><h4>NET.1.2.A4 Grundlegende Authentisierung für den Netzmanagement-Zugriff [Leiter IT, Informationssicherheitsbeauftragter (ISB)] (B)</h4>
+<p>Für den Management-Zugriff auf Netzkomponenten und auf Managementinformationen MUSS eine geeignete Authentisierung verwendet werden. Dafür MÜSSEN die Vorgaben der Institution für die Authentisierungsgüte und den Umgang mit den Authentisierungsinformationen umgesetzt werden. Auch MÜSSEN alle Default-Passwörter auf den Netzkomponenten geändert werden. Die neuen Passwörter MÜSSEN ausreichend stark sein.</p>
+</li>
+<li><h4>NET.1.2.A5 Einspielen von Updates und Patches (B)</h4>
+<p>Die verantwortlichen Mitarbeiter MÜSSEN sich regelmäßig über bekannt gewordene Schwachstellen der eingesetzten Netzmanagement-Lösungen informieren und sicherheitsrelevante Updates und Patches so schnell wie möglich einspielen. Nicht sicherheitsrelevante Updates DÜRFEN NICHT die Sicherheit und Stabilität der Netzmanagement-Lösung beeinträchtigen. </p>
+</li>
+<li><h4>NET.1.2.A6 Regelmäßige Datensicherung (B)</h4>
+<p>Alle eingesetzten Netzmanagement-Lösungen MÜSSEN ins Datensicherungskonzept der Institution eingebunden werden (siehe CON.3<span style="font-style: italic"> Datensicherungskonzept</span>). Dabei MÜSSEN alle spezifischen Daten für das Netzmanagement berücksichtigt werden. Es MÜSSEN mindestens die Systemdaten für die Einbindung der zu verwaltenden Komponenten bzw. Objekte, Ereignismeldungen, Statistikdaten sowie vorgehaltene Daten für das Konfigurationsmanagement gesichert werden.</p>
+</li>
+<li><h4>NET.1.2.A7 Grundlegende Protokollierung von Ereignissen (B)</h4>
+<p>Die Netzmanagement-Lösung MUSS in das Protokollierungskonzept der Institution eingebunden werden (siehe OPS.1.1.5 <span style="font-style: italic">Protokollierung</span>). Darüber hinaus MÜSSEN mindestens folgende Ereignisse protokolliert werden: unautorisierte Zugriffe bzw. Zugriffsversuche, Leistungs- oder Verfügbarkeitsschwankungen des Netzes, Fehler in automatischen Prozessen (z. B. bei der Konfigurationsverteilung) sowie eingeschränkte Erreichbarkeit von Netzkomponenten. </p>
+</li>
+<li><h4>NET.1.2.A8 Zeit-Synchronisation (B)</h4>
+<p>Alle Komponenten des Netzmanagements, inklusive der eingebundenen Netzkomponenten, MÜSSEN eine synchrone Uhrzeit nutzen. Die Uhrzeit MUSS an jedem Standort innerhalb des lokalen Netzes mittels NTP-Service synchronisiert werden. Ist ein separates Managementnetz eingerichtet, MUSS eine NTP-Instanz in diesem Managementnetz positioniert werden.</p>
+</li>
+<li><h4>NET.1.2.A9 Absicherung der Netzmanagement-Kommunikation (B)</h4>
+<p>Erfolgt die Netzmanagement-Kommunikation über die produktive Infrastruktur, MÜSSEN dafür sichere Protokolle verwendet werden. Ist dies nicht möglich, MUSS ein eigens dafür vorgesehenes Administrationsnetz (Out-of-Band-Management) verwendet werden (siehe NET.1.1 <span style="font-style: italic">Netzarchitektur und -design</span>).</p>
+</li>
+<li><h4>NET.1.2.A10 Beschränkung der SNMP-Kommunikation (B)</h4>
+<p>Grundsätzlich DÜRFEN im Netzmanagement KEINE unsicheren Versionen des Simple Network Management Protocol (SNMP) eingesetzt werden. Werden dennoch unsichere Protokolle verwendet und nicht über andere sichere Netzprotokolle (z. B. VPN oder TLS) abgesichert, MUSS ein separates Managementnetz genutzt werden. Grundsätzlich SOLLTE über SNMP NUR mit den minimal erforderlichen Zugriffsrechten zugegriffen werden. Die Zugangsberechtigung SOLLTE auf dedizierte Management-Server eingeschränkt werden.</p>
+</li>
+</ul>
+<a name="14145_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein NET.1.2<em>Netzmanagement</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>NET.1.2.A11 Festlegung einer Sicherheitsrichtlinie für das Netzmanagement [Informationssicherheitsbeauftragter (ISB)] (S)</h4>
+<p>Für das Netzmanagement SOLLTE eine Sicherheitsrichtlinie erstellt und nachhaltig gepflegt werden. Die Richtlinie SOLLTE allen Personen, die am Netzmanagement beteiligt sind, bekannt sein. Die Sicherheitsrichtlinie SOLLTE zudem grundlegend für ihre Arbeit sein. Es SOLLTE regelmäßig und nachvollziehbar überprüft werden, dass die in der Richtlinie geforderten Inhalte umgesetzt werden. Die Ergebnisse SOLLTEN sinnvoll dokumentiert werden.</p>
+<p>Die Sicherheitsrichtlinie SOLLTE festlegen, welche Bereiche des Netzmanagements über zentrale Management-Werkzeuge und -Dienste realisiert werden. Auch SOLLTE sie definieren, inwieweit Aufgaben im Netzmanagement der Institution automatisiert realisiert werden sollen. </p>
+<p>Darüber hinaus SOLLTEN Rahmenbedingungen und Vorgaben für die Netztrennung, die Zugriffskontrolle, die Protokollierung sowie für den Schutz der Kommunikation, für das eingesetzte Netzmanagement-Werkzeug und für die operativen Grundregeln des Netzmanagements spezifiziert werden.</p>
+</li>
+<li><h4>NET.1.2.A12 Ist-Aufnahme und Dokumentation des Netzmanagements (S)</h4>
+<p>Es SOLLTE eine Dokumentation erstellt werden, die beschreibt, wie die Management-Infrastruktur des Netzes aufgebaut ist. Darin SOLLTEN die initiale Ist-Aufnahme sowie alle durchgeführten Änderungen im Netzmanagement enthalten sein. Insbesondere SOLLTE dokumentiert werden, welche Netzkomponenten mit welchen Management-Werkzeugen verwaltet werden. Außerdem SOLLTEN alle für das Netzmanagement benutzten IT-Arbeitsplätze und -Endgeräte sowie alle Informationsbestände, Management-Daten und Informationen über den Betrieb des Netzmanagements erfasst werden. Letztlich SOLLTEN sämtliche Schnittstellen zu Anwendungen und Diensten außerhalb des Netzmanagements dokumentiert werden. </p>
+<p>Der so dokumentierte Ist-Zustand der Management-Infrastruktur SOLLTE mit der Dokumentation der Netz-Infrastruktur abgeglichen werden (siehe Baustein NET.1.1 <span style="font-style: italic">Netz-Architektur- und Design).</span></p>
+<p>Die Dokumentation SOLLTE vollständig und immer aktuell sein.</p>
+</li>
+<li><h4>NET.1.2.A13 Erstellung eines Netzmanagement-Konzepts [Leiter IT] (S)</h4>
+<p>Ausgehend von der Sicherheitsrichtlinie für das Netzmanagement SOLLTE ein Netzmanagement-Konzept erstellt und nachhaltig gepflegt werden. Dabei SOLLTEN mindestens folgende Aspekte bedarfsgerecht berücksichtigt werden:</p>
+<ul><li>Methoden, Techniken und Werkzeuge für das Netzmanagement,</li><li>Absicherung des Zugangs und der Kommunikation, </li><li>Netztrennung, insbesondere Zuordnung von Netzmanagement-Komponenten zu Sicherheitszonen,</li><li>Umfang des Monitorings und der Alarmierung je Netzkomponente,</li><li>Protokollierung,</li><li>Automatisierung, insbesondere zentrale Verteilung von Konfigurationsdateien auf Switches,</li><li>Meldeketten bei Störungen und Sicherheitsvorfällen,</li><li>Bereitstellung von Netzmanagement-Informationen für andere Betriebsbereiche sowie</li><li>Einbindung des Netzmanagements in die Notfallplanung.</li></ul>
+</li>
+<li><h4>NET.1.2.A14 Fein- und Umsetzungsplanung (S)</h4>
+<p>Es SOLLTE eine Fein- und Umsetzungsplanung für die Netzmanagement-Infrastruktur erstellt werden. Dabei SOLLTEN alle in der Sicherheitsrichtlinie und im Netzmanagement-Konzept adressierten Punkte berücksichtigt werden.</p>
+</li>
+<li><h4>NET.1.2.A15 Konzept für den sicheren Betrieb der Netzmanagement-Infrastruktur (S)</h4>
+<p>Ausgehend von den Sicherheitsrichtlinien und dem Netzmanagement-Konzept SOLLTE ein Konzept für den sicheren Betrieb der Netzmanagement-Infrastruktur erstellt werden. Darin SOLLTE der Anwendungs- und Systembetrieb für die Netzmanagement-Werkzeuge berücksichtigt werden. Auch SOLLTE geprüft werden, wie sich die Leistungen anderer operativer Einheiten einbinden und steuern lassen. </p>
+</li>
+<li><h4>NET.1.2.A16 Einrichtung und Konfiguration von Netzmanagement-Lösungen (S)</h4>
+<p>Lösungen für das Netzmanagement SOLLTEN anhand der Sicherheitsrichtlinie, der spezifizierten Anforderungen (siehe NET1.2.A2 <span style="font-style: italic">Anforderungsspezifikation für das Netzmanagement</span>) und der Fein- und Umsetzungsplanung aufgebaut, sicher konfiguriert und in Betrieb genommen werden. Danach SOLLTEN die spezifischen Prozesse für das Netzmanagement eingerichtet werden.</p>
+</li>
+<li><h4>NET.1.2.A17 Regelmäßiger Soll-Ist-Vergleich (S)</h4>
+<p>Es SOLLTE regelmäßig und nachvollziehbar geprüft werden, inwieweit die Netzmanagement-Lösung dem Sollzustand entspricht. Dabei SOLLTE geprüft werden, ob die bestehende Lösung noch die Sicherheitsrichtlinie und Anforderungsspezifikation erfüllt. Auch SOLLTE geprüft werden, inwieweit die umgesetzte Management-Struktur und die genutzten Prozesse dem aktuellen Stand entsprechen. Weiter SOLLTE verglichen werden, ob die Management-Infrastruktur aktuell ist.</p>
+</li>
+<li><h4>NET.1.2.A18 Schulungen für Management-Lösungen [Vorgesetzte] (S)</h4>
+<p>Für die eingesetzten Netzmanagement-Lösungen SOLLTEN Schulungs- und Trainingsmaßnahmen konzipiert und durchgeführt werden. Die Maßnahmen SOLLTEN die individuellen Gegebenheiten im Configuration-, Availability- und Capacity-Management sowie typische Situationen im Fehlermanagement abdecken. Die Schulungen und Trainings SOLLTEN regelmäßig wiederholt werden, mindestens jedoch, wenn sich größere technische oder organisatorische Änderungen innerhalb der Netzmanagement-Lösung ergeben.</p>
+</li>
+<li><h4>NET.1.2.A19 Starke Authentisierung des Management-Zugriffs (S)</h4>
+<p>Für den administrativen Zugriff auf Netzkomponenten SOLLTE eine als sicher geltende Authentisierungsmethode verwendet werden. Die administrativen Zugänge SOLLTEN über einen zentralen Authentisierungsserver mittels personalisierter Konten über entsprechend sichere Protokolle authentisiert werden.</p>
+</li>
+<li><h4>NET.1.2.A20 Absicherung des Zugangs zu Netzmanagement-Lösungen (S)</h4>
+<p>Der Zugriff auf zentrale Netzmanagement-Lösungen und Management-Informationen SOLLTE durch eine als sicher geltende Authentisierungsmethode geschützt werden. Die Zugänge SOLLTEN über einen zentralen Authentisierungsserver mittels personalisierter Konten authentisiert werden.</p>
+<p>Falls von einem Netz außerhalb der Managementnetze auf Netzmanagement-Werkzeuge zugegriffen wird, MÜSSEN als sicher geltende Authentisierungs- und Verschlüsselungsmethoden realisiert werden.</p>
+</li>
+<li><h4>NET.1.2.A21 Entkopplung der Netzmanagement-Kommunikation (S)</h4>
+<p>Direkte Management-Zugriffe eines Administrators von einem IT-System außerhalb der Managementnetze auf eine Netzkomponente SOLLTEN vermieden werden. Ist ein solcher Zugriff ohne zentrales Management-Werkzeug notwendig, SOLLTE die Kommunikation entkoppelt werden. Solche Sprungserver SOLLTEN im Management-Netz integriert und in einem getrennten Zugangssegment positioniert sein.</p>
+</li>
+<li><h4>NET.1.2.A22 Beschränkung der Management-Funktionen (S)</h4>
+<p>Es SOLLTEN NUR die benötigten Management-Funktionen aktiviert werden.</p>
+</li>
+<li><h4>NET.1.2.A23 Protokollierung der administrativen Zugriffe (S)</h4>
+<p>Im Rahmen des Netzmanagements SOLLTEN die Sitzungsdaten aller administrativen Zugriffe protokolliert und gespeichert werden. Dabei SOLLTEN die datenschutzrechtlichen Bestimmungen eingehalten werden.</p>
+<p>Die Protokollierungsdaten SOLLTEN in der Datensicherung ausreichend und gesetzeskonform geschützt werden. Darüber hinaus SOLLTE festgelegt werden, ob und in welchem Umfang Sitzungsdaten für forensische Analysen zu archivieren sind. Wenn Daten archiviert werden, SOLLTE darauf geachtet werden, dass dies gesetzeskonform und revisionssicher durchgeführt wird.</p>
+</li>
+<li><h4>NET.1.2.A24 Zentrale Konfigurationsverwaltung für Netzkomponenten (S)</h4>
+<p>Software bzw. Firmware und Konfigurationsdaten für Netzkomponenten SOLLTEN automatisch über das Netz verteilt und ohne Betriebsunterbrechung installiert und aktiviert werden können. Die dafür benötigten Informationen SOLLTEN an zentraler Stelle sicher verfügbar sein sowie in die Versionsverwaltung und die Datensicherung eingebunden werden. Die zentrale Konfigurationsverwaltung SOLLTE nachhaltig gepflegt und regelmäßig auditiert werden. </p>
+</li>
+<li><h4>NET.1.2.A25 Statusüberwachung der Netzkomponenten (S)</h4>
+<p>Die grundlegenden Performance- und Verfügbarkeitsparameter der zentralen Netzkomponenten SOLLTEN kontinuierlich überwacht werden. Dafür SOLLTEN vorab die jeweiligen Schwellwerte ermittelt werden (Baselining).</p>
+</li>
+<li><h4>NET.1.2.A26 Umfassende Protokollierung, Alarmierung und Logging von Ereignissen (S)</h4>
+<p>Wichtige Ereignisse auf Netzkomponenten und auf den Netzmanagement-Werkzeugen SOLLTEN automatisch an ein zentrales Management-System übermittelt und dort protokolliert werden. Das zuständige IT-Personal SOLLTE zusätzlich automatisch benachrichtigt werden. Das Alarming und Logging SOLLTE mindestens folgende Punkte beinhalten:</p>
+<ul><li>Ausfall bzw. Nichterreichbarkeit von Netz- oder Management-Komponenten,</li><li>Hardware-Fehlfunktionen,</li><li>fehlerhafte Anmeldeversuche sowie</li><li>kritische Zustände oder Überlastung von IT-Systemen.</li></ul>
+<p>Ereignismeldungen bzw. Logging-Daten SOLLTEN einem zentralen Management-System entweder kontinuierlich oder gebündelt übermittelt werden. Alarmmeldungen SOLLTEN sofort wenn sie auftreten übermittelt werden.</p>
+</li>
+<li><h4>NET.1.2.A27 Einbindung des Netzmanagements in die Notfallplanung (S)</h4>
+<p>Die Netzmanagement-Lösungen SOLLTEN in die Notfallplanung der Institution eingebunden werden. Dazu SOLLTEN die Netzmanagement-Werkzeuge und die Konfigurationen der Netzkomponenten gesichert und in die Wiederanlaufpläne integriert sein.</p>
+</li>
+<li><h4>NET.1.2.A28 Platzierung der Management-Clients für das In-Band-Management (S)</h4>
+<p>Für die Administration sowohl der internen als auch der externen IT-Systeme SOLLTEN dedizierte Management-Clients eingesetzt werden. Dafür SOLLTE mindestens ein Management-Client am äußeren Netzbereich (für die Administration am Internet anliegender IT-Systeme) und ein weiterer im internen Bereich (für die Administration interner IT-Systeme) platziert werden. </p>
+</li>
+<li><h4>NET.1.2.A29 Einsatz von VLANs in der Management-Zone (S)</h4>
+<p>Werden Managementnetze durch VLANs getrennt, SOLLTE darauf geachtet werden, dass der äußere Paketfilter sowie die daran angeschlossenen Geräte in einem eigenen Teilnetz stehen. Zudem SOLLTE sichergestellt werden, dass das ALG dabei nicht umgangen wird.</p>
+</li>
+</ul>
+<a name="14145_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein NET.1.2<em>Netzmanagement</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>NET.1.2.A30 Hochverfügbare Realisierung der Management-Lösung (H)</h4>
+<p>Zentrale Management-Lösungen SOLLTEN hochverfügbar betrieben werden. Dazu SOLLTEN die Server bzw. Werkzeuge inklusive der Netzanbindungen redundant ausgelegt sein. Auch die einzelnen Komponenten SOLLTEN hochverfügbar bereitgestellt werden.</p>
+</li>
+<li><h4>NET.1.2.A31 Grundsätzliche Nutzung von sicheren Protokollen (H)</h4>
+<p>Für das Netzmanagement SOLLTEN ausschließlich sichere Protokolle benutzt werden. Es SOLLTEN alle Sicherheitsfunktionen dieser Protokolle verwendet werden.</p>
+</li>
+<li><h4>NET.1.2.A32 Physische Trennung des Managementnetzes (H)</h4>
+<p>Das Managementnetz SOLLTE physisch von den produktiven Netzen getrennt werden.</p>
+</li>
+<li><h4>NET.1.2.A33 Physische Trennung von Management-Segmenten [Leiter Netze] (H)</h4>
+<p>Es SOLLTEN physisch getrennte Sicherheitszonen mindestens für das Management von LAN-Komponenten, Sicherheitskomponenten und Komponenten zur Außenanbindung eingerichtet werden.</p>
+</li>
+<li><h4>NET.1.2.A34 Protokollierung von Inhalten administrativer Sitzungen (H)</h4>
+<p>Ergänzend zur Protokollierung von Sitzungsdaten SOLLTEN auch die Inhalte von administrativen Zugriffen protokolliert werden. Alternativ SOLLTE nach dem Vier-Augen-Prinzip vorgegangen werden. Auch die protokollierten Inhalte der administrativen Sitzungen SOLLTEN in der Datensicherung ausreichend und gesetzeskonform geschützt werden.</p>
+</li>
+<li><h4>NET.1.2.A35 Festlegungen zur Beweissicherung (H)</h4>
+<p>Es SOLLTEN Vorgehensweisen zur Beweissicherung und zu forensischen Untersuchungen im Rahmen des Netzmanagements festgelegt und dokumentiert werden. Die erhobenen Protokollierungsdaten SOLLTEN für forensische Analysen gesetzeskonform und revisionssicher archiviert werden.</p>
+</li>
+<li><h4>NET.1.2.A36 Einbindung der Protokollierung des Netzmanagements in eine SIEM-Lösung (H)</h4>
+<p>Die Protokollierung des Netzmanagements SOLLTE in eine Security-Information-and-Event-Management (SIEM)-Lösung eingebunden werden. Dazu SOLLTEN die Anforderungskataloge zur Auswahl von Netzmanagement-Lösungen hinsichtlich der erforderlichen Unterstützung von Schnittstellen und Übergabeformaten angepasst werden (siehe NET.1.2.A2 <span style="font-style: italic">Anforderungsspezifikation für das Netzmanagement</span>).</p>
+</li>
+<li><h4>NET.1.2.A37 Standort übergreifende Zeitsynchronisation (H)</h4>
+<p>Die Zeitsynchronisation SOLLTE über alle Standorte der Institution sichergestellt werden. Dafür SOLLTE eine gemeinsame Referenzzeit benutzt werden. </p>
+</li>
+<li><h4>NET.1.2.A38 Festlegung von Notbetriebsformen für die Netzmanagement-Infrastruktur (H)</h4>
+<p>Für eine schnelle Wiederherstellung der Sollzustände von Software bzw. Firmware sowie der Konfiguration der Komponenten in der Netzmanagement-Infrastruktur SOLLTEN hinreichend gute Ersatzlösungen festgelegt werden.</p>
+</li>
+</ul>
+<a name="14145_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Die International Organization for Standardization (ISO) formuliert in der Norm ISO/IEC 27033 „Information technology – Security techniques — Network security — Part 1: Overview and concepts bis Part 3: Reference networking scenarios – Threats, design techniques and control issues“ Vorgaben für die Absicherung von Netzen.</p>
+<p>Das BSI hat das weiterführende Dokument „Sichere Anbindung von lokalen Netzen an das Internet (ISi-LANA)“ zum Themenfeld Netzmanagement veröffentlicht.</p>
+<a name="14145_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein NET.1.2 <em>Netzmanagement</em> von Bedeutung.</p>
+<ul>
+<li>G 0.9 Ausfall oder Störung von Kommunikationsnetzen</li>
+<li>G 0.11 Ausfall oder Störung von Dienstleistern</li>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.18 Fehlplanung oder fehlende Anpassung</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.25 Ausfall von Geräten oder Systemen</li>
+<li>G 0.27 Ressourcenmangel</li>
+<li>G 0.29 Verstoß gegen Gesetze oder Regelungen</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.40 Verhinderung von Diensten (Denial of Service)</li>
+<li>G 0.43 Einspielen von Nachrichten</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.09</th>
+<th>G 0.11</th>
+<th>G 0.14</th>
+<th>G 0.18</th>
+<th>G 0.19</th>
+<th>G 0.22</th>
+<th>G 0.23</th>
+<th>G 0.25</th>
+<th>G 0.27</th>
+<th>G 0.29</th>
+<th>G 0.30</th>
+<th>G 0.39</th>
+<th>G 0.40</th>
+<th>G 0.43</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NET.1.2.A1</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A2</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A3</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A4</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A5</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A6</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A7</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A8</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A9</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A10</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A11</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A12</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A13</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A14</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A15</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A16</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A17</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A18</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A19</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A20</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A21</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A22</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A23</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A24</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A25</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A26</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A27</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A28</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A29</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A30</td>
+<td>A</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A31</td>
+<td>IA</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A32</td>
+<td>CIA</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A33</td>
+<td>CIA</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A34</td>
+<td>CI</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A35</td>
+<td>CIA</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A36</td>
+<td>CIA</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>NET.1.2.A37</td>
+<td>CI</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NET.1.2.A38</td>
+<td>A</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

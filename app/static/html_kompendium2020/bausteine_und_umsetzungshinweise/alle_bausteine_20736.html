@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+SYS.2.4 Clients unter macOS
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_20736.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_20736.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">SYS.2.4 Clients unter macOS</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>SYS.2.4 Clients unter macOS</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#20736_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#20736_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#20736_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#20736_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#20736_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#20736_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#20736_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#20736_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#20736_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#20736_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#20736_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#20736_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#20736_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="20736_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="20736_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>macOS ist ein Client-Betriebssystem der Firma Apple. macOS basiert auf Darwin, dem frei verfügbaren Unix-Betriebssystem von Apple, das wiederum auf dem Open-Source-Betriebssystem FreeBSD aufbaut. macOS setzt sich im Wesentlichen aus Darwin sowie der proprietären grafischen Bedienoberfläche „Aqua“ und weiteren Anwendungen und Diensten zusammen. Gemäß den Lizenzbedingungen von Apple darf macOS nur auf IT-Systemen („Macs“) von Apple installiert werden. Aus diesem Grund sind Eigenheiten dieser Systeme ebenfalls Bestandteil dieses Bausteins.</p>
+</p>
+<a name="20736_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Das Ziel dieses Bausteins ist der Schutz von Informationen, die auf IT-Systemen unter macOS verarbeitet oder mit diesen übertragen werden. Der Baustein zielt außerdem darauf ab, Geschäftsprozesse und andere IT-Systeme davor zu schützen, durch Macs beeinträchtigt zu werden. Dazu müssen IT-Systeme unter macOS angemessen abgesichert werden.</p>
+</p>
+<a name="20736_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein SYS.2.4 C<span style="font-style: italic">lients unter macOS </span>ist für alle Client-Systeme anzuwenden, auf denen das Betriebssystem Apple macOS eingesetzt wird.</p>
+<p>Der Schwerpunkt liegt in diesem Baustein auf der Absicherung eines Macs mit macOS, der als Stand-alone-System oder als Client in einem Client-Server-Netz betrieben wird. Damit ergänzt der Baustein die allgemeinen Aspekte aus dem zusätzlich anzuwendenden Baustein SYS.2.1 <span style="font-style: italic">Allgemeiner Client</span>. Ein möglicher Einsatz von macOS als Server-Betriebssystem wird im Baustein nicht betrachtet. Im professionellen Einsatz besteht mit dem sogenannten Profilmanager und Mobile Device Management die Möglichkeit, die verwendeten Macs zentral zu verwalten. Diese Lösungen bieten erweiterte Konfigurations- und Verwaltungsfunktionen, werden in diesem Baustein jedoch nicht betrachtet. Entsprechende Sicherheitsaspekte werden im Baustein SYS.3.2.2 <span style="font-style: italic">Mobile Device Management (MDM)</span> behandelt. Außerdem ist zu beachten, dass die beiden Apple-Betriebssysteme macOS (für Macs) und iOS (für iPhones und iPads) eng miteinander verzahnt sind. Daher sollte zusätzlich der Baustein SYS.3.2.3 <span style="font-style: italic">iOS (for Enterprise) </span>berücksichtigt werden, wenn neben macOS auch Geräte mit iOS eingesetzt werden.</p>
+</p>
+<a name="20736_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Die folgenden spezifischen Bedrohungen und Schwachstellen sind für den Baustein SYS.2.4 <span style="font-style: italic">Clients unter macOS</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Unkontrollierbarer Zugriff auf ausgelagerte Daten</h3>
+<p>
+<p>macOS bietet eine Reihe von Funktionen, die auf zentralen, von Apple betriebenen Servern ausgeführt werden. Beispielsweise kann Apples iCloud für die Speicherung und für die Synchronisierung von Daten zwischen verschiedenen macOS- und iOS-Geräten verwendet werden. Da hierbei Daten auf Servern Dritter zwischengespeichert werden und damit nicht mehr unter der eigenen Kontrolle stehen, könnten prinzipiell auch Unbefugte auf diese Server zugreifen und die dort gespeicherten oder übertragenen Daten einsehen und für ihre Zwecke missbrauchen.</p>
+</p>
+<h3>2.2 Missbrauch der Apple-ID als zentrale Zugangsinformation für Apple-Dienste</h3>
+<p>
+<p>Für die Nutzung einiger macOS-Funktionen wird eine eindeutige Apple-ID als Zugangsinformation benötigt. Mit der Apple-ID kann zentral auf verschiedene Apple-Dienste zugegriffen werden, wie beispielsweise auf iCloud, iMessage, iTunes und den App Store. Falls Unbefugte an die Zugangsinformationen der Apple-ID gelangen, können sie diese Dienste unter Umständen unter einer falschen Identität nutzen und auf Informationen in iCloud zugreifen.</p>
+</p>
+<h3>2.3 Angriffe auf Funkschnittstellen</h3>
+<p>
+<p>Ein Mac verfügt in der Regel über drahtlose Schnittstellen wie WLAN oder Bluetooth, die zudem von vielen Diensten genutzt werden und entsprechend aktiviert sind. Beispielsweise können mit der WLAN-Funktion Dateien unmittelbar zwischen Apple-Geräten ausgetauscht werden (AirDrop). Des Weiteren kann die WLAN- und Bluetooth-Funktion genutzt werden, um macOS- und iOS-Geräte zu synchronisieren (Continuity). Mit AirPlay ist es möglich, Video- und Audiodaten an kompatible Wiedergabegeräte zu senden. Angreifer könnten versuchen, diese Funkschnittstellen für Angriffe zu missbrauchen, um vertrauliche Informationen zwischen Mac, iPhone, iPad und anderen Geräten abzufangen oder die Geräte zu kompromittieren.</p>
+</p>
+<h3>2.4 Angriffe auf Anwendungen mit Vorschau-Funktion</h3>
+<p>
+<p>Einige der in macOS integrierten Anwendungen unterstützen eine Vorschaufunktion für bestimmte Dateiformate (z. B. Bilddateien). Dazu gehören der Finder, der Browser „Safari“ und das in macOS integrierte E-Mail-Programm. Die Vorschaufunktion stellt beispielsweise automatisch den Anhang einer E-Mail auszugsweise dar, wenn das Dateiformat bekannt ist. Ein Angreifer könnte somit versuchen, Schadcode im Anhang einer E-Mail zu verstecken. Die Vorschaufunktion würde den E-Mail-Anhang anzeigen und möglicherweise den Schadcode ausführen, der wiederum den Mac kompromittieren könnte.</p>
+</p>
+<h3>2.5 Unsichere Protokolle in macOS oder macOS-Anwendungen</h3>
+<p>
+<p>macOS und seine Anwendungen unterstützen verschiedene, zum Teil Apple-eigene Protokolle (z. B. AFP) zur Kommunikation mit zentralen Servern oder anderen Endgeräten. Wenn diese Kommunikationsprotokolle keine ausreichenden Sicherheitsmechanismen aufweisen oder unsicher konfiguriert werden, könnten die darüber übertragenen Daten unerlaubt mitgelesen, verfälscht oder anderweitig missbraucht werden.</p>
+</p>
+<a name="20736_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die spezifischen Anforderungen des Bausteins SYS.2.4 <span style="font-style: italic">Clients unter macOS</span> aufgeführt. Grundsätzlich ist der IT-Betrieb für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und regelmäßig überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Erfüllung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt. </p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>IT-Betrieb</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+Benutzer
+</td>
+</tr>
+</table>
+<a name="20736_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein SYS.2.4<em>Clients unter macOS</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>SYS.2.4.A1 Planung des sicheren Einsatzes von macOS (B)</h4>
+<p>Die Einführung von macOS MUSS sorgfältig geplant werden. Dabei MUSS ein Konzept zur Benutzerverwaltung, zur Administration sowie zur Protokollierung erstellt werden. Es MUSS entschieden werden, wo und wie Daten abgelegt werden. Es MUSS geplant werden, wie die Datensicherung in das institutionsweite Datensicherungskonzept integriert werden kann. Es MUSS geplant werden, wie der Schutz vor Schadprogrammen in das institutionsweite Konzept integriert werden kann. Es MUSS geplant werden, wie Sicherheits- und sonstige Aktualisierungen für macOS und Anwendungen systematisch installiert werden können. Es MUSS ermittelt werden, welche Anwendungen bei einem Plattformwechsel zu macOS benötigt werden. Wird der Mac in einem Datennetz betrieben, MUSS zusätzlich berücksichtigt werden, welche Netzprotokolle eingesetzt werden sollen.</p>
+</li>
+<li><h4>SYS.2.4.A2 Nutzung der integrierten Sicherheitsfunktionen von macOS (B)</h4>
+<p>Die in macOS integrierten Schutzmechanismen „System Integrity Protection“ (SIP), „Xprotect“ und „Gatekeeper“ MÜSSEN aktiviert sein. Gatekeeper DARF NUR die Ausführung signierter Programme erlauben, sofern unsignierte Programme nicht zwingend notwendig sind.</p>
+</li>
+<li><h4>SYS.2.4.A3 Verwendung geeigneter Benutzerkonten [Benutzer] (B)</h4>
+<p>Das bei der Erstkonfiguration von macOS angelegte Administrator-Konto DARF NUR zu administrativen Zwecken verwendet werden. Für die normale Verwendung des Macs MUSS ein Standard-Benutzerkonto angelegt werden. Sollte der Mac von mehreren Benutzern verwendet werden, MUSS für jeden Benutzer ein eigenes Konto angelegt werden. Das Gast-Benutzerkonto MUSS deaktiviert werden.</p>
+</li>
+</ul>
+<a name="20736_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein SYS.2.4<em>Clients unter macOS</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>SYS.2.4.A4 Verwendung einer Festplattenverschlüsselung (S)</h4>
+<p>Festplatten SOLLTEN, insbesondere bei mobilen Macs (z. B. MacBooks), verschlüsselt werden. Wird dazu die in macOS integrierte Funktion FileVault verwendet, DARF das Schlüsselmaterial NICHT online bei Apple gespeichert werden. Der von FileVault erzeugte Wiederherstellungsschlüssel MUSS an einem sicheren Ort aufbewahrt werden. Es SOLLTE geprüft werden, ob ein institutioneller Wiederherstellungsschlüssel für FileVault verwendet werden soll.</p>
+</li>
+<li><h4>SYS.2.4.A5 Deaktivierung sicherheitskritischer Funktionen von macOS (S)</h4>
+<p>Die in macOS integrierten Ortungsdienste SOLLTEN deaktiviert werden. Heruntergeladene Daten SOLLTEN NICHT automatisch geöffnet werden. Inhalte von optischen und anderen Medien SOLLTEN NICHT automatisch ausgeführt werden. </p>
+</li>
+<li><h4>SYS.2.4.A6 Verwendung aktueller Mac-Hardware (S)</h4>
+<p>Werden neue Macs beschafft, SOLLTEN aktuelle Modelle ausgewählt werden. Werden bereits vorhandene Macs eingesetzt, SOLLTE überprüft werden, ob diese weiterhin von Apple mit Sicherheits-Updates versorgt werden. Werden die Macs nicht mehr durch Apple unterstützt, SOLLTEN sie nicht mehr verwendet werden.</p>
+</li>
+<li><h4>SYS.2.4.A7 Zwei-Faktor-Authentisierung für Apple-ID [Benutzer] (S)</h4>
+<p>Die Zwei-Faktor-Authentisierung für die Verwendung des Apple-ID-Kontos SOLLTE aktiviert werden.</p>
+</li>
+<li><h4>SYS.2.4.A8 Keine Nutzung von iCloud für schützenswerte Daten [Benutzer] (S)</h4>
+<p>Es SOLLTE verhindert werden, dass schützenswerte Daten zwischen mehreren Geräten über iCloud-Dienste synchronisiert werden. Stattdessen SOLLTEN Daten nur über selbst betriebene Dienste synchronisiert werden. Schützenswerte Daten SOLLTEN NICHT in iCloud gespeichert werden. Entwürfe, beispielsweise von E-Mails oder Dokumenten, SOLLTEN NICHT automatisch in iCloud gespeichert werden.</p>
+</li>
+<li><h4>SYS.2.4.A9 Verwendung von zusätzlichen Schutzprogrammen unter macOS (S)</h4>
+<p>Bei Bedarf, etwa wenn ein Macs in einem heterogenen Netz betrieben wird, SOLLTEN neben den integrierten Schutzmechanismen von macOS zusätzlich Virenschutz-Lösungen von Drittanbietern eingesetzt werden.</p>
+</li>
+<li><h4>SYS.2.4.A10 Aktivierung der Personal Firewall unter macOS (S)</h4>
+<p>Die in macOS integrierte Personal Firewall SOLLTE aktiviert und geeignet konfiguriert werden.</p>
+</li>
+<li><h4>SYS.2.4.A11 Geräteaussonderung von Macs (S)</h4>
+<p>Bei einer Aussonderung des Macs SOLLTE der nichtflüchtige Datenspeicher NVRAM zurückgesetzt werden.</p>
+</li>
+</ul>
+<a name="20736_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein SYS.2.4<em>Clients unter macOS</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>SYS.2.4.A12 Firmware-Kennwort und Boot-Schutz auf Macs [Benutzer] (H)</h4>
+<p>Auf älteren Macs SOLLTE die Abfrage eines sicheren Firmware-Kennworts im sogenannten „Command-Modus“ aktiviert werden, um ein unberechtigtes Booten des Macs von einem anderen Startlaufwerk zu verhindern. Es SOLLTE geprüft werden, ob über den „Full-Modus“ ein Kennwort bei jedem Startvorgang abgefragt werden sollte.</p>
+<p>Auf Macs mit T2-Sicherheitschip SOLLTE ein Firmware-Passwort über das Startsicherheitsdienstprogramm gesetzt werden. Die Option „Sicheres Starten: Volle Sicherheit“ SOLLTE aktiviert werden. Die Option „Starten von externen Medien nicht zulassen“ SOLLTE aktiviert werden.</p>
+</li>
+</ul>
+<a name="20736_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Das National Institute of Standards and Technology (NIST) stellt das Dokument „SP 800-179 Rev. 1 (DRAFT): Guide to Securing Apple macOS 10.12 Systems for IT Professionals: A NIST Security Configuration Checklist“ (Oktober 2018) zur Verfügung.</p>
+<a name="20736_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein SYS.2.4 <em>Clients unter macOS</em> von Bedeutung.</p>
+<ul>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.16 Diebstahl von Geräten, Datenträgern oder Dokumenten</li>
+<li>G 0.17 Verlust von Geräten, Datenträgern oder Dokumenten</li>
+<li>G 0.18 Fehlplanung oder fehlende Anpassung</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.21 Manipulation von Hard- oder Software</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.29 Verstoß gegen Gesetze oder Regelungen</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.31 Fehlerhafte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.32 Missbrauch von Berechtigungen</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.45 Datenverlust</li>
+<li>G 0.46 Integritätsverlust schützenswerter Informationen</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.14</th>
+<th>G 0.16</th>
+<th>G 0.17</th>
+<th>G 0.18</th>
+<th>G 0.19</th>
+<th>G 0.21</th>
+<th>G 0.23</th>
+<th>G 0.28</th>
+<th>G 0.29</th>
+<th>G 0.30</th>
+<th>G 0.31</th>
+<th>G 0.32</th>
+<th>G 0.39</th>
+<th>G 0.45</th>
+<th>G 0.46</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SYS.2.4.A1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.2.4.A2</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.4.A3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.4.A4</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.4.A5</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.4.A6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.4.A7</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.4.A8</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.4.A9</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.4.A10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.4.A11</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.2.4.A12</td>
+<td>CIA</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

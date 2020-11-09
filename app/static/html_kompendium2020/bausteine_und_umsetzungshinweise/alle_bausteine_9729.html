@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+APP.3.6 DNS-Server
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_9729.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_9729.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">APP.3.6 DNS-Server</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>APP.3.6 DNS-Server</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#9729_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#9729_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#9729_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#9729_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#9729_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#9729_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#9729_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#9729_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#9729_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#9729_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#9729_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#9729_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#9729_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="9729_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="9729_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Domain Name System (DNS) ist ein Netzdienst, der dazu eingesetzt wird, Hostnamen von IT-Systemen in IP-Adressen umzuwandeln. Üblicherweise wird über DNS zu einem Hostnamen die entsprechende IP-Adresse gesucht (Vorwärtsauflösung). Ist hingegen die IP-Adresse bekannt und der Hostname wird gesucht, wird dies als Rückwärtsauflösung bezeichnet. DNS kann mit einem Telefonbuch verglichen werden, das Namen nicht in Telefonnummern, sondern in IP-Adressen auflöst. Welche Namen zu welchen IP-Adressen gehören, wird im Domain-Namensraum verwaltet. Dieser ist hierarchisch aufgebaut und wird von DNS-Servern zur Verfügung gestellt. DNS-Server verwalten den Domain-Namensraum im Internet, werden aber auch häufig im internen Netz einer Institution eingesetzt. Auf den IT-Systemen der Benutzer sind standardmäßig sogenannte Resolver installiert. Darüber werden die Anfragen an DNS-Server gestellt. Als Antwort liefern diese Informationen über den Domain-Namensraum zurück. Die Bezeichnung DNS-Server steht im eigentlichen Sinne für die verwendete Software, wird jedoch meist auch als Synonym für das IT-System benutzt, auf dem diese Software betrieben wird.</p>
+<p>DNS-Server können nach ihren Aufgaben unterschieden werden. Dabei gibt es grundsätzlich zwei verschiedenen Typen: Advertising DNS-Server und Resolving DNS-Server. Advertising DNS-Server sind üblicherweise dafür zuständig, Anfragen aus dem Internet zu verarbeiten. Resolving DNS-Server hingegen verarbeiten Anfragen aus dem internen Netz der Institution. </p>
+<p>Ein Ausfall eines DNS-Servers kann sich gravierend auf den Betrieb einer IT-Infrastruktur auswirken. Dabei ist nicht direkt das ausgefallene DNS-System problematisch, sondern die daraus resultierende Einschränkung DNS-basierter Dienste. Unter Umständen sind Webserver oder E-Mail-Server nicht mehr erreichbar oder die Fernwartung funktioniert nicht mehr. Da DNS von sehr vielen Netzanwendungen benötigt wird, müssen laut Spezifikation (RFC 1034) mindestens zwei autoritative DNS-Server (Advertising DNS-Server) für jede Zone betrieben werden.</p>
+</p>
+<a name="9729_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>In diesem Baustein werden die für einen DNS-Server spezifischen Gefährdungen und die sich daraus ergebenden Anforderungen für einen sicheren Betrieb beschrieben. </p>
+</p>
+<a name="9729_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein APP.3.6 <span style="font-style: italic">DNS-Server</span> ist auf jeden im Informationsverbund eingesetzten DNS-Server bzw. auf jede Gruppe von DNS-Servern anzuwenden.</p>
+<p>Der vorliegende Baustein enthält grundsätzliche Anforderungen, die zu beachten und zu erfüllen sind, wenn eine Institution DNS-Server betreibt. Der Fokus liegt dabei auf der Verfügbarkeit von DNS-Servern, der Integrität der übertragenen Informationen sowie auf Problemen, die auftreten können, wenn DNS-Server betrieben werden. Allgemeine und betriebssystemspezifische Aspekte eines Servers sind jedoch nicht Gegenstand des vorliegenden Bausteins. Diese werden im Baustein SYS1.1 <span style="font-style: italic">Allgemeiner Server</span> und in den entsprechenden betriebssystemspezifischen Bausteinen der Schicht SYS <span style="font-style: italic">IT-Systeme</span> behandelt, z. B. SYS.1.3 <span style="font-style: italic">Server unter Linux und Unix</span> oder SYS.1.2.2 <span style="font-style: italic">Windows Server 2012</span>. </p>
+</p>
+<a name="9729_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein APP.3.6 <span style="font-style: italic">DNS-Server</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Ausfall des DNS-Servers</h3>
+<p>
+<p>Fällt ein DNS-Server aus, kann der gesamte IT-Betrieb davon betroffen sein. Da Clients und andere Server der Institution dann nicht mehr in der Lage sind, interne und externe Adressen auf Basis der Hostnamen aufzulösen, können keine Datenverbindungen mehr aufgebaut werden. Auch externe IT-Systeme, z. B. von mobilen Mitarbeitern, Kunden und Geschäftspartnern, können nicht auf die Server der Institution zugreifen. Dadurch sind in der Regel essenzielle Geschäftsprozesse gestört.</p>
+</p>
+<h3>2.2 Unzureichende Leitungskapazitäten</h3>
+<p>
+<p>Reichen die Leitungskapazitäten für einen DNS-Server nicht aus, können sich die Zugriffszeiten auf interne und externe Dienste erhöhen. Dadurch sind diese eventuell nur eingeschränkt oder gar nicht mehr nutzbar. Auch können Angreifer den DNS-Server dann leichter durch einen Denial-of-Service-(DoS)-Angriff überlasten.</p>
+</p>
+<h3>2.3 Fehlende oder unzureichende Planung des DNS-Einsatzes</h3>
+<p>
+<p>Fehler in der Planung stellen sich oft als besonders schwerwiegend heraus, da leicht flächendeckende Sicherheitslücken geschaffen werden können. Wird der DNS-Einsatz nicht oder nur unzureichend geplant, kann dies zu Problemen und Sicherheitslücken im laufenden Betrieb führen. Sind beispielsweise die Firewall-Regeln, die den DNS-Verkehr steuern, zu freizügig definiert, kann dies unter Umständen einen Angriff zur Folge haben. Sind die Regeln jedoch zu restriktiv formuliert, können legitime Clients keine Anfragen an die DNS-Server stellen und werden beeinträchtigt, wenn sie etwa Dienste wie E-Mail oder FTP benutzen.</p>
+</p>
+<h3>2.4 Fehlerhafte Domain-Informationen</h3>
+<p>
+<p>Selbst wenn der DNS-Einsatz sorgfältig geplant und somit alle sicherheitsrelevanten Punkte berücksichtigt wurden, ist das nicht ausreichend, wenn semantisch sowie syntaktisch fehlerhafte Domain-Informationen erstellt werden. Beispielsweise dann, wenn einem Hostnamen eine falsche IP-Adresse zugeordnet wird, Daten fehlen, nicht erlaubte Zeichen verwendet werden oder die Vorwärts- und Rückwärtsauflösung inkonsistent sind. Enthalten Domain-Informationen Fehler, funktionieren Dienste, die diese Informationen benutzen, aufgrund der Falschinformationen nur eingeschränkt. </p>
+</p>
+<h3>2.5 Fehlerhafte Konfiguration eines DNS-Servers</h3>
+<p>
+<p>Sicherheitskritische Standardeinstellungen, selbst konfigurierte sicherheitskritische Einstellungen oder fehlerhafte Konfigurationen können dazu führen, dass ein DNS-Server nicht ordnungsgemäß funktioniert. Ist beispielsweise ein Resolving DNS-Server so konfiguriert, dass er rekursive Anfragen uneingeschränkt entgegennimmt, also sowohl aus dem internen Datennetz als auch aus dem Internet, kann aufgrund der erhöhten Last die Verfügbarkeit des Servers stark beeinträchtigt sein. Zusätzlich könnte er dadurch anfällig für DNS-Reflection-Angriffe werden. </p>
+<p>Ebenso besteht bei fehlerhaft konfigurierten DNS-Servern die Gefahr, dass die Zonentransfers nicht auf berechtigte DNS-Server beschränkt sind. Damit kann jeder Host, der die Möglichkeit hat, eine Anfrage an die DNS-Server zu stellen, die gesamten Domain-Informationen dieser Server auslesen. Die so gewonnenen Daten können spätere Angriffe erleichtern.</p>
+</p>
+<h3>2.6 DNS-Manipulation</h3>
+<p>
+<p>Mit einem DNS-Cache-Poisoning-Angriff wird das Ziel verfolgt, dass das angegriffene IT-System falsche Zuordnungen von IP-Adressen und Namen speichert. Dabei wird ausgenutzt, dass DNS-Server erhaltene Domain-Informationen für einen gewissen Zeitraum im Cache zwischenspeichern. So können sich gefälschte Daten weiträumig verbreiten. Werden dann entsprechende Anfragen an den manipulierten DNS-Server gestellt, liefert dieser als Antwort die gefälschten Daten. Der Empfänger der Antwort speichert diese zwischen und sein Cache ist somit ebenfalls „vergiftet“. Die gespeicherten Daten haben eine definierte Haltbarkeit (Time-To-Live, TTL). Wird der Resolving DNS-Server nach einer manipulierten Adresse gefragt, so wird er erst dann wieder einen anderen DNS-Server anfragen, wenn die Haltbarkeit abgelaufen ist. So ist es möglich, dass sich manipulierte DNS-Informationen lange halten, obwohl sie auf dem ursprünglich angegriffenen DNS-Server bereits wieder korrigiert sind. Gelingt es einem Angreifer beispielsweise, die Namensauflösung für eine Domain zu übernehmen, indem er die Einträge so manipuliert, dass seine DNS-Server befragt werden, sind alle Subdomains automatisch mitbetroffen. DNS-Cache-Poisoning-Angriffe werden oft mit dem Ziel geführt, Anfragen auf bösartige Server umzuleiten.</p>
+</p>
+<h3>2.7 DNS-Hijacking</h3>
+<p>
+<p>DNS-Hijacking ist eine Angriffsmethode, die verwendet wird, um die Kommunikation zwischen Advertising DNS-Servern und Resolvern über das IT-System eines Angreifers zu leiten. Dem Angreifer ist es mit dieser Man-in-the-Middle-Attacke möglich, die Kommunikation zwischen den Servern abzuhören und aufzuzeichnen. Die weitaus größere Gefahr besteht jedoch darin, dass ein erfolgreicher Angreifer jeglichen Verkehr der beiden Kommunikationspartner beliebig verändern kann. Wird nach einem erfolgreichen DNS-Hijacking-Angriff vom Resolver eines Client-IT-Systems eine Anfrage an einen DNS-Server gesendet, kann der Angreifer beispielsweise die Zuordnung von Namen und IP-Adresse ändern. DNS-Hijacking lässt sich auch mit anderen Angriffen kombinieren, zum Beispiel mit Phishing. </p>
+</p>
+<h3>2.8 DNS-DoS</h3>
+<p>
+<p>Bei einem DoS-Angriff auf einen DNS-Server werden so viele Anfragen an ihn gesendet, dass die Netzverbindung zum DNS-Server bzw. der DNS-Server selbst überlastet wird. In der Regel werden die Anfragen über Botnetze versendet, um die notwendige Datenrate zu erreichen. Ein auf diese Weise überlasteter DNS-Server kann keine legitimen Anfragen mehr beantworten.</p>
+</p>
+<h3>2.9 DNS-Reflection</h3>
+<p>
+<p>Bei einem DNS-Reflection-Angriff handelt es sich um einen DoS-Angriff, bei dem nicht der DNS-Server, an den die Anfragen gestellt werden, das Ziel ist, sondern der Empfänger der Antworten. Dabei wird ausgenutzt, dass bestimmte Anfragen eine verhältnismäßig große Antwortdatenmenge erzeugen. Es ist dabei möglich, einen Verstärkungsfaktor von 100 und mehr zu erreichen. Das bedeutet, dass die Antwort, gemessen in Bytes, mindestens einhundert Mal größer ist als die Anfrage. Durch die Anzahl und Größe der Antworten wird die Netzbandbreite bzw. das IT-System des Empfängers selbst über seine Leistungskapazität hinaus überlastet. Somit kann jede beliebige technische IT-Komponente das Angriffsziel sein. DNS-Reflection-Angriffe werden durch Open-Resolver begünstigt.</p>
+</p>
+<a name="9729_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die spezifischen Anforderungen des Bausteins APP.3.6 <span style="font-style: italic">DNS-Server</span> aufgeführt. Grundsätzlich ist der IT-Betrieb für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Umsetzung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt.</p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>IT-Betrieb</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+Leiter IT,
+Vorgesetzte
+</td>
+</tr>
+</table>
+<a name="9729_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein APP.3.6<em>DNS-Server</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>APP.3.6.A1 Planung des DNS-Einsatzes (B)</h4>
+<p>Der Einsatz von DNS-Servern MUSS sorgfältig geplant werden. Dabei MUSS zunächst festgelegt werden, wie der Netzdienst DNS aufgebaut werden soll. Hierüber hinaus MUSS festgelegt werden, welche Domain-Informationen schützenswert sind. Es MUSS auch geplant werden, wie DNS-Server in das Netz des Informationsverbunds eingebunden werden sollen. Die getroffenen Entscheidungen MÜSSEN geeignet dokumentiert werden.</p>
+</li>
+<li><h4>APP.3.6.A2 Einsatz redundanter DNS-Server (B)</h4>
+<p>Advertising DNS-Server MÜSSEN redundant ausgelegt werden. Für jeden Advertising DNS-Server MUSS es mindestens einen zusätzlichen Secondary DNS-Server geben. </p>
+</li>
+<li><h4>APP.3.6.A3 Verwendung von separaten DNS-Servern für interne und externe Anfragen (B)</h4>
+<p>Advertising DNS-Server und Resolving DNS-Server MÜSSEN serverseitig getrennt sein. Die Resolver der internen IT-Systeme DÜRFEN NUR die internen Resolving DNS-Server verwenden.</p>
+</li>
+<li><h4>APP.3.6.A4 Sichere Grundkonfiguration eines DNS-Servers (B)</h4>
+<p>Ein Resolving DNS-Server MUSS so konfiguriert werden, dass er ausschließlich Anfragen aus dem internen Netz akzeptiert. Wenn er Anfragen versendet, MUSS er zufällige Source Ports benutzen. Sind DNS-Server bekannt, die falsche Domain-Informationen liefern, MUSS der Resolving DNS-Server daran gehindert werden, Anfragen dorthin zu senden. Ein Advertising DNS-Server MUSS so konfiguriert werden, dass er Anfragen aus dem Internet immer iterativ behandelt.</p>
+<p>Es MUSS sichergestellt werden, dass DNS-Zonentransfers zwischen Primary und Secondary DNS-Servern funktionieren. Zudem MÜSSEN Zonentransfers so konfiguriert werden, dass diese nur zwischen Primary und Secondary DNS-Servern möglich sind. Zonentransfers MÜSSEN auf bestimmte IP-Adressen beschränkt werden. Die Version des verwendeten DNS-Server-Produktes MUSS verborgen werden.</p>
+</li>
+<li><h4>APP.3.6.A5 ENTFALLEN (B)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>APP.3.6.A6 Absicherung von dynamischen DNS-Updates (B)</h4>
+<p>Es MUSS sichergestellt werden, dass nur legitimierte IT-Systeme Domain-Informationen ändern dürfen. Auch MUSS festgelegt werden, welche Domain-Informationen die IT-Systeme ändern dürfen.</p>
+</li>
+<li><h4>APP.3.6.A7 Überwachung von DNS-Servern (B)</h4>
+<p>DNS-Server MÜSSEN laufend überwacht werden. Auch MUSS überwacht werden, wie ausgelastet die DNS-Server sind, um rechtzeitig die Leistungskapazität der Hardware anpassen zu können. Darüber hinaus MÜSSEN alle sicherheitsrelevanten Ereignisse bei DNS-Servern geeignet protokolliert werden. </p>
+</li>
+<li><h4>APP.3.6.A8 Verwaltung von Domainnamen [Leiter IT] (B)</h4>
+<p>Es MUSS sichergestellt sein, dass die Registrierungen für alle Domains, die von einer Institution benutzt werden, regelmäßig und rechtzeitig verlängert werden. Es MUSS ein Mitarbeiter bestimmt werden, der dafür verantwortlich ist, die Internet-Domainnamen zu verwalten. Sofern ein Internetdienstleister mit der Domainverwaltung beauftragt wird, MUSS darauf geachtet werden, dass die Institution die Kontrolle über die Domains behält. </p>
+</li>
+<li><h4>APP.3.6.A9 Erstellen eines Notfallplans für DNS-Server (B)</h4>
+<p>Es MUSS ein Notfallplan für DNS-Server erstellt werden. Er MUSS in die bereits vorhandenen Notfallpläne der Institution integriert werden. Auch MUSS darin ein Datensicherungskonzept für die Zonen- und Konfigurationsdateien beschrieben sein. Dieses Datensicherungskonzept MUSS in das existierende Datensicherungskonzept der Institution integriert werden. Der Notfallplan MUSS auch einen Wiederanlaufplan für DNS-Server enthalten.</p>
+</li>
+</ul>
+<a name="9729_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein APP.3.6<em>DNS-Server</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>APP.3.6.A10 Auswahl eines geeigneten DNS-Server-Produktes (S)</h4>
+<p>Wird ein DNS-Server-Produkt beschafft, SOLLTE darauf geachtet werden, dass sich damit alle Sicherheitsanforderungen der Institution geeignet erfüllen lassen. Das Produkt SOLLTE sich in der Praxis ausreichend bewährt haben und die aktuellen RFC-Standards unterstützen. Es SOLLTE den Verantwortlichen dabei unterstützen, syntaktisch korrekte Master Files zu erstellen.</p>
+</li>
+<li><h4>APP.3.6.A11 Ausreichende Dimensionierung der DNS-Server (S)</h4>
+<p>Die Hardware des DNS-Servers SOLLTE ausreichend dimensioniert sein. Auch SOLLTE die Hardware ausschließlich für den Betrieb eines DNS-Servers benutzt werden. Ebenso SOLLTE die Netzanbindung der DNS-Server ausreichend bemessen sein.</p>
+</li>
+<li><h4>APP.3.6.A12 Schulung der Verantwortlichen [Vorgesetzte] (S)</h4>
+<p>Es SOLLTE durch Schulungen sichergestellt werden, dass die Verantwortlichen mit den einzelnen Konfigurationsmöglichkeiten und sicherheitsrelevanten Aspekten der DNS-Server vertraut sind. </p>
+</li>
+<li><h4>APP.3.6.A13 Einschränkung der Sichtbarkeit von Domain-Informationen (S)</h4>
+<p>Der Namensraum eines Informationsverbunds SOLLTE in einen öffentlichen und einen institutionsinternen Bereich aufgeteilt werden. Im öffentlichen Teil SOLLTEN nur solche Domain-Informationen enthalten sein, die von Diensten benötigt werden, die von extern erreichbar sein sollen. IT-Systeme im internen Netz SOLLTEN selbst dann keinen von außen auflösbaren DNS-Namen erhalten, wenn sie eine öffentliche IP-Adresse besitzen.</p>
+</li>
+<li><h4>APP.3.6.A14 Platzierung der Nameserver (S)</h4>
+<p>Primary und Secondary Advertising DNS-Server SOLLTEN in verschiedenen Netzsegmenten platziert werden. </p>
+</li>
+<li><h4>APP.3.6.A15 Auswertung der Logdaten (S)</h4>
+<p>Die Logdateien des DNS-Servers sowie des unterliegenden Betriebssystems SOLLTEN regelmäßig überprüft und ausgewertet werden.</p>
+</li>
+<li><h4>APP.3.6.A16 Integration eines DNS-Servers in eine "P-A-P"-Struktur (S)</h4>
+<p>Die DNS-Server SOLLTEN in eine „Paketfilter – Application-Level-Gateway – Paketfilter“-(P-A-P)-Struktur integriert werden (siehe auch NET.3.2 <span style="font-style: italic">Firewall</span>). Der Advertising DNS-Server SOLLTE in diesem Fall in einer demilitarisierten Zone (DMZ) des äußeren Paketfilters angesiedelt sein. Der Resolving DNS-Server SOLLTE in einer DMZ des inneren Paketfilters aufgestellt sein.</p>
+</li>
+<li><h4>APP.3.6.A17 Einsatz von DNSSEC (S)</h4>
+<p>Die DNS-Protokollerweiterung DNSSEC SOLLTE sowohl auf Resolving DNS-Servern als auch auf Advertising DNS-Servern aktiviert werden. Die dabei verwendeten Schlüssel Key-Signing-Keys (KSK) und Zone-Signing-Keys (ZSK) SOLLTEN regelmäßig gewechselt werden.</p>
+</li>
+<li><h4>APP.3.6.A18 Erweiterte Absicherung von Zonentransfers (S)</h4>
+<p>Um Zonentransfers stärker abzusichern, SOLLTEN zusätzlich Transaction Signatures (TSIG) eingesetzt werden. </p>
+</li>
+<li><h4>APP.3.6.A19 Aussonderung von DNS-Servern (S)</h4>
+<p>Wird ein DNS-Server ausgesondert, SOLLTEN alle Speichermedien des Servers sicher gelöscht werden. Außerdem SOLLTE der DNS-Server sowohl aus dem Domain-Namensraum als auch aus dem Netzverbund gelöscht werden.</p>
+</li>
+</ul>
+<a name="9729_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein APP.3.6<em>DNS-Server</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>APP.3.6.A20 Prüfung des Notfallplans auf Durchführbarkeit (H)</h4>
+<p>Es SOLLTE regelmäßig überprüft werden, ob der Notfallplan durchführbar ist.</p>
+</li>
+<li><h4>APP.3.6.A21 Hidden-Master (H)</h4>
+<p>Um Angriffe auf den primären Advertising DNS-Server zu erschweren, SOLLTE eine sogenannte Hidden-Master-Anordnung vorgenommen werden.</p>
+</li>
+<li><h4>APP.3.6.A22 Anbindung der DNS-Server über unterschiedliche Provider [Leiter IT] (H)</h4>
+<p>Extern erreichbare DNS-Server SOLLTEN über unterschiedliche Provider angebunden werden.</p>
+</li>
+</ul>
+<a name="9729_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Das BSI hat folgende weiterführende Dokumente zum Themenfeld DNS veröffentlicht:</p>
+<ul><li>BSI-Veröffentlichung zur Cyber-Sicherheit BSI-CS 055: „Sichere Bereitstellung von DNS-Diensten: Handlungsempfehlungen für Internet-Service-Provider (ISP) und große Unternehmen“</li><li>BSI-Veröffentlichung zur Cyber-Sicherheit BSI-CS 121: „Umsetzung von DNSSEC: Handlungsempfehlungen zur Einrichtung und zum Betrieb der Domain Name Security Extensions“</li><li>Sichere Anbindung von lokalen Netzen an das Internet (ISi-LANA)</li></ul>
+<p>Das National Institute of Standards and Technology (NIST) gibt in der NIST Special Publication 800-81-2 „Secure Domain Name System (DNS) – Deployment Guide“ Empfehlungen zum Einsatz von DNS.</p>
+<p>Im Request for Comments (RFC) bietet der RFC 1034 „Domain Names – Concepts and Facilities“ weiterführende Informationen zu DNS.</p>
+<a name="9729_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein APP.3.6 <em>DNS-Server</em> von Bedeutung.</p>
+<ul>
+<li>G 0.9 Ausfall oder Störung von Kommunikationsnetzen</li>
+<li>G 0.18 Fehlplanung oder fehlende Anpassung</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.20 Informationen oder Produkte aus unzuverlässiger Quelle</li>
+<li>G 0.21 Manipulation von Hard- oder Software</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.25 Ausfall von Geräten oder Systemen</li>
+<li>G 0.26 Fehlfunktion von Geräten oder Systemen</li>
+<li>G 0.27 Ressourcenmangel</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.31 Fehlerhafte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.32 Missbrauch von Berechtigungen</li>
+<li>G 0.40 Verhinderung von Diensten (Denial of Service)</li>
+<li>G 0.43 Einspielen von Nachrichten</li>
+<li>G 0.45 Datenverlust</li>
+<li>G 0.46 Integritätsverlust schützenswerter Informationen</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.09</th>
+<th>G 0.18</th>
+<th>G 0.19</th>
+<th>G 0.20</th>
+<th>G 0.21</th>
+<th>G 0.22</th>
+<th>G 0.23</th>
+<th>G 0.25</th>
+<th>G 0.26</th>
+<th>G 0.27</th>
+<th>G 0.28</th>
+<th>G 0.30</th>
+<th>G 0.31</th>
+<th>G 0.32</th>
+<th>G 0.40</th>
+<th>G 0.43</th>
+<th>G 0.45</th>
+<th>G 0.46</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APP.3.6.A1</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A4</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.6.A5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.6.A8</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A12</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A13</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A14</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A15</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A16</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A17</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.6.A18</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.6.A19</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A20</td>
+<td>A</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A21</td>
+<td>CIA</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.6.A22</td>
+<td>IA</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+APP.4.3 Relationale Datenbanksysteme
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_9384.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_9384.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">APP.4.3 Relationale Datenbanksysteme</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>APP.4.3 Relationale Datenbanksysteme</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#9384_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#9384_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#9384_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#9384_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#9384_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#9384_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#9384_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#9384_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#9384_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#9384_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#9384_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#9384_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#9384_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="9384_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="9384_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Datenbanksysteme (DBS) sind ein oft genutztes Hilfsmittel, um IT-gestützt große Datensammlungen zu organisieren, zu erzeugen, zu verändern und zu verwalten. Ein DBS besteht aus dem so genannten Datenbankmanagementsystem (DBMS) und einer oder mehreren Datenbanken. Eine Datenbank ist eine Zusammenstellung von Daten samt ihrer Beschreibung (Metadaten), die dauerhaft im Datenbanksystem abgelegt werden. Da Datenbanksysteme eine zentrale Bedeutung in einer IT-Infrastruktur einnehmen, ergeben sich an sie wesentliche Sicherheitsanforderungen. Meist sind Kernprozesse einer Institution von den Informationen aus den Datenbanken abhängig. Dadurch ergeben sich entsprechende Verfügbarkeitsanforderungen. Zusätzlich bestehen oft hohe Anforderungen an die Vertraulichkeit und Integrität der in den Datenbanken gespeicherten Informationen.</p>
+</p>
+<a name="9384_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Ziel dieses Bausteins ist es, relationale Datenbanksysteme sicher betreiben zu können, sowie die Informationen, die in Datenbanken verarbeitet und gespeichert werden, angemessen zu schützen. Dazu werden Anforderungen beschrieben, mit denen sich Datenbanksysteme sicher planen, umsetzen und betreiben lassen und durch die spezifische Gefährdungen reduziert werden können.</p>
+</p>
+<a name="9384_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein APP.4.3 <span style="font-style: italic">Relationale Datenbanksysteme </span>ist auf jedes relationale Datenbanksystem bzw. auf jede Gruppe von relationalen Datenbanksystemen einmal anzuwenden.</p>
+<p>In diesem Baustein werden Anforderungen an relationale Datenbanksysteme beschrieben. Sicherheitsanforderungen an nicht-relationale Datenbanksysteme sind nicht Gegenstand des vorliegenden Bausteins.</p>
+<p>Um die Informationen in den Datenbanken durchgängig zu schützen, sollten bereits in der Anwendungsentwicklung Sicherheitsanforderungen an den Aufbau der Datenbanktabellen und den Zugriff auf die Datenbank beachtet werden. Anforderungen zu diesen Themen werden jedoch nicht in diesem Baustein aufgeführt.</p>
+<p>Ebenso geht der Baustein nicht auf Gefährdungen und Anforderungen ein, die das Betriebssystem und die Hardware betreffen, auf denen das Datenbanksystem basiert. Aspekte dazu finden sich in den entsprechenden betriebssystemspezifischen Bausteinen der Schicht SYS <span style="font-style: italic">IT-Systeme</span>, z. B. SYS.1.3 <span style="font-style: italic">Server unter Linux und Unix</span> oder SYS.1.2.2 <span style="font-style: italic">Windows Server 2012</span>.</p>
+</p>
+<a name="9384_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein APP.4.3 <span style="font-style: italic">Relationale Datenbanken</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Unzureichende Dimensionierung der Systemressourcen</h3>
+<p>
+<p>Verfügt die Hardware eines Datenbanksystems nicht über genügend Systemressourcen, kann es passieren, dass die Datenbank ganz ausfällt oder fehlerhaft arbeitet. Dadurch können beispielsweise Daten nicht gespeichert werden. Auch können zu Stoßzeiten die Ressourcen stark ausgelastet werden. Dadurch kann sich die Performance verschlechtern. Dies wiederum kann dazu führen, dass Anwendungen nicht oder nicht fehlerfrei ausgeführt werden.</p>
+</p>
+<h3>2.2 Aktivierte Standard-Benutzerkonten</h3>
+<p>
+<p>Bei der Erstinstallation bzw. im Auslieferungszustand eines Datenbankmanagementsystems sind Benutzer- und Administrationskonten häufig nicht oder nur mit Passwörtern gesichert, die öffentlich bekannt sind. Dadurch kann es passieren, dass diese Konten missbräuchlich genutzt werden. Beispielsweise kann sich ein Angreifer mit den öffentlich bekannten Anmeldedaten am Datenbankmanagementsystem als Benutzer oder sogar als Administrator anmelden. Danach kann er die Konfiguration oder die gespeicherten Daten auslesen, manipulieren oder löschen.</p>
+</p>
+<h3>2.3 Unzureichende Vergabe von Berechtigungen</h3>
+<p>
+<p>Werden Berechtigungen fehlerhaft vergeben oder verwaltet, können Verantwortliche oder Benutzer des Datenbankmanagementsystems Berechtigungen erhalten, die über das zwingend notwendige Maß hinausgehen. So ist es möglich, dass Verantwortliche oder Benutzer mit zu umfassenden Berechtigungen unerlaubte Aktionen auf dem Datenbankmanagementsystem ausführen. Das kann weitreichende Folgen nach sich ziehen, wie das folgende Beispiel zeigt:</p>
+<p>Durch ein fehlerhaftes SQL-Statement (beispielsweise in einem Installationsskript) löscht ein Benutzer unbeabsichtigt sehr viele Datensätze in der Datenbank. Im Anschluss wird festgestellt, dass der Benutzer für diese Datensätze eigentlich nur Leserechte benötigt hätte, aber unnötigerweise auch über Löschrechte verfügte.</p>
+</p>
+<h3>2.4 Unverschlüsselte Datenbankanbindung</h3>
+<p>
+<p>In der Standardkonfiguration verbinden sich viele Datenbankmanagementsysteme unverschlüsselt mit den Anwendungen. Wird zwischen Anwendungen und Datenbankmanagementsystem unverschlüsselt kommuniziert, können übertragene Daten und Zugangsinformationen mitgelesen oder auf dem Transportweg manipuliert werden.</p>
+</p>
+<h3>2.5 Datenverlust in der Datenbank</h3>
+<p>
+<p>Durch Hardware- oder Softwarefehler sowie durch menschliches Versagen können Daten in der Datenbank verloren gehen. Da in Datenbanken meist wichtige Informationen für Anwendungen gespeichert sind, können Dienste ausfallen oder ganze Produktionsprozesse stillstehen.</p>
+</p>
+<h3>2.6 Integritätsverlust der gespeicherten Daten</h3>
+<p>
+<p>Durch falsch konfigurierte Datenbanken, Softwarefehler oder manipulierte Daten kann die Integrität der Informationen in der Datenbank verletzt werden. Wird dies nicht oder erst spät bemerkt, können Kernprozesse der Institution stark beeinträchtigt werden. Werden beispielsweise die Integritätsbeziehungen (referenzielle Integrität), zwischen den Tabellen nicht korrekt definiert, kann dies dazu führen, dass die Daten in der Datenbank fehlerhaft sind. Wird dieser Fehler erst im Produktivbetrieb oder gar nicht bemerkt, müssen nicht nur die inkonsistenten Daten aufwändig bereinigt und rekonstruiert werden. Es kann mit der Zeit auch ein großer Schaden entstanden sein, beispielsweise wenn es sich um kritische Daten, zum Beispiel steuerrelevante Daten, Rechnungsdaten oder gar um Steuerungsdaten für ganze Produktionssysteme handelt.</p>
+</p>
+<h3>2.7 SQL-Injections</h3>
+<p>
+<p>Eine häufige Angriffsmethode auf Datenbanksysteme sind SQL-Injections. Greift eine Anwendung auf die Daten einer SQL-Datenbank zu, so werden Befehle in Form von SQL-Anweisungen an das DBMS übermittelt. Werden Eingabedaten innerhalb der Anwendung unzureichend validiert, kann ein Angreifer eigene SQL-Befehle in die Anwendung einschleusen, die dann mit der Berechtigung des Dienstkontos der Anwendung bearbeitet werden. Ein Angreifer kann so Daten lesen, manipulieren, löschen, neue Daten hinzufügen oder auch Systembefehle aufrufen. Obwohl SQL-Injections primär die Anwendungen im Frontend betreffen, wirken sie sich auch erheblich auf das Datenbanksystem selbst und die damit verbundene Infrastruktur aus.</p>
+</p>
+<h3>2.8 Unzureichendes Patchmanagement</h3>
+<p>
+<p>Durch die umfangreichen Funktionen der Datenbankmanagementsysteme treten relativ häufig Fehler oder Schwachstellen auf, die über Patches und Aktualisierungen vom Hersteller behoben werden müssen. Werden diese jedoch nicht zeitnah vom Hersteller bereitgestellt oder aus betrieblichen Gründen verzögert eingespielt, können Schwachstellen ausgenutzt und das Datenbankmanagementsystem kann erfolgreich angegriffen werden. Dadurch ist es möglich, dass Angreifer die IT-Systeme manipulieren und so institutionskritische Daten abfließen, Dienste ausfallen oder ganze Produktionsprozesse stillstehen.</p>
+</p>
+<h3>2.9 Unsichere Konfiguration des Datenbankmanagementsystems</h3>
+<p>
+<p>Häufig sind in der Standardkonfiguration des Datenbankmanagementsystems nicht benötigte Funktionen aktiviert, die es einem potenziellen Angreifer erleichtern, Informationen aus der Datenbank auszulesen oder zu manipulieren. Beispielsweise kann sich ein Angreifer aufgrund einer unveränderten Standardinstallation mit einer von der Institution nicht benutzten Programmierschnittstelle verbinden, um das DBMS zu administrieren, ohne sich dafür authentifizieren zu müssen. Dadurch kann er unerlaubt auf die Datenbanken der Institution zugreifen.</p>
+</p>
+<h3>2.10 Malware und unsichere Datenbank-Skripte</h3>
+<p>
+<p>Bei vielen Datenbankmanagementsystemen ist es möglich, bestimmte Aktionen über Skripte zu automatisieren, die im Kontext der Datenbank ausgeführt werden, z. B. mithilfe der Procedural Language/Structured Query Language (PL/SQL). Dazu gehören unter anderem auch sogenannte Datenbanktrigger. Werden diese jedoch von den Verantwortlichen ungeprüft benutzt, kann es passieren, dass die Datenbankskripte nicht den Anforderungen an die Softwareentwicklung der Institution genügen.</p>
+<p>Ebenfalls kann ein Angreifer Kernfunktionen einer Datenbank, wie z. B. Data Dictionary Tables manipulieren, beispielsweise mithilfe von Schadprogrammen oder Datenbank-Skripten. Diese Art von Angriffen ist nur schwer zu entdecken. Qualitätsmängel in diesen Skripten und Malware können sowohl die Vertraulichkeit als auch die Integrität und die Verfügbarkeit der in den Datenbanken abgelegten Daten gefährden. </p>
+</p>
+<a name="9384_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die spezifischen Anforderungen des Bausteins APP.4.3 <span style="font-style: italic">Relationale Datenbanken</span> aufgeführt. Grundsätzlich ist der IT-Betrieb für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Umsetzung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt.</p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>IT-Betrieb</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+Entwickler,
+Fachverantwortliche,
+Leiter IT,
+Vorgesetzte
+</td>
+</tr>
+</table>
+<a name="9384_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein APP.4.3<em>Relationale Datenbanksysteme</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>APP.4.3.A1 Erstellung einer Sicherheitsrichtlinie für Datenbanksysteme (B)</h4>
+<p>Ausgehend von der allgemeinen Sicherheitsrichtlinie der Institution MUSS eine spezifische Sicherheitsrichtlinie für Datenbanksysteme erstellt werden. Darin MÜSSEN nachvollziehbar Anforderungen und Vorgaben beschrieben sein, wie Datenbanksysteme sicher betrieben werden sollen. Die Richtlinie MUSS allen im Bereich Datenbanksysteme verantwortlichen Mitarbeitern bekannt sein. Sie MUSS grundlegend für ihre Arbeit sein. Wird die Richtlinie verändert oder wird von den Anforderungen abgewichen, MUSS dies mit dem ISB abgestimmt und dokumentiert werden. Es MUSS regelmäßig überprüft werden, ob die Richtlinie noch korrekt umgesetzt ist. Die Ergebnisse MÜSSEN sinnvoll dokumentiert werden.</p>
+</li>
+<li><h4>APP.4.3.A2 Installation des Datenbankmanagementsystems (B)</h4>
+<p>Es MUSS sichergestellt sein, dass die Installationspakete des Datenbankmanagementsystems aus sicheren Quellen stammen. Bereits veröffentlichte Patches MÜSSEN eingespielt werden, bevor das DBMS betrieben wird.</p>
+</li>
+<li><h4>APP.4.3.A3 Basishärtung des Datenbankmanagementsystems (B)</h4>
+<p>Das Datenbankmanagementsystem MUSS gehärtet werden. Hierfür MUSS eine Checkliste mit den durchzuführenden Schritten zusammengestellt und abgearbeitet werden. Auch MÜSSEN alle Passwörter entsprechend den internen Anforderungen der Institution geändert werden. Alle Passwörter MÜSSEN verschlüsselt gespeichert werden. Die Basishärtung MUSS regelmäßig überprüft und, falls erforderlich, angepasst werden.</p>
+</li>
+<li><h4>APP.4.3.A4 Geregeltes Anlegen neuer Datenbanken (B)</h4>
+<p>Neue Datenbanken MÜSSEN nach einem definierten Prozess angelegt werden. Wenn eine neue Datenbank angelegt wird, MÜSSEN Grundinformationen zur Datenbank nachvollziehbar dokumentiert werden. </p>
+</li>
+<li><h4>APP.4.3.A5 Benutzer- und Berechtigungskonzept (B)</h4>
+<p>Das Benutzer- und Berechtigungskonzept der Institution MUSS um die für Datenbankmanagementsysteme notwendigen Berechtigungen für Rollen, Profile und Benutzergruppen erweitert werden (siehe ORP.4 <span style="font-style: italic">Identitäts- und Berechtigungsmanagement</span>).</p>
+<p>Es MUSS ein Prozess etabliert werden, der regelt, wie Datenbankbenutzer und deren Berechtigungen angelegt, genehmigt, eingerichtet, modifiziert und wieder entzogen bzw. gelöscht werden. Dabei DÜRFEN immer NUR so viele Zugriffsrechte vergeben werden, wie für die jeweiligen Aufgaben erforderlich sind (Need-to-know-Prinzip). Alle Änderungen SOLLTEN dokumentiert werden. Die eingerichteten Benutzer und die ihnen zugeordneten Berechtigungen MÜSSEN regelmäßig überprüft und, falls erforderlich, angepasst werden. </p>
+</li>
+<li><h4>APP.4.3.A6 Passwortänderung [Fachverantwortliche] (B)</h4>
+<p>Alle Passwörter der Datenbankbenutzer MÜSSEN der Passwortrichtlinie der Institution entsprechen (siehe ORP.4 <span style="font-style: italic">Identitäts- und Berechtigungsmanagement</span>). Es MUSS gewährleistet sein, dass die Passwörter beim geringsten Verdacht eines Sicherheitsvorfalles geändert werden. Insbesondere bei privilegierten Datenbankaccounts und Dienstkonten SOLLTE ein Passwortwechsel sorgfältig geplant und gegebenenfalls mit den Anwendungsverantwortlichen abgestimmt werden.</p>
+</li>
+<li><h4>APP.4.3.A7 Zeitnahes Einspielen von Sicherheitsupdates (B)</h4>
+<p>Vorhandene Sicherheitsupdates für das Datenbankmanagementsystem und das Betriebssystem MÜSSEN zeitnah installiert werden. Vorab MUSS auf einem Testsystem überprüft werden, ob die Sicherheitsupdates kompatibel sind und keine Fehler verursachen. Bevor ein Patch eingespielt wird, MUSS das Datenbanksystem gesichert werden (siehe APP.4.3.A9 <span style="font-style: italic">Datensicherung eines Datenbanksystems</span>).</p>
+<p>Zusätzlich MUSS eine verantwortliche Rolle definiert werden, die sich regelmäßig über bekannte Sicherheitslücken des Datenbankmanagementsystems sowie über verfügbare Sicherheitsupdates informiert. Des Weiteren MUSS geprüft werden, ob die Update-Intervalle des Datenbankmanagementsystems auf die Update-Zyklen des Herstellers abgestimmt werden können. Das Ergebnis SOLLTE nachvollziehbar dokumentiert werden. </p>
+</li>
+<li><h4>APP.4.3.A8 Datenbank-Protokollierung (B)</h4>
+<p>Sicherheitsrelevante Ereignisse des Datenbanksystems MÜSSEN mit einem eindeutigen Zeitstempel protokolliert werden. Dabei MÜSSEN sich Art und Umfang der Protokollierung am Schutzbedarf der zu verarbeitenden Informationen orientieren. Zusätzlich MUSS geprüft werden, ob die Protokollierung der Fachanwendungen zusammen mit der Protokollierung der Datenbank alle erforderlichen Informationen abdeckt, um betriebs- und sicherheitsrelevante Veränderungen an der Datenbankinfrastruktur und den Anwendungen zu erkennen. Es SOLLTE so protokolliert werden, dass die Protokolldateien nicht nachträglich verändert werden können. </p>
+</li>
+<li><h4>APP.4.3.A9 Datensicherung eines Datenbanksystems (B)</h4>
+<p>Es MÜSSEN regelmäßig Systemsicherungen des DBMS und der Daten durchgeführt werden. Auch bevor eine Datenbank neu erzeugt wird, MUSS das Datenbanksystem gesichert werden. Hierfür SOLLTEN die dafür zulässigen Dienstprogramme benutzt werden. </p>
+<p>Alle Transaktionen SOLLTEN so gesichert werden, dass sie jederzeit wiederherstellbar sind. Wenn die Datensicherung die verfügbaren Kapazitäten übersteigt, SOLLTE ein erweitertes Konzept erstellt werden, um die Datenbank zu sichern, z. B. eine inkrementelle Sicherung. Abhängig vom Schutzbedarf der Daten SOLLTEN die Wiederherstellungsparameter vorgegeben werden (siehe CON.3 <span style="font-style: italic">Datensicherungskonzept)</span>. </p>
+</li>
+</ul>
+<a name="9384_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein APP.4.3<em>Relationale Datenbanksysteme</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>APP.4.3.A10 Auswahl geeigneter Datenbankmanagementsysteme (S)</h4>
+<p>Bevor Datenbankmanagementsysteme beschafft werden, SOLLTEN Anforderungen an das DBMS definiert und in einem Anforderungskatalog dokumentiert werden. Danach SOLLTEN alle infrage kommenden Datenbankmanagementsysteme anhand dieses Katalogs bewertet werden. Die Ergebnisse SOLLTEN dokumentiert werden.</p>
+</li>
+<li><h4>APP.4.3.A11 Ausreichende Dimensionierung der Hardware [Leiter IT, Fachverantwortliche] (S)</h4>
+<p>Datenbankmanagementsysteme SOLLTEN auf ausreichend dimensionierter Hardware installiert werden. Die Hardware SOLLTE über genügend Reserven verfügen, um auch eventuell steigenden Anforderungen gerecht zu werden. Zeichnen sich trotzdem während des Betriebs Ressourcenengpässe ab, SOLLTEN diese frühzeitig behoben werden. Wenn die Hardware dimensioniert wird, SOLLTE das erwartete Wachstum für den geplanten Einsatzzeitraum berücksichtigt werden.</p>
+</li>
+<li><h4>APP.4.3.A12 Einheitlicher Konfigurationsstandard von Datenbankmanagementsystemen [Leiter IT] (S)</h4>
+<p>Für alle eingesetzten Datenbankmanagementsysteme SOLLTE ein einheitlicher Konfigurationsstandard definiert werden. Alle Datenbankmanagementsysteme SOLLTEN nach diesem Standard konfiguriert und einheitlich betrieben werden. Falls es bei einer Installation notwendig ist, vom Konfigurationsstandard abzuweichen, SOLLTEN alle Schritte vom ISB freigegeben und nachvollziehbar dokumentiert werden. Der Konfigurationsstandard SOLLTE regelmäßig überprüft und, falls erforderlich, angepasst werden.</p>
+</li>
+<li><h4>APP.4.3.A13 Restriktive Handhabung von Datenbank-Links (S)</h4>
+<p>Es SOLLTE sichergestellt sein, dass nur Verantwortliche dazu berechtigt sind, Datenbank-Links (DB-Links) anzulegen. Werden solche Links angelegt, MÜSSEN so genannte Private DB-Links vor Public DB-Links bevorzugt angelegt werden. Alle von den Verantwortlichen angelegten DB-Links SOLLTEN dokumentiert und regelmäßig überprüft werden. Zudem SOLLTEN DB-Links mitberücksichtigt werden, wenn das Datenbanksystem gesichert wird (siehe APP.4.3.A9 <span style="font-style: italic">Datensicherung eines Datenbanksystems</span>).</p>
+</li>
+<li><h4>APP.4.3.A14 Überprüfung der Datensicherung eines Datenbanksystems (S)</h4>
+<p>Die vorgenommenen Datensicherungen SOLLTEN regelmäßig daraufhin überprüft werden, ob die Integrität der Sicherungsdateien noch gewährleistet ist. Die verantwortlichen Mitarbeiter SOLLTEN zudem regelmäßig üben, wie sich Datenbanken im Notfall schnell wiederherstellen lassen.</p>
+</li>
+<li><h4>APP.4.3.A15 Schulung der Datenbankadministratoren [Vorgesetzte, Leiter IT] (S)</h4>
+<p>Es SOLLTE gewährleistet sein, dass nur ausreichend geschulte Mitarbeiter das Datenbankmanagementsystem administrieren. Es SOLLTE ein Schulungsplan erstellt werden, mit dem sichergestellt wird, dass Datenbankverantwortliche rechtzeitig zu Themen der Informationssicherheit und Performance sowie zu den Funktionen neuer Versionen des Datenbankmanagementsystems geschult werden.</p>
+</li>
+<li><h4>APP.4.3.A16 Verschlüsselung der Datenbankanbindung (S)</h4>
+<p>Das Datenbankmanagementsystem SOLLTE so konfiguriert werden, dass Datenbankverbindungen immer verschlüsselt werden. Die dazu eingesetzten kryptografischen Verfahren und Protokolle SOLLTEN den internen Vorgaben der Institution entsprechen (siehe CON.1 <span style="font-style: italic">Kryptokonzept</span>).</p>
+</li>
+<li><h4>APP.4.3.A17 Datenübernahme oder Migration [Fachverantwortliche] (S)</h4>
+<p>Es SOLLTE vorab definiert werden, wie initial oder regelmäßig Daten in eine Datenbank übernommen werden sollen. Nachdem Daten übernommen wurden, SOLLTE geprüft werden, ob sie vollständig und unverändert sind.</p>
+</li>
+<li><h4>APP.4.3.A18 Überwachung des Datenbankmanagementsystems (S)</h4>
+<p>Es SOLLTEN Parameter, Ereignisse und Betriebszustände des Datenbankmanagementsystems definiert werden, die für den sicheren Betrieb kritisch sind. Diese SOLLTEN mithilfe eines Monitoring-Systems überwacht werden. Für alle kritischen Parameter und Ereignisse SOLLTEN Schwellwerte festgelegt werden. Wenn diese Werte überschritten werden, MUSS geeignet reagiert werden. Es MÜSSEN z. B. die zuständigen Mitarbeiter alarmiert werden. Anwendungsspezifische Parameter, Ereignisse und deren Schwellwerte SOLLTEN mit den Verantwortlichen für die Fachanwendungen abgestimmt werden (siehe auch APP.4.3.A11 <span style="font-style: italic">Ausreichende Dimensionierung der Hardware</span>).</p>
+</li>
+<li><h4>APP.4.3.A19 Schutz vor schädlichen Datenbank-Skripten [Entwickler] (S)</h4>
+<p>Werden Datenbank-Skripte entwickelt, SOLLTEN dafür verpflichtende Qualitätskriterien definiert werden (siehe CON.8 <span style="font-style: italic">Software-Entwicklung</span>). Datenbank-Skripte SOLLTEN ausführlichen Funktionstests auf gesonderten Testsystemen unterzogen werden, bevor sie produktiv eingesetzt werden. Die Ergebnisse SOLLTEN dokumentiert werden.</p>
+</li>
+<li><h4>APP.4.3.A20 Regelmäßige Audits (S)</h4>
+<p>Bei allen Komponenten des Datenbanksystems SOLLTE regelmäßig überprüft werden, ob alle festgelegten Sicherheitsmaßnahmen umgesetzt und diese korrekt konfiguriert sind. Dabei SOLLTE geprüft werden, ob der dokumentierte Stand dem Ist-Zustand entspricht und ob die Konfiguration des Datenbankmanagementsystems der dokumentierten Standardkonfiguration entspricht. Zudem SOLLTE geprüft werden, ob alle Datenbank-Skripte benötigt werden und ob sie dem Qualitätsstandard der Institution genügen. Zusätzlich SOLLTEN die Protokolldateien des Datenbanksystems und des Betriebssystems nach Auffälligkeiten untersucht werden (siehe DER.1 <span style="font-style: italic">Detektion von sicherheitsrelevanten Ereignissen</span>). Die Auditergebnisse SOLLTEN nachvollziehbar dokumentiert und mit dem Soll-Zustand abgeglichen werden. Abweichungen SOLLTE nachgegangen werden.</p>
+</li>
+</ul>
+<a name="9384_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein APP.4.3<em>Relationale Datenbanksysteme</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>APP.4.3.A21 Einsatz von Datenbank Security Tools (H)</h4>
+<p>Es SOLLTEN Informationssicherheitsprodukte für Datenbanken eingesetzt werden. Die eingesetzten Produkte SOLLTEN folgende Funktionen bereitstellen:</p>
+<ul><li>Erstellung einer Übersicht über alle Datenbanksysteme, </li><li>erweiterte Konfigurationsmöglichkeiten und Rechtemanagement der Datenbanken, </li><li>Erkennung und Unterbindung von möglichen Angriffen (z. B. Brute Force Angriffe auf ein Benutzerkonto, SQL-Injection) und</li><li>Auditfunktionen (z. B. Überprüfung von Konfigurationsvorgaben).</li></ul>
+</li>
+<li><h4>APP.4.3.A22 Notfallvorsorge (H)</h4>
+<p>Für das Datenbankmanagementsystem SOLLTE ein Notfallplan erstellt werden, der festlegt, wie ein Notbetrieb realisiert werden kann und welche Ressourcen dafür nötig sind. Zusätzlich SOLLTE der Notfallplan definieren, wie aus dem Notbetrieb der Regelbetrieb wiederhergestellt werden kann. Der Notfallplan SOLLTE die nötigen Meldewege, Reaktionswege, Ressourcen und Reaktionszeiten der Fachverantwortlichen festlegen. Auf Basis eines Koordinationsplans zum Wiederanlauf SOLLTEN alle von der Datenbank abhängigen IT-Systeme vorab ermittelt und berücksichtigt werden.</p>
+</li>
+<li><h4>APP.4.3.A23 Archivierung (H)</h4>
+<p>Ist es erforderlich, Daten eines Datenbanksystems zu archivieren, SOLLTE ein entsprechendes Archivierungskonzept erstellt werden. Es SOLLTE sichergestellt sein, dass die Datenbestände zu einem späteren Zeitpunkt wieder vollständig und konsistent verfügbar sind. </p>
+<p>Im Archivierungskonzept SOLLTEN sowohl die Intervalle der Archivierung als auch die Vorhaltefristen der archivierten Daten festgelegt werden. Zusätzlich SOLLTE dokumentiert werden, mit welcher Technik die Datenbanken archiviert wurden. Mit den archivierten Daten SOLLTEN regelmäßig Wiederherstellungstests durchgeführt werden. Die Ergebnisse SOLLTEN dokumentiert werden.</p>
+</li>
+<li><h4>APP.4.3.A24 Datenverschlüsselung in der Datenbank (H)</h4>
+<p>Die Daten in den Datenbanken SOLLTEN verschlüsselt werden. Dabei SOLLTEN vorher unter anderem folgende Faktoren betrachtet werden: </p>
+<ul><li>Einfluss auf die Performance,</li><li>Schlüsselverwaltungsprozesse und -verfahren, einschließlich separater Schlüsselaufbewahrung und -sicherung, </li><li>Einfluss auf Backup-Recovery-Konzepte, </li><li>funktionale Auswirkungen auf die Datenbank, beispielsweise Sortiermöglichkeiten. </li></ul>
+</li>
+<li><h4>APP.4.3.A25 Sicherheitsüberprüfungen von Datenbanksystemen (H)</h4>
+<p>Datenbanksysteme SOLLTEN regelmäßig mithilfe von Sicherheitsüberprüfungen kontrolliert werden. Bei den Sicherheitsüberprüfungen SOLLTEN die systemischen und herstellerspezifischen Aspekte der eingesetzten Datenbank-Infrastruktur (z. B. Verzeichnisdienste) sowie des eingesetzten Datenbankmanagementsystems betrachtet werden.</p>
+</li>
+</ul>
+<a name="9384_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Das BSI hat im Rahmen der Allianz für Cybersicherheit zum Themenfeld Datenbanksicherheit folgende Partnerbeiträge veröffentlicht:</p>
+<ul><li>Oracle: Datenbank-Sicherheit – Grundüberlegungen</li><li>McAfee: Datenbanksicherheit in Virtualisierungs- und Cloud-Computing-Umgebungen</li><li>McAfee: Die Top 10 der häufigsten Sicherheitsrisiken bei Datenbanken</li></ul>
+<p>Die Deutsche Telekom Gruppe hat im Rahmen ihres Privacy and Security Assessment Verfahrens (PSA-Verfahren) das Dokument „Sicherheitsanforderung Datenbanksysteme“zum Themenfeld Datenbanken veröffentlicht. </p>
+<p>Das Information Security Forum (ISF) macht in seinem Standard „The Standard of Good Practice for Information Security“ im Kapitel BA2.3 Protection of Databases Vorgaben für die Absicherung von relationalen Datenbanksystemen.</p>
+<a name="9384_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein APP.4.3 <em>Relationale Datenbanksysteme</em> von Bedeutung.</p>
+<ul>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.15 Abhören</li>
+<li>G 0.18 Fehlplanung oder fehlende Anpassung</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.20 Informationen oder Produkte aus unzuverlässiger Quelle</li>
+<li>G 0.21 Manipulation von Hard- oder Software</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.25 Ausfall von Geräten oder Systemen</li>
+<li>G 0.26 Fehlfunktion von Geräten oder Systemen</li>
+<li>G 0.27 Ressourcenmangel</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.31 Fehlerhafte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.32 Missbrauch von Berechtigungen</li>
+<li>G 0.36 Identitätsdiebstahl</li>
+<li>G 0.37 Abstreiten von Handlungen</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.40 Verhinderung von Diensten (Denial of Service)</li>
+<li>G 0.43 Einspielen von Nachrichten</li>
+<li>G 0.45 Datenverlust</li>
+<li>G 0.46 Integritätsverlust schützenswerter Informationen</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.14</th>
+<th>G 0.15</th>
+<th>G 0.18</th>
+<th>G 0.19</th>
+<th>G 0.20</th>
+<th>G 0.21</th>
+<th>G 0.22</th>
+<th>G 0.23</th>
+<th>G 0.25</th>
+<th>G 0.26</th>
+<th>G 0.27</th>
+<th>G 0.28</th>
+<th>G 0.30</th>
+<th>G 0.31</th>
+<th>G 0.32</th>
+<th>G 0.36</th>
+<th>G 0.37</th>
+<th>G 0.39</th>
+<th>G 0.40</th>
+<th>G 0.43</th>
+<th>G 0.45</th>
+<th>G 0.46</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APP.4.3.A1</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.3.A2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.3.A3</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.3.A4</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.3.A5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.3.A6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.3.A7</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.3.A8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.3.A9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.3.A10</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.3.A11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.3.A12</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.3.A13</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.3.A14</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.3.A15</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.3.A16</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.3.A17</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.3.A18</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.3.A19</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.3.A20</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.3.A21</td>
+<td>CI</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.3.A22</td>
+<td>CIA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.3.A23</td>
+<td>IA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.3.A24</td>
+<td>C</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.3.A25</td>
+<td>CIA</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

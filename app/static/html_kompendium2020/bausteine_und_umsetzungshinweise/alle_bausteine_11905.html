@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+OPS.1.1.5 Protokollierung
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_11905.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_11905.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">OPS.1.1.5 Protokollierung</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>OPS.1.1.5 Protokollierung</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#11905_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#11905_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11905_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11905_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#11905_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#11905_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#11905_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11905_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11905_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#11905_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#11905_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11905_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#11905_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="11905_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="11905_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Damit ein verlässlicher IT-Betrieb gewährleistet ist, sollten IT-Systeme und Anwendungen entweder alle oder zumindest ausgewählte betriebs- und sicherheitsrelevante Ereignisse protokollieren, d. h. sie automatisch speichern und für die Auswertung bereitstellen. Eine Protokollierung wird in vielen Institutionen eingesetzt, um Hard- und Softwareprobleme sowie Ressourcenengpässe rechtzeitig entdecken zu können. Aber auch Sicherheitsprobleme und Angriffe auf die betriebenen Netzdienste können anhand von Protokollierungsdaten nachvollzogen werden. Ebenso können mit solchen Daten durch forensische Untersuchungen Beweise gesichert werden, nachdem ein Angriff auf IT-Systeme bekannt wurde. </p>
+<p>In jedem Informationsverbund werden lokal Protokollierungsdaten von einer Vielzahl von IT-Systemen und Anwendungen generiert. Um jedoch einen Gesamtüberblick über einen Informationsverbund zu erhalten, können die von verschiedenen IT-Systemen und Anwendungen generierten Protokollinformationen an eine dedizierte Protokollierungsinfrastruktur gesendet und dort zentral gespeichert werden. Nur so lassen sich die Protokollierungsdaten an einer zentralen Stelle auswählen, filtern und systematisch auswerten. </p>
+</p>
+<a name="11905_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Der Baustein enthält Anforderungen, die zu erfüllen sind, damit die Protokollierung möglichst aller sicherheitsrelevanten Ereignisse umgesetzt werden kann. Ziel ist es, alle hierfür relevanten Daten sicher zu erheben, zu speichern und geeignet für die Auswertung bereitzustellen sowie deren ordnungsgemäße Entsorgung sicherzustellen.</p>
+</p>
+<a name="11905_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein OPS.1.1.5 <span style="font-style: italic">Protokollierung</span> ist für den gesamten Informationsverbund einmal anzuwenden.</p>
+<p>Im vorliegenden Baustein werden nur übergreifende Aspekte betrachtet, die für eine angemessene Protokollierung erforderlich sind. Die Protokollierung spezifischer IT-Systeme oder Anwendungen wird hier nicht behandelt, sondern in den jeweiligen Bausteinen beschrieben.</p>
+<p>In vielen Betriebssystemen oder Anwendungen sind Protokollierungsfunktionen bereits vorhanden oder können dort mittels Zusatzprodukten integriert werden. Um diese Funktionen und die gespeicherten Protokollierungsdaten abzusichern, muss das zugrundeliegende Betriebssystem geschützt sein. Das ist jedoch nicht Bestandteil dieses Bausteins. Dafür sind die betriebssystemspezifischen Bausteine umzusetzen, z. B. SYS.1.2.2 <span style="font-style: italic">Windows Server 2012</span>. </p>
+<p>Auch ist dieser Baustein abzugrenzen von der Detektion (siehe DER.1 <span style="font-style: italic">Detektion von sicherheitsrelevanten Ereignissen</span>) sowie der Reaktion auf Sicherheitsvorfälle (DER.2.1 <span style="font-style: italic">Behandlung von Sicherheitsvorfällen</span>). Beide Aspekte werden im vorliegenden Baustein nicht oder nur am Rande behandelt. </p>
+<p>Vorgaben, wie mit personenbezogenen Daten umzugehen ist, werden im Baustein CON.2 <span style="font-style: italic">Datenschutz</span> beschrieben. Wie lang und umfangreich Protokollierungsdaten archiviert werden müssen, wird darüber hinaus im Baustein OPS.1.2.2 <span style="font-style: italic">Archivierung</span> erläutert.</p>
+</p>
+<a name="11905_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein OPS.1.1.5 <span style="font-style: italic">Protokollierung</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Fehlende oder unzureichende Protokollierung</h3>
+<p>
+<p>In einem Informationsverbund gibt es häufig IT-Systeme oder Anwendungen, bei denen die Protokollierung in der Grundeinstellung nicht aktiviert wurde. Auch können einzelne IT-Systeme und Anwendungen manchmal gar nicht protokollieren. In beiden Fällen könnten wichtige Informationen verloren gehen und Angriffe nicht rechtzeitig erkannt werden. Das ist auch dann möglich, wenn die Protokollierung bei einzelnen IT-Systemen zwar genutzt wird, aber die Protokollierungsdaten nicht an einer zentralen Stelle zusammengeführt werden. In Informationsverbünden ohne zentrale Protokollierung ist es schwierig sicherzustellen, dass die relevanten Protokollinformationen aller IT-Systeme und Anwendungen erhalten und ausgewertet werden.</p>
+<p>Weiterhin müssen Protokollierungsdaten aussagekräftige Informationen enthalten. Welche Ereignisse protokolliert werden, hängt unter anderem auch vom Schutzbedarf der jeweiligen IT-Systeme bzw. Anwendungen ab. Wird dieser missachtet, indem beispielsweise bei der Protokollierung nur auf Standard-Einstellungen der IT-Systeme bzw. Anwendungen zurückgegriffen wird, kann dies dazu führen, dass besonders relevante Sicherheitsereignisse nicht protokolliert werden. Somit werden Angriffe eventuell nicht erkannt.</p>
+</p>
+<h3>2.2 Fehlerhafte Auswahl von relevanten Protokollierungsdaten</h3>
+<p>
+<p>Protokollierungsdaten liefern oft wichtige Informationen, die dabei helfen, Sicherheitsvorfälle zu erkennen. Eine besondere Herausforderung ist es, die relevanten Meldungen aus der großen Menge der verschiedenen Protokollereignisse herauszufiltern. Denn viele protokollierte Meldungen haben nur informativen Charakter und lenken von den wirklich wichtigen Meldungen ab. Werden zu viele Protokollmeldungen ausgewählt, lässt sich die Fülle an Informationen nur schwer und mit hohem Zeitaufwand auswerten. </p>
+<p>Des Weiteren können Protokollierungsdaten verworfen oder überschrieben werden, wenn der Arbeitsspeicher oder die Festplattenkapazität des IT-Systems bzw. der Protokollierungsinfrastruktur nicht ausreichen. Werden dadurch zu wenige oder nicht ausreichend relevante Protokollmeldungen aufgezeichnet, könnten sicherheitskritische Vorfälle unerkannt bleiben. </p>
+</p>
+<h3>2.3 Fehlende oder fehlerhafte Zeitsynchronisation bei der Protokollierung</h3>
+<p>
+<p>Wenn in einem Informationsverbund die Zeit nicht auf allen IT-Systemen synchronisiert wird, können die Protokollierungsdaten eventuell nicht miteinander korreliert werden bzw. kann die Korrelation eventuell zu fehlerhaften Aussagen führen. Grund dafür ist, dass die unterschiedlichen Zeitstempel von Ereignissen keine gemeinsame Basis aufweisen. Eine fehlende Zeitsynchronisation erschwert es somit, erhobene Protokollierungsdaten auszuwerten, insbesondere, wenn diese auf einem zentralen Logserver gespeichert werden. Weiterhin kann eine fehlerhafte oder fehlende Zeitsynchronisation dazu führen, dass die Protokollierung nicht zur Beweissicherung herangezogen werden kann. </p>
+</p>
+<h3>2.4 Fehlplanung bei der Protokollierung</h3>
+<p>
+<p>Wird die Protokollierung nicht ausreichend geplant, kann dies dazu führen, dass IT-Systeme oder Anwendungen nicht überwacht und sicherheitsrelevante Ereignisse somit nicht erkannt und angemessen behandelt werden. Datenschutzverstöße könnten ebenfalls nicht nachvollzogen werden.</p>
+</p>
+<h3>2.5 Vertraulichkeits- und Integritätsverlust von Protokollierungsdaten</h3>
+<p>
+<p>Einige IT-Systeme in einem Informationsverbund generieren Protokollierungsdaten wie Benutzernamen, IP-Adressen, E-Mail-Adressen und Rechnernamen, die konkreten Personen zugeordnet werden können. Solche Informationen lassen sich kopieren, abhören und manipulieren, wenn sie nicht verschlüsselt übertragen und gesichert gespeichert werden. Dies kann dazu führen, dass Angreifer auf vertrauliche Informationen zugreifen oder dass, durch manipulierte Protokollierungsdaten, Sicherheitsvorfälle bewusst verschleiert werden. Ebenso können Angreifer, wenn sie an eine größere Menge von Protokollierungsdaten gelangen, diese Informationen nutzen, um die interne Struktur des Informationsverbunds aufzudecken und dadurch ihre Angriffe gezielter ausrichten.</p>
+</p>
+<h3>2.6 Falsch konfigurierte Protokollierung</h3>
+<p>
+<p>Wenn die Protokollierung in IT-Systemen falsch konfiguriert ist, werden wichtige Informationen entweder fehlerhaft oder gar nicht aufgezeichnet. Auch kann es sein, dass zu viele oder falsche Informationen protokolliert werden. So können z. B. personenbezogene Daten unberechtigt protokolliert und gespeichert werden. Die Institution könnte dadurch gegen gesetzliche Anforderungen verstoßen. </p>
+<p>Durch eine falsch konfigurierte Protokollierung ist es ebenso möglich, dass die Protokollierungsdaten in inkonsistenten oder proprietären Formaten vorliegen. Dadurch lassen sich die Protokolle eventuell nur schwer auswerten und Sicherheitsvorfälle bleiben unentdeckt. </p>
+</p>
+<h3>2.7 Ausfall von Datenquellen für Protokollierungsdaten</h3>
+<p>
+<p>Liefern IT-Systeme in einem Informationsverbund nicht mehr die notwendigen Protokollierungsdaten, lassen sich Sicherheitsvorfälle nicht mehr angemessen detektieren. Ursache für solche Ausfälle von Datenquellen können Fehler in der Hard- und Software oder auch fehlerhaft administrierte IT-Systeme sein. Besonders, wenn nicht bemerkt wird, dass Datenquellen ausgefallen sind, kann dies zu einem falschen Bild der Sicherheitslage in der Institution führen. Dadurch können Angreifer z. B. sehr lange unbemerkt bleiben und institutionskritische Informationen abgreifen oder Produktionssysteme manipulieren. </p>
+</p>
+<h3>2.8 Ungenügend dimensionierte Protokollierungsinfrastruktur</h3>
+<p>
+<p>Aufgrund der komplexen Informationsverbünde und der vielfältigen Angriffsszenarien steigen die Anforderungen an die Protokollierung, da sehr viele Protokollierungsdaten gespeichert und verarbeitet werden müssen. Weiterhin ist es bei Sicherheitsvorfällen üblich, die Intensität der Protokollierung zu erhöhen. Ist die Protokollierungsinfrastruktur dafür jedoch nicht ausgelegt, kann es passieren, dass Protokollierungsdaten unvollständig gespeichert werden. Somit lassen sich sicherheitsrelevante Ereignisse nicht mehr oder nur unzureichend auswerten und Sicherheitsvorfälle bleiben unentdeckt.</p>
+</p>
+<a name="11905_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die spezifischen Anforderungen des Bausteins OPS.1.1.5 <span style="font-style: italic">Protokollierung</span> aufgeführt. Grundsätzlich ist der IT-Betrieb für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Umsetzung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt.</p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>IT-Betrieb</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+Fachverantwortliche,
+Informationssicherheitsbeauftragter (ISB),
+Leiter IT
+</td>
+</tr>
+</table>
+<a name="11905_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein OPS.1.1.5<em>Protokollierung</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>OPS.1.1.5.A1 Erstellung einer Sicherheitsrichtlinie für die Protokollierung [Informationssicherheitsbeauftragter (ISB), Fachverantwortliche] (B)</h4>
+<p>Ausgehend von der allgemeinen Sicherheitsrichtlinie der Institution MUSS eine spezifische Sicherheitsrichtlinie erstellt werden, in der nachvollziehbar Anforderungen und Vorgaben beschrieben sind, wie die Protokollierung sicher geplant, aufgebaut und betrieben werden soll. In der Richtlinie MUSS geregelt werden, wie, wo und was protokolliert werden soll. Dabei SOLLTEN sich Art und Umfang der Protokollierung am Schutzbedarf der Informationen orientieren.</p>
+<p>Die Richtlinie MUSS vom ISB gemeinsam mit den Fachverantwortlichen erstellt werden. Sie MUSS allen für die Protokollierung verantwortlichen Mitarbeitern bekannt und grundlegend für ihre Arbeit sein. Wird die Richtlinie verändert oder wird von den Anforderungen abgewichen, MUSS dies mit dem ISB abgestimmt und dokumentiert werden. Es MUSS regelmäßig überprüft werden, ob die Richtlinie noch korrekt umgesetzt ist. Die Ergebnisse MÜSSEN dokumentiert werden.</p>
+</li>
+<li><h4>OPS.1.1.5.A2 Festlegung von Rollen und Verantwortlichkeiten [Leiter IT] (B)</h4>
+<p>Für die in der Protokollierungsrichtlinie als relevant definierten IT-Systeme und Anwendungen MÜSSEN Verantwortliche benannt werden. Diese MÜSSEN sicherstellen, dass die Protokollierungsrichtlinie eingehalten wird. </p>
+</li>
+<li><h4>OPS.1.1.5.A3 Konfiguration der Protokollierung auf System- und Netzebene (B)</h4>
+<p>Alle sicherheitsrelevanten Ereignisse von IT-Systemen und Anwendungen MÜSSEN protokolliert werden. Sofern die in der Protokollierungsrichtlinie als relevant definierten IT-Systeme und Anwendungen über eine Protokollierungsfunktion verfügen, MUSS diese benutzt werden. Wenn die Protokollierung eingerichtet wird, MÜSSEN dabei die Herstellervorgaben für die jeweiligen IT-Systeme oder Anwendungen beachtet werden. </p>
+<p>Es MUSS in angemessenen Intervallen stichpunktartig überprüft werden, ob die Protokollierung noch korrekt funktioniert. Die Intervalle MÜSSEN in der Protokollierungsrichtlinie definiert werden. </p>
+<p>Sofern betriebs- und sicherheitsrelevante Ereignisse nicht auf einem IT-System protokolliert werden können, MÜSSEN weitere IT-Systeme zur Protokollierung (z. B. von Ereignissen auf Netzebene) integriert werden. </p>
+</li>
+<li><h4>OPS.1.1.5.A4 Zeitsynchronisation der IT-Systeme (B)</h4>
+<p>Die Systemzeit aller protokollierenden IT-Systeme und Anwendungen MUSS immer synchron sein. Es MUSS sichergestellt sein, dass das Datums- und Zeitformat der Protokolldateien einheitlich ist. </p>
+</li>
+<li><h4>OPS.1.1.5.A5 Einhaltung rechtlicher Rahmenbedingungen [Informationssicherheitsbeauftragter (ISB)] (B)</h4>
+<p>Bei der Protokollierung MÜSSEN die gesetzlichen Bestimmungen aus den aktuellen Gesetzen zum Bundes- sowie Landesdatenschutz eingehalten werden (siehe CON.2 <span style="font-style: italic">Datenschutz</span>). </p>
+<p>Darüber hinaus MÜSSEN eventuelle Persönlichkeitsrechte bzw. Mitbestimmungsrechte der Mitarbeitervertretungen gewahrt werden. </p>
+<p>Ebenso MUSS sichergestellt sein, dass alle weiteren relevanten gesetzlichen Bestimmungen beachtet werden. </p>
+<p>Protokollierungsdaten MÜSSEN nach einem festgelegten Prozess gelöscht werden. Es MUSS technisch unterbunden werden, dass Protokollierungsdaten unkontrolliert gelöscht oder verändert werden. </p>
+</li>
+</ul>
+<a name="11905_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein OPS.1.1.5<em>Protokollierung</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>OPS.1.1.5.A6 Aufbau einer zentralen Protokollierungsinfrastruktur (S)</h4>
+<p>Vor allem in größeren Informationsverbünden SOLLTEN alle gesammelten sicherheitsrelevanten Protokollierungsdaten an einer zentralen Stelle gespeichert werden. Dafür SOLLTE eine zentrale Protokollierungsinfrastruktur im Sinne eines Logserver-Verbunds aufgebaut und in einem hierfür eingerichteten Netzsegment platziert werden. </p>
+<p>Der Logserver-Verbund SOLLTE die Protokollierungsdaten von IT-Systemen und Anwendungen ausschließlich nach dem „Pull“-Prinzip beziehen. Wird dies von IT-Systemen und Anwendungen nicht unterstützt, SOLLTEN die Protokollierungsdaten auf vorgelagerten IT-Systemen gesammelt und dort vom Logserver-Verbund abgeholt werden. Die hierfür erforderlichen Kommunikationsverbindungen SOLLTEN restriktiv erfolgen. </p>
+<p>Zusätzlich zu sicherheitsrelevanten Ereignissen (siehe OPS.1.1.5.A3 <span style="font-style: italic">Konfiguration der Protokollierung auf System- und Netzebene</span>) SOLLTE eine zentrale Protokollierungsinfrastruktur auch allgemeine Betriebsereignisse protokollieren, die auf einen Fehler hindeuten.</p>
+<p>Die Protokollierungsinfrastruktur SOLLTE ausreichend dimensioniert sein. Die Möglichkeit einer Skalierung im Sinne einer erweiterten Protokollierung SOLLTE berücksichtigt werden. Dafür SOLLTEN genügend technische, finanzielle und personelle Ressourcen verfügbar sein. Falls die Protokollierungsinfrastruktur extern aufgebaut und betrieben werden soll, SOLLTE ein spezialisierter Dienstleister beauftragt werden. </p>
+</li>
+<li><h4>OPS.1.1.5.A7 Sichere Administration von Protokollierungsservern (S)</h4>
+<p>Der Logserver-Verbund SOLLTE ausschließlich über ein separates Managementnetz (Out-of-Band-Management) administriert werden. Für die Administrationszugriffe SOLLTE ein Berechtigungskonzept erstellt werden. Es SOLLTEN nur Administratoren auf die Protokollierungsserver zugreifen können, die speziell dafür verantwortlich sind (siehe OPS.1.1.5.A2 <span style="font-style: italic">Festlegung von Rollen und Verantwortlichkeiten</span>).</p>
+</li>
+<li><h4>OPS.1.1.5.A8 Archivierung von Protokollierungsdaten (S)</h4>
+<p>Für Protokollierungsdaten SOLLTE ein Archivierungskonzept erstellt werden. Dabei SOLLTEN die gesetzlich vorgeschriebenen Regelungen berücksichtigt und im Konzept dokumentiert werden (siehe auch OPS.1.2.2 <span style="font-style: italic">Archivierung</span>).</p>
+</li>
+<li><h4>OPS.1.1.5.A9 Bereitstellung von Protokollierungsdaten für die Auswertung (S)</h4>
+<p>Die gesammelten Protokollierungsdaten SOLLTEN gefiltert, normalisiert, aggregiert und korreliert werden. Die so bearbeiteten Protokollierungsdaten SOLLTEN geeignet verfügbar gemacht werden, damit sie ausgewertet werden können. </p>
+<p>Damit sich die Daten automatisiert auswerten lassen, SOLLTEN die Protokollanwendungen über entsprechende Schnittstellen für die Auswertungsprogramme verfügen. </p>
+<p>Es SOLLTE sichergestellt sein, dass bei der Auswertung die in der Protokollierungsrichtlinie definierten Sicherheitsanforderungen eingehalten werden. Auch wenn die Daten bereitgestellt werden, SOLLTEN betriebliche und interne Vereinbarungen berücksichtigt werden. </p>
+<p>Die Protokollierungsdaten SOLLTEN in unveränderter Originalform aufbewahrt werden.</p>
+</li>
+<li><h4>OPS.1.1.5.A10 Zugriffsschutz für Protokollierungsdaten (S)</h4>
+<p>Alle Protokollierungsdaten SOLLTEN so gespeichert und übertragen werden, dass Unbefugte nicht darauf zugreifen können. Es SOLLTE zudem ein Zugriffskonzept erstellt werden, das regelt, wer auf welche protokollierten Daten zugreifen darf. Dabei SOLLTEN die Berechtigungen so restriktiv wie möglich vergeben werden. </p>
+<p>Es SOLLTE sichergestellt sein, dass auf die Protokollierungsdaten grundsätzlich nur zugegriffen wird, wenn sicherheitsrelevante Vorfälle aufzuklären sind. Dabei SOLLTE nach der im Baustein DER.1 <span style="font-style: italic">Detektion von sicherheitsrelevanten Ereignissen</span> festgelegten Methode vorgegangen werden. Ein solcher Zugriff SOLLTE dokumentiert werden.</p>
+</li>
+</ul>
+<a name="11905_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein OPS.1.1.5<em>Protokollierung</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>OPS.1.1.5.A11 Steigerung des Protokollierungsumfangs (H)</h4>
+<p>Bei erhöhtem Schutzbedarf von Anwendungen oder IT-Systemen SOLLTEN grundsätzlich mehr Ereignisse protokolliert werden, sodass sicherheitsrelevante Vorfälle möglichst lückenlos nachvollziehbar sind. </p>
+<p>Um die Protokollierungsdaten in Echtzeit auswerten zu können, SOLLTEN sie in verkürzten Zeitabständen von den protokollierenden IT-Systemen und Anwendungen zentral gespeichert werden. Die Protokollierung SOLLTE eine Auswertung über den gesamten Informationsverbund ermöglichen. Anwendungen und IT-Systeme, mit denen eine zentrale Protokollierung nicht möglich ist, SOLLTEN bei einem erhöhten Schutzbedarf NICHT eingesetzt werden.</p>
+</li>
+<li><h4>OPS.1.1.5.A12 Verschlüsselung der Protokollierungsdaten (H)</h4>
+<p>Um Protokollierungsdaten sicher übertragen zu können, SOLLTEN sie verschlüsselt werden. Weiterhin SOLLTEN alle gespeicherten Protokolle digital signiert werden. Auch archivierte und außerhalb der Protokollierungsinfrastruktur gespeicherte Protokollierungsdaten SOLLTEN immer verschlüsselt gespeichert werden. </p>
+</li>
+<li><h4>OPS.1.1.5.A13 Hochverfügbare Protokollierungssysteme [Informationssicherheitsbeauftragter (ISB)] (H)</h4>
+<p>Bei erhöhtem Schutzbedarf SOLLTE eine hochverfügbare Protokollierungsinfrastruktur aufgebaut werden.</p>
+</li>
+</ul>
+<a name="11905_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Das Bundesamt für Sicherheit in der Informationstechnik (BSI) regelt in seinem Mindeststandard „Mindeststandard des BSI zur Protokollierung und Detektion von Cyber-Angriffen“ die Protokollierung und Detektion von sicherheitsrelevanten Ereignissen (SRE).</p>
+<p>Die International Organization for Standardization (ISO) macht in der Norm ISO/IEC 27001:2013 im Kapitel A.12.4 „Protokollierung und Überwachung“ Vorgaben zur Protokollierung. </p>
+<p>Das Infomation Security Forum (ISF) macht in seinem Standard „The Standard of Good Practice for Information Security“ in Kapitel TM1.2 – Security Event Logging – Vorgaben zur Protokollierung.</p>
+<p>Das National Institute of Standards and Technology (NIST) beschreibt in seiner Special Publication 800-92 „Guide to Computer Security Log Management“, wie Protokollierung sicher eingesetzt werden kann.</p>
+<a name="11905_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein OPS.1.1.5 <em>Protokollierung</em> von Bedeutung.</p>
+<ul>
+<li>G 0.9 Ausfall oder Störung von Kommunikationsnetzen</li>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.15 Abhören</li>
+<li>G 0.18 Fehlplanung oder fehlende Anpassung</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.21 Manipulation von Hard- oder Software</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.25 Ausfall von Geräten oder Systemen</li>
+<li>G 0.26 Fehlfunktion von Geräten oder Systemen</li>
+<li>G 0.29 Verstoß gegen Gesetze oder Regelungen</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.31 Fehlerhafte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.32 Missbrauch von Berechtigungen</li>
+<li>G 0.37 Abstreiten von Handlungen</li>
+<li>G 0.38 Missbrauch personenbezogener Daten</li>
+<li>G 0.40 Verhinderung von Diensten (Denial of Service)</li>
+<li>G 0.45 Datenverlust</li>
+<li>G 0.46 Integritätsverlust schützenswerter Informationen</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.09</th>
+<th>G 0.14</th>
+<th>G 0.15</th>
+<th>G 0.18</th>
+<th>G 0.19</th>
+<th>G 0.21</th>
+<th>G 0.22</th>
+<th>G 0.23</th>
+<th>G 0.25</th>
+<th>G 0.26</th>
+<th>G 0.29</th>
+<th>G 0.30</th>
+<th>G 0.31</th>
+<th>G 0.32</th>
+<th>G 0.37</th>
+<th>G 0.38</th>
+<th>G 0.40</th>
+<th>G 0.45</th>
+<th>G 0.46</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OPS.1.1.5.A1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.5.A2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.5.A3</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.5.A4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>OPS.1.1.5.A5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.5.A6</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>OPS.1.1.5.A7</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>OPS.1.1.5.A8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>OPS.1.1.5.A9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.5.A10</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>OPS.1.1.5.A11</td>
+<td>CIA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.5.A12</td>
+<td>CI</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>OPS.1.1.5.A13</td>
+<td>A</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

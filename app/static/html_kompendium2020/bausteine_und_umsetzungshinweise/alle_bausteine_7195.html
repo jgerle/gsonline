@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+OPS.1.2.5 Fernwartung
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_7195.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_7195.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">OPS.1.2.5 Fernwartung</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>OPS.1.2.5 Fernwartung</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#7195_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#7195_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7195_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7195_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#7195_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#7195_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#7195_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7195_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7195_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#7195_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#7195_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7195_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#7195_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="7195_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="7195_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Mit dem Begriff Fernwartung wird ein räumlich getrennter Zugriff auf IT-Systeme und die darauf laufenden Anwendungen bezeichnet. Der Zugriff kann z. B. dazu dienen, Konfigurations-, Wartungs- oder Reparaturarbeiten durchzuführen.</p>
+<p>Die Fernwartung kann aktiv oder passiv geschehen. Bei der aktiven Fernwartung werden die Tastatur- und Maussignale vom System eines Administrators an ein entferntes System übertragen. Das entfernte System überträgt die Bildschirm- oder Konsolenausgabe an das System des Administrators. Der Administrator führt Aktionen auf dem entfernten System aus, als wenn er selbst vor Ort wäre.</p>
+<p>Bei der passiven Fernwartung werden nur die Bildschirminhalte eines Systems zum Administrator übertragen. Der Administrator erteilt einem Benutzer vor Ort Anweisungen, die von ihm ausgeführt und vom Administrator beobachtet werden.</p>
+<p>Da sich viele IT-Systeme außerhalb der Reichweite ihrer Administratoren befinden (z. B. in entfernten Rechenzentren, Industrieanlagen oder einem Außenstandort ohne IT-Personal), wird Fernwartung in vielen Institutionen eingesetzt. Aufgrund der tiefgreifenden Eingriffsmöglichkeiten in IT-Systeme, ist die Absicherung von Fernwartungskomponenten von besonderer Bedeutung.</p>
+</p>
+<a name="7195_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Ziel dieses Bausteins ist der Schutz der Informationen, die auf Basis der Fernwartung gespeichert, verarbeitet und übertragen werden sowie der Schutz der Fernwartungsschnittstellen von IT-Systemen. Zu diesem Zweck werden Anforderungen an die Fernwartung gestellt, die sich auf Funktionen der aktiven und passiven Fernwartung beziehen.</p>
+</p>
+<a name="7195_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein ist auf alle Zielobjekte im Informationsverbund anzuwenden, bei denen Fernwartung genutzt wird.</p>
+<p>Dieser Baustein betrachtet die Fernwartung überwiegend aus der Sicht des IT-Betriebs und gibt Hinweise für Administratoren, wie Fernwartung eingesetzt werden kann. Wichtig ist dabei, dass die Informationssicherheit in allen Lebenszyklusphasen ganzheitlich gewährleistet wird. Die Sicherheitsaspekte der eingesetzten Kommunikationsverbindungen und Authentisierungsmechanismen sowie die Absicherung der Fernwartungszugänge sind wichtige Bestandteile dieses Bausteins. Dennoch werden darin nicht alle relevanten Aspekte der mit einer Fernwartung in Verbindung stehenden Geschäftsprozesse abgedeckt. Vor allem die Bausteine OPS.1.1.3 <span style="font-style: italic">Patch- und Änderungsmanagement</span>, ORP.3 <span style="font-style: italic">Sensibilisierung und Schulung</span>, CON.1 <span style="font-style: italic">Kryptokonzept</span> und CON.3<span style="font-style: italic"> Datensicherungskonzept</span> sind zusätzlich zu beachten. Ebenso sind die Vorgaben der Bausteinschicht NET <span style="font-style: italic">Netze und Kommunikation</span> umzusetzen, sofern diese direkt mit der Fernwartung in Verbindung stehen.</p>
+<p>Wird die Fernwartung von einem externen Dienstleister durchgeführt, muss zudem der Baustein OPS.2.1 <span style="font-style: italic">Outsourcing</span> beachtet werden. Werden cloudbasierte Fernwartungs-Produkte verwendet, müssen auch die allgemeinen Anforderungen aus dem Baustein OPS.2.2 <span style="font-style: italic">Cloud-Nutzung</span> erfüllt werden.</p>
+</p>
+<a name="7195_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein OPS.1.2.5 <span style="font-style: italic">Fernwartung</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Unzureichende Kenntnisse über Regelungen der Fernwartung</h3>
+<p>
+<p>Werden den Beteiligten die Regelungen zur Fernwartung nicht mitgeteilt, bestehen Gefahren für den IT-Betrieb. Insbesondere Administratoren, die Fernwartung einrichten und nutzen, sind auf Regelungen angewiesen, z. B. zu Konfigurationen. Ansonsten können mit der Fernwartung zusätzliche Risiken für das interne Netz entstehen. Beispielsweise kann ein Administrator eine Fernwartungsschnittstelle einrichten und dabei ein Anmeldeverfahren mit unsicherem Passwort erlauben, anstelle eines sicheren, zertifikatbasierten Verfahrens.</p>
+</p>
+<h3>2.2 Fehlende oder unzureichende Planung und Regelung der Fernwartung</h3>
+<p>
+<p>Wird die Fernwartung nicht sorgfältig geplant, aufgebaut und geregelt, kann die Sicherheit aller IT-Systeme einer Institution beeinträchtigt werden. Sicherheitslücken können an vielen Stellen entstehen und sowohl Kommunikationsprotokolle und Patch-Prozesse als auch Verschlüsselungsalgorithmen und Authentisierungsmechanismen betreffen. Über unzureichend gesicherte Fernwartungsschnittstellen kann auch ein gekoppeltes Netz eines Dritten kompromittiert werden.</p>
+</p>
+<h3>2.3 Unerlaubtes Ausüben von Rechten bei der Fernwartung</h3>
+<p>
+<p>Werden privilegierte Berechtigungen für Fernwartungszugänge an unberechtigte Personen vergeben oder werden Berechtigungen unautorisiert aus der Ferne genutzt, kann dies die Sicherheit eines Informationsverbunds gefährden. Angreifer könnten z. B. Schadsoftware einschleusen oder Daten manipulieren. Zu den möglichen Auswirkungen gehören finanzielle Schäden oder der Verlust von Wissen. Außerdem können Sachgüter physisch zerstört oder IT-Systeme und Netze kompromittiert werden.</p>
+</p>
+<h3>2.4 Ungeeignete Nutzung von Authentisierung bei der Fernwartung</h3>
+<p>
+<p>Bei der Fernwartung können unterschiedliche Authentisierungsmechanismen verwendet werden. Wird ein unsicheres Anmeldeverfahren verwendet, können unberechtigte Dritte administrative Berechtigungen auf Fernwartungsrechnern bzw. für Fernwartungswerkzeuge erlangen. Dadurch haben sie Zugriff auf die IT-Systeme einer Institution und können weitreichende Schäden verursachen.</p>
+<p>Ein Beispiel hierfür ist ein Anmeldeverfahren, das nur ein kurzes Passwort verwendet. Ein Angreifer kann dieses Passwort in kurzer Zeit erraten und sich so Zugriff auf IT-Systeme der Institution verschaffen.</p>
+</p>
+<h3>2.5 Fehlerhafte Fernwartung</h3>
+<p>
+<p>Damit die Sicherheit und Funktionsfähigkeit von IT-Systemen und Anwendungen, auf die nur aus der Ferne zugegriffen werden kann, gewährleistet wird, ist eine professionelle und regelmäßige Fernwartung erforderlich. Werden solche IT-Systeme und Anwendungen nicht ordnungsgemäß per Fernwartung konfiguriert und gewartet, können sie im schlimmsten Fall nicht mehr genutzt werden. Laufen die Fernwartungsprozesse nicht korrekt ab, kann dies zu Fehlfunktionen einzelner Betriebssystemkomponenten führen. Außerdem können durch verspätete oder fehlerhafte IT-Systemwartungen Sicherheitslücken entstehen.</p>
+</p>
+<h3>2.6 Verwendung unsicherer Protokolle in der Fernwartung</h3>
+<p>
+<p>Die Kommunikation über öffentliche und interne Netze mittels unsicherer Protokolle stellt eine potenzielle Gefahr dar. Werden z. B. veraltete Versionen von IPSec, SSH oder SSL/TLS eingesetzt, um einen Tunnel zwischen zwei Endpunkten bzw. Netzen herzustellen, kann nicht gewährleistet werden, dass dieser Tunnel ausreichend sicher ist und die darin übertragenen Informationen angemessen geschützt sind. Angreifer können Schwachstellen dieser Protokolle ausnutzen, um in geschützte Verbindungen eigene Inhalte einzuschleusen. Generell als unsicher gelten Protokolle, bei denen Informationen im Klartext übertragen werden.</p>
+</p>
+<h3>2.7 Unsichere und unkontrollierte Fremdnutzung der Fernwartungszugänge</h3>
+<p>
+<p>Wird Fernwartung von Dritten durchgeführt, ohne dass es dafür eine vertragliche Grundlage gibt, sind die Zuständigkeiten für die Fernwartung möglicherweise nicht klar geregelt. Dadurch können z. B. Rollentrennungen umgangen werden oder offene Fernwartungszugänge werden nicht dokumentiert.</p>
+</p>
+<h3>2.8 Nutzung von Online-Diensten für die Fernwartung</h3>
+<p>
+<p>Neben einer Fernwartung, bei der ein Administrator direkt eine Datenverbindung zu der betreffenden Institution aufbaut, können auch Online-Dienste genutzt werden. Hierbei verbinden sich die zu administrierenden IT-Systeme mit den Servern eines Drittanbieters und die Administratoren können z. B. über einen Webbrowser auf die zu administrierenden IT-Systeme zugreifen.</p>
+<p>Falls die Kommunikation nicht Ende-zu-Ende verschlüsselt wird, könnte der Online-Dienstleister den Datenaustausch mitlesen. Zusätzlich könnten auch die IT-Systeme durch unberechtigte Personen administriert werden, indem die Datenverbindung verändert wird. Bauen die IT-Systeme automatisch beim Systemstart eine Datenverbindung zum Online-Dienst auf, könnte direkt auf das IT-System zugegriffen werden, ohne das dies dem Benutzer des Systems oder dem zuständigen Administrator bekannt ist.</p>
+</p>
+<h3>2.9 Unbekannte Fernwartungskomponenten</h3>
+<p>
+<p>Viele IT-Systeme enthalten Komponenten, die integrierte Funktionen zur Fernwartung bieten. Oft sind diese Funktionen aber schlecht dokumentiert und werden bei der Beschaffung sowie beim Betrieb von IT-Systemen nicht berücksichtigt.</p>
+<p>Integrierte Fernwartungskomponenten haben weitreichenden Zugriff auf die IT-Systeme, in denen sie verbaut sind. Dieser Zugriff wirkt dabei oft direkt auf andere Komponenten des IT-Systems und kann so die Sicherheitsmechanismen des Betriebssystems umgehen. Zusätzlich können integrierte Fernwartungsfunktionen Schwachstellen enthalten, die einen unberechtigten Zugriff auf das System vereinfachen.</p>
+</p>
+<a name="7195_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die spezifischen Anforderungen des Bausteins OPS.1.2.5 <span style="font-style: italic">Fernwartung</span> aufgeführt. Grundsätzlich ist der IT-Betrieb für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festlegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Umsetzung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt.</p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>IT-Betrieb</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+Benutzer
+</td>
+</tr>
+</table>
+<a name="7195_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein OPS.1.2.5<em>Fernwartung</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>OPS.1.2.5.A1 Planung des Einsatzes der Fernwartung (B)</h4>
+<p>Der Einsatz der Fernwartung MUSS an die Institution angepasst und hinsichtlich technischer und organisatorischer Aspekte bedarfsgerecht geplant werden. Es MUSS geklärt werden, ob In-Band oder Out-Band Administration genutzt wird. Die Institution MUSS geeignete IT-Systemschnittstellen und Protokolle auswählen.</p>
+</li>
+<li><h4>OPS.1.2.5.A2 Sicherer Verbindungsaufbau bei der Fernwartung von Clients [Benutzer] (B)</h4>
+<p>Wird per Fernwartung auf Clients zugegriffen, MUSS dieser Zugriff vom Benutzer des IT-Systems initiiert werden. Der Benutzer des fernadministrierten Clients MUSS dem Fernzugriff explizit zustimmen.</p>
+</li>
+<li><h4>OPS.1.2.5.A3 Absicherung der Schnittstellen zur Fernwartung (B)</h4>
+<p>Die möglichen Zugänge und Kommunikationsschnittstellen für einen Verbindungsaufbau MÜSSEN auf das notwendige Maß beschränkt werden. Ebenso MÜSSEN alle Fernwartungsverbindungen nach dem Fernzugriff getrennt werden.</p>
+<p>Es MUSS sichergestellt werden, dass Fernwartungssoftware nur auf Systemen installiert ist, auf denen sie benötigt wird.</p>
+<p>Fernwartungsverbindungen über nicht vertrauenswürdige Netze MÜSSEN verschlüsselt werden.</p>
+</li>
+<li><h4>OPS.1.2.5.A4 Regelungen zu Kommunikationsverbindungen (B)</h4>
+<p>Die Fernwartung MUSS so restriktive wie möglich in das Firewall-Regelwerk eingebunden werden. Es MUSS darauf geachtet werden, dass bestehende Firewall-Regeln nicht umgangen werden.</p>
+</li>
+</ul>
+<a name="7195_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein OPS.1.2.5<em>Fernwartung</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>OPS.1.2.5.A5 Einsatz von Online-Diensten [Benutzer] (S)</h4>
+<p>Die Institution SOLLTE festlegen, unter welchen Umständen Online-Dienste zur Fernwartung genutzt werden dürfen, bei denen die Verbindung über einen externen Dienstleister hergestellt wird. Grundsätzlich SOLLTE der Einsatz solcher Dienste auf möglichst wenige Fälle beschränkt werden. Die IT-Systeme SOLLTEN keine automatisierten Verbindungen zum Online-Dienst aufbauen. Es SOLLTE sichergestellt werden, dass der eingesetzte Online-Dienst die übertragenen Informationen Ende-zu-Ende-verschlüsselt.</p>
+</li>
+<li><h4>OPS.1.2.5.A6 Erstellung einer Richtlinie für die Fernwartung (S)</h4>
+<p>Die Regelungen zur Fernwartung SOLLTEN in einer Richtlinie dokumentiert werden. Die Richtlinie SOLLTE allen Verantwortlichen bekannt sein, die an der Konzeption, dem Aufbau, dem Betrieb und der Aussonderung beteiligt sind.</p>
+</li>
+<li><h4>OPS.1.2.5.A7 Dokumentation bei der Fernwartung (S)</h4>
+<p>Die Fernwartung SOLLTE geeignet dokumentiert werden. Aus der Dokumentation SOLLTE hervorgehen, welche Fernwartungszugänge existieren und ob diese aktiviert sind. Die Dokumente SOLLTEN an geeigneten Orten und vor unberechtigtem Zugriff geschützt abgelegt werden. Die Dokumente SOLLTEN im Rahmen des Notfallmanagements zur Verfügung stehen.</p>
+</li>
+<li><h4>OPS.1.2.5.A8 Sichere Protokolle bei der Fernwartung (S)</h4>
+<p>Es SOLLTEN nur als sicher eingestufte Kommunikationsprotokolle eingesetzt werden. Dafür SOLLTEN sichere kryptografische Verfahren eingesetzt werden. Die Stärke der verwendeten kryptografischen Verfahren und Schlüssel SOLLTE regelmäßig überprüft und bei Bedarf angepasst werden. </p>
+<p>Wird auf die Fernwartungszugänge von IT-Systemen im internen Netz über ein öffentliches Datennetz zugegriffen, SOLLTE ein abgesichertes Virtuelles Privates Netz (VPN) genutzt werden.</p>
+</li>
+<li><h4>OPS.1.2.5.A9 Auswahl und Beschaffung geeigneter Fernwartungswerkzeuge (S)</h4>
+<p>Die Auswahl geeigneter Fernwartungswerkzeuge SOLLTE sich aus den betrieblichen, sicherheitstechnischen und datenschutzrechtlichen Anforderungen der Institution ergeben. Alle Beschaffungsentscheidungen SOLLTEN mit dem System- und Anwendungsverantwortlichen sowie dem Informationssicherheitsbeauftragten abgestimmt werden.</p>
+</li>
+<li><h4>OPS.1.2.5.A10 Verwaltung der Fernwartungswerkzeuge [Benutzer] (S)</h4>
+<p>Es SOLLTEN organisatorische Verwaltungsprozesse zum Umgang mit den ausgewählten Werkzeugen etabliert werden. Es SOLLTE eine Bedienungsanleitung für den Umgang mit den Fernwartungswerkzeugen vorliegen. Ergänzend zu den allgemeinen Schulungsmaßnahmen SOLLTEN Musterabläufe für die passive und die aktive Fernwartung erstellt und kommuniziert werden. Zusätzlich zu den allgemeinen Schulungsmaßnahmen SOLLTE der IT-Betrieb besonders im Umgang mit den Fernwartungswerkzeugen sensibilisiert und geschult werden. Es SOLLTE ein Ansprechpartner für alle fachlichen Fragen zu den Fernwartungswerkzeugen benannt werden.</p>
+</li>
+<li><h4>OPS.1.2.5.A11 ENTFALLEN (S)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>OPS.1.2.5.A12 ENTFALLEN (S)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>OPS.1.2.5.A13 ENTFALLEN (S)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>OPS.1.2.5.A15 ENTFALLEN (S)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>OPS.1.2.5.A16 ENTFALLEN (S)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>OPS.1.2.5.A17 Authentisierungsmechanismen bei der Fernwartung (S)</h4>
+<p>Für die Fernwartung SOLLTEN Mehr-Faktor-Verfahren zur Authentisierung eingesetzt werden. Die Auswahl der Authentisierungsmethode und die Gründe, die zu der Auswahl geführt haben, SOLLTEN dokumentiert werden. Fernwartungszugänge SOLLTEN im Identitäts- und Berechtigungsmanagement der Institution berücksichtigt werden.</p>
+</li>
+<li><h4>OPS.1.2.5.A18 ENTFALLEN (S)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>OPS.1.2.5.A19 Fernwartung durch Dritte (S)</h4>
+<p>Wird die Fernwartung von Externen durchgeführt, SOLLTEN alle Aktivitäten von internen Mitarbeitern beobachtet werden. Alle Fernwartungsvorgänge durch Dritte SOLLTEN aufgezeichnet werden. Mit externem Wartungspersonal MÜSSEN vertragliche Regelungen über die Sicherheit der betroffenen IT-Systeme und Informationen geschlossen werden. Sollte der Dienstleister mehrere Mandanten fernwarten, MUSS gewährleistet sein, dass die Netze seiner Mandanten nicht miteinander verbunden werden. Die Pflichten und Kompetenzen des externen Wartungspersonals SOLLTEN vertraglich festgehalten werden.</p>
+<p>Die Fernwartungsschnittstellen SOLLTEN so konfiguriert sein, dass es dem Dienstleister nur möglich ist, auf die Systeme und Netzsegmente zuzugreifen, die für seine Arbeit benötigt werden.</p>
+</li>
+<li><h4>OPS.1.2.5.A20 Betrieb der Fernwartung (S)</h4>
+<p>Es SOLLTE ein Meldeprozess für Support- und Fernwartungsanliegen etabliert werden.</p>
+<p>Es SOLLTEN Mechanismen zur Erkennung und Abwehr von hochvolumigen Angriffen, TCP-State-Exhaustion-Angriffen und Angriffen auf Applikationsebene implementiert sein.</p>
+<p>Alle Fernwartungsvorgänge SOLLTEN protokolliert werden. Die anfallenden Protokolldaten SOLLTEN regelmäßig ausgewertet werden.</p>
+</li>
+<li><h4>OPS.1.2.5.A21 Erstellung eines Notfallplans für den Ausfall der Fernwartung (S)</h4>
+<p>Es SOLLTE ein Konzept entwickelt werden, wie die Folgen eines Ausfalls von Fernwartungskomponenten minimiert werden können. Dieses SOLLTE festhalten, wie im Falle eines Ausfalls zu reagieren ist. Durch den Notfallplan SOLLTE sichergestellt sein, dass Störungen, Schäden und Folgeschäden minimiert werden. Außerdem SOLLTE eine zeitnahe Wiederherstellung des Normalbetriebs erfolgen. </p>
+</li>
+<li><h4>OPS.1.2.5.A24 Absicherung integrierter Fernwartungssysteme (S)</h4>
+<p>Bei der Beschaffung von neuen IT-Systemen SOLLTE geprüft werden, ob diese Systeme oder einzelne Komponenten der Systeme über Funktionen zur Fernwartung verfügen. Werden diese Funktionen nicht verwendet, SOLLTEN sie deaktiviert werden. Die Funktionen SOLLTEN ebenfalls deaktiviert werden, wenn sie durch bekannte Sicherheitslücken gefährdet sind.</p>
+<p>Werden Fernwartungsfunktionen verwendet, die in die Firmware einzelner Komponenten integriert sind, SOLLTEN deren Funktionen und der Zugriff darauf so weit wie möglich eingeschränkt werden. Die Systeme SOLLTEN nur aus einem getrennten Management-Netz erreichbar sein.</p>
+</li>
+</ul>
+<a name="7195_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein OPS.1.2.5<em>Fernwartung</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>OPS.1.2.5.A14 Dedizierte Systeme bei der Fernwartung (H)</h4>
+<p>Zur Fernwartung SOLLTEN IT-Systeme eingesetzt werden, die ausschließlich zur Administration von anderen IT-Systemen dienen. Alle weiteren Funktionen auf diesen IT-Systemen SOLLTEN deaktiviert werden.</p>
+</li>
+<li><h4>OPS.1.2.5.A22 Redundante Kommunikationsverbindungen (H)</h4>
+<p>Für Fernwartungszugänge SOLLTEN redundante Verbindungs- bzw. Kommunikationsnetze eingerichtet werden. Die Institution SOLLTE Anbindungen zum Out-Of-Band-Management vorhalten.</p>
+</li>
+<li><h4>OPS.1.2.5.A23 ENTFALLEN (H)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+</ul>
+<a name="7195_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Das Bundesamt für Sicherheit in der Informationstechnik beschreibt in seiner Veröffentlichung „Grundregeln zur Absicherung von Fernwartungszugängen“ wie Fernwartungszugänge sicher betrieben werden können.</p>
+<p>Das Bundesamt für Sicherheit in der Informationstechnik beschreibt in seiner Veröffentlichung „Fernwartung im industriellen Umfeld“ wie Fernwartungszugänge im Industrieumfeld sicher betrieben werden können.</p>
+<a name="7195_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein OPS.1.2.5 <em>Fernwartung</em> von Bedeutung.</p>
+<ul>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.18 Fehlplanung oder fehlende Anpassung</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.20 Informationen oder Produkte aus unzuverlässiger Quelle</li>
+<li>G 0.21 Manipulation von Hard- oder Software</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.25 Ausfall von Geräten oder Systemen</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.31 Fehlerhafte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.37 Abstreiten von Handlungen</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.40 Verhinderung von Diensten (Denial of Service)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.14</th>
+<th>G 0.18</th>
+<th>G 0.19</th>
+<th>G 0.20</th>
+<th>G 0.21</th>
+<th>G 0.22</th>
+<th>G 0.25</th>
+<th>G 0.30</th>
+<th>G 0.31</th>
+<th>G 0.37</th>
+<th>G 0.39</th>
+<th>G 0.40</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OPS.1.2.5.A1</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A3</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A4</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A5</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A6</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A7</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A8</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A9</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A10</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A13</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A14</td>
+<td>CIA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A15</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A16</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A17</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A18</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A19</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A20</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A21</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A22</td>
+<td>A</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A23</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.2.5.A24</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+APP.2.2 Active Directory
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_11649.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_11649.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">APP.2.2 Active Directory</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>APP.2.2 Active Directory</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#11649_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#11649_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11649_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11649_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#11649_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#11649_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#11649_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11649_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11649_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#11649_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#11649_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11649_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#11649_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="11649_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="11649_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Active Directory (AD) ist ein von Microsoft entwickelter Verzeichnisdienst, der mit dem Betriebssystem Windows 2000 Server erstmalig eingeführt wurde. Ausgehend von den Active-Directory-Funktionen des Betriebssystems Microsoft Windows 2000 Server wurden dem Active-Directory-Dienst mit jedem Release der Windows-Server-Familie weitere Schlüsselfunktionen hinzugefügt.</p>
+<p>Active Directory wird hauptsächlich in IT-Netzen mit Microsoft-Komponenten eingesetzt. Ein AD speichert Informationen über Objekte innerhalb eines Netzes, z. B. über Benutzer oder IT-Systeme. Es erleichtert es Anwendern und Administratoren, diese Informationen bereitzustellen, zu organisieren, zu nutzen und zu überwachen. Als ein objektbasierter Verzeichnisdienst ermöglicht Active Directory die Verwaltung von Objekten und deren Beziehung untereinander, was die eigentliche Netzumgebung auszeichnet. Active Directory stellt zentrale Steuerungs- und Kontrollmöglichkeiten des jeweiligen Netzes bereit. Der Einsatz eines solchen Verzeichnisdienstes bietet sich vor allem dort an, wo z. B. die Anzahl der im Netz eingesetzten Clients eine dezentrale Verwaltung erschwert. Ohne einen Verzeichnisdienst könnte nicht mehr gewährleistet werden, dass lokal vorzunehmende Einstellungen, wie z. B. die Vorgaben aus Sicherheitsrichtlinien, aufgrund des hohen Aufwandes zuverlässig erledigt werden. Verwaltungsaufgaben innerhalb des Netzes wie z. B. Passwortänderungen, Kontenerstellung und Zugriffsrechte können effizienter durchgeführt werden, wenn ein Verzeichnisdienst eingesetzt wird.</p>
+</p>
+<a name="11649_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Das Ziel dieses Bausteins ist es, Active Directory im Regelbetrieb einer Institution abzusichern, die AD zur Verwaltung ihrer Infrastruktur von Windows-Systemen (Client und Server) einsetzt.</p>
+</p>
+<a name="11649_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein APP.2.2 <span style="font-style: italic">Active Directory</span> ist für alle verwendeten Verzeichnisdienste anzuwenden, die auf Microsoft Active Directory basieren.</p>
+<p>In diesem Baustein werden die für Active Directory spezifischen Gefährdungen und Anforderungen betrachtet. Allgemeine Sicherheitsempfehlungen zu Verzeichnisdiensten finden sich im Baustein APP.2.1 <span style="font-style: italic">Allgemeiner Verzeichnisdienst</span>. Die dort beschriebenen allgemeinen Anforderungen werden im vorliegenden Baustein konkretisiert und ergänzt. Dieser Baustein wiederholt nicht die Anforderungen zur Absicherung der Betriebssysteme der Server und Clients, die für den Betrieb und die Verwaltung des AD genutzt werden, wie z. B. SYS.1.2.2 <span style="font-style: italic">Windows Server 2012 </span>oder SYS.2.2.3 <span style="font-style: italic">Clients unter Windows 10</span>. Dieser Baustein geht auch nicht erneut auf die Anforderungen der zugrundeliegenden Netzinfrastruktur ein. Auch Prozesse wie Datensicherung und Patchmanagement werden nur insofern behandelt, wie im Bereich AD Besonderheiten zu beachten sind.</p>
+</p>
+<a name="11649_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein APP.2.2 <span style="font-style: italic">Active Directory </span>von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Unzureichende Planung der Sicherheitsgrenzen</h3>
+<p>
+<p>Eine AD-Instanz erzeugt einen Wald (Forest) als Container auf höchster Ebene für alle Domänen dieser Instanz. Ein Wald kann einen oder mehrere Domänen-Containerobjekte enthalten, die über eine gemeinsame logische Struktur, einen Global Catalog, ein Schema und automatische transitive Vertrauensbeziehungen verfügen. Der Wald stellt also die Sicherheitsgrenze dar, innerhalb derer Informationen standardmäßig im AD weitergegeben werden, nicht ein einzelner Baum. Werden diese Grenzen nicht bewusst und strukturiert geplant, können Informationen ungewollt abfließen und das Sicherheitskonzept der Institution kann versagen. Daher kann es notwendig sein, weitere Forests aufzubauen, wenn für Teile der Infrastruktur unterschiedliche Sicherheitsanforderungen gelten. Dies macht das Einrichten und Verwalten jedoch zusätzlich komplexer. </p>
+</p>
+<h3>2.2 Zu viele oder nachlässige Vertrauensbeziehungen</h3>
+<p>
+<p>Werden die Vertrauensbeziehungen zwischen Wäldern und Domänen nicht regelmäßig daraufhin evaluiert, ob sie weiterhin benötigt werden und gerechtfertigt sind, können Probleme mit Berechtigungen auftreten und Informationen abfließen. Auch muss regelmäßig überprüft werden, ob sie den korrekten Typ haben, d. h. vor allem, ob eine zweiseitige Vertrauensbeziehung wirklich notwendig ist, und ob die Sicherheitskontrollen rund um diese Vertrauensbeziehungen ausreichend sind. Insbesondere wenn die standardmäßig aktive SID-(Security Identifier)-Filterung deaktiviert wird, können komplexe, schwer zu durchschauende Schwachstellen auftreten. Gleiches gilt, wenn auf Selective Authentication bei Vertrauensbeziehungen zwischen Forests verzichtet wird.</p>
+</p>
+<h3>2.3 Fehlende Sicherheitsfunktionen durch ältere Betriebssysteme und Domain Functional Level</h3>
+<p>
+<p>Jede neue Generation des Betriebssystems Windows Server bringt zusätzliche Sicherheitsfunktionen und -erweiterungen auch in Bezug auf AD mit. Außerdem werden in der Regel die Standardeinstellungen mit jedem neuen Release immer sicherer gesetzt. Einige davon sind verwendbar, sobald das neue System installiert ist, andere erst dann, wenn das Domänen- bzw. Forest-Functional-Level angehoben wurde. Werden ältere Betriebssysteme als (primärer) Domänencontroller bzw. veraltete Domain Functional Level eingesetzt, können zeitgemäße Sicherheitsfunktionen nicht genutzt werden. Dies erhöht die Gefahr unsicherer Standardeinstellungen. Eine unsicher konfigurierte Domäne gefährdet die darin verarbeiteten Informationen und erleichtert Angriffe durch Dritte.</p>
+</p>
+<h3>2.4 Betrieb weiterer Rollen und Dienste auf Domänencontrollern</h3>
+<p>
+<p>Werden neben dem AD auf einem Domänencontroller noch weitere Dienste betrieben, erhöht dies die Angriffsfläche dieser zentralen Infrastrukturkomponenten durch mögliche zusätzliche Schwachstellen und Fehlkonfigurationen. Solche Dienste können bewusst oder unbewusst missbraucht werden, um z. B. Informationen unberechtigt zu kopieren oder zu verändern. </p>
+</p>
+<h3>2.5 Nicht benötigte Domänenadministratoren und -Rechte</h3>
+<p>
+<p>Das AD selbst sollte nur von einer sehr kleinen Zahl von Administratoren verwaltet werden. Häufig werden jedoch sehr viel mehr Konten als Domänenadministrator (DA) geführt. Diese haben volle administrative Rechte auf allen Domänencontrollern, Workstations und Gruppenrichtlinien. Das eröffnet Angreifern unnötig viel Spielraum, wenn einer dieser Accounts übernommen werden kann. Häufig enthält die Gruppe der DA Dienstkonten und andere Gruppen, die nichts direkt mit der Verwaltung des AD selbst zu tun haben.</p>
+</p>
+<h3>2.6 Unzureichende Überwachung und Dokumentation von delegierten Rechten</h3>
+<p>
+<p>Wenn die Bildung unternehmensspezifischer Gruppen und die Delegation von Rechten an diese Gruppen nicht systematisch geplant und umgesetzt wird, kann die Delegation nur noch schwer kontrolliert werden. Sie könnte dann etwa viel mehr Zugriffe einräumen als vorgesehen, was durch Dritte missbraucht werden kann. Eine fehlende regelmäßige Auditierung der Gruppen und ihrer Zugriffsrechte kann das Problem zusätzlich verschärfen. Auch wenn Standardgruppen genutzt und ihre Rechte an eigene Gruppen delegiert werden, etwa bei der Delegation von „Account Operators“ an Helpdesk-Mitarbeiter, werden in der Regel mehr Rechte gewährt als tatsächlich benötigt werden.</p>
+</p>
+<h3>2.7 Unsichere Authentisierung</h3>
+<p>
+<p>Sogenannte „Legacy“- (also historische) Authentisierungsmechanismen im Bereich AD wie LAN Manager (LM) und NT LAN Manager (NTLM) v1 gelten heute als unsicher und können von Angreifern unter bestimmten Bedingungen leicht umgangen werden. Dadurch kann ein Angreifer Rechte erhalten und missbrauchen, ohne Benutzerpasswörter zu kennen, zu erraten oder anderweitig zu brechen und so die Domäne oder Teile von ihr kompromittieren.</p>
+</p>
+<h3>2.8 Anmeldung von AD-Administratoren an Systemen niedriger Vertrauensstufen</h3>
+<p>
+<p>Es muss davon ausgegangen werden, dass Schadcode auf verschiedene Systeme wie etwa normale Clients oder Server gelangt. Kann ein Angreifer auf diese Weise auf die IT-Systeme zugreifen, wird er nach weiteren Credentials suchen, die er missbrauchen kann. Melden sich privilegierte Accounts an allen möglichen IT-Systemen an, so erhält der Angreifer eine Vielzahl von Chancen, die Credentials abzugreifen und sich zusätzliche Berechtigungen zu verschaffen, insbesondere wenn die Credentials dort gecached werden.</p>
+</p>
+<h3>2.9 Fehlende Überwachung der Mitgliedschaft in privilegierten Gruppen</h3>
+<p>
+<p>In den meisten Institutionen wächst die Anzahl der Konten mit administrativen Rechten stetig und wird selten oder nie bereinigt. Dies verletzt das Prinzip der minimalen Rechte (Least Privilege) und führt dazu, dass Angreifer immer mehr Möglichkeiten haben, sich zusätzliche Berechtigungen zu verschaffen und diese zu missbrauchen.</p>
+</p>
+<h3>2.10 Zu mächtige oder schwach gesicherte Dienstkonten</h3>
+<p>
+<p>Anbieter von Anwendungssoftware setzen manchmal DA-Rechte für Dienstkonten voraus, um ihre Produkte einfacher testen und ausbringen zu können, obwohl für den Betrieb deutlich weniger Rechte notwendig wären. Die zusätzlichen Rechte des Dienstkontos können von Angreifern missbraucht werden, um sich in der Domäne weiterzubewegen. Da die Credentials eines Dienstes, der im Kontext eines Dienstkontos ausgeführt wird, im geschützten Speicher des Local Security Authority Subsystem (LSASS) vorgehalten werden, kann der Angreifer diese dort extrahieren. So kann ein einzelner schwach gesicherter Serviceaccount dazu führen, dass die gesamte Domäne kompromittiert wird.</p>
+<p>Insbesondere gilt dies, wenn das Dienstkonto mit einem schwachen Passwort gesichert ist. Denn ein Angreifer kann, wenn er Kerberos-Authentisierung einsetzt, ohne weiteres ein TGS-(Ticket Granting Service)-Ticket anfordern, in dem das Passwort des Dienstaccounts verarbeitet ist. Letzteres kann er dann offline per Brute-Force brechen.</p>
+</p>
+<h3>2.11 Nutzung desselben lokalen Administratorpassworts auf mehreren IT-Systemen</h3>
+<p>
+<p>Lokale Konten können sich auf einem IT-System anmelden, auch wenn es nicht mit der Domäne verbunden ist. Werden dieselben Credentials auf mehreren IT-Systemen verwendet, kann der Administrator sich auf den anderen IT-Systemen ebenfalls anmelden. Damit steigt die Gefahr, dass ein Angreifer auf einem der IT-Systeme Domänencredentials mit höheren Rechten findet und diese missbrauchen kann, um die Domäne zu kompromittieren.</p>
+</p>
+<h3>2.12 Fehlende Entfernung nicht mehr verwendeter Konten aus dem AD</h3>
+<p>
+<p>Angreifer können versuchen, nicht mehr verwendete Accounts, die im AD aber noch vorhanden sind, bevorzugt für Angriffe zu nutzen. Solch ein Missbrauch wird möglicherweise längere Zeit nicht bemerkt, wenn der Account keinen Eigentümer mehr hat. </p>
+</p>
+<a name="11649_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die spezifischen Anforderungen des Bausteins APP.2.2 <span style="font-style: italic">Active Directory</span> aufgeführt. Grundsätzlich ist der IT-Betrieb für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Umsetzung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt.</p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>IT-Betrieb</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+Fachverantwortliche
+</td>
+</tr>
+</table>
+<a name="11649_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein APP.2.2<em>Active Directory</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>APP.2.2.A1 Planung des Active Directory [Fachverantwortliche] (B)</h4>
+<p>Es MUSS ein geeignetes, möglichst hohes Domain Functional Level gewählt werden. Die Begründung SOLLTE geeignet dokumentiert werden. Ein bedarfsgerechtes Active-Directory-Berechtigungskonzept MUSS entworfen werden. Administrative Delegationen MÜSSEN mit restriktiven und bedarfsgerechten Berechtigungen ausgestattet sein. Die geplante Active-Directory-Struktur einschließlich etwaiger Schema-Änderungen SOLLTE nachvollziehbar dokumentiert sein.</p>
+</li>
+<li><h4>APP.2.2.A2 Planung der Active-Directory-Administration [Fachverantwortliche] (B)</h4>
+<p>Es MUSS ein rollenbasiertes Berechtigungskonzept erstellt werden. Alle administrativen Aufgabenbereiche und Berechtigungen SOLLTEN geeignet dokumentiert sein.</p>
+<p>In großen Domänen MÜSSEN die administrativen Benutzer bezüglich Diensteverwaltung und Datenverwaltung des Active Directory aufgeteilt werden. Zusätzlich MÜSSEN hier die administrativen Aufgaben im Active Directory nach einem Delegationsmodell überschneidungsfrei verteilt sein.</p>
+</li>
+<li><h4>APP.2.2.A3 Planung der Gruppenrichtlinien unter Windows (B)</h4>
+<p>Es MUSS ein Konzept zur Einrichtung von Gruppenrichtlinien vorliegen. Mehrfachüberdeckungen MÜSSEN beim Gruppenrichtlinienkonzept möglichst vermieden werden. In der Dokumentation des Gruppenrichtlinienkonzepts MÜSSEN Ausnahmeregelungen erkannt werden können. Alle Gruppenrichtlinienobjekte MÜSSEN durch restriktive Zugriffsrechte geschützt sein. Für die Parameter in allen Gruppenrichtlinienobjekten MÜSSEN sichere Vorgaben festgelegt sein.</p>
+</li>
+<li><h4>APP.2.2.A4 Schulung zur Active-Directory-Verwaltung (B)</h4>
+<p>Die Administratoren MÜSSEN mit allen Sicherheitsmechanismen und -aspekten von Active Directory in ihrem Tätigkeitsbereich vertraut sein. Sie SOLLTEN für die Arbeit mit Active Directory vor der Einrichtung sowie fortlaufend geschult werden.</p>
+</li>
+<li><h4>APP.2.2.A5 Härtung des Active Directory (B)</h4>
+<p>Built-in-Accounts MÜSSEN mit komplexen Passwörtern versehen werden. Sie DÜRFEN NUR als Notfallkonten dienen. Privilegierte Accounts MÜSSEN Mitglieder der Gruppe „Protected Users“ sein. Für Dienstkonten MÜSSEN (Group) Managed Service Accounts verwendet werden.</p>
+<p>Für alle Domänen-Controller MÜSSEN restriktive Zugriffsrechte auf Betriebssystemebene vergeben sein. Der Active-Directory-Restore-Modus MUSS durch ein geeignetes Passwort geschützt sein. Arbeiten in diesem Modus SOLLTEN nur erfolgen, wenn das Vier-Augen-Prinzip eingehalten wird.</p>
+<p>Es SOLLTE regelmäßig ein Abbild des Domänencontrollers erstellt werden. Die Berechtigungen für die Gruppe „Jeder“ MUSS beschränkt werden. Der Domänencontroller MUSS gegen unautorisierte Neustarts geschützt sein.</p>
+<p>Die Richtlinien für Domänen und Domänencontroller MÜSSEN sichere Einstellungen für Kennworte, Kontensperrung, Kerberos-Authentisierung, Benutzerrechte und Überwachung umfassen. Es MUSS eine ausreichende Größe für das Sicherheitsprotokoll des Domänen-Controllers eingestellt sein. Bei externen Vertrauensstellungen zu anderen Domänen MÜSSEN die Autorisierungsdaten der Benutzer gefiltert und anonymisiert werden.</p>
+</li>
+<li><h4>APP.2.2.A6 Aufrechterhaltung der Betriebssicherheit von Active Directory (B)</h4>
+<p>Alle Vertrauensbeziehungen im AD MÜSSEN regelmäßig evaluiert werden.</p>
+<p>Die Dienste-Administratoren auf dem Domänencontroller DÜRFEN NUR die notwendigen Rechte besitzen. Diese Rechte MÜSSEN in regelmäßigen Abständen überprüft werden. Die Gruppe der Domänenadministratoren MUSS leer oder möglichst klein sein. Nicht mehr verwendete Konten MÜSSEN im AD deaktiviert werden. Sie SOLLTEN nach Ablauf einer angemessenen Aufbewahrungsfrist gelöscht werden.</p>
+<p>Alle notwendigen Parameter des Active Directory SOLLTEN aktuell und nachvollziehbar festgehalten werden.</p>
+</li>
+<li><h4>APP.2.2.A7 Umsetzung sicherer Verwaltungsmethoden für Active Directory [Fachverantwortliche] (B)</h4>
+<p>Administratorkonten DÜRFEN NICHT für die gewöhnliche tägliche Arbeit verwendet werden. Server-Administratorkonten DÜRFEN NICHT auf Clients verwendet werden. Domänen-Administratorkonten DÜRFEN NICHT auf Clients oder Servern genutzt werden.</p>
+<p>Jeder Account MUSS sich eindeutig einem Mitarbeiter zuordnen lassen.</p>
+<p>Die Anzahl der Dienste-Administratoren und der Daten-Administratoren des Active Directory MUSS auf das notwendige Minimum vertrauenswürdiger Personen reduziert sein. Ihre Konten MÜSSEN angemessen abgesichert sein.</p>
+<p>Das Standardkonto „Administrator“ SOLLTE umbenannt werden. Es SOLLTE ein unprivilegiertes Konto mit dem Namen „Administrator“ erstellt werden. Alltägliche, nichtadministrative Aufgaben MÜSSEN mit unprivilegierten Benutzerkonten durchgeführt werden.</p>
+<p>Es MUSS sichergestellt sein, dass die Dienste-Administratorkonten ausschließlich von Mitgliedern der Dienste-Administratorgruppe verwaltet werden. Die Gruppe „Kontenoperatoren“ SOLLTE leer sein.</p>
+<p>Administratoren SOLLTEN der Gruppe „Schema-Admins“ nur temporär für den Zeitraum der Schema-Änderungen zugewiesen werden. Für die Gruppen „Organisations-Admins“ und „Domänen-Admins“ zur Administration der Stammdomäne SOLLTE ein Vier-Augen-Prinzip etabliert sein.</p>
+<p>Die Arbeitsplätze zur Administration des Active Directory MÜSSEN ausreichend abgesichert sein. Bei Remote-Administration der Domänen-Controller MUSS der Datenverkehr geeignet verschlüsselt sein.</p>
+<p>Es MUSS sichergestellt sein, dass die Gruppen „Administratoren“ bzw. „Domänenadministratoren“ auch die Besitzer des Domänenstammobjektes der jeweiligen Domäne sind.</p>
+<p>Der Einsatz von domänenlokalen Gruppen für die Steuerung der Leseberechtigung für Objektattribute SOLLTE vermieden werden.</p>
+<p>Der Papierkorb des AD SOLLTE aktiviert werden.</p>
+<p>In großen Institutionen SOLLTE mit einer Enterprise-Identity-Management-Lösung sichergestellt werden, dass die Rechte aller Anwender den definierten Vorgaben entsprechen.</p>
+</li>
+</ul>
+<a name="11649_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein APP.2.2<em>Active Directory</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>APP.2.2.A8 Konfiguration des „Sicheren Kanals“ unter Windows (S)</h4>
+<p>Der „Sichere Kanal“ unter Windows SOLLTE entsprechend den Sicherheitsanforderungen und den lokalen Gegebenheiten konfiguriert sein. Dabei SOLLTEN alle relevanten Gruppenrichtlinienparameter berücksichtigt werden.</p>
+</li>
+<li><h4>APP.2.2.A9 Schutz der Authentisierung beim Einsatz von Active Directory (S)</h4>
+<p>In der Umgebung des Active Directory SOLLTE konsequent das Authentisierungsprotokoll Kerberos eingesetzt werden. Wenn aus Kompatibilitätsgründen übergangsweise NTLMv2 eingesetzt wird, SOLLTE die Migration auf Kerberos geplant und terminiert werden. Die LM-Authentisierung SOLLTE deaktiviert sein. Der SMB-Datenverkehr SOLLTE signiert sein. Anonyme Zugriffe auf Domänencontroller SOLLTEN unterbunden sein.</p>
+</li>
+<li><h4>APP.2.2.A10 Sicherer Einsatz von DNS für Active Directory (S)</h4>
+<p>Es SOLLTEN integrierte DNS-Zonen bzw. die sichere dynamische Aktualisierung der DNS-Daten verwendet werden, um DNS-Clientabfragen durch unautorisierte Systeme zu vermeiden. Der Zugriff auf die Konfigurationsdaten des DNS-Servers SOLLTE nur von administrativen Konten erlaubt sein. Der DNS-Cache auf den DNS-Servern SOLLTE vor unberechtigten Änderungen geschützt sein. Der Zugriff auf den DNS-Dienst der Domänen-Controller SOLLTE auf das notwendige Maß beschränkt sein. Die Netzaktivitäten in Bezug auf DNS-Anfragen SOLLTEN überwacht werden. Der Zugriff auf die DNS-Daten im Active Directory SOLLTE mittels ACLs auf Administratoren beschränkt sein.</p>
+<p>Sekundäre DNS-Zonen SOLLTEN vermieden werden. Zumindest SOLLTE die Zonen-Datei vor unbefugtem Zugriff geschützt werden.</p>
+<p>Wird IPsec eingesetzt, um die DNS-Kommunikation abzusichern, SOLLTE ein ausreichender Datendurchsatz im Netz gewährleistet sein.</p>
+</li>
+<li><h4>APP.2.2.A11 Überwachung der Active-Directory-Infrastruktur (S)</h4>
+<p>Die Active-Directory-Infrastruktur SOLLTE anhand der systemeigenen Ereignisse überwacht und protokolliert werden. Die Ergebnisse der Sicherheitsüberwachung des Active Directory SOLLTEN regelmäßig ausgewertet werden. Die Verfügbarkeit und die Systemressourcen der Domänen-Controller SOLLTEN überwacht werden. Änderungen auf Domänen-Ebene und an der Gesamtstruktur des Active Directory SOLLTEN überwacht, protokolliert und ausgewertet werden.</p>
+</li>
+<li><h4>APP.2.2.A12 Datensicherung für Domänen-Controller (S)</h4>
+<p>Es SOLLTE eine Datensicherungs- und Wiederherstellungsrichtlinie für Domänen-Controller existieren. Die eingesetzte Sicherungssoftware SOLLTE explizit vom Hersteller für die Datensicherung von Domänen-Controllern freigegeben sein. Für die Domänen-Controller SOLLTE ein separates Datensicherungskonto mit Dienste-Administratorenrechten eingerichtet sein. Die Anzahl der Mitglieder der Gruppe „Sicherungs-Operatoren“ SOLLTE auf das notwendige Maß begrenzt sein. Der Zugriff auf das AdminSDHolder-Objekt SOLLTE zum Schutz der Berechtigungen besonders geschützt sein.</p>
+<p>Die Daten der Domänen-Controller SOLLTEN in regelmäßigen Abständen gesichert werden. Dabei SOLLTE ein Verfahren eingesetzt werden, das veraltete Objekte weitgehend vermeidet.</p>
+<p>Die Sicherungsmedien SOLLTEN an einem geeigneten Standort aufbewahrt werden. Der korrekte Ablauf und das Wiedereinspielen von Datensicherungen der Domänen-Controller SOLLTEN in regelmäßigen Abständen überprüft werden.</p>
+</li>
+</ul>
+<a name="11649_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein APP.2.2<em>Active Directory</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>APP.2.2.A13 Einsatz von Zwei-Faktor-Authentisierung (H)</h4>
+<p>Privilegierte Konten im Bereich des AD SOLLTEN mittels Zwei-Faktor-Authentifizierung geschützt werden.</p>
+</li>
+<li><h4>APP.2.2.A14 Verwendung dedizierter privilegierter Administrationssysteme (H)</h4>
+<p>Die Administration des Active Directory SOLLTE auf dedizierte Administrationssysteme eingeschränkt werden. Diese SOLLTEN durch die eingeschränkte Aufgabenstellung besonders stark gehärtet sein.</p>
+</li>
+<li><h4>APP.2.2.A15 Trennung von Administrations- und Produktionsumgebung (H)</h4>
+<p>Besonders kritische Systeme wie Domaincontroller und Systeme zur Administration der Domain SOLLTEN in einen eigenen Forest ausgegliedert werden, der einen einseitigen Trust in Richtung des Produktions-Forests besitzt.</p>
+</li>
+</ul>
+<a name="11649_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Die Website „Active Directory Security“ (https://adsecurity.org) enthält viele weiterführende Informationen zu AD-Sicherheit. </p>
+<p>Der Hersteller Microsoft bietet weitergehende Informationen zu Active Directory und dessen Sicherheitsaspekten:</p>
+<ul><li>Enhanced Security Administrative Environment: https://docs.microsoft.com/de-de/windows-server/identity/securing-privileged-access/securing-privileged-access </li><li>Privileged Access Workstations: http://download.microsoft.com/download/9/3/9/9392A4D2-D530-4344-8447-4A7CF1C01AEE/Privileged%20Access%20Workstation_Datasheet.pdf</li><li>Einstiegspunkt Active Directory für Windows Server 2012 (R2): https://technet.microsoft.com/en-us/library/dn283324.aspx </li><li>Einstiegspunkt Active Directory für Windows Server 2008 R2: https://technet.microsoft.com/en-us/library/dd378801.aspx </li></ul>
+<a name="11649_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein APP.2.2 <em>Active Directory</em> von Bedeutung.</p>
+<ul>
+<li>G 0.11 Ausfall oder Störung von Dienstleistern</li>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.15 Abhören</li>
+<li>G 0.18 Fehlplanung oder fehlende Anpassung</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.21 Manipulation von Hard- oder Software</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.25 Ausfall von Geräten oder Systemen</li>
+<li>G 0.26 Fehlfunktion von Geräten oder Systemen</li>
+<li>G 0.27 Ressourcenmangel</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.29 Verstoß gegen Gesetze oder Regelungen</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.31 Fehlerhafte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.32 Missbrauch von Berechtigungen</li>
+<li>G 0.33 Personalausfall</li>
+<li>G 0.36 Identitätsdiebstahl</li>
+<li>G 0.37 Abstreiten von Handlungen</li>
+<li>G 0.38 Missbrauch personenbezogener Daten</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.40 Verhinderung von Diensten (Denial of Service)</li>
+<li>G 0.42 Social Engineering</li>
+<li>G 0.43 Einspielen von Nachrichten</li>
+<li>G 0.45 Datenverlust</li>
+<li>G 0.46 Integritätsverlust schützenswerter Informationen</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.11</th>
+<th>G 0.14</th>
+<th>G 0.15</th>
+<th>G 0.18</th>
+<th>G 0.19</th>
+<th>G 0.21</th>
+<th>G 0.22</th>
+<th>G 0.23</th>
+<th>G 0.25</th>
+<th>G 0.26</th>
+<th>G 0.27</th>
+<th>G 0.28</th>
+<th>G 0.29</th>
+<th>G 0.30</th>
+<th>G 0.31</th>
+<th>G 0.32</th>
+<th>G 0.33</th>
+<th>G 0.36</th>
+<th>G 0.37</th>
+<th>G 0.38</th>
+<th>G 0.39</th>
+<th>G 0.40</th>
+<th>G 0.42</th>
+<th>G 0.43</th>
+<th>G 0.45</th>
+<th>G 0.46</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APP.2.2.A1</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.2.2.A2</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.2.2.A3</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.2.2.A4</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.2.2.A5</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.2.2.A6</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.2.2.A7</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.2.2.A8</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.2.2.A9</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.2.2.A10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.2.2.A11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.2.2.A12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>APP.2.2.A13</td>
+<td>CIA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.2.2.A14</td>
+<td>CIA</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.2.2.A15</td>
+<td>CIA</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

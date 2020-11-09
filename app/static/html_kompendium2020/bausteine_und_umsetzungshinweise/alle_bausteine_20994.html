@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+APP.1.4 Mobile Anwendungen (Apps)
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_20994.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_20994.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">APP.1.4 Mobile Anwendungen (Apps)</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>APP.1.4 Mobile Anwendungen (Apps)</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#20994_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#20994_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#20994_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#20994_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#20994_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#20994_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#20994_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#20994_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#20994_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#20994_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#20994_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#20994_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#20994_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="20994_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="20994_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Smartphones, Tablets und ähnliche Geräte sind heute auch in Behörden und Unternehmen weit verbreitet. Mitarbeiter können so unabhängig von Ort und Zeit auf Daten der Institution, auf Informationen und Anwendungen zugreifen.</p>
+<p>Mobile Anwendungen (Applikationen, kurz Apps) sind Anwendungen, die auf mobilen Betriebssystemen wie iOS oder Android auf entsprechenden Endgeräten installiert und ausgeführt werden. Apps werden üblicherweise aus sogenannten App Stores bezogen. Diese werden von den Herstellern der mobilen Betriebssysteme und Endgeräte betrieben und gepflegt. Im professionellen Umfeld ist es aber auch üblich, Apps selbst zu entwickeln und z. B. über Mobile-Device-Management-Lösungen (MDM) auf den Endgeräten zu installieren und zu verwalten. Im Vergleich zu Anwendungen auf Desktop-Betriebssystemen unterliegen Apps unter iOS oder Android besonderen Rahmenbedingungen, wie etwa einem durch das Betriebssystem sichergestellten Berechtigungsmanagement.</p>
+<p>Für die unterschiedlichen mobilen Betriebssysteme gibt es mittlerweile eine riesige Auswahl an verfügbaren Apps. Auch gibt es standardisierte Bibliotheken und Entwicklungsumgebungen, mit deren Hilfe sich Apps im Vergleich zu klassischen Anwendungen schnell selbst entwickeln lassen.</p>
+</p>
+<a name="20994_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Ziel dieses Bausteins ist es, Informationen zu schützen, die auf mobilen Endgeräten mit Apps verarbeitet werden. Auch die Einbindung von Apps in eine bestehende IT-Infrastruktur wird dabei betrachtet. Der Baustein definiert zudem Anforderungen, um Apps richtig auszuwählen und sicher betreiben zu können. Dabei werden die Apps unabhängig von ihrer Quelle (App Store oder eigene Installation) betrachtet.</p>
+</p>
+<a name="20994_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein APP.1.4 <span style="font-style: italic">Mobile Anwendungen (Apps)</span> ist anzuwenden, wenn Apps auf mobilen Endgeräten eingesetzt werden.</p>
+<p>Der Baustein betrachtet Apps unter mobilen Betriebssystemen wie iOS und Android. Anforderungen, welche die zugrundeliegenden Betriebssysteme betreffen, werden hier nicht berücksichtigt. Diese Anforderungen finden sich beispielsweise in den Bausteinen SYS.3.2.3 <span style="font-style: italic">iOS (for Enterprise)</span> sowie SYS.3.2.4 <span style="font-style: italic">Android</span>. Oft werden Apps zentral über ein Mobile Device Management verwaltet. Anforderungen hierzu können dem Baustein SYS.3.2.2 <span style="font-style: italic">Mobile Device Management (MDM)</span> entnommen werden. </p>
+<p>Ebenso sind anwendungsspezifische Aspekte von Apps nicht Gegenstand des Bausteins zu mobilen Anwendungen. Diese werden in den entsprechenden Bausteinen der Schicht APP <span style="font-style: italic">Anwendungen</span> behandelt.</p>
+<p>Apps greifen häufig auf Backend- oder Server-Systeme bzw. Anwendungsdienste zurück. Sicherheitsempfehlungen dazu werden jedoch nicht an dieser Stelle gegeben, sondern in den geeigneten Bausteinen. Dazu gehören beispielsweise APP.3.1 <span style="font-style: italic">Webanwendungen</span>, APP.3.5 <span style="font-style: italic">Webservices</span> oder APP.4.3 <span style="font-style: italic">Relationale Datenbanksysteme</span>. Zusätzlich sollten die Bausteine berücksichtigt werden, die sich mit allgemeinen Aspekten von Anwendungen befassen, etwa OPS.1.1.6 <span style="font-style: italic">Software-Tests und -Freigaben</span> oder CON.4 <span style="font-style: italic">Auswahl und Einsatz von Standardsoftware</span>, da diese Aspekte nicht im vorliegenden Baustein berücksichtigt werden. Bei der Entwicklung eigener Apps sollten die Anforderungen des Bausteins CON.8 <span style="font-style: italic">Software-Entwicklung</span> berücksichtigt werden.</p>
+</p>
+<a name="20994_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein APP.1.4 <span style="font-style: italic">Mobile Anwendungen (Apps)</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Ungeeignete Auswahl von Apps</h3>
+<p>
+<p>Die ausgewählten Apps wirken sich stark auf die damit verarbeiteten Informationen, auf das mobile Endgerät sowie allgemein auf die IT-Infrastruktur der Institution aus. Wird dies bei der Auswahl der Apps nicht berücksichtigt, können weitreichende Probleme entstehen. Besonders hoch ist die Gefahr, wenn es sich dabei um Apps handelt, die nicht eigens für die abzubildenden Geschäftsprozesse entwickelt wurden. So könnten beispielsweise die für den Betrieb einer App erforderlichen Voraussetzungen nicht ausreichend betrachtet werden. Möglicherweise ist dann z. B. die mobile Netzanbindung nicht leistungsfähig genug oder die Hardware nicht kompatibel. Apps können auch dann ungeeignet sein, wenn sie keine ausreichende langfristige Einsatzstabilität und -planung bieten oder vom Hersteller nicht ausreichend gepflegt werden.</p>
+</p>
+<h3>2.2 Mangelnde Ressourcen und Kompetenzen</h3>
+<p>
+<p>Viele Institutionen unterschätzen, wie aufwendig es ist, Apps kontrolliert einzusetzen. Smartphones, Tablets und ähnliche mobile Endgeräte sind heute leistungsstarke IT-Systeme, die von Mitarbeitern oft auch privat benutzt werden. Die Geräte und die darauf installierten Apps werden jedoch in vielen Institutionen nicht angemessen abgesichert und betreut, weil die Geräte häufig immer noch als einfache Telefone angesehen werden. Sind jedoch für die Administration mobiler Geräte nicht ausreichend Ressourcen und Kompetenzen verfügbar, könnten Apps unkontrolliert eingesetzt werden. Dadurch können Sicherheitsrisiken für die Informationen oder sogar für die IT-Infrastruktur der Institution entstehen. </p>
+</p>
+<h3>2.3 Mangelnde Kontrolle und Auswertungsmöglichkeiten</h3>
+<p>
+<p>Werden dienstliche Apps von Mitarbeitern auf privaten Endgeräten installiert, dann kann eine Institution nicht kontrollieren, welche App wie genutzt wird und welche Daten wohin übertragen werden. Ebenso können eventuell auftretende Fehler schwerer behoben werden, da Administratoren oft nur eingeschränkt auf das Gerät zugreifen können. Aus dem gleichen Grund lassen sich auch eventuell anfallende Protokollierungsdaten schwerer analysieren. Dadurch können Angreifer z. B. die Kommunikation zwischen der App und den Servern der Institution unentdeckt manipulieren oder auf schützenswerte Informationen zugreifen.</p>
+</p>
+<h3>2.4 Zu weitreichende Berechtigungen</h3>
+<p>
+<p>Apps benötigen unter iOS und Android bestimmte Berechtigungen, um auf bestimmte Funktionen und Dienste zugreifen zu können. So kann eine App in der Regel immer auf die Internetverbindung des mobilen Endgeräts zugreifen. Der Standort oder das Adressbuch müssen hingegen meist gesondert freigegeben werden. Werden Apps eingesetzt, die zu weitgehende Berechtigungen erfordern, oder werden die Berechtigungen nicht ausreichend eingeschränkt, so kann das Auswirkungen insbesondere auf die Vertraulichkeit und Integrität der Informationen auf dem Endgerät haben. Apps können zudem Informationen an unberechtigte Dritte weitergeben, wie z. B. den Standort, Fotos oder Kontakt- und Kalenderdaten. Außerdem sind Apps in der Lage, lokale Daten zu verändern oder zu löschen. Schließlich können Apps auch Kosten verursachen, etwa durch Telefonanrufe, versendete SMS oder In-App-Käufe.</p>
+</p>
+<h3>2.5 Ungewollte Funktionen in Apps</h3>
+<p>
+<p>Zwar prüfen manche App-Store-Betreiber die angebotenen Apps, dennoch können diese Sicherheitslücken oder bewusst eingesetzte Schadfunktionen enthalten. Das Risiko ist insbesondere dann hoch, wenn Apps aus ungeprüften oder unzuverlässigen Quellen bezogen werden. Dann kann die Vertraulichkeit, Integrität und Verfügbarkeit der Informationen gefährdet werden.</p>
+</p>
+<h3>2.6 Software-Schwachstellen und Fehler in Apps</h3>
+<p>
+<p>Apps können Schwachstellen enthalten, über die sie direkt am Gerät oder über Netzverbindungen angegriffen werden können. Außerdem werden viele Apps nach einiger Zeit von ihren Entwicklern nicht mehr weiter gepflegt. Dadurch werden erkannte Sicherheitsmängel nicht mehr durch entsprechende Updates behoben.</p>
+</p>
+<h3>2.7 Unsichere Speicherung lokaler Anwendungsdaten</h3>
+<p>
+<p>Einige Apps speichern Daten auf dem Endgerät, beispielsweise Benutzerprofile oder Dokumente. Falls diese Daten unzureichend geschützt sind, können möglicherweise andere Apps darauf zugreifen. Dies betrifft neben bewusst abgelegten Daten auch temporäre Daten, wie beispielsweise im Cache zwischengespeicherte Informationen. Auch sind sie für Unberechtigte leicht lesbar, z. B. wenn ein Mitarbeiter sein Gerät verloren hat. Außerdem werden lokal gespeicherte Informationen oft nicht im Datensicherungskonzept berücksichtigt. Fällt das Endgerät aus oder geht verloren, sind die lokal gespeicherten Informationen ebenfalls nicht mehr verfügbar.</p>
+</p>
+<h3>2.8 Ableitung vertraulicher Informationen aus Metadaten</h3>
+<p>
+<p>Durch Apps sammeln sich viele Metadaten an. Mithilfe dieser Metadaten können Dritte auf vertrauliche Informationen schließen, z. B. über Telefon- und Netzverbindungen, Bewegungsdaten oder besuchte Webseiten. Daraus lassen sich dann weitere Informationen ableiten, beispielsweise die Organisationsstruktur der Institution, genaue Positionen von Standorten sowie deren personelle Besetzung.</p>
+</p>
+<h3>2.9 Abfluss von vertraulichen Daten</h3>
+<p>
+<p>Daten werden über verschiedene Wege von und zu einer App übertragen. Dafür stellen mobile Betriebssysteme verschiedene Schnittstellen bereit. Der Benutzer hat ebenfalls verschiedene Möglichkeiten, Daten mit einer App auszutauschen, etwa lokal über eine Speicherkarte, die Zwischenablage, die Gerätekamera oder andere Anwendungen. Außerdem können Daten über Cloud-Dienste oder Server des App- oder Geräte-Anbieters übertragen werden. Darüber können Dritte Zugriff auf die vertraulichen Daten erlangen. Schließlich kann auch das Betriebssystem selbst Daten für den schnelleren Zugriff zwischenspeichern (Caching). Dabei können Daten versehentlich abfließen oder Angreifer auf vertrauliche Informationen zugreifen.</p>
+</p>
+<h3>2.10 Unsichere Kommunikation mit Backend-Systemen</h3>
+<p>
+<p>Viele Apps kommunizieren mit Backend-Systemen, über die Daten mit dem Datennetz der Institution ausgetauscht werden. Die Daten werden bei mobilen Geräten zumeist über unsichere Netze wie ein Mobilfunknetz oder WLAN-Hotspots übertragen. Werden für die Kommunikation mit Backend-Systemen aber unsichere Protokolle verwendet, können Informationen abgehört oder manipuliert werden.</p>
+</p>
+<h3>2.11 Wechselwirkungen mit anderen Apps</h3>
+<p>
+<p>Je nach Berechtigungen können Apps sich unbeabsichtigt stören. Das kann z. B. dann geschehen, wenn die Apps Netzkonfigurationen ändern oder beeinflussen, wie z. B. Firewalls oder Virtual Private Networks (VPN). Auch können sie benötigte Ressourcen blockieren bzw. manipulieren, wie GPS, Audio- oder Kamerafunktionen. Apps können sich außerdem gegenseitig behindern oder Daten gegenseitig löschen, wenn Daten etwa widersprüchlich synchronisiert werden, z. B. Termine oder Kontaktdaten.</p>
+</p>
+<h3>2.12 Kommunikationswege außerhalb der Infrastruktur der Institution</h3>
+<p>
+<p>Wenn Apps unkontrolliert mit Dritten kommunizieren können, kann dies Kommunikationswege schaffen, die nicht von der Institution erkannt und kontrolliert werden können. So kann ein Benutzer beispielsweise die App eines Cloud-Datenspeicherdienstes nutzen, um Informationen vom Endgerät nach außen zu übertragen. Auch die enge Verzahnung von Social-Media-Diensten mit vielen Apps erschwert die Kontrolle, ob und wie Informationen das Endgerät verlassen. Diese Art von Kommunikationswegen sind nur schwer nachzuvollziehen. Dies kann noch weitere Probleme verursachen, etwa wenn der Anwender oder die Institution verpflichtet sind, Informationen oder Vorgänge zu archivieren.</p>
+</p>
+<h3>2.13 Nicht verwaltete Apps und nicht verwaltete Endgeräte</h3>
+<p>
+<p>Häufig dürfen die Mitarbeiter die Geräte auch privat benutzen. Wenn die Benutzer aber selbst Apps auf dem mobilen Endgerät installieren dürfen, kann die Institution diese Apps meist nicht kontrollieren. Solche Apps können aber Sicherheitslücken aufweisen und dienstliche Geräte kompromittieren. Umgekehrt können auch die Vertraulichkeit und Integrität verloren gehen, wenn eine dienstliche App auf einem Endgerät installiert wird, das nicht unter Kontrolle der Institution steht, etwa ein privates Smartphone.</p>
+</p>
+<h3>2.14 Abhängigkeit von Backend- oder externen Systemen und Diensten</h3>
+<p>
+<p>Viele Apps sind abhängig von externen Systemen und Diensten und funktionieren ohne eine aktive Datenverbindung nur eingeschränkt oder gar nicht. Wenn die Verbindung zu einem notwendigen Dienst oder sogar der Dienst selbst ausfällt, kann eine solche App nicht mehr verwendet werden. Die damit bearbeiteten Informationen sind dann nicht verfügbar. Dieses Problem kann auch auftreten, wenn der Betreiber des Dienstes etwa Änderungen an den APIs vornimmt und die App nicht rechtzeitig aktualisiert wird.</p>
+</p>
+<a name="20994_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die spezifischen Anforderungen des Bausteins APP.1.4 <span style="font-style: italic">Mobile Anwendungen (Apps)</span> aufgeführt. Grundsätzlich ist der IT-Betrieb für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Umsetzung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt. </p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>IT-Betrieb</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+Benutzer,
+Datenschutzbeauftragter,
+Fachverantwortliche
+</td>
+</tr>
+</table>
+<a name="20994_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein APP.1.4<em>Mobile Anwendungen (Apps)</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>APP.1.4.A1 Anforderungsanalyse für die Nutzung von Apps [Fachverantwortliche] (B)</h4>
+<p>Bevor eine App installiert und genutzt wird, MUSS unter Einbeziehung der jeweiligen Fachverantwortlichen klar definiert werden, welche Geschäftsprozesse die App unterstützen und an welche IT-Komponenten der Institution sie angebunden werden soll. Ferner MÜSSEN Sicherheitsanforderungen für die App festgelegt werden. Außerdem MÜSSEN Schutzbedarf und die rechtlichen Rahmenbedingungen der zu verarbeitenden Daten betrachtet werden. </p>
+<p>In der Anforderungsanalyse MÜSSEN insbesondere Risiken betrachtet werden, die sich aus der mobilen Nutzung ergeben. Die Institution MUSS prüfen, ob ihre Kontroll- und Einflussmöglichkeiten auf die Betriebssystemumgebung mobiler Endgeräte ausreichend sind, um sie sicher nutzen zu können.</p>
+</li>
+<li><h4>APP.1.4.A2 Regelungen für die Verwendung von mobilen Endgeräten und Apps [Benutzer] (B)</h4>
+<p>Da für mobile Endgeräte oft nicht alle sicherheitsrelevanten Aspekte technisch gelöst werden können, MUSS für die Mitarbeiter eine Richtlinie für die Nutzung von Apps erstellt werden. Diese MUSS mindestens regeln, </p>
+<ul><li>welche Daten auf den Geräten verarbeitet werden dürfen (auch: inwieweit eine private Nutzung gestattet ist),</li><li>durch wen welche Apps auf den Geräten installiert werden dürfen, </li><li>wie sich Benutzer in öffentlichen Datennetzen verhalten sollen und</li><li>was zu tun ist, wenn ein Gerät verloren geht.</li></ul>
+<p>Diese Vorgaben MÜSSEN mit den etablierten Regelungen der Institution abgestimmt werden.</p>
+</li>
+<li><h4>APP.1.4.A3 Verwendung sicherer Quellen für Apps [Benutzer] (B)</h4>
+<p>Es MUSS sichergestellt werden, dass Apps nur aus sicheren und vertrauenswürdigen Quellen bezogen werden können. Es DÜRFEN NUR vertrauenswürdige App Stores verwendet werden. Interne Apps der Institution und Apps, die schutzbedürftige Informationen verarbeiten, SOLLTEN über einen institutionseigenen App Store oder via MDM verteilt werden.</p>
+</li>
+<li><h4>APP.1.4.A4 Test und Freigabe von Apps [Datenschutzbeauftragter, Fachverantwortliche] (B)</h4>
+<p>Es MUSS sichergestellt werden, dass sich die App in den vorhandenen Betrieb integrieren lässt und alle Anforderungen der fachlichen Bereiche, der Informationssicherheit und des Datenschutzes eingehalten werden. Bevor eine neue App bzw. eine neue Version einer App eingesetzt wird, SOLLTE diese getestet und danach ausdrücklich freigegeben werden. Für alle Bereiche SOLLTEN entsprechende Tests entwickelt sowie Freigabekriterien definiert werden. Die Ergebnisse der Tests SOLLTEN dokumentiert werden und als Basis für die Freigabe der App dienen. Es SOLLTE insbesondere darauf geachtet werden, dass die Tests auf allen in der Institution verwendeten Gerätemodellen und Betriebssystemumgebungen durchgeführt werden. Die Freigabekriterien SOLLTEN bei allen erfüllt sein.</p>
+</li>
+<li><h4>APP.1.4.A5 Minimierung und Kontrolle von App-Berechtigungen [Fachverantwortliche] (B)</h4>
+<p>Bevor eine App in einer Institution eingeführt wird, MUSS sichergestellt werden, dass sie nur die minimal benötigten App-Berechtigungen für ihre Funktion erhält. Nicht unbedingt notwendige Berechtigungen MÜSSEN hinterfragt und gegebenenfalls unterbunden werden. </p>
+<p>Sicherheitsrelevante Berechtigungseinstellungen MÜSSEN so fixiert werden, dass sie nicht durch Benutzer oder Apps geändert werden können. Wo dies technisch nicht möglich ist, MÜSSEN die Berechtigungseinstellungen regelmäßig geprüft und erneut gesetzt werden.</p>
+</li>
+<li><h4>APP.1.4.A6 Patchmanagement für Apps (B)</h4>
+<p>Updates für Apps MÜSSEN zeitnah eingespielt werden. Falls die Institution ein System für MDM einsetzt, MÜSSEN verfügbare Updates damit gesteuert werden. Für jeden Patch MUSS bewertet werden, wie er sich auf die Sicherheit auswirkt. Danach SOLLTE er entsprechend priorisiert werden.</p>
+<p>Wenn keine Patches zur Verfügung stehen, MÜSSEN geeignete Gegenmaßnahmen ergriffen werden, wenn bei Apps Schwachstellen bekannt sind. Ist dies nicht möglich, DÜRFEN Apps mit bekannten offenen Schwachstellen NICHT verwendet werden.</p>
+</li>
+<li><h4>APP.1.4.A7 Sichere Speicherung lokaler App-Daten (B)</h4>
+<p>Wenn Apps auf interne Dokumente der Institution zugreifen können, MUSS sichergestellt sein, dass die lokale Datenhaltung der App angemessen abgesichert ist. Insbesondere MÜSSEN Zugriffsschlüssel verschlüsselt abgelegt werden. Außerdem DÜRFEN vertrauliche Daten NICHT vom Betriebssystem an anderen Ablageorten zwischengespeichert werden.</p>
+</li>
+<li><h4>APP.1.4.A8 Verhinderung von Datenabfluss (B)</h4>
+<p>Um zu verhindern, dass Apps ungewollt vertrauliche Daten versenden oder aus den gesendeten Daten Benutzerprofile erstellt werden, MUSS die App-Kommunikation geeignet eingeschränkt werden. Dazu SOLLTE die Kommunikation im Rahmen des Test- und Freigabeverfahrens analysiert werden. Weiterhin SOLLTE überprüft werden, ob eine App ungewollte Protokollierungs- oder Hilfsdateien schreibt, die möglicherweise vertrauliche Informationen enthalten.</p>
+</li>
+</ul>
+<a name="20994_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein APP.1.4<em>Mobile Anwendungen (Apps)</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>APP.1.4.A9 Sichere Anbindung an Backend-Systeme [Fachverantwortliche] (S)</h4>
+<p>Die Verbindung zwischen App und Backend-Systemen SOLLTE durch kryptografische Maßnahmen abgesichert werden. Hierbei MUSS überprüft werden, ob die vom Betriebssystem angebotenen Verfahren für die App ausreichend sicher sind oder ob eventuell eigene Methoden auf Applikationsebene implementiert werden müssen.</p>
+<p>Wenn eine App über ein Benutzerkonto auf ein Backend-Systeme zugreift, MUSS dafür ein dediziertes Dienstekonto verwendet werden.</p>
+</li>
+<li><h4>APP.1.4.A10 Sichere Authentisierung von Apps (S)</h4>
+<p>Bevor eine App auf die IT-Systeme einer Institution zugreifen darf, SOLLTE sie sich am Backend-System authentisieren. In diesem Fall MÜSSEN angemessene und sichere Authentisierungsmechanismen verwendet werden. Die App MUSS die Authentisierungsparameter wie z. B. Benutzername, Passwort oder Zertifikat mit einem sicheren Protokoll übertragen. Wenn Mitarbeiter mobile Endgeräte verlieren, SOLLTE sichergestellt sein, dass kein Unbefugter auf die Apps und damit auf Informationen der Institution zugreifen kann.</p>
+</li>
+<li><h4>APP.1.4.A11 Zentrales Management von Apps (S)</h4>
+<p>Es SOLLTE eine MDM-Lösung etabliert werden. Es SOLLTE über Prüfmechanismen und Whitelists sichergestellt werden, dass nur geprüfte und freigegebene Apps verwendet werden können.</p>
+</li>
+<li><h4>APP.1.4.A12 Sichere Deinstallation von Apps (S)</h4>
+<p>Wenn Apps deinstalliert werden, SOLLTEN auch alle von der App generierten Dateien gelöscht werden. Dabei SOLLTEN ebenso vom Betriebssystem zwischengespeicherte Daten mit Bezug zur App gelöscht werden, etwa Caches. Außerdem SOLLTEN auch Daten gelöscht werden, die auf externen Systemen, beispielsweise beim App-Anbieter, gespeichert wurden.</p>
+</li>
+</ul>
+<a name="20994_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein APP.1.4<em>Mobile Anwendungen (Apps)</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>APP.1.4.A13 Entwicklung von Fallback-Lösungen für Apps [Fachverantwortliche] (H)</h4>
+<p>Für alle mit Apps abgebildeten Geschäftsprozesse SOLLTE im Falle einer Störung oder bei anderen Problemen eine Alternative bereitstehen. Dabei SOLLTE im Vorfeld überlegt werden, wie lang die maximal tolerierbare Ausfallzeit einer App ist und wie sich die betroffenen Geschäftsprozesse anderweitig abbilden lassen, beispielsweise durch ein zentrales Webportal.</p>
+</li>
+<li><h4>APP.1.4.A14 Unterstützung zusätzlicher Authentisierungsmerkmale bei Apps (H)</h4>
+<p>Es SOLLTE für die Authentisierung der Benutzer in der App ein zweiter Faktor benutzt werden. Hierbei SOLLTE darauf geachtet werden, dass eventuell benötigte Sensoren oder Schnittstellen in allen verwendeten Geräten vorhanden sind. Zusätzlich SOLLTE bei biometrischen Verfahren berücksichtigt werden, wie resistent die Authentisierung gegen mögliche Fälschungsversuche ist.</p>
+</li>
+<li><h4>APP.1.4.A15 Durchführung von Penetrationstests für Apps (H)</h4>
+<p>Bevor eine App für den Einsatz freigegeben wird, SOLLTE ein Penetrationstest durchgeführt werden. Dabei SOLLTEN alle Kommunikationsschnittstellen zu Backend-Systemen sowie die lokale Speicherung von Daten auf mögliche Sicherheitslücken untersucht werden. Die Penetrationstests SOLLTEN regelmäßig und zusätzlich bei größeren Änderungen an der App wiederholt werden.</p>
+</li>
+</ul>
+<a name="20994_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Das BSI bietet eine Broschüre „Mobile Endgeräte und mobile Applikationen: Sicherheitsgefährdungen und Schutzmaßnahmen“ (2006) an.</p>
+<p>Der Bundesverband Informationswirtschaft, Telekommunikation und neue Medien e. V. (Bitkom) stellt mit dem Leitfaden „Apps &amp; Mobile Services – Tipps für Unternehmen“ (2. Auflage, 2014) eine Entscheidungshilfe zum Thema Apps und Mobile Services in Unternehmen bereit.</p>
+<p>Das Information Security Forum (ISF) bietet eine Broschüre mit dem Titel „ Securing Mobile Apps – Embracing mobile, balancing control“ (2018) an.</p>
+<p>Auch die „NIST Special Publication 800-163: Vetting the Security of Mobile Applications“ (2015) bietet weiterführende Informationen zum Thema Apps.</p>
+<a name="20994_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein APP.1.4 <em>Mobile Anwendungen (Apps)</em> von Bedeutung.</p>
+<ul>
+<li>G 0.9 Ausfall oder Störung von Kommunikationsnetzen</li>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.15 Abhören</li>
+<li>G 0.16 Diebstahl von Geräten, Datenträgern oder Dokumenten</li>
+<li>G 0.17 Verlust von Geräten, Datenträgern oder Dokumenten</li>
+<li>G 0.18 Fehlplanung oder fehlende Anpassung</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.20 Informationen oder Produkte aus unzuverlässiger Quelle</li>
+<li>G 0.21 Manipulation von Hard- oder Software</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.25 Ausfall von Geräten oder Systemen</li>
+<li>G 0.26 Fehlfunktion von Geräten oder Systemen</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.29 Verstoß gegen Gesetze oder Regelungen</li>
+<li>G 0.32 Missbrauch von Berechtigungen</li>
+<li>G 0.36 Identitätsdiebstahl</li>
+<li>G 0.38 Missbrauch personenbezogener Daten</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.42 Social Engineering</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.09</th>
+<th>G 0.14</th>
+<th>G 0.15</th>
+<th>G 0.16</th>
+<th>G 0.17</th>
+<th>G 0.18</th>
+<th>G 0.19</th>
+<th>G 0.20</th>
+<th>G 0.21</th>
+<th>G 0.23</th>
+<th>G 0.25</th>
+<th>G 0.26</th>
+<th>G 0.28</th>
+<th>G 0.29</th>
+<th>G 0.32</th>
+<th>G 0.36</th>
+<th>G 0.38</th>
+<th>G 0.39</th>
+<th>G 0.42</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APP.1.4.A1</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.4.A2</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.1.4.A3</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.4.A4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.4.A5</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.1.4.A6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.4.A7</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.4.A8</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.4.A9</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.4.A10</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.4.A11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.4.A12</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.4.A13</td>
+<td>A</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.4.A14</td>
+<td>CI</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.4.A15</td>
+<td>CIA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

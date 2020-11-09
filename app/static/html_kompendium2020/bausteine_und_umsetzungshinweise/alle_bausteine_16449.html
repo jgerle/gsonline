@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+APP.4.6 SAP ABAP-Programmierung
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_16449.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_16449.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">APP.4.6 SAP ABAP-Programmierung</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>APP.4.6 SAP ABAP-Programmierung</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#16449_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#16449_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#16449_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#16449_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#16449_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#16449_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#16449_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#16449_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#16449_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#16449_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#16449_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#16449_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#16449_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="16449_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="16449_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Häufig werden in SAP-Systemen Eigenentwicklungen programmiert. Die Gründe dafür sind vielfältig: So können Geschäftsprozesse oder Anforderungen an das Reporting mit Hilfe von Eigenentwicklungen individuell an die Institution angepasst werden. Außerdem ist es möglich, spezielle Funktionen zu erstellen, die in der Standard-Auslieferung nicht vorhanden sind.</p>
+<p>Eigenentwicklungen werden von Entwicklern der Institution oder von beauftragten Entwicklern programmiert. Im SAP-Umfeld wird dazu häufig ABAP (Advanced Business Application Programming) verwendet.</p>
+<p>ABAP ist eine proprietäre, plattformunabhängige Programmiersprache des Unternehmens SAP. Sie wurde für die Programmierung kommerzieller Anwendungen im SAP-Umfeld entwickelt und ähnelt in ihrer Grundstruktur entfernt der Sprache COBOL. Wichtige Merkmale sind:</p>
+<ul><li>Integration eines Authentisierungs-, Rollen- und Berechtigungskonzepts,</li><li>Verwendung eines proprietären, datenbankunabhängigen SQL-Derivats (Open SQL),</li><li>Unterstützung der Kommunikation zwischen verschiedenen SAP-Systemen sowie</li><li>Integration von Audit-Optionen.</li></ul>
+</p>
+<a name="16449_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Der Baustein zeigt ABAP-Entwicklern und Sicherheitstestern relevante technische Risiken auf, die sich durch ABAP-Eigenentwicklungen ergeben können. Außerdem werden Anforderungen definiert, die aufzeigen, wie ABAP-Programme sicher entwickelt und eingesetzt werden können.</p>
+<p>Der Baustein setzt grundlegende Kenntnisse in ABAP und im Umgang mit ABAP-Entwicklungswerkzeugen voraus.</p>
+</p>
+<a name="16449_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein APP.4.6 <span style="font-style: italic">SAP ABAP-Programmierung </span>ist auf jedes SAP-System einmal anzuwenden, wenn Eigenentwicklungen in der Programmiersprache ABAP erstellt werden.</p>
+<p>Mit diesem Baustein werden die Bausteine CON.8 <span style="font-style: italic">Software-Entwicklung</span>, CON.4 <span style="font-style: italic">Auswahl und Einsatz von Standardsoftware</span> und CON.5 <span style="font-style: italic">Entwicklung und Einsatz von Allgemeinen Anwendungen</span> um konkrete Aspekte zur Entwicklung von ABAP-Programmen erweitert.</p>
+<p>Der Baustein stellt keine vollständige Anleitung dar, um ABAP-Programme zu entwickeln, sondern beschreibt die generellen Risiken der Programmiersprache ABAP. Im Baustein werden Anforderungen definiert, die bei der Entwicklung von ABAP-Programmen aus Sicherheitssicht erfüllt werden sollten. </p>
+<p>Da Webanwendungen nur einen sehr geringen Anteil aller ABAP-Anwendungen in SAP-Implementierungen ausmachen, stehen Web-Schwachstellen nicht im Fokus dieses Dokuments. </p>
+</p>
+<a name="16449_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein APP.4.6 <span style="font-style: italic">SAP ABAP-Programmierung</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Fehlende Berechtigungsprüfungen</h3>
+<p>
+<p>In SAP werden Berechtigungen nur dann geprüft, wenn eine entsprechende Berechtigungsprüfung vom Entwickler im Programm implementiert wurde. Ohne eine solche Prüfung im Programm-Code wird also nicht getestet, ob ein Benutzer auch wirklich berechtigt ist eine Aktion auszuführen. In selbst entwickeltem Programm-Code werden Berechtigungsprüfungen aber häufig vergessen. Somit greift das gesamte Berechtigungskonzept oftmals nicht und unberechtigte Personen können auf die im SAP-System gespeicherten Daten zugreifen. Dadurch kann etwa auch gegen Compliance-Anforderungen verstoßen werden. Dies kann besonders bei Wirtschaftsprüfungen schwerwiegende Folgen nach sich ziehen.</p>
+</p>
+<h3>2.2 Verlust von Vertraulichkeit oder Integrität von kritischen Daten</h3>
+<p>
+<p>SAP-Systeme enthalten viele institutionskritische Informationen. Der SAP-Standard sieht verschiedene Mechanismen vor, diese Daten zu schützen. Allerdings könnte durch fehlerhafte ABAP-Eigenentwicklungen unerlaubt auf institutionskritische Informationen zugegriffen werden. Mitarbeiter oder Angreifer könnten die Daten so in eine nicht mehr kontrollierbare Umgebung transferieren. Ebenso könnten mit Hilfe von ABAP-Programmen kritische Daten manipuliert werden, indem die Sicherheitsmechanismen des SAP-Standards umgangen werden.</p>
+</p>
+<h3>2.3 Injection-Schwachstellen</h3>
+<p>
+<p>Injection-Schwachstellen entstehen dadurch, dass ein Angreifer Steuerzeichen bzw. Kommandos über das Eingabefeld in eine Anwendung einschleust. Ein erfolgreicher Angriff kann den geplanten Programmablauf durch unerwartete Kommandos stören.</p>
+<p>Injection-Schwachstellen stellen für Eigenentwicklungen das größte Sicherheitsrisiko dar. Durch fehlerhaften Code in einer ABAP-Anwendung können Angreifer ein SAP-System mitunter vollständig kontrollieren. Da solche Angriffe sehr komplex sind und es viele Varianten davon gibt, lassen sie sich ohne spezielle Schulungen kaum erkennen und beheben. </p>
+</p>
+<h3>2.4 Umgehung von vorhandenen SAP-Sicherheitsmechanismen</h3>
+<p>
+<p>Der SAP-Standard stellt verschiedene Schutzmechanismen für Daten zur Verfügung. Dazu gehören unter anderem die Mandantentrennung, Identity-Management sowie Rollen und Berechtigungen. Diese Sicherheitsmechanismen können im Code jedoch bewusst umgangen oder ungewollt weggelassen werden.</p>
+</p>
+<a name="16449_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die spezifischen Anforderungen des Bausteins APP.4.6 <span style="font-style: italic">SAP ABAP-Programmierung</span> aufgeführt. Grundsätzlich ist der Leiter der Entwicklung für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festlegten Sicherheitskonzept erfüllt und regelmäßig überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Umsetzung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt. </p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>Leiter Entwicklung</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+Entwickler
+</td>
+</tr>
+</table>
+<a name="16449_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein APP.4.6<em>SAP ABAP-Programmierung</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>APP.4.6.A1 Absicherung von Reports mit Berechtigungsprüfungen [Entwickler] (B)</h4>
+<p>Es MUSS sichergestellt sein, dass nur berechtigte Benutzer selbst programmierte Auswertungen (Reports) starten können. Deswegen MUSS jeder Report explizite, zum Kontext passende Berechtigungsprüfungen durchführen. </p>
+</li>
+<li><h4>APP.4.6.A2 Formal korrekte Auswertung von Berechtigungsprüfungen [Entwickler] (B)</h4>
+<p>Jede Berechtigungsprüfung im Code MUSS durch Abfrage des Rückgabewertes <span style="font-style: italic">SY-SUBRC</span> ausgewertet werden.</p>
+</li>
+<li><h4>APP.4.6.A3 Berechtigungsprüfung vor dem Start einer Transaktion [Entwickler] (B)</h4>
+<p>Wenn Entwickler den Befehl <span style="font-style: italic">CALL TRANSACTION</span> verwenden, MUSS vorher immer eine Startberechtigungsprüfung durchgeführt werden. </p>
+</li>
+<li><h4>APP.4.6.A4 Verzicht auf proprietäre Berechtigungsprüfungen [Entwickler] (B)</h4>
+<p>Jede Berechtigungsprüfung MUSS technisch über den dafür vorgesehenen Befehl <span style="font-style: italic">AUTHORITY-CHECK</span> erfolgen. Proprietäre Berechtigungsprüfungen, z. B. basierend auf Benutzernamen, DÜRFEN NICHT benutzt werden.</p>
+</li>
+</ul>
+<a name="16449_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein APP.4.6<em>SAP ABAP-Programmierung</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>APP.4.6.A5 Erstellung einer Richtlinie für die ABAP-Entwicklung (S)</h4>
+<p>Es SOLLTE eine Richtlinie für die Entwicklung von ABAP-Programmen erstellt werden. Die Richtlinie SOLLTE neben Namenskonventionen auch Vorgaben zu ABAP-Elementen beinhalten, die verwendet bzw. nicht verwendet werden dürfen. Die Anforderungen aus diesem Baustein SOLLTEN in die Richtlinie aufgenommen werden. Die Richtlinie SOLLTE für die Entwickler verbindlich sein.</p>
+</li>
+<li><h4>APP.4.6.A6 Vollständige Ausführung von Berechtigungsprüfungen [Entwickler] (S)</h4>
+<p>Bei einer Berechtigungsprüfung im ABAP-Code (<span style="font-style: italic">AUTHORITY-CHECK &lt;OBJECT&gt;</span>) SOLLTE sichergestellt sein, dass alle Felder des relevanten Berechtigungsobjekts überprüft werden. Wenn einzelne Felder tatsächlich nicht benötigt werden, SOLLTEN sie als <span style="font-style: italic">DUMMY</span> gekennzeichnet werden. Zusätzlich SOLLTE am Feld der Grund für die Ausnahme dokumentiert werden.</p>
+</li>
+<li><h4>APP.4.6.A7 Berechtigungsprüfung während der Eingabeverarbeitung [Entwickler] (S)</h4>
+<p>Funktionscodes und Bildschirmelemente von ABAP-Dynpro-Anwendungen SOLLTEN konsistent sein. Wenn ein Bildschirmelement abgeschaltet wurde, dann SOLLTE eine Anwendung NICHT ohne adäquate Berechtigungsprüfungen auf Ereignisse dieses Elements reagieren. Wenn bestimmte Einträge eines Dynpro-Menüs ausgeblendet oder einzelne Schaltflächen deaktiviert werden, dann SOLLTEN auch die zugehörigen Funktionscodes nicht ausgeführt werden. </p>
+</li>
+<li><h4>APP.4.6.A8 Schutz vor unberechtigten oder manipulierenden Zugriffen auf das Dateisystem [Entwickler] (S)</h4>
+<p>Wenn Zugriffe auf Dateien des SAP-Servers von Benutzereingaben abhängen, SOLLTEN diese Eingaben vor dem Zugriff validiert werden.</p>
+</li>
+<li><h4>APP.4.6.A9 Berechtigungsprüfung in remote-fähigen Funktionsbausteinen [Entwickler] (S)</h4>
+<p>Es SOLLTE sichergestellt werden, dass alle remote-fähigen Funktionsbausteine im Programmcode explizit prüfen, ob der Aufrufer berechtigt ist, die zugehörige Businesslogik auszuführen.</p>
+</li>
+<li><h4>APP.4.6.A10 Verhinderung der Ausführung von Betriebssystemkommandos [Entwickler] (S)</h4>
+<p>Jedem Aufruf eines erlaubten Betriebssystemkommandos SOLLTE eine entsprechende Berechtigungsprüfung (Berechtigungsobjekt<span style="font-style: italic"> S_LOG_COM</span>) vorangestellt werden. Benutzereingaben SOLLTEN NICHT Teil eines Kommandos sein. Deswegen SOLLTEN Betriebssystemaufrufe ausschließlich über dafür vorgesehene SAP-Standardfunktionsbausteine ausgeführt werden.</p>
+</li>
+<li><h4>APP.4.6.A11 Vermeidung von eingeschleustem Schadcode [Entwickler] (S)</h4>
+<p>Die ABAP-Befehle <span style="font-style: italic">INSERT REPORT</span> und <span style="font-style: italic">GENERATE SUBROUTINE POOL</span> SOLLTEN NICHT verwendet werden. Denn damit könnten zur Laufzeit dynamisch neue, möglicherweise schädliche, ABAP-Programme erstellt und ausgeführt werden.</p>
+</li>
+<li><h4>APP.4.6.A12 Vermeidung von generischer Modulausführung [Entwickler] (S)</h4>
+<p>Transaktionen, Programme, Funktionsbausteine und Methoden SOLLTEN NICHT generisch ausführbar sein. Sollte es wichtige Gründe für eine generische Ausführung geben, SOLLTE detailliert dokumentiert werden, wo und warum dies geschieht. Zusätzlich SOLLTE eine Whitelist definiert werden, die alle erlaubten Module enthält. Bevor ein Modul aufgerufen wird, SOLLTE die Benutzereingabe mit der Whitelist abgeglichen werden.</p>
+</li>
+<li><h4>APP.4.6.A13 Vermeidung von generischem Zugriff auf Tabelleninhalte [Entwickler] (S)</h4>
+<p>Tabelleninhalte SOLLTEN NICHT generisch ausgelesen werden. Sollte es wichtige Gründe dafür geben, dies doch zu tun, SOLLTE detailliert dokumentiert werden, wo und warum dies geschieht. Außerdem SOLLTE dann gewährleistet sein, dass sich der dynamische Tabellenname auf eine kontrollierbare Liste von Werten beschränkt.</p>
+</li>
+<li><h4>APP.4.6.A14 Vermeidung von nativen SQL-Anweisungen [Entwickler] (S)</h4>
+<p>Die Schnittstelle ABAP Database Connectivity (ADBC) SOLLTE NICHT verwendet werden. Benutzereingaben SOLLTEN NICHT Teil von ADBC-Befehlen sein.</p>
+</li>
+<li><h4>APP.4.6.A15 Vermeidung von Datenlecks [Entwickler] (S)</h4>
+<p>Es SOLLTE eine ausreichend sichere Berechtigungsprüfung durchgeführt werden, bevor geschäftskritische Daten angezeigt, übermittelt oder exportiert werden. Vorgesehene (gewollte) Möglichkeiten des Exports SOLLTEN dokumentiert werden.</p>
+</li>
+<li><h4>APP.4.6.A16 Verzicht auf systemabhängige Funktionsausführung [Entwickler] (S)</h4>
+<p>ABAP-Programme SOLLTEN NICHT systemabhängig programmiert werden, so dass sie nur auf einem bestimmten SAP-System ausgeführt werden können. Sollte dies jedoch unbedingt erforderlich sein, SOLLTE es detailliert dokumentiert werden. Außerdem SOLLTE der Code dann manuell überprüft werden. </p>
+</li>
+<li><h4>APP.4.6.A17 Verzicht auf mandantenabhängige Funktionsausführung [Entwickler] (S)</h4>
+<p>ABAP-Programme SOLLTEN NICHT mandantenabhängig programmiert werden, so dass sie nur von einem bestimmten Mandanten ausgeführt werden können. Sollte dies jedoch unbedingt erforderlich sein, SOLLTE es detailliert dokumentiert werden. Außerdem SOLLTEN dann zusätzliche Sicherheitsmaßnahmen ergriffen werden, wie beispielsweise eine manuelle Code-Überprüfung (manuelles Code-Review) oder eine Qualitätssicherung auf dem entsprechenden Mandanten.</p>
+</li>
+<li><h4>APP.4.6.A18 Vermeidung von Open-SQL-Injection-Schwachstellen [Entwickler] (S)</h4>
+<p>Dynamisches Open SQL SOLLTE NICHT verwendet werden. Falls Datenbankzugriffe mit dynamischen SQL-Bedingungen notwendig sind, SOLLTEN KEINE Benutzereingaben in der jeweiligen Abfrage übertragen werden. Wenn das dennoch der Fall ist, SOLLTE die Benutzereingabe zwingend geprüft werden (Output Encoding). </p>
+</li>
+<li><h4>APP.4.6.A19 Schutz vor Cross-Site-Scripting [Entwickler] (S)</h4>
+<p>Auf selbst entwickeltes HTML in Business-Server-Pages-(<span style="font-style: italic">BSP</span>)-Anwendungen oder HTTP-Handlern SOLLTE möglichst verzichtet werden.</p>
+</li>
+<li><h4>APP.4.6.A20 Keine Zugriffe auf Daten eines anderen Mandanten [Entwickler] (S)</h4>
+<p>Die automatische Mandantentrennung SOLLTE NICHT umgangen werden. Auf Daten anderer Mandanten SOLLTE NICHT mittels <span style="font-style: italic">EXEC SQL </span>oder der Open SQL Option <span style="font-style: italic">CLIENT SPECIFIED</span> zugegriffen werden.</p>
+</li>
+<li><h4>APP.4.6.A21 Verbot von verstecktem ABAP-Quelltext [Entwickler] (S)</h4>
+<p>Der Quelltext eines selbst erstellten ABAP-Programms SOLLTE immer lesbar sein. Techniken, die das verhindern (Obfuskation<span style="font-weight: bold">)</span>, SOLLTEN NICHT verwendet werden.</p>
+</li>
+</ul>
+<a name="16449_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein APP.4.6<em>SAP ABAP-Programmierung</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>APP.4.6.A22 Einsatz von ABAP-Codeanalyse Werkzeugen (H)</h4>
+<p>Zur automatisierten Überprüfung von ABAP-Code auf sicherheitsrelevante Programmierfehler, funktionale und technische Fehler sowie auf qualitative Schwachstellen SOLLTE ein ABAP-Codeanalyse-Werkzeug eingesetzt werden.</p>
+</li>
+</ul>
+<a name="16449_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Im „Best Practice Guide: Leitfaden Development ABAP 2.0“ der Deutschsprachigen SAP Anwendergruppe e.V. (DSAG) finden sich vertiefende Informationen zur ABAP-Programmierung.</p>
+<p>Weitere Informationen und Best Practices zur sicheren ABAP-Programmierung finden sich im Buch „Sichere ABAP-Programmierung“ von Wiegenstein, Schuhmacher, Schinzel, Weidemann aus dem SAP Press Verlag.</p>
+<a name="16449_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein APP.4.6 <em>SAP ABAP-Programmierung</em> von Bedeutung.</p>
+<ul>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.16 Diebstahl von Geräten, Datenträgern oder Dokumenten</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.45 Datenverlust</li>
+<li>G 0.46 Integritätsverlust schützenswerter Informationen</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.14</th>
+<th>G 0.16</th>
+<th>G 0.19</th>
+<th>G 0.22</th>
+<th>G 0.28</th>
+<th>G 0.39</th>
+<th>G 0.45</th>
+<th>G 0.46</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APP.4.6.A1</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A2</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A3</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.6.A4</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.6.A6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A8</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A9</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.6.A10</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A11</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A12</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A13</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A14</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A15</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>APP.4.6.A16</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A17</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A18</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A19</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A20</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A21</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.4.6.A22</td>
+<td>CIA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

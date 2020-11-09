@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+SYS.3.2.3 iOS (for Enterprise)
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_22509.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_22509.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">SYS.3.2.3 iOS (for Enterprise)</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>SYS.3.2.3 iOS (for Enterprise)</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#22509_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#22509_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22509_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22509_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#22509_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#22509_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#22509_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22509_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22509_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#22509_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#22509_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22509_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#22509_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="22509_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="22509_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Mobilgeräte sind ständige Begleiter in der heutigen Informationsgesellschaft. Sie sind fast ununterbrochen online, das heißt mit dem Internet oder dem internen Institutionsnetz (Intranet) verbunden, und ermöglichen damit jederzeit den Zugriff auf digitale Informationen. Die Geräte können über diverse Schnittstellen kommunizieren, zum Beispiel über Mobilfunk, WLAN oder Bluetooth.</p>
+<p>Aufgrund von modernen, einfachen Bedienkonzepten sowie ihrer hohen Leistungsfähigkeit sind Smartphones und Tablets heutzutage weit verbreitet. Dazu zählen auch die von der Firma Apple produzierten Mobilgeräte iPhone und iPad mit dem Betriebssystem iOS. Ursprünglich wurden diese Geräte für den privaten Gebrauch konzipiert. Durch die Umgestaltung der Infrastrukturen und die Art der Informationserhebung und -verarbeitung werden sie jedoch immer häufiger auch im beruflichen Umfeld verwendet und lösen teilweise sogar Notebooks ab.</p>
+<p>Durch die Integration von Business-Funktionen wurde iOS seit der Version 4 schrittweise für den Einsatz in Unternehmen und Behörden ausgebaut und Funktionen für die Verwaltung aus Sicht einer Institution integriert. Hierzu gehören die Möglichkeit zur zentralisierten Geräteregistrierung (Apple Business Manager) sowie Optionen wie Single Sign-On (SSO).</p>
+</p>
+<a name="22509_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Ziel dieses Bausteins ist es, aufzuzeigen, wie mit iOS (for Enterprise) betriebene Geräte sicher in Institutionen eingesetzt werden können. Dazu werden Anforderungen für Einstellungen der iOS-basierten Endgeräte aufgestellt, die in Form von Konfigurationsprofilen auf den Endgeräten verteilt werden können. iOS-Konfigurationsprofile enthalten einheitlich definierte Einstellungen, z. B. für Sicherheitsrichtlinien oder einzelne Systemaspekte, um iOS-basierte Geräte einheitlich und zentral zu verwalten und automatisch zu konfigurieren.</p>
+</p>
+<a name="22509_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein SYS.3.2.3 <span style="font-style: italic">iOS (for Enterprise)</span> ist für alle dienstlich verwendeten Smartphones und Tablets mit dem Betriebssystem Apple iOS anzuwenden.</p>
+<p>Dieser Baustein enthält grundsätzliche Anforderungen, die beim Betrieb von iOS-basierten Geräten, die in die Prozesse der Institution integriert sind, zu beachten und zu erfüllen sind. Anforderungen an die Integration in die Sicherheits- oder Kollaborations-Infrastruktur der Institution stehen nicht im Fokus dieses Bausteins. Mit einem sogenannten „Mobile Device Management“ (MDM) besteht die Möglichkeit, die Geräte zentral zu verwalten und Konfigurationsprofile pro Benutzergruppe oder Einsatzzweck auszurollen. Über ein MDM lassen sich auch Sicherheitsmaßnahmen einheitlich umsetzen. Dieser Baustein setzt voraus, dass zu verwaltende iOS-Geräte in eine MDM-Infrastruktur integriert sind. Wird eine geringe Anzahl von Geräten verwaltet, können diese aus wirtschaftlichen Gründen ausnahmsweise ohne MDM eingesetzt werden. Anforderungen für den Betrieb von MDM finden sich im Baustein SYS.3.2.2 <span style="font-style: italic">Mobile Device Management (MDM)</span>. Für kleinere Umgebungen kann der Apple Configurator verwendet werden, um die in diesem Baustein aufgeführten Anforderungen auf mehreren Endgeräte einheitlich umzusetzen. Allgemeine und übergreifende Aspekte zum Betrieb von Smartphones und Tablets, unabhängig vom darauf eingesetzten Betriebssystem, finden sich im Baustein SYS.3.2.1 <span style="font-style: italic">Allgemeine Smartphones und Tablets</span> und sind ebenfalls umzusetzen, wenn iOS-basierte Geräte verwendet werden.</p>
+</p>
+<a name="22509_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein SYS.3.2.3 <span style="font-style: italic">iOS (for Enterprise)</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Fehlende oder schlechte Qualität des Zugangsschutzes</h3>
+<p>
+<p>Mit der sogenannten Codesperre werden iOS-basierte Geräte vor unbefugtem Zugang geschützt. Wenn diese Funktion nicht aktiviert oder ein leicht zu erratender Code verwendet wird, besteht die erhöhte Gefahr, dass Unbefugte auf iOS-basierte Geräte zugreifen. Zudem ist der verwendete Gerätecode unter iOS ein essenzieller Bestandteil für die Entropie bestimmter Verschlüsselungscodes.</p>
+</p>
+<h3>2.2 Jailbreak</h3>
+<p>
+<p>In den bisherigen Versionen des iOS-Betriebssystems wurden meist Schwachstellen gefunden, die es ermöglichen, das von der Firma Apple etablierte Sicherheitsframework zu unterlaufen und somit auf Systemprozesse und geschützte Speicherbereiche zuzugreifen. Sogenannte Jailbreaks nutzen diese Schwachstellen aus, um beispielsweise alternative App-Stores oder von Apple unerwünschte Erweiterungen nutzen zu können. Jailbreak-Techniken werden von Angreifern verwendet, um Schadprogramme zu installieren oder andere schädliche Manipulationen auf dem iOS-basierten Gerät vorzunehmen.</p>
+</p>
+<h3>2.3 Risikokonzentration durch ein Benutzerkonto (Apple-ID) für alle Apple-Dienste</h3>
+<p>
+<p>Mit der Apple-ID existiert ein zentraler Zugang zu allen von der Firma Apple zur Verfügung gestellten Diensten (z. B. „iMessage“, „FaceTime“, „iCloud“, „App Store“, „iTunes“, „iBook-Store“, „iPhone-Suche“ oder Synchronisationsdienste). Wenn Unbefugte auf eine nicht ausreichend abgesicherte Apple-ID zugreifen können, können sie diese Apple-Dienste unter Umständen unter einer falschen Identität nutzen, die Verfügbarkeit der Apple-ID-basierten Dienste stören, iOS-basierte Geräte aus der Ferne lokalisieren oder auf Werkseinstellungen zurücksetzen sowie auf Informationen des Cloud-Dienstes iCloud zugreifen. Insbesondere ist es einem Angreifer bei aktivierten iCloud-Backups möglich, die gespeicherten Daten auf ein eigenes iOS-Gerät zu klonen.</p>
+</p>
+<h3>2.4 Software-Schwachstellen in Apps</h3>
+<p>
+<p>Apps für iOS können Schwachstellen enthalten, die für lokale Angriffe oder für Angriffe über Netzverbindungen ausgenutzt werden können. Außerdem werden viele Apps von Drittentwicklern nach einiger Zeit nicht mehr weiter gepflegt. Dadurch besteht die Gefahr, dass erkannte Sicherheitsmängel nicht durch entsprechende Updates behoben werden.</p>
+</p>
+<h3>2.5 Tiefe Integration von vorinstallierten Apps und deren Funktionen</h3>
+<p>
+<p>Mit iOS liefert Apple bereits tief integrierte und vorinstallierte Apps (z. B. „Mail“ und „Safari“) aus. Diese Apps werden teilweise mit höheren Berechtigungen als die aus dem App Store herunterladbaren Apps ausgeführt, wodurch sich die Angriffsfläche des iOS-basierten Geräts vergrößert. </p>
+</p>
+<h3>2.6 Missbrauch biometrischer Authentisierung</h3>
+<p>
+<p>Das Betriebssystem iOS enthält spezielle Funktionen, die durch biometrische Authentisierungsverfahren wie den Fingerabdrucksensor „Touch ID“ oder die Gesichtserkennung „Face ID“ vereinfacht genutzt werden können. Dazu gehören z. B. das vereinfachte Freischalten des Geräts oder der Einkauf im App Store. Biometrische Sicherheitsfunktionen lassen sich oft mit entsprechendem Aufwand, etwa durch den Nachbau eines künstlichen Fingers auf Basis eines digital gesäuberten Fingerabdrucks, umgehen. Bis zu 48 Stunden nach der letzten Entsperrung akzeptiert das Gerät eine Freischaltung über biometrische Verfahren. Dies ist somit das maximale Zeitfenster für einen Missbrauch.</p>
+</p>
+<h3>2.7 Missbrauch vertraulicher Daten im gesperrten Zustand</h3>
+<p>
+<p>Das Betriebssystem iOS verfügt über eine Funktion, um Mitteilungen von aktivierten Widgets und Push-Nachrichten auf dem Sperrbildschirm anzeigen zu lassen. Dadurch können vertrauliche Informationen des Benutzers ungeschützt auf dem Sperrbildschirm unberechtigten Dritten preisgegeben und ausgenutzt werden. Über den Sprachassistenten „Siri“ besteht zudem auch im gesperrten Zustand die Möglichkeit, auf Telefonfunktionen und Kontaktdaten zuzugreifen. Auch dies kann dazu führen, dass unberechtigte Dritte an schützenswerte Informationen gelangen können.</p>
+</p>
+<h3>2.8 Missbräuchlicher Zugriff auf ausgelagerte Daten</h3>
+<p>
+<p>Für eine Reihe iOS-spezifischer Funktionen muss die von der Firma Apple betriebene Infrastruktur verwendet werden. Werden die Funktioen „iCloud-Schlüsselbund“, „iMessage“, „FaceTime“, „Siri“, „Continuity“, „Spotlight-Vorschläge“ sowie Funktionen der iCloud zum Anlegen von Backups oder zum gemeinsamen Arbeiten an Dokumenten verwendet, erfolgt die Synchronisierung von Daten zwischen unterschiedlichen Geräten oder Benutzern stets über die Infrastruktur der Firma Apple. Ebenfalls werden Push-Nachrichten für iOS-basierte Geräte über diese Infrastruktur weitergeleitet. Es besteht somit prinzipiell die Gefahr, dass Unbefugte auf Apple-Server zugreifen und die dort gespeicherten oder übertragenen Daten für ihre Zwecke missbrauchen.</p>
+</p>
+<a name="22509_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die spezifischen Anforderungen des Bausteins SYS.3.2.3 <span style="font-style: italic">iOS (for Enterprise)</span> aufgeführt. Grundsätzlich ist der IT-Betrieb für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Umsetzung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt.</p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>IT-Betrieb</td>
+</tr>
+</table>
+<a name="22509_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein SYS.3.2.3<em>iOS (for Enterprise)</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>SYS.3.2.3.A1 Strategie für die iOS-Nutzung (B)</h4>
+<p>Wird ein MDM eingesetzt, so MÜSSEN die iOS-basierten Geräte über das MDM verwaltet und konfiguriert werden. Hierzu MUSS eine Strategie zur iOS-Nutzung vorliegen, in der Aspekte wie Endgeräte-Auswahl oder Backup-Strategien festgelegt werden. Es MUSS geregelt werden, ob zusätzliche Apps von Drittanbietern genutzt werden sollen bzw. dürfen. Außerdem MÜSSEN Jailbreaks organisatorisch untersagt und nach Möglichkeit technisch verhindert werden, etwa über eine Jailbreak-Erkennung durch das MDM.</p>
+</li>
+<li><h4>SYS.3.2.3.A2 Planung des Einsatzes von Cloud-Diensten (B)</h4>
+<p>Bevor iOS-basierte Geräte verwendet werden, MUSS strategisch festgelegt werden, welche Cloud-Services in welchem Umfang genutzt werden sollen bzw. dürfen. Dabei SOLLTE berücksichtigt werden, dass iOS-basierte Geräte grundsätzlich eng mit iCloud-Diensten des Herstellers Apple verzahnt sind sowie dass beispielsweise bereits die Aktivierung von Einzelgeräten mit einer Apple-ID hiervon betroffen ist. Daher SOLLTE geprüft werden, ob zur Geräteregistrierung Apple Business Manager (früher Device Enrollment Program, DEP) genutzt werden kann, da in diesem Fall auf eine Apple-ID verzichtet werden kann.</p>
+</li>
+<li><h4>SYS.3.2.3.A3 ENTFALLEN (B)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.3.2.3.A4 ENTFALLEN (B)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.3.2.3.A5 ENTFALLEN (B)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.3.2.3.A6 ENTFALLEN (B)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.3.2.3.A7 Verhinderung des unautorisierten Löschens von Konfigurationsprofilen (B)</h4>
+<p>Damit Konfigurationsprofile nicht unautorisiert gelöscht werden können, MÜSSEN geeignete technische (z. B. durch den betreuten Modus) oder organisatorische Maßnahmen getroffen und umgesetzt werden. Benutzer von mobilen Endgeräten SOLLTEN für den Sinn und Zweck der Sicherheitsmaßnahmen sensibilisiert werden.</p>
+</li>
+<li><h4>SYS.3.2.3.A8 ENTFALLEN (B)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+</ul>
+<a name="22509_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein SYS.3.2.3<em>iOS (for Enterprise)</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>SYS.3.2.3.A9 ENTFALLEN (S)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.3.2.3.A10 Verwendung biometrischer Authentisierung (S)</h4>
+<p>Bei iOS-basierten Geräten mit Funktionen zur biometrischen Authentisierung wie „Touch ID“ oder „Face ID“ SOLLTEN diese den Benutzern alternativ zur Entsperrung des Geräts freigegeben werden, wenn gleichzeitig organisatorisch und technisch geregelt ist, dass die Benutzer komplexere Gerätecodes verwenden müssen. Einhergehend mit der Aktivierung von „Touch ID“ oder „Face ID“ SOLLTEN die Benutzer für die Fälschbarkeit von biometrischen Merkmalen sensibilisiert werden.</p>
+</li>
+<li><h4>SYS.3.2.3.A11 Verwendung nicht personalisierter Gerätenamen (S)</h4>
+<p>Der Gerätename SOLLTE keine persönlichen Namens- und Institutionsmerkmale enthalten.</p>
+</li>
+<li><h4>SYS.3.2.3.A12 Verwendung von Apple-IDs (S)</h4>
+<p>Werden Dienste verwendet, für die eine Apple-ID erforderlich ist, SOLLTE statt einer persönlichen Apple-ID des Benutzers eine anonymisierte Apple-ID verwendet werden. Falls möglich, SOLLTE der Apple Business Manager für Volumenlizenzen (früher Volume Purchase Program, VPP) sowie eine zentralisierte Installation von Apps verwendet werden.</p>
+</li>
+<li><h4>SYS.3.2.3.A13 Verwendung der Konfigurationsoption „Einschränkungen unter iOS“ (S)</h4>
+<p>Es SOLLTEN alle nicht benötigten oder erlaubten Funktionen bzw. Dienste von iOS deaktiviert werden. Basierend auf dem Einsatzzweck und dem zugrundeliegenden Schutzbedarf SOLLTEN insbesondere die Aspekte „Sperrbildschirm“, „Unified Communication“, „Siri“, „Hintergrundbild“, „Verbindung mit Host-Systemen“ und „Diagnose- und Nutzungsdaten“ geprüft werden.</p>
+</li>
+<li><h4>SYS.3.2.3.A14 Verwendung der iCloud-Infrastruktur (S)</h4>
+<p>Bevor die umfängliche oder selektive Nutzung der iCloud-Infrastruktur für eine dienstliche Nutzung freigegeben wird, SOLLTE bewertet werden, ob die allgemeinen Geschäftsbedingungen der Firma Apple mit den internen Richtlinien hinsichtlich Verfügbarkeit, Vertraulichkeit, Integrität und Datenschutz vereinbar sind. Wird die Nutzung der iCloud-Infrastruktur erlaubt, SOLLTE die Identitätsprüfung am iCloud-Webservice durch eine Zwei-Faktor-Authentisierung erfolgen. Ansonsten SOLLTE die iCloud-Nutzung für einen rein dienstlichen Bedarf auf ein geringes Maß reduziert oder komplett ausgeschlossen werden.</p>
+</li>
+<li><h4>SYS.3.2.3.A15 Verwendung der Continuity-Funktionen (S)</h4>
+<p>Wurde die Nutzung der iCloud-Infrastruktur nicht grundsätzlich durch das Sicherheitsmanagement der Institution untersagt, SOLLTE die Vereinbarkeit der Continuity-Funktionen mit den internen Richtlinien unter Berücksichtigung der Aspekte Vertraulichkeit und Integrität bewertet werden. Auf Basis der Bewertungsergebnisse SOLLTE geregelt werden, inwieweit diese Funktionen technisch bzw. organisatorisch eingeschränkt werden.</p>
+</li>
+<li><h4>SYS.3.2.3.A16 ENTFALLEN (S)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.3.2.3.A17 Verwendung der Gerätecode-Historie (S)</h4>
+<p>Im Konfigurationsprofil SOLLTE die Anzahl der eindeutigen Codes bis zur ersten Wiederholung auf einen angemessenen Wert festgelegt sein.</p>
+</li>
+<li><h4>SYS.3.2.3.A18 Verwendung der Konfigurationsoption für den Browser Safari (S)</h4>
+<p>Die bereits in der Institution etablierten Browserrichtlinien SOLLTEN entsprechend auch für Safari durch technische und organisatorische Maßnahmen umgesetzt werden. Dabei SOLLTEN die bereits etablierten Anforderungen für Browser auf stationären und tragbaren PCs als Grundlage für die Absicherung der iOS-basierten Geräte dienen sowie die Einsatzszenarien und das Einsatzumfeld der Geräte beachtet werden.</p>
+</li>
+<li><h4>SYS.3.2.3.A19 ENTFALLEN (S)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.3.2.3.A20 Einbindung der Geräte in die interne Infrastruktur via VPN (S)</h4>
+<p>iOS-basierte Geräte SOLLTEN mittels Virtual Private Network (VPN) in die Infrastruktur integriert werden. Je nach Schutzbedarf, Zweck und den technischen Möglichkeiten des VPN-Servers, SOLLTE eine VPN-Verbindung auf Basis von IKEv2, IPSec, L2TP, PPTP oder SSL/TLS realisiert werden. Die Authentisierung SOLLTE bevorzugt durch Einmalpasswörter und Zertifikate statt durch klassische Passwörter erfolgen.</p>
+</li>
+<li><h4>SYS.3.2.3.A21 Freigabe von Apps und Einbindung des Apple App Stores (S)</h4>
+<p>Wenn zusätzliche Apps von Drittanbietern eingesetzt werden (siehe SYS.3.2.3.A1 <span style="font-style: italic">Strategie für die iOS-Nutzung</span>), SOLLTE durch die Verantwortlichen der interne Software-Freigabeprozess bezüglich der Validierung und Freigabe von Anwendungen (Apps) aus dem Apple App Store ergänzt werden. Um die institutionsinternen App-Freigabeprozesse zu unterstützen, SOLLTE das eingesetzte MDM eine Filterung auf Basis von Whitelists, Blacklists oder App-Reputationsservices ermöglichen. </p>
+<p>Alle freigegebenen Anwendungen SOLLTEN intern in einem Standardkatalog veröffentlicht und den Benutzern zur Verfügung gestellt werden. Um sicherzustellen, dass den autorisierten Benutzern die benötigten Apps zum notwendigen Zeitpunkt ausreichend zur Verfügung stehen, SOLLTE überlegt werden, den Apple Business Manager in die MDM-Infrastruktur zu integrieren. Die Zahlungsbestätigung von Apps im App Store SOLLTE NICHT über biometrische Verfahren erfolgen.</p>
+</li>
+</ul>
+<a name="22509_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein SYS.3.2.3<em>iOS (for Enterprise)</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>SYS.3.2.3.A22 ENTFALLEN (H)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.3.2.3.A23 Verwendung der automatischen Konfigurationsprofillöschung (H)</h4>
+<p>Durch die Verwendung der automatischen Konfigurationsprofillöschung SOLLTE sichergestellt werden, dass auch nicht permanent online erreichbare Geräte ohne Zutun der IT-Verantwortlichen den bisher gewährten Zugang zur internen Infrastruktur nach Ablauf eines definierten Zeitraums oder an einem bestimmten Tag verlieren, sofern der Zeitraum nicht durch den Zugriff auf das interne Netz erneuert wird. Um sicherzustellen, dass der Benutzer noch im Besitz des Geräts ist, SOLLTE diese Methodik bei Bedarf präventiv angewendet werden.</p>
+</li>
+<li><h4>SYS.3.2.3.A24 ENTFALLEN (H)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.3.2.3.A25 Verwendung der Konfigurationsoption für AirPrint (H)</h4>
+<p>Freigegebene AirPrint-Drucker SOLLTEN dem Benutzer durch ein Konfigurationsprofil bereitgestellt werden. Um zu vermeiden, dass Informationen auf nicht vertrauenswürdigen Druckern von Benutzern ausgedruckt werden können, SOLLTEN stets alle Kommunikationsverbindungen über die Infrastruktursysteme der Institution geführt werden.</p>
+</li>
+<li><h4>SYS.3.2.3.A26 Keine Verbindung mit Host-Systemen (H)</h4>
+<p>Um zu vermeiden, dass iOS-basierte Geräte unautorisiert mit anderen IT-Systemen verbunden werden, SOLLTEN die Benutzer iOS-basierte Geräte ausschließlich mit dem MDM verbinden können.</p>
+</li>
+<li><h4>SYS.3.2.3.A27 ENTFALLEN (H)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+</ul>
+<a name="22509_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Das BSI hat in den „BSI-Veröffentlichungen zur Cyber-Sicherheit“ das Dokument BSI-CS 074: „iOS-Konfigurationsempfehlung auf Basis betriebssystemeigener Mittel für eine Nutzung mit erhöhter Sicherheit“ (Stand 2015) veröffentlicht.</p>
+<p>Die Firma Apple stellt im Kontext der Themen dieses Bausteins unter anderem folgende weiterführende Informationen bereit:</p>
+<ul><li>Apple Configurator: https://support.apple.com/de-de/apple-configurator </li><li>Apple Security Updates: https://support.apple.com/en-us/HT1222</li><li>Abgekündigte und Vintage-Produkte: https://support.apple.com/de-de/HT201624</li><li>Apple Business Manager: https://business.apple.com</li><li>Support für Unternehmen und Bildungseinrichtungen: https://www.apple.com/de/support/business-education/ </li></ul>
+<a name="22509_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein SYS.3.2.3 <em>iOS (for Enterprise)</em> von Bedeutung.</p>
+<ul>
+<li>G 0.9 Ausfall oder Störung von Kommunikationsnetzen</li>
+<li>G 0.11 Ausfall oder Störung von Dienstleistern</li>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.16 Diebstahl von Geräten, Datenträgern oder Dokumenten</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.21 Manipulation von Hard- oder Software</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.25 Ausfall von Geräten oder Systemen</li>
+<li>G 0.26 Fehlfunktion von Geräten oder Systemen</li>
+<li>G 0.27 Ressourcenmangel</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.29 Verstoß gegen Gesetze oder Regelungen</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.32 Missbrauch von Berechtigungen</li>
+<li>G 0.35 Nötigung, Erpressung oder Korruption</li>
+<li>G 0.36 Identitätsdiebstahl</li>
+<li>G 0.37 Abstreiten von Handlungen</li>
+<li>G 0.38 Missbrauch personenbezogener Daten</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.41 Sabotage</li>
+<li>G 0.42 Social Engineering</li>
+<li>G 0.46 Integritätsverlust schützenswerter Informationen</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.09</th>
+<th>G 0.11</th>
+<th>G 0.14</th>
+<th>G 0.16</th>
+<th>G 0.19</th>
+<th>G 0.21</th>
+<th>G 0.22</th>
+<th>G 0.23</th>
+<th>G 0.25</th>
+<th>G 0.26</th>
+<th>G 0.27</th>
+<th>G 0.28</th>
+<th>G 0.29</th>
+<th>G 0.30</th>
+<th>G 0.32</th>
+<th>G 0.35</th>
+<th>G 0.36</th>
+<th>G 0.37</th>
+<th>G 0.38</th>
+<th>G 0.39</th>
+<th>G 0.41</th>
+<th>G 0.42</th>
+<th>G 0.46</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SYS.3.2.3.A1</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A2</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A11</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A12</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A13</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A14</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A15</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A16</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A17</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A18</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A19</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A20</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A21</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A22</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A23</td>
+<td>CI</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A24</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A25</td>
+<td>CI</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A26</td>
+<td>CI</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.3.2.3.A27</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

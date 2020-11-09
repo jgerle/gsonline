@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+OPS.1.1.6 Software-Tests und -Freigaben
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_11238.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_11238.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">OPS.1.1.6 Software-Tests und -Freigaben</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>OPS.1.1.6 Software-Tests und -Freigaben</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#11238_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#11238_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11238_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11238_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#11238_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#11238_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#11238_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11238_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11238_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#11238_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#11238_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#11238_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#11238_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="11238_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="11238_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Der Einsatz von IT in Institutionen setzt voraus, dass die maschinelle Datenverarbeitung soweit wie möglich fehlerfrei funktioniert, da die Einzelergebnisse in den meisten Fällen nicht mehr kontrolliert werden können. Deswegen muss Software jeglicher Art schon vor Inbetriebnahme im Rahmen von Software-Tests überprüft werden. In diesen Tests muss nachgewiesen werden, dass die Software die erforderlichen Funktionen zuverlässig bereitstellt und darüber hinaus keine unerwünschten Nebeneffekte aufweist. Mit der anschließenden Freigabe der Software durch die fachlich zuständige Organisationseinheit wird die grundsätzliche Erlaubnis erteilt, die Software produktiv in der Institution zu nutzen. Gleichzeitig übernimmt diese Organisationseinheit damit auch die Verantwortung für das IT-Verfahren, das durch die Software unterstützt wird.</p>
+<p>Software kann an unterschiedlichen Stellen ihres Lebenszyklus getestet werden. So können Software-Tests bereits bei der Entwicklung, vor der Freigabe für den Produktivbetrieb oder im Zuge des Patch- und Änderungsmanagements notwendig werden. Die Software-Tests und -Freigaben sind sowohl für Individualsoftware als auch beim Einsatz von Standardsoftware durchzuführen.</p>
+<p>Dieser Baustein beschreibt den Test- und Freigabeprozess für individuell entwickelte oder angepasste Software sowie für Standardsoftware. Der Test- und Freigabeprozess zeichnet sich dadurch aus, dass dieser je nach Ergebnis mehrmals durchlaufen werden kann.</p>
+</p>
+<a name="11238_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Mit der Umsetzung dieses Bausteins sorgt die Institution dafür, dass die eingesetzte Software den technischen und organisatorischen Anforderungen sowie dem vorliegenden Schutzbedarf der gesamten Institution oder einzelner Organisationseinheiten entspricht. Ein wesentlicher Teilaspekt ist dabei, dass sicherheitskritische Software auf bestehende Schwachstellen systematisch und methodisch überprüft wird.</p>
+</p>
+<a name="11238_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein OPS.1.1.6 <span style="font-style: italic">Software-Tests und Freigaben</span> ist auf den gesamten Informationsverbund einmal anzuwenden.</p>
+<p>Während der Baustein CON.8 <span style="font-style: italic">Softwareentwicklung</span> auf den Softwareentwicklungsprozess und die darin enthaltenen Software-Tests, die während des Entwicklungsprozesses notwendig sind, eingeht, beschreibt dieser Baustein die speziellen Anforderungen, die an ein Test- und Freigabemanagement gestellt werden. Dabei bezieht sich dieses Test- und Freigabemanagement nicht ausschließlich auf selbst oder im Kundenauftrag entwickelte Software, sondern auch auf das Testen und die Freigabe von Standardsoftware, wie sie in CON.4 <span style="font-style: italic">Auswahl und Einsatz von Standsoftware </span>beschrieben wird, sowie alle weiteren Softwareprodukte der Schicht APP <span style="font-style: italic">Anwendungen</span>. </p>
+<p>Software-Tests können auch Bestandteil des Patch- oder Änderungsmanagements werden. Entsprechende Anforderungen sind im Baustein OPS.1.1.3 <span style="font-style: italic">Patch- und Änderungsmanagement</span> näher spezifiziert.</p>
+</p>
+<a name="11238_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein OPS.1.1.6 <span style="font-style: italic">Software-Tests und -Freigaben</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Unvollständige Umsetzung von Anforderungen des Auftraggebers</h3>
+<p>
+<p>Werden die Anforderungen des Auftraggebers unzureichend oder fehlerhaft in die Software eingearbeitet oder kommunizieren die an der Software-Entwicklung oder -Beschaffung beteiligten Parteien (z. B. Auftraggeber und Auftragnehmer) unzureichend miteinander, könnten diese Anforderungen unter Umständen nur unvollständig erfüllt werden. Dadurch können Schwachstellen in der Software entstehen. Müssen beispielsweise die Anforderungen durch den Auftragnehmer nachträglich eingearbeitet werden, können sich Software-Entwicklungsprojekte verzögern und dadurch finanzielle Schäden entstehen.</p>
+</p>
+<h3>2.2 Unzureichende Schulung der Entwickler und Software-Tester</h3>
+<p>
+<p>Es wird häufig davon ausgegangen, dass ausgebildete Entwickler und Software-Tester aufgrund ihrer Ausbildung über ein ausreichendes Wissen für das Testen und Freigeben von Software verfügen. Deshalb werden sie häufig nicht genügend zu Neuerungen ihres Themengebiets oder zum Einsatzgebiet der Software geschult. Diese Unkenntnis kann zu gravierenden Sicherheitsproblemen führen, wenn z. B. Funktionen oder Methoden in der Programmierung verwendet werden, die bereits als unsicher eingestuft sind, dies aber den Entwicklern noch nicht bekannt ist.</p>
+</p>
+<h3>2.3 Software-Tests mit Produktivdaten</h3>
+<p>
+<p>Software-Tests mit Produktivdaten sind häufig notwendig, denn nur mit solcher Art Daten können Funktion und Performance des Produktes beurteilt werden. Hinzu kommt, dass Entwickler oft einen verzerrten Blick auf das entwickelte Produkt haben. So haben sie beispielsweise ein geringeres Sicherheitsbewusstsein, vertrauen der entwickelten Software zu sehr und können mögliche Auswirkungen von Problemen nicht richtig deuten. </p>
+<p>Obwohl Software-Tests mit Produktivdaten notwendig sind, können hierdurch Sicherheitsprobleme entstehen. Insbesondere vertrauliche Produktivdaten könnten dabei von unbefugten Mitarbeitern oder Dritten eingesehen werden, die mit dem jeweiligen Software-Test beauftragt wurden. Wird mit den „originalen“ Produktivdaten getestet und nicht mit Kopien der Daten, könnten diese ungewollt geändert oder gelöscht werden.</p>
+<p>Durch Software-Tests im Produktivbetrieb könnte der gesamte Betrieb massiv gestört werden. Denn Fehlfunktionen der zu testenden Software können sich auch auf andere Anwendungen und IT-Systeme auswirken, die dadurch ebenfalls gestört werden. </p>
+</p>
+<h3>2.4 Fehlendes oder unzureichendes Testverfahren</h3>
+<p>
+<p>Wird neue Software nicht oder nur unzureichend getestet und ohne Installationsvorschriften freigegeben, können Fehler in der Software unerkannt bleiben. Ebenso ist es möglich, dass dadurch erforderliche und einzuhaltende Installationsparameter nicht erkannt oder nicht beachtet werden.</p>
+<p>Diese Software- oder Installationsfehler, die aus einem fehlenden oder unzureichenden Software-Testverfahren resultieren, können den IT-Betrieb der Institution erheblich gefährden. So können beispielsweise wichtige Daten verloren gehen, wenn ein Update eines Datenbankmanagementsystems ohne vorherigen Test eingespielt wird.</p>
+</p>
+<h3>2.5 Fehlendes oder unzureichendes Freigabeverfahren</h3>
+<p>
+<p>Ein fehlendes oder unzureichendes Freigabeverfahren kann dazu führen, dass Software eingesetzt wird, die von der Fachseite nicht abgenommen wurde. Auf diese Weise kann die Software Funktionen besitzen, die sie nicht enthalten sollte, oder benötigte Funktionen können fehlen. Außerdem kann die Software zu anderen Anwendungen inkompatibel sein.</p>
+</p>
+<h3>2.6 Fehlende oder unzureichende Dokumentation der Tests und Testergebnisse</h3>
+<p>
+<p>Eine Software-Freigabe kann in der Regel erteilt werden, sobald alle Tests durchgeführt wurden und keine Abweichungen gefunden wurden. Sollte die Dokumentation der Software-Tests jedoch unvollständig sein, ist nachträglich nicht erkennbar, was getestet wurde. Wurden erkennbare Softwarefehler oder fehlende Funktionen ungenügend dokumentiert und damit bei der Freigabe nicht berücksichtigt, können durch diese Abweichungen die zu verarbeitenden Produktivdaten ungewollt gelöscht oder verändert werden. Außerdem können andere IT-Systeme und Anwendungen gestört werden. </p>
+</p>
+<h3>2.7 Fehlende oder unzureichende Dokumentation der Freigabekriterien</h3>
+<p>
+<p>Wenn Freigabekriterien nicht klar kommuniziert werden, kann dies dazu führen, dass Software voreilig freigegeben wird oder keine Freigabe erfolgt, obwohl diese erteilt werden könnte. Dadurch könnten zum einen Versionen mit unerkannten Softwarefehlern freigegeben werden, die den Produktivbetrieb stören können. Zum anderen kann eine fehlende oder unzureichende Dokumentation der Freigabekriterien dazu führen, dass sich Projekte verzögern und dadurch finanzielle Schäden entstehen.</p>
+</p>
+<a name="11238_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die spezifischen Anforderungen des Bausteins OPS.1.1.6 <span style="font-style: italic">Software-Tests und -Freigaben</span> aufgeführt. Grundsätzlich ist der Leiter IT für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festlegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Erfüllung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt.</p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>Leiter IT</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+Datenschutzbeauftragter,
+Fachverantwortliche,
+IT-Betrieb,
+Leiter Personal,
+Personalabteilung,
+Tester
+</td>
+</tr>
+</table>
+<a name="11238_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein OPS.1.1.6<em>Software-Tests und -Freigaben</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>OPS.1.1.6.A1 Planung der Software-Tests (B)</h4>
+<p>Die Rahmenbedingungen für Software-Test MÜSSEN vor den Tests innerhalb der Institution entsprechend der Schutzbedarfe, Organisationseinheiten, technischen Möglichkeiten und Test-Umgebungen festlegt sein. Die Software-Tests MÜSSEN auf den Angaben des Pflichtenhefts basieren.</p>
+<p>Bei der Auswahl der Testfälle MUSS darauf geachtet werden, dass diese möglichst repräsentativ für die zu testenden Funktionen sind und diese möglichst vollständig abdecken.</p>
+</li>
+<li><h4>OPS.1.1.6.A2 Durchführung von funktionalen Software-Tests [Tester] (B)</h4>
+<p>Funktionale Software-Tests MÜSSEN durchgeführt werden, um die ordnungsgemäße und vollständige Funktion der Software zu überprüfen. Die funktionalen Software-Tests MÜSSEN so durchgeführt werden, dass sie den Produktivbetrieb nicht beeinflussen.</p>
+</li>
+<li><h4>OPS.1.1.6.A3 Auswertung der Testergebnisse [Tester] (B)</h4>
+<p>Die Ergebnisse der Software-Tests MÜSSEN ausgewertet werden. Es SOLLTE ein Soll-Ist-Vergleich mit definierten Vorgaben durchgeführt werden. Die Auswertung MUSS dokumentiert werden.</p>
+</li>
+<li><h4>OPS.1.1.6.A4 Freigabe der Software [Fachverantwortliche] (B)</h4>
+<p>Die fachliche Organisationseinheit MUSS die Software freigeben, sobald die Software-Tests erfolgreich durchgeführt wurden. Die Freigabe MUSS in Form einer Freigabeerklärung dokumentiert werden.</p>
+<p>Die freigebende Organisationseinheit MUSS überprüfen, ob die Software gemäß den Anforderungen getestet wurde. Die Ergebnisse der Software-Tests MÜSSEN mit den vorher festgelegten Erwartungen übereinstimmen. Auch MUSS überprüft werden, ob die rechtlichen und organisatorischen Vorgaben eingehalten wurden.</p>
+</li>
+<li><h4>OPS.1.1.6.A5 Durchführung nicht-funktionaler Software-Tests [Tester] (B)</h4>
+<p>Es MÜSSEN nicht-funktionale Tests durchgeführt werden. Insbesondere MÜSSEN sicherheitsspezifische Software-Tests durchgeführt werden, wenn die Anwendung sicherheitskritische Funktionen mitbringt. Die durchgeführten Testfälle, sowie die Testergebnisse, MÜSSEN dokumentiert werden.</p>
+</li>
+</ul>
+<a name="11238_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein OPS.1.1.6<em>Software-Tests und -Freigaben</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>OPS.1.1.6.A6 Geordnete Einweisung der Software-Tester [IT-Betrieb, Fachverantwortliche] (S)</h4>
+<p>Ein Software-Tester SOLLTE über die durchzuführenden Testarten und die zu testenden Bereiche einer Software vom IT-Betrieb informiert werden. Darüber hinaus SOLLTE der Software-Tester über die Anwendungsfälle und mögliche weitere Anforderungen der Software informiert werden. </p>
+</li>
+<li><h4>OPS.1.1.6.A7 Personalauswahl der Software-Tester [Personalabteilung, Leiter IT] (S)</h4>
+<p>Bei der Auswahl der Software-Tester SOLLTEN gesonderte Auswahlkriterien berücksichtigt werden. Die Personen SOLLTEN die erforderliche berufliche Qualifikation haben. Es SOLLTEN außerdem ausreichende Kenntnisse der zu testenden Programmiersprache, der Entwicklungsumgebung und der einzusetzenden Testmethoden vorhanden sein. Darüber hinaus SOLLTE eine entsprechende Rollentrennung erfolgen, sodass Quellcode nicht ausschließlich von Testern überprüft wird, die an der Erstellung des Quellcodes beteiligt waren. </p>
+<p>In öffentlichen Einrichtungen und geheimschutzbetreuten Institutionen SOLLTE geprüft werden, ob eine Sicherheitsüberprüfung des Personals erforderlich ist.</p>
+</li>
+<li><h4>OPS.1.1.6.A8 Fort- und Weiterbildung der Software-Tester [Leiter Personal] (S)</h4>
+<p>Die Software-Tester SOLLTEN entsprechend dem Baustein ORP.3 <span style="font-style: italic">Sensibilisierung und Schulung</span> geschult werden. Es SOLLTEN Verfahren etabliert werden, mit denen die Software-Tester über Neuerungen informiert werden, die für ihr jeweiliges Aufgabenspektrum relevant sind.</p>
+</li>
+<li><h4>OPS.1.1.6.A9 Beschaffung von Test-Software [IT-Betrieb, Tester] (S)</h4>
+<p>Die Test-Software SOLLTE nach einem Anforderungskatalog beschafft werden. Sie SOLLTE ebenfalls dem Test- und Freigabeprozess unterzogen werden. Es SOLLTE überprüft werden, ob die Hilfestellungs- und Supportleistungen des Softwareherstellers ausreichend sind. </p>
+</li>
+<li><h4>OPS.1.1.6.A10 Erstellung eines Abnahmeplans (S)</h4>
+<p>In einem Abnahmeplan SOLLTEN die durchzuführenden Testarten, Testfälle und die erwarteten Ergebnisse dokumentiert sein. Außerdem SOLLTE der Abnahmeplan die Freigabekriterien beinhalten. Es SOLLTE eine Vorgehensweise für die Situation festgelegt werden, wenn eine Freigabe abgelehnt wird. </p>
+</li>
+<li><h4>OPS.1.1.6.A11 Verwendung von anonymisierten oder pseudonymisierten Testdaten [Datenschutzbeauftragter, Tester] (S)</h4>
+<p>Es SOLLTEN nur anonymisierte oder pseudonymisierte Testdaten für Software-Tests verwendet werden. Sofern die Produktivdaten personenbezogen sind, SOLLTEN Institutionen ausschließlich anonymisierte Testdaten verwenden. Wenn ein Personenbezug von den Testdaten abgeleitet werden könnte, SOLLTEN der Datenschutzbeauftragte und unter Umständen die Personalvertretung hinzugezogen werden.</p>
+</li>
+<li><h4>OPS.1.1.6.A12 Durchführung von Regressionstests [Tester] (S)</h4>
+<p>Wenn Software-Tests nach einer Änderung der Software durchgeführt werden sollen, SOLLTEN hierbei Regressionstests inkludiert werden. Regressionstests SOLLTEN vollständig durchgeführt werden. Werden Testfälle ausgelassen, SOLLTE dies begründet und dokumentiert werden. Die durchgeführten Testfälle und die Testergebnisse SOLLTEN dokumentiert werden.</p>
+</li>
+<li><h4>OPS.1.1.6.A13 Trennung von Test- und Qualitätsmanagement-Umgebung von der Produktivumgebung [IT-Betrieb] (S)</h4>
+<p>Software SOLLTE nur in einer hierfür vorgesehenen Test- und Qualitätsmanagement-Umgebung getestet werden. Die Test- und Qualitätsmanagement-Umgebungen SOLLTEN von der Produktivumgebung getrennt betrieben werden. Die in der Test- und Qualitätsmanagement-Umgebung verwendeten Architekturen und Mechanismen SOLLTEN dokumentiert werden. Die Test- und Qualitätsmanagement-Umgebung SOLLTE der Produktivumgebung angepasst sein. Es SOLLTEN Verfahren dokumentiert werden, wie mit der Test- und Qualitätsmanagement-Umgebung nach Abschluss des Software-Tests zu verfahren ist.</p>
+</li>
+</ul>
+<a name="11238_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein OPS.1.1.6<em>Software-Tests und -Freigaben</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>OPS.1.1.6.A14 Durchführung von Penetrationstests [Tester] (H)</h4>
+<p>Es SOLLTEN für Anwendungen beziehungsweise IT-Systeme mit erhöhtem Schutzbedarf Penetrationstests als Testmethode durchgeführt werden. Es SOLLTE ein Penetrationstest-Konzept erstellt werden. Im Penetrationstest-Konzept SOLLTEN neben den zu verwendenden Testmethoden auch die Erfolgskriterien dokumentiert werden.</p>
+<p>Der Penetrationstest SOLLTE nach den Rahmenbedingungen des Penetrationstest-Konzepts erfolgen. Die durch den Penetrationstest aufgefundenen Sicherheitslücken SOLLTEN klassifiziert und dokumentiert sein.</p>
+</li>
+</ul>
+<a name="11238_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Die International Organization for Standardization (ISO) gibt in der Norm ISO/IEC 27001:2013 im Annex A.14 „System Acquisition, Development and maintenance“ Anforderungen an die sichere System-Entwicklung, die auch einen Test- und Freigabeprozess erfordert, sowie direkt an Testdaten selbst. Darüber hinaus hat die ISO die Norm ISO/IEC 29119-2:2013 „Software and systems engineering - Software testing - Part 2: Test processes, International Organization for Standardization“ veröffentlicht, die ausführlich Anforderungen an Software-Tests behandelt. </p>
+<p>Das BSI hat die Studie „Durchführungskonzept für Penetrationstests“, die als Grundlage für Penetrationstests verwendet werden kann, sowie den BSI-Leitfäden zur Entwicklung sicherer Webanwendungen, der auch Software-Tests inkludiert, veröffentlicht. </p>
+<p>Das Infomation Security Forum (ISF) führt in „The Standard of Good Practice for Information Security“ Aspekte zum Testen und Freigeben zu allen relevanten Anforderungen (Areas) aus. </p>
+<p>Das National Institute of Standards and Technology stellt Richtlinien zum Testen von Software in der NIST Publication 800-53 in der SA 11 Developer Security Testing and Evaluation zur Verfügung.</p>
+<p>Das Buch „The Art of Software Testing“ von Glenford J. Myers, Corey Sandler, Tom Badgett, kann für Software-Tests konsultiert werden.</p>
+<p>Das Common Vulnerability Scoring System kann als Scoring-System zur Klassifikation des Schweregrades einer Sicherheitslücke verwendet werden und somit die Ergebnisse von Software-Tests in Bezug auf die Informationssicherheit darstellen.</p>
+<a name="11238_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein OPS.1.1.6 <em>Software-Tests und -Freigaben</em> von Bedeutung.</p>
+<ul>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.18 Fehlplanung oder fehlende Anpassung</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.25 Ausfall von Geräten oder Systemen</li>
+<li>G 0.26 Fehlfunktion von Geräten oder Systemen</li>
+<li>G 0.27 Ressourcenmangel</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.32 Missbrauch von Berechtigungen</li>
+<li>G 0.38 Missbrauch personenbezogener Daten</li>
+<li>G 0.41 Sabotage</li>
+<li>G 0.45 Datenverlust</li>
+<li>G 0.46 Integritätsverlust schützenswerter Informationen</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.14</th>
+<th>G 0.18</th>
+<th>G 0.19</th>
+<th>G 0.25</th>
+<th>G 0.26</th>
+<th>G 0.27</th>
+<th>G 0.28</th>
+<th>G 0.32</th>
+<th>G 0.38</th>
+<th>G 0.41</th>
+<th>G 0.45</th>
+<th>G 0.46</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OPS.1.1.6.A1</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.6.A2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.6.A3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.6.A4</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.6.A5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.6.A6</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.6.A7</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.6.A8</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.6.A9</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.6.A10</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.6.A11</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.6.A12</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>OPS.1.1.6.A13</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>OPS.1.1.6.A14</td>
+<td>CIA</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

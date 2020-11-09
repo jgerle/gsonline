@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+IND.2.1 Allgemeine ICS-Komponente
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_12366.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_12366.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">IND.2.1 Allgemeine ICS-Komponente</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>IND.2.1 Allgemeine ICS-Komponente</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#12366_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#12366_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#12366_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#12366_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#12366_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#12366_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#12366_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#12366_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#12366_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#12366_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#12366_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#12366_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#12366_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="12366_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="12366_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Eine ICS-Komponente ist eine elektronische Komponente, die eine Maschine oder Anlage steuert oder regelt. Sie ist damit Bestandteil eines industriellen Steuerungssystems (engl. Industrial Control System, ICS) oder allgemeiner einer Betriebstechnik (engl. Operational Technology, OT). Solche Komponenten können Speicherprogrammierbare Steuerungen (SPS) (engl. Programmable Logic Controller, PLC), Sensoren, Aktoren, eine Maschine oder andere Teile eines ICS sein.</p>
+<p>Aufgrund der im OT-Umfeld typischen hohen Verfügbarkeitsanforderungen und der oft extremen Umgebungsbedingungen wie Hitze oder Kälte, Staub, Vibration oder Korrosion wurden ICS-Komponenten schon immer als robuste Geräte mit hoher Zuverlässigkeit und langer Lebensdauer konstruiert.</p>
+<p>ICS-Komponenten werden normalerweise über Spezialsoftware des jeweiligen Herstellers konfiguriert bzw. programmiert. Das wird entweder über sogenannte Programmiergeräte z. B. als Anwendung unter Windows oder Linux oder über eine Engineering-Station durchgeführt, welche die Anwendungsprogramme in die Speicherprogrammierbaren Steuerungen lädt.</p>
+<p>Die Rolle des Informationssicherheitsbeauftragten für den Bereich der industriellen Automatisierung wird je nach Art und Ausrichtung der Institution anders genannt. Eine weitere Bezeichnung neben ICS-Informationssicherheitsbeauftragter (ICS-ISB) ist auch Industrial Security Officer.</p>
+</p>
+<a name="12366_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Ziel dieses Bausteins ist die Absicherung aller Arten von ICS-Komponenten, unabhängig von Hersteller, Bauart, Einsatzzweck und -ort. Er kann für ein einzelnes Gerät oder ein aus mehreren Komponenten aufgebautes modulares Gerät verwendet werden. </p>
+</p>
+<a name="12366_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein IND.2.1 <span style="font-style: italic">Allgemeine ICS-Komponente </span>ist für alle Komponenten der industriellen Steuerung einmal anzuwenden. </p>
+<p>Die Anforderungen sind für eine allgemeine Komponente erarbeitet. Für spezifischere ICS-Komponenten, z. B. Sensoren und Aktoren oder Maschinen, sind zusätzliche Bausteine wie IND.2.3 <span style="font-style: italic">Sensoren und Aktoren </span>bzw. IND 2.4 <span style="font-style: italic">Maschine </span>verfügbar. Dort sind Anforderungen beschrieben, die über die allgemeinen Anforderungen dieses Bausteins hinausgehen und eventuell umgesetzt werden müssen. </p>
+<p>Der Baustein enthält keine organisatorischen Anforderungen zur Absicherung einer ICS-Komponente. Dafür müssen die Anforderungen des Bausteins IND.1 <span style="font-style: italic">Betriebs- und Steuerungstechnik</span> umgesetzt werden.</p>
+</p>
+<a name="12366_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein IND.2.1 <span style="font-style: italic">Allgemeine ICS-Komponente</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Unvollständige Dokumentation</h3>
+<p>
+<p>ICS-Komponenten sind oft unvollständig dokumentiert, sodass nicht alle Produktfunktionen bekannt sind. Besonders lückenhaft sind häufig die Angaben über die verwendeten Dienste, Protokolle und Kommunikationsports sowie zur Berechtigungsverwaltung. Das erschwert die Gefährdungsanalyse, da Schnittstellen, Funktionen und sicherheitsrelevante Mechanismen oft übersehen werden. Dadurch können potenzielle Gefährdungen nicht berücksichtigt werden. Zudem kann nicht oder nur eingeschränkt auf neue Schwachstellen einer ICS-Komponente reagiert werden, wenn die verwendeten Dienste und Ports nicht vollständig erfasst sind. </p>
+</p>
+<h3>2.2 Unsichere Systemkonfiguration</h3>
+<p>
+<p>Die Standardkonfiguration von ICS-Komponenten ist häufig darauf ausgelegt, dass die Komponenten korrekt funktionieren und sich leicht in Betrieb nehmen lassen. Sicherheitsmechanismen spielen dabei oft eine untergeordnete Rolle. So sind in der Standardeinstellung häufig alle Dienste, Protokolle und Anschlüsse eingeschaltet und bleiben aktiv, auch wenn sie nicht benutzt werden. Ebenso bleiben voreingestellte Berechtigungen häufig unverändert.</p>
+<p>Es ist für Angreifer leicht, solche Komponenten zu übernehmen und zu manipulieren. Ebenso ist es möglich, dass ein Angreifer die unsichere Systemkonfiguration ausnutzt, um die ICS-Komponente als Ausgangspunkt für weitere Angriffe zu nutzen. In der Folge können geschäftskritische Informationen abfließen oder auch der gesamte Betrieb der Institution beeinträchtigt werden. </p>
+</p>
+<h3>2.3 Unzureichendes Benutzer- und Berechtigungsmanagement</h3>
+<p>
+<p>Einige ICS-Komponenten verfügen über ein eigenes Benutzer- und Berechtigungsmanagement. Ist dieses unzureichend konzipiert, kann es passieren, dass Mitarbeiter gemeinsam Benutzerkonten nutzen oder dass Berechtigungen von ausgeschiedenen Mitarbeitern oder Dienstleistern nicht gelöscht werden. Insgesamt können so unberechtigte Personen auf ICS-Komponenten zugreifen.</p>
+</p>
+<h3>2.4 Unzureichende Protokollierung</h3>
+<p>
+<p>Bei ICS-Komponenten beschränkt sich die Protokollierung häufig auf prozessrelevante Ereignisse. Für die Informationssicherheit relevante Daten werden oft nicht aufgezeichnet. Dadurch lassen sich Sicherheitsvorfälle nur schwer detektieren und hinterher nicht mehr rekonstruieren. </p>
+</p>
+<h3>2.5 Manipulation und Sabotage einer ICS-Komponente</h3>
+<p>
+<p>Die vielfältigen Schnittstellen von ICS-Komponenten führen zu einem erhöhten Manipulationsrisiko für Systeme, die Software und übertragene Informationen. Je nach Motivation und Kenntnissen des Täters kann sich das lokal, aber auch standortübergreifend auswirken. Zudem können Status- und Alarmmeldungen oder sonstige Messwerte unterdrückt oder verändert werden.</p>
+<p>Manipulierte Messwerte können Fehlentscheidungen von ICS-Komponenten bzw. des Bedienpersonals nach sich ziehen. Manipulierte Systeme können dazu genutzt werden, um andere Systeme oder Standorte anzugreifen oder um eine laufende Manipulation zu vertuschen.</p>
+</p>
+<h3>2.6 Einsatz unsicherer Protokolle</h3>
+<p>
+<p>Die im Umfeld industrieller Steuerungsanlagen eingesetzten Protokolle bieten teilweise keine oder nur eingeschränkte Sicherheitsmechanismen. Technische Informationen wie Mess- und Steuerwerte werden häufig im Klartext und ohne Integritätssicherung oder Authentifizierung übertragen. Ein Angreifer mit Zugang zum Übertragungsmedium kann dann die Inhalte der Kommunikation auslesen und verändern oder Steuerbefehle einschleusen. So kann er Handlungen provozieren bzw. den Betrieb direkt beeinflussen. Ein Angriff auf Protokollebene ist auch dann möglich, wenn die ICS-Komponente ansonsten sicher konfiguriert ist und selbst keine Schwachstellen aufweist.</p>
+</p>
+<h3>2.7 Denial-of-Service-(DoS)-Angriffe</h3>
+<p>
+<p>Ein Angreifer kann den Betrieb von ICS-Komponenten durch DoS-Angriffe beeinträchtigen. Bei Prozessen, die unter Echtzeitbedingungen ablaufen, kann bereits eine kürzere Störung zu Informations- oder Kontrollverlusten führen. </p>
+</p>
+<h3>2.8 Schadprogramme</h3>
+<p>
+<p>Die Bedrohung durch Schadprogramme verschärft sich auch für industrielle Steuerungsanlagen immer mehr. Infektionsmöglichkeiten ergeben sich durch Schnittstellen zur Außenwelt und zur Office-IT (vertikale Integration). Aber auch mobile Endgeräte wie Service-Notebooks oder Wechseldatenträger, die bei der Programmierung und Wartung von ICS-Komponenten eingesetzt werden, stellen eine Gefahr dar. Denn durch Letztere können Schadprogramme auch in isolierte Umgebungen eingebracht werden.</p>
+</p>
+<h3>2.9 Ausspionieren von Informationen</h3>
+<p>
+<p>ICS-Komponenten enthalten häufig detaillierte Informationen über den geregelten oder überwachten Prozess bzw. Vorgang. Auch aus sonstigen übertragenen Werten wie Mess- oder Steuerungsdaten lassen sich diese Informationen teilweise rekonstruieren. Gleiches gilt für Steuerungsprogramme oder -parameter.</p>
+<p>Angreifer könnten hier im Rahmen von Industriespionage an Geschäftsgeheimnisse gelangen, z. B. an Rezepte, Verfahren oder anderes geistiges Eigentum. Auch können sie Informationen über die Funktionsweise einer ICS-Komponente und ihre Sicherheitsmechanismen gewinnen, die sie für weitere Angriffe benutzen können.</p>
+</p>
+<h3>2.10 Unzureichende Sicherheitsanforderungen bei der Beschaffung</h3>
+<p>
+<p>Aus mangelndem Bewusstsein für die Risiken und aus Kostengründen wird bei der Beschaffung häufig die Informationssicherheit nicht berücksichtigt. Dadurch können in ICS-Komponenten mitunter schwerwiegende Schwachstellen enthalten sein, die sich später nur sehr aufwändig beheben lassen.</p>
+</p>
+<h3>2.11 Manipulierte Firmware</h3>
+<p>
+<p>Bei ICS-Komponenten lässt sich neben dem Anwendungsprogramm auch das Betriebssystem (Firmware) verändern. Dadurch kann manipulierte Software in das System gelangen. Die internen Speicher könnten durch ein kompromittiertes Programmiergerät über eine lokale Datenschnittstelle (z. B. USB) oder über eine andere bestehende Netzverbindung von einem Angreifer verändert werden. Ebenso könnte ein Software-Update auf dem Weg vom Hersteller zum Betreiber manipuliert worden sein. Schließlich könnte eine Komponente mit bereits kompromittierter Firmware beim Betreiber eintreffen, etwa bei manipulierter Lieferkette (engl. <span style="font-style: italic">supply chain</span>) oder einem Einkauf aus unsicheren Quellen. Ein Angreifer erhält dadurch die Möglichkeit, Prozesse und Abläufe zu verändern bzw. zu verfälschen.</p>
+</p>
+<a name="12366_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die spezifischen Anforderungen des Bausteins IND.2.1 <span style="font-style: italic">Allgemeine ICS-Komponente</span> aufgeführt. Grundsätzlich ist der ICS-Informationssicherheitsbeauftragte (ICS-ISB) für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Umsetzung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt.</p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>ICS-Informationssicherheitsbeauftragter</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+ICS-Administrator,
+Leitstellen-Operator,
+Wartungspersonal
+</td>
+</tr>
+</table>
+<a name="12366_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein IND.2.1<em>Allgemeine ICS-Komponente</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>IND.2.1.A1 Einschränkung des Zugriffs für Konfigurations- und Wartungsschnittstellen [ICS-Administrator] (B)</h4>
+<p>Es MUSS sichergestellt werden, dass nur berechtigte Mitarbeiter auf Konfigurations- und Wartungsschnittstellen von ICS-Komponenten zugreifen können. Die Konfiguration der ICS-Komponente DARF NUR nach einer Freigabe oder nach einer Authentisierung geändert werden.</p>
+<p>Standardmäßig eingerichtete bzw. herstellerseitig gesetzte Passwörter MÜSSEN gewechselt werden. Der Wechsel MUSS dokumentiert und das Passwort sicher hinterlegt werden. Standardmäßig eingerichtete bzw. herstellerseitig gesetzte Benutzerkonten SOLLTEN gewechselt werden.</p>
+</li>
+<li><h4>IND.2.1.A2 Nutzung sicherer Protokolle für die Konfiguration und Wartung [Wartungspersonal, ICS-Administrator] (B)</h4>
+<p>Für die Konfiguration und Wartung von ICS-Komponenten MÜSSEN sichere Protokolle genutzt werden. Die Daten DÜRFEN NICHT ungeschützt übertragen werden. </p>
+</li>
+<li><h4>IND.2.1.A3 Protokollierung [ICS-Administrator] (B)</h4>
+<p>Es MUSS festgelegt werden:</p>
+<ul><li>welche Daten und Ereignisse protokolliert werden sollen, </li><li>wie lange die Protokolldaten aufbewahrt werden und </li><li>wer diese einsehen darf. </li></ul>
+<p>Generell MÜSSEN alle sicherheitsrelevanten Systemereignisse protokolliert und bei Bedarf ausgewertet werden. </p>
+</li>
+<li><h4>IND.2.1.A4 Deaktivierung nicht genutzter Dienste, Funktionen und Schnittstellen [Wartungspersonal, ICS-Administrator] (B)</h4>
+<p>Alle nicht genutzten Dienste, Funktionen und Schnittstellen der ICS-Komponenten MÜSSEN deaktiviert oder deinstalliert werden.</p>
+</li>
+<li><h4>IND.2.1.A5 Deaktivierung nicht genutzter Benutzerkonten [ICS-Administrator] (B)</h4>
+<p>Nicht genutzte und unnötige Benutzerkonten MÜSSEN deaktiviert werden.</p>
+</li>
+<li><h4>IND.2.1.A6 Netzsegmentierung [ICS-Administrator] (B)</h4>
+<p>ICS-Komponenten MÜSSEN von der Office-IT getrennt werden. Sind ICS-Komponenten von anderen Diensten im Netz abhängig, SOLLTE dies ausreichend dokumentiert werden. ICS-Komponenten SOLLTEN so wenig wie möglich mit anderen ICS-Komponenten kommunizieren.</p>
+</li>
+<li><h4>IND.2.1.A7 Backups [Leitstellen-Operator] (B)</h4>
+<p>Von Programmen und Daten MÜSSEN regelmäßig und nach Systemänderungen Backups erstellt werden. </p>
+</li>
+</ul>
+<a name="12366_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein IND.2.1<em>Allgemeine ICS-Komponente</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>IND.2.1.A8 Schutz vor Schadsoftware [ICS-Administrator] (S)</h4>
+<p>ICS-Komponenten SOLLTEN durch geeignete Mechanismen vor Schadprogrammen geschützt werden. Wird dafür ein Virenschutzprogramm benutzt, SOLLTEN das Programm und die Virensignaturen immer auf dem aktuellen Stand sein. Wenn die Ressourcen auf der ICS-Komponente nicht ausreichend sind oder die Echtzeitanforderung durch den Einsatz von Virenschutzprogrammen gefährdet werden könnte, SOLLTEN alternative Maßnahmen ergriffen werden, wie z. B. die Abschottung der Komponente oder des Produktionsnetzes.</p>
+</li>
+<li><h4>IND.2.1.A9 Dokumentation der Kommunikationsbeziehungen [ICS-Administrator] (S)</h4>
+<p>Es SOLLTE dokumentiert werden, mit welchen Systemen die ICS-Komponenten welche Daten austauschen. Außerdem SOLLTEN die Kommunikationsverbindungen neu integrierter ICS-Komponenten dokumentiert werden.</p>
+</li>
+<li><h4>IND.2.1.A10 Systemdokumentation [Leitstellen-Operator, ICS-Administrator] (S)</h4>
+<p>Es SOLLTE eine erweiterte Systemdokumentation erstellt werden. Darin SOLLTEN Besonderheiten im Betrieb, wie z. B. Sicherung, Regelwartungsmaßnahmen, Austausch und Wiederherstellung von Komponenten oder Leistungen Dritter, sowie die Möglichkeiten zur Systemverwaltung, wie z. B. Fernzugriffe, festgehalten werden. Außerdem SOLLTE dokumentiert werden, wenn ICS-Komponenten verändert wurden. Es SOLLTE sichergestellt sein, dass nur berechtigte Mitarbeiter auf die Systemdokumentation zugreifen können. Auch SOLLTE die Dokumentation im Störungsfall noch verfügbar sein.</p>
+</li>
+<li><h4>IND.2.1.A11 Wartung der ICS-Komponenten [Leitstellen-Operator, Wartungspersonal, ICS-Administrator] (S)</h4>
+<p>Bei der Wartung einer ICS-Komponente SOLLTEN immer die aktuellen und freigegebenen Sicherheitsupdates eingespielt werden. Updates für das Betriebssystem SOLLTEN erst nach Freigabe durch den Hersteller einer Komponente installiert werden. Alternativ SOLLTE die Aktualisierung in einer Testumgebung getestet werden, bevor sie in einer produktiven Komponente eingesetzt wird. Für kritische Sicherheitsupdates SOLLTE die ICS-Komponente kurzfristig gewartet werden. </p>
+</li>
+<li><h4>IND.2.1.A12 Beschaffung von ICS-Komponenten [Leitstellen-Operator, ICS-Administrator] (S)</h4>
+<p>Für ICS-Komponenten SOLLTEN einheitliche und dem Schutzbedarf angemessene Anforderungen an die Informationssicherheit definiert werden. Diese SOLLTEN berücksichtigt werden, wenn neue ICS-Komponenten beschafft werden.</p>
+</li>
+<li><h4>IND.2.1.A13 Geeignete Inbetriebnahme der ICS-Komponenten [ICS-Administrator] (S)</h4>
+<p>Bevor ICS-Komponenten in Betrieb genommen werden, SOLLTEN sie dem aktuellen intern freigegebenen Firmware-, Software- und Patch-Stand entsprechen. </p>
+<p>Neue ICS-Komponenten SOLLTEN in die bestehenden Betriebs-, Überwachungs- und Informationssicherheitsmanagement-Prozesse eingebunden werden. Das SOLLTE insbesondere </p>
+<ul><li>die Änderungs- und Berechtigungsverwaltung, </li><li>das Schwachstellenmanagement, </li><li>den Schutz vor Schadsoftware, </li><li>die betriebliche Überwachung und Notfallplanung sowie </li><li>die regelmäßige Sicherheitsüberprüfung der Systeme </li></ul>
+<p>umfassen.</p>
+</li>
+<li><h4>IND.2.1.A14 Aussonderung von ICS-Komponenten [ICS-Administrator] (S)</h4>
+<p>Bei der Aussonderung von alten oder defekten ICS-Komponenten SOLLTEN alle schützenswerten Daten sicher gelöscht werden. Es SOLLTE insbesondere sichergestellt sein, dass alle Zugangsdaten nachhaltig entfernt wurden.</p>
+</li>
+<li><h4>IND.2.1.A15 Zentrale Systemprotokollierung und -überwachung [ICS-Administrator] (S)</h4>
+<p>Alle ICS-Komponenten SOLLTEN ihre Protokollierungsdaten an ein zentrales System übermitteln. Die protokollierten Daten SOLLTEN regelmäßig ausgewertet werden. Bei sicherheitskritischen Ereignissen SOLLTE eine automatische Alarmierung erfolgen. </p>
+</li>
+<li><h4>IND.2.1.A16 Schutz externer Schnittstellen [ICS-Administrator] (S)</h4>
+<p>Von außen erreichbare Schnittstellen SOLLTEN vor Missbrauch geschützt werden.</p>
+</li>
+<li><h4>IND.2.1.A17 Nutzung sicherer Protokolle für die Übertragung von Informationen [ICS-Administrator] (S)</h4>
+<p>Mess- oder Steuerdaten SOLLTEN vor unberechtigten Zugriffen oder Veränderungen geschützt werden. Bei Anwendungen mit Echtzeitanforderungen SOLLTE geprüft werden, ob dies notwendig und umsetzbar ist. Werden Mess- oder Steuerdaten über öffentliche Netze übertragen, SOLLTEN sie angemessen geschützt werden.</p>
+</li>
+</ul>
+<a name="12366_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein IND.2.1<em>Allgemeine ICS-Komponente</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>IND.2.1.A18 Kommunikation im Störfall [Leitstellen-Operator, ICS-Administrator] (H)</h4>
+<p>Es SOLLTE alternative und unabhängige Kommunikationsmöglichkeiten geben, die bei einem Störfall benutzt werden können, um handlungsfähig zu bleiben. </p>
+</li>
+<li><h4>IND.2.1.A19 Security-Tests [ICS-Administrator] (H)</h4>
+<p>Mithilfe von regelmäßigen Security-Tests SOLLTE geprüft werden, ob die technischen Sicherheitsmaßnahmen noch effektiv umgesetzt sind. Die ICS-Komponenten SOLLTEN nicht im laufenden Anlagenbetrieb getestet werden. Die Tests SOLLTEN auf die Wartungszeiten geplant werden. Die Ergebnisse SOLLTEN dokumentiert werden. Erkannte Risiken SOLLTEN bewertet und behandelt werden. </p>
+</li>
+<li><h4>IND.2.1.A20 Vertrauenswürdiger Code [ICS-Administrator] (H)</h4>
+<p>Firmware-Updates oder neue Steuerungsprogramme SOLLTEN nur eingespielt werden, wenn vorher ihre Integrität und Authentizität überprüft wurde. </p>
+</li>
+</ul>
+<a name="12366_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Mit dem „ICS Security Kompendium“ gibt das Bundesamt für Sicherheit in der Informationstechnik (BSI) Hilfestellungen für den Test der Komponenten und Maßnahmen für die IT-Sicherheit in ICS für Hersteller und Integratoren von ICS.</p>
+<p>Der Bundesverband der Energie- und Wasserwirtschaft e. V. (BDEW) und Österreichs E-Wirtschaft bietet mit dem Dokument „Whitepaper: Anforderungen an sichere Steuerungs- und Telekommunikationssysteme“ eine Hilfestellung zum sicheren Betrieb von Steuerungs- und Telekommunikationssystemen.</p>
+<p>In der NIST Special Publication 800-81 - „Guide to Industrial Control Systems (ICS) Security“ ist beschrieben, wie IT-Sicherheit für Industrial Control Systems umgesetzt werden kann.</p>
+<a name="12366_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein IND.2.1 <em>Allgemeine ICS-Komponente</em> von Bedeutung.</p>
+<ul>
+<li>G 0.2 Ungünstige klimatische Bedingungen</li>
+<li>G 0.4 Verschmutzung, Staub, Korrosion</li>
+<li>G 0.8 Ausfall oder Störung der Stromversorgung</li>
+<li>G 0.9 Ausfall oder Störung von Kommunikationsnetzen</li>
+<li>G 0.10 Ausfall oder Störung von Versorgungsnetzen</li>
+<li>G 0.12 Elektromagnetische Störstrahlung</li>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.15 Abhören</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.21 Manipulation von Hard- oder Software</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.25 Ausfall von Geräten oder Systemen</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.31 Fehlerhafte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.32 Missbrauch von Berechtigungen</li>
+<li>G 0.37 Abstreiten von Handlungen</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.40 Verhinderung von Diensten (Denial of Service)</li>
+<li>G 0.41 Sabotage</li>
+<li>G 0.43 Einspielen von Nachrichten</li>
+<li>G 0.45 Datenverlust</li>
+<li>G 0.46 Integritätsverlust schützenswerter Informationen</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.02</th>
+<th>G 0.04</th>
+<th>G 0.08</th>
+<th>G 0.09</th>
+<th>G 0.10</th>
+<th>G 0.12</th>
+<th>G 0.14</th>
+<th>G 0.15</th>
+<th>G 0.19</th>
+<th>G 0.21</th>
+<th>G 0.22</th>
+<th>G 0.23</th>
+<th>G 0.25</th>
+<th>G 0.28</th>
+<th>G 0.30</th>
+<th>G 0.31</th>
+<th>G 0.32</th>
+<th>G 0.37</th>
+<th>G 0.39</th>
+<th>G 0.40</th>
+<th>G 0.41</th>
+<th>G 0.43</th>
+<th>G 0.45</th>
+<th>G 0.46</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IND.2.1.A1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>IND.2.1.A2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>IND.2.1.A3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>IND.2.1.A4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>IND.2.1.A5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>IND.2.1.A6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>IND.2.1.A7</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>IND.2.1.A8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>IND.2.1.A9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>IND.2.1.A10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>IND.2.1.A11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>IND.2.1.A12</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>IND.2.1.A13</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>IND.2.1.A14</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>IND.2.1.A15</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>IND.2.1.A16</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>IND.2.1.A17</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>IND.2.1.A18</td>
+<td>A</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>IND.2.1.A19</td>
+<td>CIA</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>IND.2.1.A20</td>
+<td>IA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

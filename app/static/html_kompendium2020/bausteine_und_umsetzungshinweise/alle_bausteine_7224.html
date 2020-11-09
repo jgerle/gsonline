@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+SYS.4.5 Wechseldatenträger
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_7224.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_7224.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">SYS.4.5 Wechseldatenträger</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>SYS.4.5 Wechseldatenträger</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#7224_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#7224_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7224_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7224_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#7224_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#7224_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#7224_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7224_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7224_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#7224_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#7224_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#7224_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#7224_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="7224_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="7224_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Wechseldatenträger werden oft eingesetzt, um Daten zu transportieren, zu speichern oder um mobil auf sie zugreifen zu können. Zu Wechseldatenträger gehören externe Festplatten, CD-ROMs, DVDs, Speicherkarten, Magnetbänder und USB-Sticks.</p>
+<p>Datenträger sind danach klassifizierbar, ob sie nur lesbar, einmalig beschreibbar oder wiederbeschreibbar sind. Unterschiede gibt es auch bei der Art der Datenspeicherung (analog oder digital), wie sie bearbeitet werden können oder nach ihrer Bauform. So gibt es auswechselbare Datenträger (z. B. verbaute Festplatten) oder externe Datenspeicher (z. B. USB-Sticks) sowie Datenträger, die in Geräte integriert sind (z. B. Speicher, die fest in Smartphones verbaut sind) und die mit diesen Geräten in anderen IT-Systemen eingebunden werden können.</p>
+</p>
+<a name="7224_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>In diesem Baustein wird aufgezeigt, wie Wechseldatenträger sicher genutzt werden können. Außerdem wird beschrieben, wie verhindert werden kann, dass über Wechseldatenträger unbeabsichtigt Informationen weitergegeben werden.</p>
+</p>
+<a name="7224_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein SYS.4.5 <span style="font-style: italic">Wechseldatenträger</span> muss auf alle Wechseldatenträger im Informationsverbund angewendet werden. </p>
+<p>Dieser Baustein beschäftigt sich mit den Sicherheitseigenschaften von Wechseldatenträgern. Der Schutz der IT-Systeme, an denen die Wechseldatenträger angeschlossen werden können, wird in dem vorliegenden Baustein nicht berücksichtigt. Empfehlungen hierzu sind in den Bausteinen SYS.1.1 <span style="font-style: italic">Allgemeiner Server</span> oder SYS.2.1 <span style="font-style: italic">Allgemeiner Client</span> sowie den betriebssystemspezifischen Bausteinen zu finden.</p>
+<p>Wechseldatenträger speichern Daten elektronisch, magnetisch oder auf andere, nicht direkt wahrnehmbare Weise. Sie verarbeiten dabei selbst keine Daten. Die Anforderungen an solche Geräte, wie z. B. Smartphones und Tablets, werden im Baustein SYS.3.2.1<span style="font-style: italic"> Allgemeine Smartphones und Tablets</span> aufgeführt.</p>
+<p>Wechseldatenträger können bei persönlichen Treffen oder auch per Versand ausgetauscht werden. Der sichere Austausch von digitalen und analogen Datenträgern, um Informationen zwischen verschiedenen Kommunikationspartnern und IT-Systemen zu übertragen, wird in diesem Baustein nicht betrachtet. Dazu sind die Anforderungen des Bausteins CON.9 <span style="font-style: italic">Informationsaustausch</span> zu erfüllen.</p>
+<p>Neben den digitalen Datenträgern sind z. B. auch Informationen auf Papier oder anderen analogen Datenträgern bei der Sicherheitskonzeption zu berücksichtigen. Diese Aspekte werden in anderen Bausteinen behandelt, wie zum Beispiel in SYS.4.1 <span style="font-style: italic">Drucker, Kopierer und Multifunktionsgeräte</span>, NET.4.3<span style="font-style: italic"> Fax</span>, OPS.1.1.5 <span style="font-style: italic">Protokollierung </span>oder OPS.1.2.2 <span style="font-style: italic">Archivierung</span>.</p>
+</p>
+<a name="7224_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein SYS.4.5 <span style="font-style: italic">Wechseldatenträger</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Sorglosigkeit im Umgang mit Informationen</h3>
+<p>
+<p>Häufig gibt es in Institutionen zwar organisatorische Regelungen und technische Sicherheitsverfahren für Wechseldatenträger, diese werden jedoch oft durch den sorglosen Umgang der Mitarbeiter ausgehebelt. So kommt es etwa vor, dass Wechseldatenträger während einer Pause unbeaufsichtigt im Besprechungsraum zurück- oder auch im Zugabteil liegengelassen werden. </p>
+</p>
+<h3>2.2 Unzureichende Kenntnis über Regelungen</h3>
+<p>
+<p>Wenn Mitarbeitern die Regelungen für den korrekten Umgang mit Wechseldatenträgern nicht hinreichend bekannt sind, können sie sich auch nicht daran halten. So können zahlreiche Gefährdungen hinsichtlich der Informationssicherheit eintreten, zum Beispiel, wenn nicht geprüfte USB-Sticks an die IT-Systeme der Institution angeschlossen werden. </p>
+</p>
+<h3>2.3 Diebstahl oder Verlust von Wechseldatenträgern</h3>
+<p>
+<p>Bei Wechseldatenträgern ist das Risiko von Datenverlusten höher als bei stationären Systemen. Ursachen für Datenverluste sind etwa Diebstahl oder verlorengegangene Geräte. Die auf den Datenträgern abgelegten Informationen sind in diesen Fällen oft unwiederbringlich verloren. Außerdem können die Informationen fremden Personen in die Hände fallen.</p>
+</p>
+<h3>2.4 Defekte Datenträger</h3>
+<p>
+<p>Wechseldatenträger sind aufgrund ihrer Größe und Anwendungsbereiche anfällig für Beschädigungen, Fehler oder Ausfälle. Ursache sind beispielsweise ständig wechselnde Einsatzumgebungen oder mechanische Einwirkungen.</p>
+</p>
+<h3>2.5 Beeinträchtigung durch wechselnde Einsatzumgebung</h3>
+<p>
+<p>Wechseldatenträger werden in sehr unterschiedlichen Umgebungen eingesetzt und sind dadurch vielen Gefährdungen ausgesetzt. Dazu gehören beispielsweise schädigende Umwelteinflüsse wie zu hohe oder zu niedrige Temperaturen, ebenso Staub oder Feuchtigkeit. Hinzu kommen beispielsweise Transportschäden. Ein weiterer wichtiger Aspekt ist, dass Datenträger oft in Bereichen mit unterschiedlichem Sicherheitsniveau benutzt werden. Die Kommunikation mit unbekannten IT-Systemen und Netzen birgt immer ein Gefährdungspotenzial für das eigene mobile Endgerät.</p>
+</p>
+<h3>2.6 Verbreitung von Schadprogrammen</h3>
+<p>
+<p>Wechseldatenträger werden oft benutzt, um Daten zwischen verschiedenen Geräten und dem Arbeitsplatz auszutauschen. Es besteht die Gefahr, dass Schadprogramme Daten auf dem Wechseldatenträgern kompromittieren und sich so auf die Arbeitsplatz-Systeme übertragen.</p>
+</p>
+<h3>2.7 Datendiebstahl mit Wechseldatenträgern</h3>
+<p>
+<p>Da fast alle IT-Systeme eine Schnittstelle für austauschbare Datenträger haben, besteht die Gefahr, dass mit ihnen große Datenmengen unbefugt kopiert werden. </p>
+</p>
+<a name="7224_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die Anforderungen des Bausteins SYS.4.5 <span style="font-style: italic">Wechseldatenträger</span> aufgeführt. Grundsätzlich ist der IT-Betrieb für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Umsetzung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt.</p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>IT-Betrieb</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+Benutzer,
+Fachverantwortliche
+</td>
+</tr>
+</table>
+<a name="7224_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein SYS.4.5<em>Wechseldatenträger</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>SYS.4.5.A1 Sensibilisierung der Mitarbeiter zum sicheren Umgang mit Wechseldatenträgern (B)</h4>
+<p>Alle Mitarbeiter MÜSSEN für den sicheren Umgang mit Wechseldatenträgern sensibilisiert werden. Die Mitarbeiter MÜSSEN insbesondere darauf hingewiesen werden, wie sie mit den Wechseldatenträgern umgehen sollten, um einem Verlust oder Diebstahl vorzubeugen und eine lange Lebensdauer zu gewährleisten.</p>
+<p>Die Institution MUSS ihre Mitarbeiter darüber informieren, dass sie keine Wechseldatenträger an ihre Systeme anschließen dürfen, die aus unbekannten Quellen stammen.</p>
+</li>
+<li><h4>SYS.4.5.A2 Verlust- bzw. Manipulationsmeldung [Benutzer] (B)</h4>
+<p>Benutzer MÜSSEN umgehend melden, wenn ein Wechseldatenträger gestohlen wird oder der Verdacht einer Manipulation besteht. Der Benutzer MUSS bei seiner Meldung angeben, welche Informationen auf dem Wechseldatenträger gespeichert sind. Hierfür MUSS es in jeder Institution klare Meldewege und Ansprechpartner geben. </p>
+</li>
+<li><h4>SYS.4.5.A3 ENTFALLEN (B)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.4.5.A12 Schutz vor Schadsoftware [Benutzer] (B)</h4>
+<p>Nur auf Schadsoftware überprüfte Daten DÜRFEN auf Wechseldatenträger übertragen werden. Bevor Daten von Wechseldatenträgern verarbeitet werden, MÜSSEN sie auf Schadsoftware überprüft werden.</p>
+</li>
+</ul>
+<a name="7224_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein SYS.4.5<em>Wechseldatenträger</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>SYS.4.5.A4 Erstellung einer Richtlinie zum sicheren Umgang mit Wechseldatenträgern (S)</h4>
+<p>Es SOLLTE eine Richtlinie für den richtigen Umgang mit Wechseldatenträgern erstellt werden. Folgende grundlegenden Aspekte SOLLTEN dabei berücksichtigt werden: </p>
+<ul><li>welche Wechseldatenträger genutzt werden und wer diese einsetzen darf,</li><li>welche Daten auf Wechseldatenträgern gespeichert werden dürfen und welche nicht, </li><li>wie die auf Wechseldatenträgern gespeicherten Daten vor unbefugtem Zugriff, Manipulation und Verlust geschützt werden, </li><li>wie die Daten auf den Wechseldatenträgern gelöscht werden sollen,</li><li>ob und wie private Datenträger genutzt werden dürfen,</li><li>mit welchen externen Mitarbeitern oder Dienstleistern Datenträger ausgetauscht werden dürfen und welche Sicherheitsregelungen dabei zu beachten sind, </li><li>wie Datenträger zu versenden sind sowie</li><li>wie der Verbreitung von Schadsoftware über Wechseldatenträger vorgebeugt wird.</li></ul>
+<p>Die Institution SOLLTE in der Sicherheitsrichtlinie festlegen, unter welchen Bedingungen Datenträger gelagert werden sollen. Insbesondere SOLLTE sie vorgeben, dass nur berechtigte Benutzer Zugang zu beschriebenen Datenträgern haben. Sie SOLLTE festlegen, dass Herstellerangaben zum Umgang mit Datenträgern berücksichtigt werden sollen.</p>
+<p>Es SOLLTE regelmäßig überprüft werden, ob die Sicherheitsvorgaben für den Umgang mit Wechseldatenträgern aktuell sind. </p>
+</li>
+<li><h4>SYS.4.5.A5 Regelung zur Mitnahme von Wechseldatenträgern (S)</h4>
+<p>Es SOLLTE klare schriftliche Regeln dazu geben, ob, wie und zu welchen Anlässen Wechseldatenträger mitgenommen werden dürfen. Darin SOLLTE festgelegt sein, welche Datenträger von wem außer Haus transportiert werden dürfen und welche Sicherheitsmaßnahmen dabei zu beachten sind.</p>
+</li>
+<li><h4>SYS.4.5.A6 Datenträgerverwaltung [Fachverantwortliche] (S)</h4>
+<p>Es SOLLTE eine Verwaltung für Wechseldatenträger geben. Die Datenträger SOLLTEN einheitlich gekennzeichnet werden. Die Datenträgerverwaltung SOLLTE gewährleisten, dass Wechseldatenträger sachgerecht behandelt und aufbewahrt sowie ordnungsgemäß eingesetzt und transportiert werden. </p>
+</li>
+<li><h4>SYS.4.5.A7 Sicheres Löschen der Datenträger vor und nach der Verwendung [Fachverantwortliche] (S)</h4>
+<p>Bevor wiederbeschreibbare Datenträger weitergegeben, wiederverwendet oder ausgesondert werden, SOLLTEN sie in geeigneter Weise gelöscht werden. Die Institution SOLLTE den Mitarbeitern dafür geeignete Programme zur Verfügung stellen.</p>
+</li>
+<li><h4>SYS.4.5.A8 ENTFALLEN (S)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.4.5.A13 Angemessene Kennzeichnung der Datenträger beim Versand [Benutzer] (S)</h4>
+<p>Benutzer SOLLTEN Datenträger, die versendet werden sollen, so kennzeichnen, dass Absender und Empfänger sie sofort identifizieren können. Die Kennzeichnung der Datenträger bzw. deren Verpackung SOLLTE für den Empfänger eindeutig sein. Die Kennzeichnung von Datenträgern mit schützenswerten Informationen SOLLTE für Außenstehende keine Rückschlüsse auf Art und Inhalte der Informationen zulassen.</p>
+</li>
+</ul>
+<a name="7224_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein SYS.4.5<em>Wechseldatenträger</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>SYS.4.5.A9 ENTFALLEN (H)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.4.5.A10 Datenträgerverschlüsselung (H)</h4>
+<p>Wechseldatenträger SOLLTEN vollständig verschlüsselt werden. Es SOLLTE ein sicheres Verschlüsselungsverfahren eingesetzt werden.</p>
+</li>
+<li><h4>SYS.4.5.A11 Integritätsschutz durch Checksummen oder digitale Signaturen (H)</h4>
+<p>Um beim Datenaustausch mittels mobiler Datenträger die Integrität von vertraulichen Informationen sicherzustellen, SOLLTE ein Verfahren zum Schutz gegen zufällige oder vorsätzliche Veränderungen eingesetzt werden. Die Verfahren zum Schutz vor Veränderungen SOLLTEN dem aktuellen Stand der Technik entsprechen.</p>
+</li>
+<li><h4>SYS.4.5.A14 Sichere Versandart und Verpackung (H)</h4>
+<p>Die Institution SOLLTE überprüfen, wie vertrauliche Informationen bei einem Versand angemessen geschützt werden können. Die Benutzer SOLLTEN eine sichere Versandverpackung für Datenträger verwenden, bei der Manipulationen sofort zu erkennen sind. Der Versender SOLLTE alle beteiligten Mitarbeiter auf notwendige Versand- und Verpackungsarten hinweisen.</p>
+</li>
+<li><h4>SYS.4.5.A15 Zertifizierte Produkte (H)</h4>
+<p>Die Institution SOLLTE nur Wechseldatenträger verwenden, die zertifiziert sind. Die Zertifizierung SOLLTE insbesondere eine integere Datenerhaltung sowie eine möglicherweise vorhandene Verschlüsselung berücksichtigen.</p>
+</li>
+<li><h4>SYS.4.5.A16 Nutzung dedizierter Systeme zur Datenprüfung (H)</h4>
+<p>Die Institution SOLLTE dedizierte Systeme als Datenschleuse verwenden, bei denen Daten von einem Wechseldatenträger auf einen anderen übertragen werden und dabei auf Schadsoftware untersucht werden.</p>
+</li>
+</ul>
+<a name="7224_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Die International Organization for Standardization beschreibt in der Norm ISO/IEC 27001:2013 wie Wechseldatenträger sicher eingesetzt werden können.</p>
+<a name="7224_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein SYS.4.5 <em>Wechseldatenträger</em> von Bedeutung.</p>
+<ul>
+<li>G 0.2 Ungünstige klimatische Bedingungen</li>
+<li>G 0.4 Verschmutzung, Staub, Korrosion</li>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.16 Diebstahl von Geräten, Datenträgern oder Dokumenten</li>
+<li>G 0.17 Verlust von Geräten, Datenträgern oder Dokumenten</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.21 Manipulation von Hard- oder Software</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.29 Verstoß gegen Gesetze oder Regelungen</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.46 Integritätsverlust schützenswerter Informationen</li>
+<li>G 0.20 Informationen oder Produkte aus unzuverlässiger Quelle</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.02</th>
+<th>G 0.04</th>
+<th>G 0.14</th>
+<th>G 0.16</th>
+<th>G 0.17</th>
+<th>G 0.19</th>
+<th>G 0.20</th>
+<th>G 0.21</th>
+<th>G 0.22</th>
+<th>G 0.23</th>
+<th>G 0.29</th>
+<th>G 0.39</th>
+<th>G 0.46</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SYS.4.5.A1</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.4.5.A2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.4.5.A3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.4.5.A4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.4.5.A5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.4.5.A6</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.4.5.A7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.4.5.A8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.4.5.A9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.4.5.A10</td>
+<td>C</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.4.5.A11</td>
+<td>I</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.4.5.A12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.4.5.A13</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.4.5.A14</td>
+<td>CIA</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.4.5.A15</td>
+<td>CIA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.4.5.A16</td>
+<td>CI</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

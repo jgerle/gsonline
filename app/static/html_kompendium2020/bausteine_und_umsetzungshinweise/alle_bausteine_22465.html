@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+APP.3.1 Webanwendungen
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_22465.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_22465.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">APP.3.1 Webanwendungen</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>APP.3.1 Webanwendungen</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#22465_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#22465_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22465_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22465_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#22465_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#22465_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#22465_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22465_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22465_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#22465_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#22465_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22465_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#22465_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="22465_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="22465_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Webanwendungen stellen Funktionen und dynamische Inhalte zur Verfügung. Sie nutzen dazu das Internetprotokoll HTTP (Hypertext Transfer Protocol) bzw. HTTPS. Bei HTTPS wird die Verbindung durch die Protokolle SSL (Secure Socket Layer) oder TLS (Transport Layer Security) verschlüsselt und zusätzlich gesichert. </p>
+<p>Webanwendungen erstellen auf einem Server Dokumente und Benutzeroberflächen, z. B. Eingabemasken, und liefern diese an entsprechende Clientprogramme, wie etwa Webbrowser. Webanwendungen werden gewöhnlich auf der Grundlage von Frameworks entwickelt. Diese stellen ein Rahmenwerk für häufig wiederkehrende Aufgaben zur Verfügung, z. B. für Sicherheitskomponenten. </p>
+<p>Um eine Webanwendung zu betreiben, sind in der Regel mehrere Komponenten notwendig. Hierzu gehören üblicherweise ein Webserver, um Daten auszuliefern und ein Applikationsserver, um die eigentliche Anwendung zu betreiben. Außerdem sind zusätzliche Hintergrundsysteme nötig, die oft als Datenquellen über unterschiedliche Schnittstellen angebunden sind, z. B. Datenbanken oder Verzeichnisdienste. </p>
+<p>Webanwendungen werden sowohl in öffentlichen Datennetzen als auch in Institutionsnetzen (Intranet) eingesetzt, um Daten und Anwendungen bereitzustellen. Je nach Zweck der Webanwendungen werden diese in der Regel von Anwendern genutzt, die sich im Vorfeld authentisieren müssen. Dabei müssen Webanwendungen Sicherheitsmechanismen umsetzen, die den Schutz der Daten gewährleisten und deren Missbrauch verhindern. Typische Sicherheitskomponenten bzw. -mechanismen sind: Authentisierung, Autorisierung, Eingabevalidierung, Ausgabekodierung, Session-Management, Fehlerbehandlung und Protokollierung. </p>
+</p>
+<a name="22465_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Ziel dieses Bausteins ist der sichere Betrieb von Webanwendungen sowie der Schutz von Informationen, die durch eine Webanwendung verarbeitet werden:</p>
+</p>
+<a name="22465_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein ist auf alle Webanwendungen des Informationsverbunds anzuwenden.</p>
+<p>In diesem Baustein werden die für Webanwendungen spezifischen Gefährdungen und Anforderungen betrachtet. Webanwendungen stellen Funktionen zur Verfügung und bereiten dynamische Inhalte vor, die durch den Webserver ausgeliefert werden (siehe auch APP.3.2 <span style="font-style: italic">Webserver</span>). Der Baustein APP.3.2 <span style="font-style: italic">Webserver</span> beinhaltet auch die redaktionelle Planung des Webauftritts. Diese Aspekte werden daher im Baustein APP.3.1 <span style="font-style: italic">Webanwendungen</span> nicht nochmals behandelt.</p>
+</p>
+<a name="22465_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein APP.3.1 <span style="font-style: italic">Webanwendungen</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Mängel bei der Entwicklung und der Erweiterung von Webanwendungen</h3>
+<p>
+<p>Wird eine Webanwendung mit fehlenden oder unzureichenden Vorgaben und Standards entwickelt bzw. erweitert, so kann dies zu Fehlern, Qualitätseinbußen oder einer unvollständigen Funktionalität führen. Fehler, die in frühen Entwicklungsphasen auftreten, werden häufig erst in einem fortgeschrittenen Entwicklungsstadium entdeckt. Um diese Fehler nachträglich zu beheben, muss oft der Quellcode der Webanwendung aufwendig geprüft und wieder korrigiert werden. Dadurch können die Entwicklungskosten deutlich zunehmen. Im Fall von grundlegenden architektonischen Fehlern muss die Webanwendung eventuell sogar komplett neu entwickelt werden. Gibt es darüber hinaus keine Vorgaben, um Sicherheitsmechanismen umzusetzen, werden die zu verarbeitenden Daten möglicherweise nicht ausreichend geschützt.</p>
+</p>
+<h3>2.2 Umgehung der Autorisierung bei Webanwendungen</h3>
+<p>
+<p>Angreifer versuchen häufig, auf Funktionen oder Daten von Webanwendungen zuzugreifen, die nur für eine eingeschränkte Benutzergruppe verfügbar sind. Ist die Autorisierung fehlerhaft umgesetzt, kann ein Angreifer unter Umständen die Berechtigungen eines anderen Benutzers mit umfangreicheren Rechten erlangen und somit auf geschützte Bereiche und Daten zugreifen. Das geschieht üblicherweise, indem ein Angreifer seine Eingaben gezielt manipuliert.</p>
+</p>
+<h3>2.3 Unzureichende Eingabevalidierung und Ausgabekodierung</h3>
+<p>
+<p>Verarbeitet eine Webanwendung ungeprüfte Eingangsdaten, die von einem Angreifer manipuliert wurden, können möglicherweise Schutzmechanismen umgangen werden. Auch die Ausgabedaten der Webanwendung werden entweder direkt an den Webbrowser des Benutzers, die aufrufende Anwendung oder an nachgelagerte Systeme übermittelt. Werden diese Daten vor der Ausgabe nicht ausreichend kodiert, könnten sie Schadcode enthalten, der auf den Zielsystemen interpretiert oder ausgeführt wird.</p>
+</p>
+<h3>2.4 Fehlende oder mangelhafte Fehlerbehandlung durch Webanwendungen</h3>
+<p>
+<p>Treten Fehler während des Betriebs einer Webanwendung auf, kann das z. B. die Verfügbarkeit der Webanwendung einschränken, bis sie etwa nicht mehr erreichbar ist. So werden eventuell Aktionen unvollständig durchgeführt, zwischengespeicherte Aktionen und Daten gehen verloren oder Sicherheitsmechanismen fallen aus. Werden Fehler nicht korrekt behandelt, kann sowohl der Betrieb als auch der Schutz der Funktionen und Daten beeinträchtigt werden. </p>
+</p>
+<h3>2.5 Unzureichende Protokollierung von sicherheitsrelevanten Ereignissen</h3>
+<p>
+<p>Werden sicherheitsrelevante Ereignisse von der Webanwendung unzureichend protokolliert, können diese unter Umständen zu einem späteren Zeitpunkt nicht nachvollzogen werden. Somit kann auch die Ursache nicht mehr ermittelt werden. Kritische Fehler und Angriffe, wie beispielsweise unbefugte Konfigurationsänderungen an der Webanwendung, bleiben dann möglicherweise unbemerkt. Eine unzureichende Protokollierung erschwert es auch, Schwachstellen zu erkennen und zu beheben. </p>
+</p>
+<h3>2.6 Offenlegung sicherheitsrelevanter Informationen bei Webanwendungen</h3>
+<p>
+<p>Webseiten und Daten, die von einer Webanwendung generiert und ausgeliefert werden, können Informationen zu den Hintergrundsystemen enthalten, z. B. Angaben zu Datenbanken oder Versionsständen von Frameworks. Diese Informationen können es einem Angreifer erleichtern, gezielte Angriffe auf die Webanwendung durchzuführen. </p>
+</p>
+<h3>2.7 Missbrauch einer Webanwendung durch automatisierte Nutzung</h3>
+<p>
+<p>Wenn ein Angreifer Funktionen einer Webanwendung automatisiert nutzt, kann er zahlreiche Vorgänge in kurzer Zeit ausführen. Diese auf Wiederholung basierenden Angriffe gegen die Webanwendung sind besonders effizient. Mithilfe eines wiederholt durchgeführten Login-Prozesses kann der Angreifer z. B. versuchen, gültige Kombinationen aus Benutzernamen und Passwort zu ermitteln (Brute-Force) oder Listen mit gültigen Benutzernamen zu erzeugen (Enumeration). Darüber hinaus kann das wiederholte Aufrufen von ressourcenintensiven Funktionen, wie z. B. komplexe Datenbankabfragen, für Denial-of-Service-Angriffe auf Anwendungsebene missbraucht werden.</p>
+</p>
+<h3>2.8 Unzureichendes Session-Management von Webanwendungen</h3>
+<p>
+<p>Wenn es einem Angreifer aufgrund eines unzureichenden Session-Managements gelingt, die Session-ID eines berechtigten Benutzers zu ermitteln, kann er damit unter Umständen auf geschützte Funktionen und Ressourcen der Webanwendung zugreifen. Ein Beispiel für eine solche Angriffsform ist der Session-Fixation-Angriff. Dabei lässt sich ein Angreifer zunächst eine Session-ID von der Webanwendung zuweisen und übermittelt diese ID an einen legitimen Benutzer, zum Beispiel über einen Link in einer E-Mail. Wenn der Benutzer diesem Link folgt und sich danach gegenüber der Webanwendung mit der vom Angreifer übermittelten Session-ID authentisiert, kann der Angreifer die Anwendung anschließend mit der ihm bekannten Session-ID verwenden. Auf diese Weise ist es ihm möglich, im Sicherheitskontext des angegriffenen Benutzers auf die Webanwendung zuzugreifen und so eventuell geschützte Funktionen zu nutzen. </p>
+</p>
+<a name="22465_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind spezifische Anforderungen für den Baustein APP.3.1 <span style="font-style: italic">Webanwendungen</span> aufgeführt. Grundsätzlich ist der IT-Betrieb für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Umsetzung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt. </p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>IT-Betrieb</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+Beschaffer,
+Entwickler
+</td>
+</tr>
+</table>
+<a name="22465_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein APP.3.1<em>Webanwendungen</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>APP.3.1.A1 Authentisierung bei Webanwendungen [Entwickler] (B)</h4>
+<p>Der IT-Betrieb und die Entwickler von Webanwendungen MÜSSEN sicherstellen, dass sich Benutzer gegenüber der Anwendung geeignet authentisieren, wenn diese auf geschützte Ressourcen zugreifen wollen. Dafür MUSS eine geeignete Authentisierungsmethode ausgewählt und der Auswahlprozess dokumentiert werden. Die Zugangsdaten MÜSSEN angemessen geschützt werden.</p>
+<p>Es MUSS eine zentrale Authentisierungskomponente verwendet werden, die möglichst mit etablierten Standardkomponenten umgesetzt wurde. Die Komponente MUSS die Benutzer dazu zwingen, sichere Passwörter gemäß einer Passwort-Richtlinie zu benutzen. Speichert eine Webanwendung Authentisierungsdaten auf einem Client, MUSS der Benutzer explizit zustimmen („Opt-In“) und auf die Risiken der Funktion hingewiesen werden.</p>
+<p>In der Webanwendung MÜSSEN Grenzwerte für fehlgeschlagene Anmeldeversuche definiert sein. Alle angebotenen Authentisierungsverfahren der Webanwendung MÜSSEN das gleiche Sicherheitsniveau aufweisen. Zudem MÜSSEN Benutzer sofort informiert werden, wenn ihr Passwort zurückgesetzt wurde. </p>
+</li>
+<li><h4>APP.3.1.A2 Zugriffskontrolle bei Webanwendungen [Entwickler] (B)</h4>
+<p>Es MUSS durch die Entwickler einer Webanwendung mittels einer Autorisierungskomponente sichergestellt werden, dass Benutzer nur Aktionen durchführen können, zu denen sie berechtigt sind. Jeder Zugriff auf geschützte Inhalte und Funktionen MUSS kontrolliert werden, bevor er ausgeführt wird. Sollte es nicht möglich sein, Zugriffsrechte zuzuweisen, MUSS dafür ein zusätzliches Sicherheitsprodukt eingesetzt werden. </p>
+<p>Es MÜSSEN alle von der Webanwendung verwalteten Ressourcen von der Autorisierungskomponente berücksichtigt werden. Die Benutzer MÜSSEN serverseitig und zentral auf einem vertrauenswürdigen IT-System autorisiert werden. Ist die Zugriffskontrolle fehlerhaft, MÜSSEN Zugriffe abgelehnt werden. Auch MUSS es eine Zugriffskontrolle bei URL-Aufrufen und Objekt-Referenzen geben. Ebenso MUSS der Zugriff auf Dateien durch die Benutzer mit restriktiven Dateisystemberechtigungen beschränkt werden. Es MUSS zudem ein sicherer Umgang mit temporären Dateien vorgesehen werden.</p>
+</li>
+<li><h4>APP.3.1.A3 Sicheres Session-Management [Entwickler] (B)</h4>
+<p>Entwickler einer Webanwendung MÜSSEN sicherstellen, dass Session-IDs geeignet geschützt werden. Session-IDs MÜSSEN zufällig und mit ausreichender Entropie erzeugt werden. Falls das Framework der Webanwendung Session-IDs generieren kann, MUSS diese Funktion des Frameworks von den Entwicklern verwendet werden. Sicherheitsrelevante Konfigurationsmöglichkeiten des Frameworks MÜSSEN berücksichtigt werden. Die Session-ID MUSS ausreichend geschützt werden, wenn sie übertragen und vom Client gespeichert wird.</p>
+<p>Eine Webanwendung MUSS den Benutzern die Möglichkeit geben, eine bestehende Sitzung explizit zu beenden. Nachdem sich der Benutzer angemeldet hat, MUSS eine bereits bestehende Session-ID durch eine neue ersetzt werden. Sitzungen MÜSSEN eine maximale Gültigkeitsdauer besitzen (Timeout). Inaktive Sitzungen MÜSSEN automatisch nach einer bestimmten Zeit ungültig werden. Nachdem die Sitzung ungültig ist, MÜSSEN alle Sitzungsdaten sowohl server- als auch clientseitig ungültig und gelöscht sein. </p>
+</li>
+<li><h4>APP.3.1.A4 Kontrolliertes Einbinden von Daten und Inhalten bei Webanwendungen [Entwickler] (B)</h4>
+<p>Entwickler MÜSSEN sicherstellen, dass eine Webanwendung ausschließlich vorgesehene Daten und Inhalte einbindet und an den Benutzer ausliefert. Falls eine Webanwendung eine Upload-Funktion für Dateien anbietet, MUSS diese Funktion durch den IT-Betrieb so weit wie möglich eingeschränkt werden. Auch Zugriffs- und Ausführungsrechte MÜSSEN in diesem Fall restriktiv gesetzt werden. Zudem MUSS sichergestellt werden, dass ein Benutzer Dateien nur im vorgegebenen Pfad speichern kann. Die Entwickler MÜSSEN sicherstellen, dass der Benutzer den Ablageort der Uploads nicht beeinflussen kann.</p>
+<p>Die Ziele der Weiterleitungsfunktion einer Webanwendung MÜSSEN ausreichend eingeschränkt werden, sodass Benutzer ausschließlich auf vertrauenswürdige Webseiten weitergeleitet werden. Verlässt ein Benutzer die Vertrauensdomäne, MUSS ihn die Webanwendung darüber informieren.</p>
+</li>
+<li><h4>APP.3.1.A5 Protokollierung sicherheitsrelevanter Ereignisse von Webanwendungen [Entwickler] (B)</h4>
+<p>Entwickler MÜSSEN sicherstellen, dass eine Webanwendung sicherheitsrelevante Ereignisse mit den erforderlichen Merkmalen nachvollziehbar protokolliert. Die sicherheitsrelevanten Protokollierungsdaten MÜSSEN regelmäßig durch den IT-Betrieb ausgewertet werden. Bei der Auswertung der Protokollierungsdaten MUSS sichergestellt werden, dass Schadcode in Protokoll-Einträgen vom Auswertungsprogramm nicht interpretiert wird.</p>
+</li>
+<li><h4>APP.3.1.A6 ENTFALLEN (B)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>APP.3.1.A7 Schutz vor unerlaubter automatisierter Nutzung von Webanwendungen [Entwickler] (B)</h4>
+<p>Die Entwickler einer Webanwendung und deren Betreiber MÜSSEN sicherstellen, dass die Anwendung vor automatisierten Zugriffen geschützt wird. Dabei MUSS jedoch berücksichtigt werden, wie sich die Schutzmechanismen auf die Nutzungsmöglichkeiten berechtigter Benutzer auswirken. Wenn die Webanwendung RSS-Feeds oder andere Funktionen enthält, die explizit für die automatisierte Nutzung vorgesehen sind, MUSS dies ebenfalls bei der Konfiguration der Schutzmechanismen berücksichtigt werden.</p>
+</li>
+<li><h4>APP.3.1.A14 Schutz vertraulicher Daten [Entwickler] (B)</h4>
+<p>Entwickler MÜSSEN sicherstellen, dass die Daten vom Client zum Server nur mit der HTTP-Post-Methode übertragen werden.</p>
+<p>Entwickler MÜSSEN sicherstellen, dass die Webanwendung durch Direktiven gewährleistet, dass clientseitig keine schützenswerten Daten zwischengespeichert werden. Weiterhin MÜSSEN Entwickler sicherstellen, dass in Formularen keine vertraulichen Formulardaten im Klartext angezeigt werden. Die Webanwendung SOLLTE verhindern, dass vertrauliche Daten vom Webbrowser unerwartet gespeichert werden. Zugangsdaten der Webanwendung MÜSSEN serverseitig mithilfe von sicheren kryptografischen Algorithmen vor unbefugtem Zugriff geschützt werden (Salted Hash). Ebenso MÜSSEN die Dateien mit den Quelltexten der Webanwendung vor unerlaubten Abrufen geschützt werden.</p>
+</li>
+<li><h4>APP.3.1.A16 Umfassende Eingabevalidierung und Ausgabekodierung [Entwickler] (B)</h4>
+<p>Alle an eine Webanwendung übergebenen Daten MÜSSEN von den Entwicklern als potenziell gefährlich behandelt und geeignet gefiltert werden. Alle Eingabedaten sowie Datenströme und Sekundärdaten wie z. B. Session-IDs MÜSSEN validiert werden.</p>
+<p>Serverseitig SOLLTEN die Daten auf einem vertrauenswürdigen IT-System geprüft werden. Fehleingaben SOLLTEN möglichst nicht automatisch behandelt werden (Sanitizing). Lässt es sich jedoch nicht vermeiden, MUSS Sanitizing sicher umgesetzt werden.</p>
+<p>Ausgabedaten MÜSSEN so kodiert werden, dass schadhafter Code auf dem Zielsystem nicht interpretiert oder ausgeführt wird.</p>
+</li>
+<li><h4>APP.3.1.A19 Schutz vor SQL-Injection [Entwickler] (B)</h4>
+<p>Werden Daten an ein Datenbank-System weitergeleitet, MÜSSEN die Entwickler Stored Procedures bzw. Prepared SQL Statements einsetzen, wenn dies von der Einsatzumgebung unterstützt wird. Wenn weder Stored Procedures noch Prepared SQL Statements eingesetzt werden können, MÜSSEN die SQL-Queries separat abgesichert werden.</p>
+</li>
+</ul>
+<a name="22465_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein APP.3.1<em>Webanwendungen</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>APP.3.1.A8 Systemarchitektur einer Webanwendung [Beschaffer, Entwickler] (S)</h4>
+<p>Bereits in der Entwurfsphase einer Webanwendung SOLLTE der Beschaffer Sicherheitsaspekte beachten. Auch SOLLTE darauf geachtet werden, dass die Architektur der Webanwendung die Geschäftslogik der Institution exakt erfasst und korrekt umsetzt.</p>
+<p>In der Systemarchitektur SOLLTE der IT-Betrieb vorsehen, dass die Serverdienste durch jeweils separate IT-Systeme voneinander getrennt sind. Auch SOLLTEN jeweils eigene Benutzerkonten für die unterschiedlichen Serverprozesse der Systemkomponenten verwendet werden. Dabei SOLLTEN die Rechte dieser Dienstkonten auf Betriebssystemebene soweit eingeschränkt werden, dass nur auf die erforderlichen Ressourcen und Dateien des Betriebssystems zugegriffen werden kann.</p>
+<p>Die Softwarearchitektur der Webanwendung SOLLTE mit allen Bestandteilen und Abhängigkeiten von den Entwicklern dokumentiert werden. Die Dokumentation SOLLTE bereits während des Projektverlaufs aktualisiert und angepasst werden. Die Dokumentation SOLLTE so gestaltet sein, dass Entscheidungen nachvollziehbar sind und sie schon in der Entwicklungsphase benutzt werden kann. Es SOLLTEN in der Dokumentation alle für den Betrieb notwendigen Komponenten, die nicht Bestandteil der Webanwendung sind, als solche gekennzeichnet werden. Ebenso SOLLTE daraus hervorgehen, welche Komponenten welche Sicherheitsmechanismen umsetzen, wie die Webanwendung in eine bestehende Infrastruktur integriert wird und welche kryptografischen Funktionen und Verfahren eingesetzt werden.</p>
+</li>
+<li><h4>APP.3.1.A9 Beschaffung, Entwicklung und Erweiterung von Webanwendungen [Entwickler, Beschaffer] (S)</h4>
+<p>Wenn Produkte für Webanwendungen beschafft werden, SOLLTE vom Beschaffer ein Anforderungskatalog erstellt werden. Um verschiedene Produkte miteinander vergleichen zu können, SOLLTE eine Bewertungsskala entwickelt werden. </p>
+<p>Wird die eigentliche Webanwendung oder eine Erweiterung dazu selbst entwickelt, SOLLTEN die Entwickler ein geeignetes Vorgehensmodell benutzen. Dabei SOLLTEN vor der Inbetriebnahme alle Phasen des Modells durchlaufen werden. Für die Entwicklung SOLLTEN zudem Programmierrichtlinien vorgegeben werden, die dabei helfen, ein einheitliches Sicherheitsniveau zu etablieren. </p>
+<p>Wenn die Sicherheitsmechanismen einer Webanwendung entworfen und entwickelt werden, SOLLTEN diese möglichst künftige Standards und Angriffstechniken berücksichtigen. Bei der Anwendungsentwicklung SOLLTEN die Entwicklungs-, Test- und Produktivsysteme voneinander getrennt sein. </p>
+<p>Falls die Webanwendung von einem Dienstleister entwickelt wird, SOLLTE der Beschaffer sicherstellen, dass der Dienstleister die nötigen Sicherheitsanforderungen bei der Entwicklung umsetzt und der Auftraggeber jederzeit auf den Quelltext zugreifen kann. </p>
+</li>
+<li><h4>APP.3.1.A10 ENTFALLEN (S)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>APP.3.1.A11 Sichere Anbindung von Hintergrundsystemen (S)</h4>
+<p>Hintergrundsysteme von Webanwendungen, auf denen Funktionalitäten und Daten ausgelagert werden, SOLLTEN ausreichend geschützt werden. Der Zugriff auf Hintergrundsysteme SOLLTE ausschließlich über definierte Schnittstellen und von definierten Systemen aus möglich sein. Bei der Kommunikation über Standort- und Netzgrenzen hinweg SOLLTE der Datenverkehr authentisiert und verschlüsselt werden. Zugriffe der Webanwendung auf Hintergrundsysteme SOLLTEN zudem mit minimalen Rechten erfolgen.</p>
+<p>Beim Einsatz eines Enterprise Service Bus (ESB) SOLLTE ein eigenes logisches Netzsegment für den ESB vorhanden sein. Der Zugriff auf den ESB SOLLTE ausschließlich durch die angeschlossenen Anwendungen und Dienste möglich sein. Alle Zugriffe auf den ESB SOLLTEN authentisiert und bei der Kommunikation über Standort- und Netzgrenzen hinweg verschlüsselt sein.</p>
+</li>
+<li><h4>APP.3.1.A12 Sichere Konfiguration von Webanwendungen (S)</h4>
+<p>Eine Webanwendung SOLLTE so konfiguriert sein, dass auf ihre Ressourcen und Funktionen ausschließlich über die vorgesehenen, abgesicherten Kommunikationspfade zugegriffen werden kann. Der Zugriff auf nicht benötigte Ressourcen und Funktionen SOLLTE daher eingeschränkt werden. Folgendes SOLLTE bei der Konfiguration von Webanwendungen berücksichtigt werden:</p>
+<ul><li>Deaktivierung nicht benötigter HTTP-Methoden,</li><li>Zeichenkodierungskonfiguration,</li><li>Festlegung von Grenzwerten für Zugriffsversuche sowie</li><li>Administration einer Webanwendung.</li></ul>
+</li>
+<li><h4>APP.3.1.A13 Restriktive Herausgabe sicherheitsrelevanter Informationen (S)</h4>
+<p>Webseiten und Rückantworten von Webanwendungen SOLLTEN keine Informationen enthalten, die einem Angreifer Hinweise darauf geben, wie er Sicherheitsmechanismen umgehen kann.</p>
+<p>Konfigurationsdateien der Webanwendung SOLLTEN außerhalb des Web-Root-Verzeichnisses gespeichert werden. </p>
+</li>
+<li><h4>APP.3.1.A15 Verifikation essenzieller Änderungen [Entwickler] (S)</h4>
+<p>Sollen wichtige Einträge geändert werden, SOLLTEN die Entwickler sicherstellen, dass die Änderungen durch die Eingabe eines Passworts erneut verifiziert werden. Falls dies nicht möglich ist, SOLLTE die Anwendung auf andere geeignete Weise sicherstellen, dass sich der Benutzer authentisiert. Die Benutzer SOLLTEN über Änderungen mithilfe von Kommunikationswegen außerhalb der Web-Anwendung informiert werden.</p>
+</li>
+<li><h4>APP.3.1.A17 Fehlerbehandlung [Entwickler] (S)</h4>
+<p>Treten während des Betriebs einer Webanwendung Fehler auf, SOLLTEN Entwickler diese so behandeln, dass die Webanwendung weiter in einem konsistenten Zustand bleibt. Das heißt:</p>
+<ul><li>Fehlermeldungen SOLLTEN protokolliert werden, </li><li>eine veranlasste Aktion SOLLTE im Fehlerfall abgebrochen werden und </li><li>in der Folge SOLLTE der Zugriff auf die angeforderte Ressource oder Funktion abgewiesen werden. </li></ul>
+<p>Zuvor reservierte Ressourcen SOLLTEN im Rahmen der Fehlerbehandlung wieder freigegeben werden. Auch SOLLTE der Fehler möglichst von der Webanwendung selbst behandelt werden.</p>
+</li>
+<li><h4>APP.3.1.A18 ENTFALLEN (S)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>APP.3.1.A21 Sichere HTTP-Konfiguration bei Webanwendungen [Entwickler] (S)</h4>
+<p>Zum Schutz vor Clickjacking, Cross-Site-Scripting und anderen Angriffen SOLLTEN die Entwickler sowie der IT-Betrieb geeignete HTTP-Response-Header setzen. Dazu SOLLTEN mindestens die folgenden Direktiven verwendet werden: Content-Security-Policy, möglicherweise X-FRAME-OPTIONS, Strict-Transport-Security, X-XSS-Protection, Content-Type, X-Content-Type-Options sowie Cache-Control.</p>
+<p>Cookies SOLLTEN grundsätzlich mit den Attributen <span style="font-style: italic">secure</span> und <span style="font-style: italic">httponly</span> gesetzt werden.</p>
+</li>
+<li><h4>APP.3.1.A22 Überprüfung von Webanwendungen (S)</h4>
+<p>Webanwendungen SOLLTEN regelmäßig auf Sicherheitsprobleme hin überprüft werden. Auch SOLLTEN regelmäßig Revisionen durchgeführt werden. Die Ergebnisse SOLLTEN nachvollziehbar dokumentiert, ausreichend geschützt und vertraulich behandelt werden. Abweichungen SOLLTE nachgegangen werden. Die Ergebnisse SOLLTEN dem ISB vorgelegt werden.</p>
+</li>
+<li><h4>APP.3.1.A23 Verhinderung von Cross-Site-Request-Forgery [Entwickler] (S)</h4>
+<p>Die Entwickler einer Webanwendung SOLLTEN diese mit Sicherheitsmechanismen ausstatten, die es ermöglichen, beabsichtigte Seitenaufrufe des Benutzers von unbeabsichtigt weitergeleiteten Befehlen Dritter zu unterscheiden. Mindestens SOLLTE dabei geprüft werden, ob neben der Session-ID ein geheimes Token für den Zugriff auf geschützte Ressourcen und Funktionen benötigt wird.</p>
+</li>
+</ul>
+<a name="22465_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein APP.3.1<em>Webanwendungen</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>APP.3.1.A20 Einsatz von Web Application Firewalls (H)</h4>
+<p>Institutionen SOLLTEN auf Web Application Firewalls (WAF) zurückgreifen. Wird eine WAF eingesetzt, SOLLTE die Konfiguration auf die zu schützende Webanwendung angepasst werden. Die Konfiguration der WAF SOLLTE nach jedem Update der Webanwendung geprüft werden. </p>
+</li>
+<li><h4>APP.3.1.A24 Verhinderung der Blockade von Ressourcen [Entwickler] (H)</h4>
+<p>Zum Schutz vor Denial-of-Service (DoS)-Angriffen SOLLTEN ressourcenintensive Operationen vermieden und besonders abgesichert werden. Ebenso SOLLTE ein möglicher Überlauf von Protokollierungsdaten bei Webanwendungen überwacht und verhindert werden.</p>
+</li>
+<li><h4>APP.3.1.A25 Kryptografische Sicherung vertraulicher Daten [Entwickler] (H)</h4>
+<p>Entwickler und Betreiber einer Webanwendung SOLLTEN sicherstellen, dass vertrauliche Daten einer Webanwendung durch sichere, kryptografische Algorithmen geschützt werden.</p>
+</li>
+</ul>
+<a name="22465_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Das Bundesamt für Sicherheit in der Informationstechnik (BSI) stellt im Dokument „Hilfsmittel zur Nutzung des Bausteins Webanwendungen“ Hinweise zum Umgang mit diesem Baustein zur Verfügung.</p>
+<p>Das Open Web Application Security Projekt stellt auf seiner Webseite Hinweise zur Absicherung von Webanwendungen zur Verfügung.</p>
+<p>Das Bundesamt für Sicherheit in der Informationstechnik (BSI) stellt im Dokument „Kryptographische Verfahren: Empfehlungen und Schlüssellängen: BSI TR-02102“ Hinweise zur Anwendung kryptografischer Verfahren zur Verfügung.</p>
+<a name="22465_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein APP.3.1 <em>Webanwendungen</em> von Bedeutung.</p>
+<ul>
+<li>G 0.18 Fehlplanung oder fehlende Anpassung</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.20 Informationen oder Produkte aus unzuverlässiger Quelle</li>
+<li>G 0.21 Manipulation von Hard- oder Software</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.32 Missbrauch von Berechtigungen</li>
+<li>G 0.36 Identitätsdiebstahl</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.40 Verhinderung von Diensten (Denial of Service)</li>
+<li>G 0.43 Einspielen von Nachrichten</li>
+<li>G 0.46 Integritätsverlust schützenswerter Informationen</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.18</th>
+<th>G 0.19</th>
+<th>G 0.20</th>
+<th>G 0.21</th>
+<th>G 0.22</th>
+<th>G 0.23</th>
+<th>G 0.28</th>
+<th>G 0.30</th>
+<th>G 0.32</th>
+<th>G 0.36</th>
+<th>G 0.39</th>
+<th>G 0.40</th>
+<th>G 0.43</th>
+<th>G 0.46</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APP.3.1.A1</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.1.A2</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.1.A3</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.1.A4</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.1.A5</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.1.A6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.1.A7</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.1.A8</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.1.A9</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.1.A10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.1.A11</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.1.A12</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.1.A13</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.1.A14</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.1.A15</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.1.A16</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.1.A17</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.1.A18</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.1.A19</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.1.A20</td>
+<td>CIA</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.1.A21</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.1.A22</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.1.A23</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.3.1.A24</td>
+<td>A</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.3.1.A25</td>
+<td>CI</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

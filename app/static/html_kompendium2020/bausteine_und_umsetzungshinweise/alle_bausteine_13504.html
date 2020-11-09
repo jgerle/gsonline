@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+APP.1.2 Webbrowser
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_13504.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_13504.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">APP.1.2 Webbrowser</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>APP.1.2 Webbrowser</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#13504_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#13504_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#13504_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#13504_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#13504_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#13504_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#13504_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#13504_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#13504_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#13504_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#13504_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#13504_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#13504_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="13504_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="13504_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Webbrowser sind Anwendungsprogramme, die (Hypertext-)Dokumente, Bilder, Video-, Audio- und andere Datenformate aus dem Internet abrufen, verarbeiten, darstellen, ausgeben und auf lokalen IT-Systemen speichern können. Ebenso können Webbrowser auch Daten ins Internet übertragen.</p>
+<p>Stationäre und mobile Client-Systeme sind heute ohne Webbrowser nicht vorstellbar, weil sehr viele private und geschäftliche Anwendungen entsprechende Inhalte nutzen. Gleichzeitig werden diese Inhalte im Internet immer vielfältiger. Immer weniger Webseiten kommen ohne eingebettete Videos, animierte Elemente und andere aktive Inhalte aus. Moderne Webbrowser decken zudem eine große Bandbreite an Zusatzfunktionen ab, indem sie Plug-ins und externe Bibliotheken einbinden. Hinzu kommen Erweiterungen für bestimmte Funktionen, Datenformate und Inhalte. Die Komplexität moderner Webbrowser bietet ein hohes Potenzial für gravierende konzeptionelle Fehler und programmtechnische Schwachstellen. Sie erhöht nicht nur die möglichen Gefahren für Angriffe aus dem Internet, sondern birgt zusätzliche Risiken durch Programmier- und Bedienungsfehler.</p>
+<p>Die Folgen für die Vertraulichkeit und Integrität von Daten sind erheblich. Ebenso ist die Verfügbarkeit des gesamten IT-Systems durch solche Schwachstellen bedroht. Internetinhalte müssen demzufolge aus Sicht des Webbrowsers grundsätzlich als nicht vertrauenswürdig angesehen werden.</p>
+</p>
+<a name="13504_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Dieser Baustein beschreibt Sicherheitsanforderungen für Webbrowser, die auf Client-Systemen, also auf stationären und mobilen Computern sowie teilweise auch auf Tablets und Smartphones, eingesetzt werden. Es werden sowohl zentral verwaltete als auch einzelne Betriebsumgebungen betrachtet.</p>
+</p>
+<a name="13504_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein APP.1.2 <span style="font-style: italic">Webbrowser</span> ist auf alle Webbrowser anzuwenden, die auf Client-Systemen eingesetzt werden.</p>
+<p>Er enthält grundsätzliche Sicherheitsanforderungen, die bei der Installation und dem Betrieb von Webbrowsern für den Zugriff auf Daten aus dem Internet zu beachten und zu erfüllen sind. Browser, die auf lokale Daten oder Daten in internen Datennetzen ohne Internetzugriff zugreifen, werden in diesem Baustein nicht behandelt.</p>
+<p>Webbrowser sind eng mit dem Betriebssystem des Client-Systems verzahnt und greifen auf dort bereitgestellte Schnittstellen und Funktionen zurück. Um die Betriebssysteme abzusichern, sollten daher die Anforderungen der Bausteine der Schichten SYS.2 <span style="font-style: italic">Desktop-Systeme</span> und SYS.3.2 <span style="font-style: italic">Tablet und Smartphone</span> erfüllt werden.</p>
+<p>Mit Browsern genutzte Webanwendungen sowie zuständige Server werden in den Bausteinen APP.3.1 <span style="font-style: italic">Webanwendungen</span> und APP.3.2 <span style="font-style: italic">Webserver</span> behandelt.</p>
+</p>
+<a name="13504_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein APP.1.2 <span style="font-style: italic">Webbrowser</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Ausführung von Schadcode durch Webbrowser</h3>
+<p>
+<p>Webbrowser können Daten aus nicht vertrauenswürdigen oder möglicherweise sogar kompromittierten Quellen laden. Solche Daten können ausführbaren Schadcode enthalten, der Schwachstellen ausnutzen kann und das Gerät des Benutzers ohne dessen Kenntnis infiziert.</p>
+<p>Dabei kann es sich um Code handeln, der durch den Webbrowser direkt ausgeführt werden kann, wie etwa JavaScript. Ebenso kann es auch ausführbarer Code eines Plug-ins oder einer Erweiterung im Kontext des Browsers sein, wie etwa Adobe Flash, Java oder Bestandteile von PDF-Dokumenten. Schließlich kann es sich auch um Code handeln, der vom Webbrowser auf den Client geladen und dort außerhalb des Browser-Prozesses ausgeführt wird. Oft wird auch durch den Schadcode weitere Schadsoftware nachgeladen, die dann auf dem Client mit den Rechten des Benutzers ausgeführt wird. Werden die grundlegenden Schutzmechanismen moderner Webbrowser nicht ausreichend angewendet, werden die Vertraulichkeit, Integrität oder Verfügbarkeit von Informationen oder Diensten des Clients oder möglicherweise sogar der mit ihm verbundenen Netze bedroht.</p>
+</p>
+<h3>2.2 Exploit Kits</h3>
+<p>
+<p>Schwachstellenlisten und sogenannte Exploit Kits erleichtern die Entwicklung individueller Schadsoftware erheblich. Cyberangriffe können automatisiert werden, um Drive-by-Downloads oder andere Verbreitungswege leicht und ohne Expertenwissen zu nutzen. Angreifer können ihnen bekannte Schwachstellen des Webbrowsers, einer verbundenen Ressource oder Erweiterung ausnutzen, um Folgeangriffe vorzubereiten oder Code mit Schadfunktion auf den Client zu laden und zu installieren.</p>
+</p>
+<h3>2.3 Mitlesen der Internetkommunikation</h3>
+<p>
+<p>Die grundlegende Sicherheit der Kommunikation im Internet hängt wesentlich vom eingesetzten Authentisierungsverfahren und von der Verschlüsselung der Daten auf dem Transportweg ab.</p>
+<p>Schwache Implementierungen der nötigen Verfahren sind weit verbreitet und verhindern eine wirkungsvolle Authentisierung und Verschlüsselung. Viele Webdienste wenden außerdem immer noch veraltete Verschlüsselungsverfahren an. Somit kann ein Angreifer die Authentisierung von Servern unterlaufen oder die Kommunikation bzw. die Daten werden nicht wirkungsvoll verschlüsselt. Hierdurch können Informationen auf dem Übertragungsweg mitgelesen oder verändert werden. In der Vergangenheit wurden außerdem Zertifizierungsstellen kompromittiert. Angreifer konnten so an Zertifikate für fremde Websites gelangen. </p>
+</p>
+<h3>2.4 Integritätsverlust in Webbrowsern</h3>
+<p>
+<p>Werden Webbrowser, Plug-ins oder Erweiterungen aus nicht vertrauenswürdigen Quellen bezogen, können unabsichtlich und unbemerkt Schadfunktionen ausgeführt werden. Angreifer können beispielsweise Browserkomponenten wie Toolbars fälschen, um die Benutzer auf manipulierte Kopien von Webseiten zu locken, mit deren Hilfe Phishing-Angriffe durchgeführt werden. Bösartige Erweiterungen können Inhalte der betrachteten Webseiten manipulieren oder Daten ausspionieren und an den Angreifer senden.</p>
+</p>
+<h3>2.5 Verlust der Privatsphäre</h3>
+<p>
+<p>Werden Webbrowser unsicher konfiguriert, können vertrauenswürdige Daten zufällig oder böswillig unbefugten Dritten zugänglich gemacht werden. Auch Passwörter können ungewollt weitergegeben werden. Werden Cookies, Passwörter, Historien, Eingabedaten und Suchanfragen gespeichert oder unnötige Erweiterungen aktiviert, können Daten von Dritten oder von Schadprogrammen leichter missbräuchlich ausgelesen werden.</p>
+</p>
+<h3>2.6 Fehler bei Administration und Betrieb</h3>
+<p>
+<p>Fehler in der Administration des Webbrowsers können zu einer unsicheren Konfiguration und zu unsicherem Betrieb führen. Ein wesentliches Bedrohungspotenzial erwächst in der mangelhaften Aktualität und Pflege des verwendeten Webbrowsers. Browserhersteller bieten zudem oftmals Sicherheitsupdates nicht zeitnah genug an. Dadurch steigt die Verbreitungsrate von ausnutzbaren Schwachstellen signifikant.</p>
+</p>
+<a name="13504_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die spezifischen Anforderungen des Bausteins APP.1.2 <span style="font-style: italic">Webbrowser </span>aufgeführt. Grundsätzlich ist der IT-Betrieb für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Umsetzung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt. </p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>IT-Betrieb</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+Benutzer
+</td>
+</tr>
+</table>
+<a name="13504_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein APP.1.2<em>Webbrowser</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>APP.1.2.A1 Verwendung von Sandboxing (B)</h4>
+<p>Der eingesetzte Webbrowser MUSS sicherstellen, dass jede Instanz und jeder Verarbeitungsprozess nur auf die eigenen Ressourcen zugreifen kann (Sandboxing). Webseiten MÜSSEN als eigenständige Prozesse oder mindestens als eigene Threads voneinander isolierten werden. Plug-ins und Erweiterungen MÜSSEN ebenfalls in isolierten Bereichen ausgeführt werden. Der verwendete Webbrowser SOLLTE die aktuelle Version der Content Security Policy (CSP) gemäß den Spezifikationen des World Wide Web Consortium (W3C) umsetzen.</p>
+</li>
+<li><h4>APP.1.2.A2 Unterstützung sicherer Verschlüsselung der Kommunikation (B)</h4>
+<p>Der Webbrowser MUSS Transport Layer Security (TLS) in einer sicheren Version unterstützen. Unsichere Versionen von TLS SOLLTEN deaktiviert werden. Der Webbrowser MUSS den Sicherheitsmechanismus HTTP Strict Transport Security (HSTS) gemäß RFC 6797 unterstützen. Für alle wichtigen öffentlichen TLS-verschlüsselten Web-Dienste SOLLTEN die Domains in die HSTS-Preload-Liste des Browsers eingefügt werden.</p>
+</li>
+<li><h4>APP.1.2.A3 Verwendung von vertrauenswürdigen Zertifikaten [Benutzer] (B)</h4>
+<p>Der Webbrowser MUSS eine Liste vertrauenswürdiger Wurzelzertifikats-Aussteller bereitstellen. Er MUSS die von der Institution selbst bereitgestellten Zertifikate akzeptieren. Der Webbrowser MUSS Extended-Validation-Zertifikate unterstützen. Wurzelzertifikate DÜRFEN NUR mit Administrationsrechten hinzugefügt, geändert oder gelöscht werden. Zertifikate MÜSSEN durch den Webbrowser lokal widerrufen werden können.</p>
+<p>Der Webbrowser MUSS die Gültigkeit der Server-Zertifikate mithilfe des öffentlichen Schlüssels und unter Berücksichtigung des Gültigkeitszeitraums vollständig prüfen. Auch der Sperrstatus der Server-Zertifikate MUSS vom Webbrowser geprüft werden. Die Zertifikatskette einschließlich des Wurzelzertifikats MUSS verifiziert werden.</p>
+<p>Der Webbrowser MUSS dem Benutzer eindeutig und gut sichtbar darstellen, ob die Kommunikation im Klartext oder verschlüsselt erfolgt. Der Webbrowser SOLLTE dem Benutzer auf Anforderung das verwendete Serverzertifikat anzeigen können. Der Webbrowser MUSS dem Benutzer signalisieren, wenn Zertifikate fehlen, ungültig sind oder widerrufen wurden. Die verschlüsselte Verbindung DARF in einem solchen Fall NUR nach ausdrücklicher Bestätigung durch den Benutzer hergestellt werden.</p>
+</li>
+<li><h4>APP.1.2.A4 Versionsprüfung und Aktualisierung des Webbrowsers (B)</h4>
+<p>Der Webbrowser MUSS über einen Mechanismus verfügen, der den eigenen Versionsstand sowie den Versionsstand aller geladenen oder aktivierten Erweiterungen und Plug-ins zuverlässig erkennen und anzeigen kann.</p>
+<p>Sicherheitsaktualisierungen, Plug-ins und Erweiterungen MÜSSEN unverzüglich eingespielt werden. Der Webbrowser SOLLTE Updates automatisch einspielen können. Ist kein Update für eine bekannt gewordene kritische Schwachstelle verfügbar, MÜSSEN zeitnah Maßnahmen zur Risikominderung ergriffen werden.</p>
+</li>
+</ul>
+<a name="13504_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein APP.1.2<em>Webbrowser</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>APP.1.2.A5 Verwendung einer zentralen Basiskonfiguration (S)</h4>
+<p>Der Webbrowser SOLLTE zentral konfiguriert werden. Zentral vorgegebene Einstellungen DÜRFEN NICHT von den Benutzern verändert werden können. Der Webbrowser SOLLTE NICHT dauerhaft mit erweiterten Rechten ausgeführt werden.</p>
+</li>
+<li><h4>APP.1.2.A6 Kennwortmanagement im Webbrowser [Benutzer] (S)</h4>
+<p>Wird ein Kennwortmanager im Webbrowser verwendet, SOLLTE er eine direkte und eindeutige Beziehung zwischen Webseite und hierfür gespeichertem Kennwort herstellen. Der Kennwortspeicher SOLLTE geschützt sein. Auf die im Kennwortmanager gespeicherten Passwörter SOLLTE nur nach Eingabe eines Master-Kennworts zugegriffen werden können. Die Authentisierung für den kennwortgeschützten Zugriff SOLLTE nur für die aktuelle Sitzung gültig sein. Der Kennwortmanager SOLLTE die Qualität der Kennwörter entsprechend der Sicherheitsrichtlinie der Institution vorgeben. Die gespeicherten Kennwörter SOLLTEN durch den Benutzer gelöscht werden können.</p>
+</li>
+<li><h4>APP.1.2.A7 Datensparsamkeit in Webbrowsern [Benutzer] (S)</h4>
+<p>Cookies von Drittanbietern SOLLTEN im Webbrowser abgelehnt werden. Gespeicherte Cookies SOLLTEN durch den Benutzer gelöscht werden können.</p>
+<p>Die Funktion zur Autovervollständigung von Daten SOLLTE deaktiviert werden. Wird die Funktion dennoch genutzt, SOLLTE der Benutzer diese Daten löschen können. Der Benutzer SOLLTE außerdem die Historiendaten des Webbrowsers löschen können.</p>
+<p>Sofern vorhanden, SOLLTE eine Synchronisation des Webbrowsers mit Cloud-Diensten deaktiviert werden. Telemetriefunktionen sowie das automatische Senden von Absturzberichten an den Hersteller SOLLTEN soweit wie möglich deaktiviert werden.</p>
+<p>Sind Peripheriegeräte wie Mikrofon oder Webcam angeschlossen, SOLLTEN diese im Webbrowser deaktiviert werden. Der Browser SOLLTE eine Möglichkeit bieten, WebRTC, HSTS und JavaScript zu konfigurieren bzw. abzuschalten.</p>
+</li>
+<li><h4>APP.1.2.A8 Verwendung von Plug-ins und Erweiterungen [Benutzer] (S)</h4>
+<p>Es SOLLTEN nur unbedingt notwendige Plug-ins und Erweiterungen installiert werden. Diese SOLLTEN ausschließlich aus vertrauenswürdigen Quellen bezogen werden. Plug-ins und Erweiterungen für den Webbrowser SOLLTEN nur mit Administrationsrechten installiert werden dürfen. Die Ausführung von Plug-ins SOLLTE immer vom Benutzer bestätigt werden müssen. Der Webbrowser SOLLTE die Möglichkeit bieten, Erweiterungen zu konfigurieren und abzuschalten.</p>
+</li>
+</ul>
+<a name="13504_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein APP.1.2<em>Webbrowser</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>APP.1.2.A9 Einsatz einer isolierten Webbrowser-Umgebung (H)</h4>
+<p>Bei erhöhtem Schutzbedarf SOLLTEN Webbrowser eingesetzt werden, die in einer isolierten Umgebung, wie z. B. ReCoBS, oder auf dedizierten IT-Systemen laufen.</p>
+</li>
+<li><h4>APP.1.2.A10 Verwendung des privaten Modus [Benutzer] (H)</h4>
+<p>Der Webbrowser SOLLTE bei erhöhten Anforderungen bezüglich der Vertraulichkeit im sogenannten privaten Modus ausgeführt werden, sodass keine Informationen oder Inhalte dauerhaft auf dem IT-System des Benutzers gespeichert werden. Der Browser SOLLTE so konfiguriert werden, dass lokale Inhalte beim Beenden gelöscht werden.</p>
+</li>
+<li><h4>APP.1.2.A11 Überprüfung auf schädliche Inhalte (H)</h4>
+<p>Aufgerufene Internetadressen SOLLTEN durch den Webbrowser auf potenziell schädliche Inhalte geprüft werden. Der Webbrowser SOLLTE den Benutzer warnen, wenn Informationen über schädliche Inhalte vorliegen. Eine als schädlich klassifizierte Verbindung SOLLTE NICHT aufgerufen werden können. Das verwendete Verfahren zur Überprüfung DARF NICHT gegen Datenschutz- oder Geheimschutz-Vorgaben verstoßen.</p>
+</li>
+<li><h4>APP.1.2.A12 Zwei-Browser-Strategie (H)</h4>
+<p>Für den Fall von ungelösten Sicherheitsproblemen mit dem verwendeten Webbrowser SOLLTE ein alternativer Browser eines anderen Herstellers installiert sein, der dem Benutzer als Ausweichmöglichkeit dient. </p>
+</li>
+</ul>
+<a name="13504_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Das BSI hat folgende Dokumente zum Themenfeld Webbrowser veröffentlicht:</p>
+<ul><li>BSI-Veröffentlichung zur Cyber-Sicherheit BSI-CS 047: „Absicherungsmöglichkeiten beim Einsatz von Webbrowsern“</li><li>Mindeststandard des BSI für den Einsatz des SSL/ TLS-Protokoll durch Bundesbehörden nach § 8 Abs. 1 Satz 1 BSIG</li><li>Mindeststandard des BSI für sichere Webbrowser nach § 8 Absatz 1 Satz 1 BSIG</li><li>Common Criteria Protection Profile for Remote-Controlled Browsers System (ReCoBS): BSI-PP-0040</li></ul>
+<a name="13504_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein APP.1.2 <em>Webbrowser</em> von Bedeutung.</p>
+<ul>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.15 Abhören</li>
+<li>G 0.18 Fehlplanung oder fehlende Anpassung</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.20 Informationen oder Produkte aus unzuverlässiger Quelle</li>
+<li>G 0.21 Manipulation von Hard- oder Software</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.25 Ausfall von Geräten oder Systemen</li>
+<li>G 0.26 Fehlfunktion von Geräten oder Systemen</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.31 Fehlerhafte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.40 Verhinderung von Diensten (Denial of Service)</li>
+<li>G 0.45 Datenverlust</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.14</th>
+<th>G 0.15</th>
+<th>G 0.18</th>
+<th>G 0.19</th>
+<th>G 0.20</th>
+<th>G 0.21</th>
+<th>G 0.22</th>
+<th>G 0.23</th>
+<th>G 0.25</th>
+<th>G 0.26</th>
+<th>G 0.28</th>
+<th>G 0.30</th>
+<th>G 0.31</th>
+<th>G 0.39</th>
+<th>G 0.40</th>
+<th>G 0.45</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APP.1.2.A1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.2.A2</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.2.A3</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.2.A4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.2.A5</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.2.A6</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.2.A7</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>APP.1.2.A8</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.2.A9</td>
+<td>CI</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.2.A10</td>
+<td>CI</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.2.A11</td>
+<td>C</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>APP.1.2.A12</td>
+<td>A</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

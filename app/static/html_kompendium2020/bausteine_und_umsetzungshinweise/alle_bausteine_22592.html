@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+CON.8 Software-Entwicklung
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_22592.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_22592.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">CON.8 Software-Entwicklung</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>CON.8 Software-Entwicklung</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#22592_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#22592_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22592_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22592_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#22592_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#22592_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#22592_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22592_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22592_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#22592_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#22592_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22592_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#22592_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="22592_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="22592_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Institutionen stehen häufig vor Herausforderungen, die nicht mehr hinreichend mit Standardsoftware behandelt werden können. Nur durch individuell entwickelte bzw. angepasste Software, die auf die Anforderungen der Institution zugeschnitten ist, können diese Herausforderungen effektiv gelöst werden. Beispiele hierfür sind hochspezifische Software-Lösungen für Branchenspezialisten (wie zur Steuerung von Produktionsanlagen), an die eigenen Geschäftsprozesse angepasste IT-Anwendungen (wie Content-Management-Systeme oder Identity-Management-Systeme) oder Altsysteme, die angepasst werden müssen, jedoch nicht mehr vom ursprünglichen Hersteller weitergepflegt werden.</p>
+<p>Hierbei kann (Individual-) Software durch die Institution selbst oder von einem Dritten komplett neu entwickelt werden. Ebenso kann es erforderlich sein, eine Basis-Lösung an die eigenen Anforderungen anzupassen und durch zusätzliche individuelle Funktionen zu erweitern.</p>
+<p>In beiden Fällen nimmt die Software-Entwicklung eine zentrale Rolle ein, indem aus den Anforderungen der Institution ein Programm-Code entwickelt bzw. angepasst wird. Hierbei ist es von essentieller Bedeutung, dass die Informationssicherheit über den gesamten Software-Entwicklungsprozess hinweg berücksichtigt wird, da nur auf diese Weise die Informationssicherheit der zu entwickelnden Software-Lösung und im Rahmen des Entwicklungsprojektes selbst gewährleistet werden kann. </p>
+<p>Es ist in der Regel viel aufwändiger, wenn Informationssicherheit erst in einer späten Phase der Software-Entwicklung betrachtet wird. Außerdem besteht die Gefahr, dass bereits fertig entwickelte Bestandteile der Software angepasst oder neu entwickelt werden müssen. </p>
+</p>
+<a name="22592_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Der Baustein beschäftigt sich mit allen relevanten Sicherheitsaspekten, die von Institutionen bei der Eigenentwicklung von Software zu beachten sind. Hierzu wird betrachtet, wie eine Institution die Software-Entwicklung vorbereiten und durchführen kann. Es werden entsprechende Gefährdungen identifiziert und Anforderungen formuliert.</p>
+</p>
+<a name="22592_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein CON.8 <span style="font-style: italic">Software-Entwicklung </span>ist für den gesamten Informationsverbund einmal anzuwenden, wenn Software entwickelt werden soll. </p>
+<p>Der Baustein stellt keine vollständige Anleitung oder generelle Vorgehensweise für die Entwicklung von Software dar, sondern er konzentriert sich auf die relevanten Aspekte der Informationssicherheit bei der Software-Entwicklung. Mit diesem Baustein wird der Baustein CON.5 <span style="font-style: italic">Entwicklung und Einsatz von Individualsoftware</span> um konkrete Aspekte zur Eigenentwicklung von Software erweitert. </p>
+<p>Der Baustein OPS.1.1.3 <span style="font-style: italic">Patch- und Änderungsmanagement</span> sollte bei Änderungen an der eingesetzten Software-Umgebung zur Softwareentwicklung und im Rahmen des Änderungsprozesses zur Einführung der eigenentwickelten Software berücksichtigt werden.</p>
+<p>Die Abnahme und hiermit verbundenen Tests von eigenentwickelter bzw. beauftragter Software werden in dem Baustein OPS.1.1.6 <span style="font-style: italic">Software-Tests und Freigaben</span> geregelt. Darüber hinaus gehende Aspekte zu Tests im Rahmen der Software-Entwicklung werden in diesem Baustein CON.8 <span style="font-style: italic">Software-Entwicklung</span> behandelt. </p>
+</p>
+<a name="22592_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Folgende spezifische Bedrohungen und Schwachstellen sind für den Baustein CON.8 <span style="font-style: italic">Software-Entwicklung</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Auswahl eines ungeeigneten Vorgehensmodells</h3>
+<p>
+<p>Vorgehensmodelle strukturieren und planen den Projektablauf, indem bestimmte Handlungsschritte und deren Abfolge vorgegeben werden. Wird ein ungeeignetes Vorgehensmodell bei der Software-Entwicklung ausgewählt, kann der Projektverlauf erheblich gestört werden. Je nachdem, wie das gewählte Modell ausgeprägt und wie umfangreich das Projekt ist, könnten entweder wichtige Aspekte vernachlässigt oder irrelevante Aspekte übermäßig fokussiert werden. Beide genannten Probleme erhöhen den Arbeitsaufwand im Projektmanagement und schränken die produktive Arbeit ein.</p>
+<p>Ist das gewählte Vorgehensmodell zu starr, kann eigenentwickelte Software nachträglich nur mit hohem Aufwand geändert werden, wenn beispielsweise zusätzliche Anforderungen bei der vorherigen Planung nicht berücksichtigt wurden. Bei einem zu flexiblen Modell kann die Software-Entwicklung durch übermäßig viele Iterationen verzögert werden, wenn die Entwicklung nicht detailliert genug geplant wurde oder wenn immer wieder Änderungswünsche entstehen. Ebenso kann der Personalaufwand, der benötigt wird, um das Projekt zu realisieren, falsch eingeschätzt werden, wenn hierbei ein ungeeignetes Vorgehensmodell ausgewählt wurde.</p>
+</p>
+<h3>2.2 Auswahl einer ungeeigneten Entwicklungsumgebung</h3>
+<p>
+<p>Wird eine Entwicklungsumgebung ungeeignet oder unkontrolliert ausgewählt, können dringend benötigte Funktionen fehlen oder nicht in ausreichender Form implementiert sein. Weiterhin kann eine ungeeignete Entwicklungsumgebung auch Fehler oder Schwachstellen aufweisen, die erhebliche Störungen im Verlauf der Software-Entwicklung verursachen können.</p>
+<p>Wenn keine bestimmte Entwicklungsumgebung ausgewählt und vorgegeben wird, arbeiten verschiedene Entwickler möglicherweise mit unterschiedlichen, selbst gewählten Werkzeugen an der Software und können dadurch Kompatibilitätsprobleme verursachen.</p>
+</p>
+<h3>2.3 Fehlende oder unzureichende Qualitätssicherung des Entwicklungsprozesses</h3>
+<p>
+<p>Durch eine fehlende oder unzureichende Qualitätssicherung während der Software-Entwicklung kann sich das Projekt verzögern oder sogar gänzlich scheitern. Wenn nicht geprüft wird, ob die eigenentwickelte Software sicher implementiert wird, drohen Schwachstellen in der ausgelieferten Software.</p>
+<p>Ist die Qualitätssicherung nicht fest im Entwicklungsprozess verankert, können Fehler und Manipulationen in der Konzeption oder Implementierung unter Umständen nicht erkannt werden. Dabei sollte die Aufmerksamkeit nicht nur selbst entwickelten Bestandteilen, sondern gerade auch externen Beiträgen und übernommenen Bestandteilen gelten.</p>
+</p>
+<h3>2.4 Fehlende oder unzureichende Dokumentation</h3>
+<p>
+<p>Wird die Software in der Konzeptions- oder Entwicklungsphase nicht oder nur unzureichend dokumentiert, kann dies dazu führen, dass Fehler in einem Schadensfall nur verzögert oder gar nicht diagnostiziert und behoben werden können. Wird die Entwicklung ungeeignet dokumentiert, kann die Software außerdem später nur mit hohem Aufwand aktualisiert, angepasst oder erweitert werden.</p>
+<p>Bei unzureichender Administratoren- oder Benutzerdokumentation kann es passieren, dass die Software im produktiven Betrieb fehlerhaft verwaltet oder bedient wird. Dies kann beispielsweise Störungen des IT-Betriebs, falsche Arbeitsergebnisse oder Verzögerungen des Arbeitsablaufs nach sich ziehen.</p>
+</p>
+<h3>2.5 Unzureichend gesicherter Einsatz von Entwicklungsumgebungen</h3>
+<p>
+<p>Wenn die Entwicklungsumgebung unzureichend gesichert eingesetzt wird, kann die zu produzierende Software möglicherweise manipuliert werden. Auch die nachträgliche Erkennung solcher Manipulationen kann dadurch erschwert werden.</p>
+<p>Wenn nicht bekannt ist, welche Benutzer zu welchem Zeitpunkt auf die Entwicklungsumgebung zugreifen können und konnten, kann die Software anonym manipuliert werden. Sofern die manipulierten Teile der Software entdeckt werden, kann dann unter Umständen nicht nachvollzogen werden, welcher Benutzer sie manipuliert hat.</p>
+<p>Bei einer fehlenden oder unzureichenden Versionsverwaltung des Quellcodes ist es nicht möglich, Änderungen zuverlässig nachzuvollziehen sowie vorherige und bereits funktionierende Versionen der Software wiederherzustellen.</p>
+<p>Wenn Quellcodes unzureichend vor versehentlichen oder absichtlichen Änderungen geschützt werden, besteht die Gefahr, dass Teile eines Projekts oder sogar das gesamte Projekt beschädigt werden und die bereits eingebrachte Arbeitsleistung verloren geht.</p>
+</p>
+<h3>2.6 Software-Konzeptionsfehler</h3>
+<p>
+<p>Bei der Planung von Software können sicherheitsrelevante Konzeptionsfehler entstehen. Häufig sind diese Fehler historisch bedingt. Beispielsweise kann sich der Schutzbedarf von Daten ändern. Wenn in der Konzeption dann beispielsweise keine Möglichkeit zur Verschlüsselung der Daten vorgesehen wurde, kann es passieren, dass vertrauliche Daten nicht ausreichend vor ungewollter Offenlegung geschützt werden.</p>
+</p>
+<h3>2.7 Fehlendes oder unzureichendes Test- und Freigabeverfahren</h3>
+<p>
+<p>Wird neue Software nicht ausreichend getestet und freigegeben, kann es passieren, dass Fehler in der Software nicht erkannt werden. Solche Fehler gefährden nicht nur den produktiven Einsatz und die Informationssicherheit der neuen Software selbst, sondern unter Umständen auch andere Anwendungen und IT-Systeme in der Produktivumgebung.</p>
+<p>Störungen des IT-Betriebs können auch bei fehlenden Installationsvorschriften für die neue Software eintreten, weil dadurch möglicherweise wichtige Installationsparameter nicht eingehalten werden.</p>
+</p>
+<h3>2.8 Softwaretest mit Produktivdaten</h3>
+<p>
+<p>Software-Tests mit Produktivdaten oder im Produktivbetrieb sind oft notwendig, denn häufig kann nur mit den Produktivdaten die Funktion und die Performance des Produktes realistisch beurteilt werden. Oft haben auch Entwickler einen anderen Blick auf das entwickelte Produkt als die späteren Anwender, beispielsweise hinsichtlich der Sicherheitsziele und der möglichen Wechselwirkungen mit anderen Systemen.</p>
+<p>Beim Test mit Produktivdaten können folgende Probleme auftreten:</p>
+<ul><li>Wenn neue Software mit Produktivdaten getestet wird, erhalten eventuell nicht befugte Personen hierbei Einblick in vertrauliche Informationen.</li><li>Fehlfunktionen von Software während des Testens können über den oben geschilderten Fall hinaus beispielsweise dazu führen, dass neben der Vertraulichkeit der Produktivdaten auch deren Integrität oder Verfügbarkeit beeinträchtigt wird. </li><li>Ungewollte Veränderungen an Produktivdaten können auch dadurch entstehen, dass die Software fehlerhaft getestet oder bedient wird. Möglicherweise wird diese Veränderung nicht zeitnah festgestellt. Solche Fehler können sich auch auf andere IT-Anwendungen auswirken, die auf die gleichen Datenbestände zugreifen.</li></ul>
+</p>
+<a name="22592_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind spezifische Anforderungen für den Baustein CON.8 <span style="font-style: italic">Software-Entwicklung</span> aufgeführt. Grundsätzlich ist der Leiter Entwicklung für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Umsetzung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt.</p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>Leiter Entwicklung</td>
+</tr>
+<tr>
+<th>Weitere Zuständigkeiten</th>
+<td>
+Entwickler,
+IT-Betrieb,
+Leiter Organisation,
+Tester
+</td>
+</tr>
+</table>
+<a name="22592_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein CON.8<em>Software-Entwicklung</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>CON.8.A1 Definition von Rollen und Verantwortlichkeiten [Leiter Organisation] (B)</h4>
+<p>Für den Software-Entwicklungsprozess MUSS ein Gesamtverantwortlicher benannt werden. Außerdem MÜSSEN die Rollen und Verantwortlichkeiten für alle Aktivitäten im Rahmen der Software-Entwicklung festgelegt werden. Für jedes Entwicklungsprojekt MUSS ein Sicherheitsverantwortlicher benannt werden.</p>
+</li>
+<li><h4>CON.8.A2 Auswahl eines Vorgehensmodells (B)</h4>
+<p>Es MUSS ein geeignetes Vorgehensmodell zur Software-Entwicklung festgelegt werden. Anhand des gewählten Vorgehensmodells MUSS ein Ablaufplan für die Software-Entwicklung erstellt werden. Die Sicherheitsanforderungen MÜSSEN dokumentiert werden.</p>
+<p>Das Personal SOLLTE in der Methodik des gewählten Vorgehensmodells geschult sein.</p>
+</li>
+<li><h4>CON.8.A3 Auswahl einer Entwicklungsumgebung [Leiter Entwicklung] (B)</h4>
+<p>Es MUSS eine Liste der erforderlichen und optionalen Auswahlkriterien für eine Entwicklungsumgebung vom Leiter Entwicklung erstellt werden. Die Entwicklungsumgebung MUSS anhand der vorgegebenen Kriterien ausgewählt werden.</p>
+</li>
+<li><h4>CON.8.A4 Einhaltung einer sicheren Vorgehensweise [Entwickler] (B)</h4>
+<p>Das ausgewählte Vorgehensmodell zur Software-Entwicklung, einschließlich der festgelegten Sicherheitsanforderungen, MUSS eingehalten werden. Der entwickelte oder geänderte Quellcode MUSS auf Fehler gesichtet werden. Externe Komponenten MÜSSEN auf Schwachstellen und potentielle Konflikte überprüft werden.</p>
+</li>
+<li><h4>CON.8.A5 Sicheres Systemdesign (B)</h4>
+<p>Folgende Grundregeln des sicheren Systemdesigns MÜSSEN eingehalten werden:</p>
+<ul><li>Grundsätzlich MÜSSEN alle Eingabedaten vor der Weiterverarbeitung geprüft und validiert werden. </li><li>Bei Client-Server-Anwendungen MÜSSEN die Daten grundsätzlich auf dem Server validiert werden. </li><li>Die Standardeinstellungen der Software MÜSSEN derart konfiguriert sein, dass ein sicherer Betrieb der Software ermöglicht wird.</li><li>Bei Fehlern oder Ausfall von Komponenten des Systems DÜRFEN KEINE schützenswerten Informationen preisgegeben werden.</li><li>Der Betrieb der Software MUSS mit möglichst geringen Benutzerprivilegien möglich sein.</li></ul>
+<p>Das Systemdesign MUSS dokumentiert werden. Es MUSS überprüft werden, ob alle Sicherheitsanforderungen an das Systemdesign erfüllt wurden.</p>
+</li>
+<li><h4>CON.8.A6 Verwendung von Bibliotheken aus vertrauenswürdigen Quellen (B)</h4>
+<p>Wird im Rahmen des Entwicklungs- und Implementierungsprozesses auf externe Bibliotheken zurückgegriffen, MÜSSEN diese aus vertrauenswürdigen Quellen bezogen werden. Bevor sie verwendet werden, MUSS außerdem die Integrität der Bibliotheken geeignet sichergestellt werden.</p>
+</li>
+<li><h4>CON.8.A7 Anwendung von Testverfahren [Tester] (B)</h4>
+<p>Vor der Freigabe neuer oder geänderter Softwareversionen MÜSSEN angemessene Tests durchgeführt werden, bei denen die Funktionalität und Sicherheit der Software auf dem Zielsystem geprüft wird. Alle kritischen Grenzwerte MÜSSEN getestet werden. Code Reviews und eine automatische statische Code-Analyse MÜSSEN durchgeführt werden. Verwendete externe Bibliotheken MÜSSEN ebenfalls getestet werden.</p>
+<p>Außerdem MUSS getestet werden, ob die Systemvoraussetzungen für die vorgesehene Software ausreichend dimensioniert sind.</p>
+</li>
+<li><h4>CON.8.A8 Bereitstellung von Patches, Updates und Änderungen [Entwickler] (B)</h4>
+<p>Es MUSS sichergestellt sein, dass sicherheitskritische Patches und Updates zeitnah durch die Entwickler bereitgestellt und durch den IT-Betrieb eingespielt werden. Dies betrifft auch verwendete externe Bibliotheken.</p>
+<p>Für die Installations-, Update- oder Patchdateien MÜSSEN vom Entwickler digitale Signaturen bereitgestellt werden.</p>
+</li>
+<li><h4>CON.8.A9 Berücksichtigung von Compliance-Anforderungen [Entwickler] (B)</h4>
+<p>Alle Compliance-Anforderungen, die institutionsweiten Sicherheitsrichtlinien, die rechtlichen Anforderungen und die spezifischen Sicherheitsanforderungen MÜSSEN bei der Software-Entwicklung ermittelt und berücksichtigt werden.</p>
+</li>
+<li><h4>CON.8.A10 Versionsverwaltung des Quellcodes [Leiter Entwicklung, Entwickler] (B)</h4>
+<p>Das Entwicklungsprojekt (Quellcode des Projektes) MUSS über eine geeignete Versionsverwaltung verwaltet werden. Der Leiter Entwicklung MUSS den Zugriff auf die Versionsverwaltung regeln und festlegen, wann Änderungen am Quellcode durch die Entwickler als eigene Version in der Versionsverwaltung gespeichert werden sollen. Es MUSS sichergestellt sein, dass durch die Versionsverwaltung alle Änderungen am Quellcode nachvollzogen und rückgängig gemacht werden können. </p>
+<p>Die Versionsverwaltung MUSS in dem Datensicherungskonzept berücksichtigt werden und DARF NICHT ohne Datensicherung erfolgen. </p>
+</li>
+</ul>
+<a name="22592_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein CON.8<em>Software-Entwicklung</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>CON.8.A11 Erstellung einer Richtlinie für die Software-Entwicklung (S)</h4>
+<p>Es SOLLTE eine Richtlinie für die Software-Entwicklung erstellt und aktuell gehalten werden. Die Richtlinie SOLLTE neben Namenskonventionen auch Vorgaben zu Elementen beinhalten, die verwendet bzw. nicht verwendet werden dürfen. Die relevanten Anforderungen aus diesem Baustein SOLLTEN in die Richtlinie aufgenommen werden. Die Richtlinie SOLLTE für die Entwickler verbindlich sein.</p>
+</li>
+<li><h4>CON.8.A12 Ausführliche Dokumentation (S)</h4>
+<p>Es SOLLTEN ausreichende Projekt-, Funktions- und Schnittstellendokumentationen erstellt und aktuell gehalten werden. Benutzern und Administratoren SOLLTEN geeignete Hilfen zur korrekten Nutzung bzw. Administration der Software zur Verfügung gestellt werden. Die Software-Entwicklung SOLLTE so dokumentiert sein, dass ein Fachexperte mithilfe der Dokumentation den Programm-Code nachvollziehen und weiterentwickeln kann.</p>
+</li>
+<li><h4>CON.8.A13 Beschaffung von Werkzeugen (S)</h4>
+<p>Werkzeuge für die Software-Entwicklung SOLLTEN nach standardisierten und dokumentierten Vorgehensweisen beschafft werden.</p>
+</li>
+<li><h4>CON.8.A14 Schulung des Projektteams zur Informationssicherheit (S)</h4>
+<p>Die Entwickler und die übrigen Mitglieder des Projektteams SOLLTEN zu generellen Informationssicherheitsaspekten und zu den jeweils speziell für sie relevanten Aspekten geschult sein.</p>
+</li>
+<li><h4>CON.8.A15 Sicherer Einsatz der Test- und Entwicklungsumgebungen [Entwickler] (S)</h4>
+<p>Die Test- und Entwicklungsumgebungen SOLLTEN getrennt von der Produktionsumgebung betrieben werden. Informationen, die für den Produktivbetrieb nicht relevant sind, SOLLTEN möglichst entfernt werden, bevor die Programmpakete in die Produktionsumgebung überführt werden. Testdaten SOLLTEN sorgfältig ausgewählt und geschützt werden.</p>
+<p>Verteilte Arbeitsplätze der Software-Entwicklung SOLLTEN über eine sichere Verbindung miteinander kommunizieren. Der Zugriff auf die Entwicklungsdaten SOLLTE kontrolliert sein.</p>
+</li>
+<li><h4>CON.8.A16 Geeignete Steuerung der Software-Entwicklung (S)</h4>
+<p>Bei einer Software-Entwicklung SOLLTE ein geeignetes Steuerungs- und Projektmanagementmodell auf Basis des ausgewählten Vorgehensmodells verwendet werden und in die Richtlinie zur Software-Entwicklung integriert werden. Dabei SOLLTEN insbesondere die benötigten Qualifikationen beim Personal und die Abdeckung aller relevanten Phasen während des Lebenszyklus der Software berücksichtigt werden. Außerdem SOLLTE ein geeignetes Entwicklungsmodell und Risikomanagement sowie geeignete Qualitätsziele festgelegt werden. Werden Teile der Software-Entwicklung extern durchgeführt, SOLLTE dies geeignet in die internen Steuerungs- und Sicherheitsprozesse eingebunden werden.</p>
+</li>
+</ul>
+<a name="22592_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein CON.8<em>Software-Entwicklung</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>CON.8.A17 Auswahl vertrauenswürdiger Entwicklungswerkzeuge (H)</h4>
+<p>Zur Entwicklung der Software SOLLTEN nur Werkzeuge mit nachgewiesenen Sicherheitseigenschaften verwendet werden. Es SOLLTE sichergestellt sein, dass die Werkzeuge nicht manipuliert werden können. An die Hersteller von Hardware oder Software SOLLTEN hinreichende Anforderungen zur Sicherheit ihrer Werkzeuge gestellt werden.</p>
+</li>
+<li><h4>CON.8.A18 Regelmäßige Sicherheitsaudits für die Entwicklungsumgebung (H)</h4>
+<p>Es SOLLTEN regelmäßige Sicherheitsaudits der Software-Entwicklungsumgebung und der Software-Testumgebung durchgeführt werden.</p>
+</li>
+<li><h4>CON.8.A19 Regelmäßige Integritätsprüfung der Entwicklungsumgebung [IT-Betrieb] (H)</h4>
+<p>Die Integrität der Entwicklungsumgebung SOLLTE regelmäßig mit kryptographischen Mechanismen entsprechend dem Stand der Technik geprüft werden. Die Prüfsummendateien und das Prüfprogramm selbst SOLLTEN ausreichend vor Manipulationen geschützt sein. Wichtige Hinweise auf einen Integritätsverlust SOLLTEN nicht in einer Fülle irrelevanter Warnmeldungen (false positives) untergehen.</p>
+</li>
+</ul>
+<a name="22592_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Die International Organization for Standardization (ISO) gibt in den Normen</p>
+<ul><li>ISO/IEC 27001:2013 im Apendix A.14.2 Vorgaben für die Sicherheit in Entwicklungs- und Unterstützungsprozessen,</li><li>ISO/IEC 25000:2014 einen Guide to SQuaRE (Systems and software Quality Requirements and Evaluation),</li><li>ISO/IEC 25001:2014 Anforderungen an die Planung und das Management (SQuaRE) und</li><li>ISO/IEC 25010:2011 Anforderungen an ein Qualitätsmodell und Leitlinien (SQuaRE).</li></ul>
+<p>Das Infomation Security Forum (ISF) macht in seinem Standard „The Standard of Good Practice for Information Security“ im Kapitel „SD System Development“ Vorgaben an die sichere Systementwicklung. </p>
+<p>Das National Institute of Standards and Technologie gibt in seiner Special Publication 800-160 „Systems Security Engineering, Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems“ Anforderungen an ein sicheres Systemdesign. </p>
+<p>Die Fachgruppe „Vorgehensmodelle für die betriebliche Anwendungsentwicklung“ der Gesellschaft für Informatik gibt in ihren Publikationen einen Überblick über aktuelle Entwicklungen in der Anwendungsentwicklung. http://fg-wi-vm.gi.de/</p>
+<a name="22592_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein CON.8 <em>Software-Entwicklung</em> von Bedeutung.</p>
+<ul>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.15 Abhören</li>
+<li>G 0.18 Fehlplanung oder fehlende Anpassung</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.20 Informationen oder Produkte aus unzuverlässiger Quelle</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.25 Ausfall von Geräten oder Systemen</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.29 Verstoß gegen Gesetze oder Regelungen</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.31 Fehlerhafte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.32 Missbrauch von Berechtigungen</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.40 Verhinderung von Diensten (Denial of Service)</li>
+<li>G 0.41 Sabotage</li>
+<li>G 0.46 Integritätsverlust schützenswerter Informationen</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.14</th>
+<th>G 0.15</th>
+<th>G 0.18</th>
+<th>G 0.19</th>
+<th>G 0.20</th>
+<th>G 0.22</th>
+<th>G 0.23</th>
+<th>G 0.25</th>
+<th>G 0.28</th>
+<th>G 0.29</th>
+<th>G 0.30</th>
+<th>G 0.31</th>
+<th>G 0.32</th>
+<th>G 0.39</th>
+<th>G 0.40</th>
+<th>G 0.41</th>
+<th>G 0.46</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CON.8.A1</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CON.8.A2</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CON.8.A3</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CON.8.A4</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>CON.8.A5</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>CON.8.A6</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CON.8.A7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CON.8.A8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CON.8.A9</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CON.8.A10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CON.8.A11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>CON.8.A12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CON.8.A13</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CON.8.A14</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CON.8.A15</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CON.8.A16</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>CON.8.A17</td>
+<td>CI</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>CON.8.A18</td>
+<td>CIA</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CON.8.A19</td>
+<td>I</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>

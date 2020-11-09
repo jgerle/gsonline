@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+SYS.3.2.2 Mobile Device Management (MDM)
+</title>
+<link rel="canonical" href="/DE/bausteine_und_umsetzungshinweise/alle_bausteine_22489.html" />
+<link rel="alternate" href="/EN/bausteine_und_umsetzungshinweise/alle_bausteine_22489.html" hreflang="en-GB" />
+<link rel="stylesheet" href="../media/_tech__rutgs2/layout__rutgs2/css__rutgs2/internal_css__rutgs2/main__rutgs2.css" />
+</head>
+<body>
+<div id="servicebox"></div>
+<div id="menuoben">
+<a href="../content__rutgs2/uebersicht/uebersichtsseite__rutgs2.html">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/bsi_logo.gif" alt="Logo Bundesamt f&uuml;r Sicherheit in der Informationstechnik. Zur&uuml;ck zur Startseite" width="196" height="80" hspace="0" vspace="0" border="0" style="float: left">
+</a>
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/halbkreisverlaengert.gif" alt="" hspace="0" vspace="0" border="0" class="halbkreis" style="float: left">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/themen.jpg" alt="" class="grafikoben">
+</div>
+<div style="clear: both"></div>
+<div id="trennliniethemen">
+<img src="../media/_tech__rutgs2/layout__rutgs2/images__rutgs2/blank.gif" alt="" width="0" height="4" hspace="0" vspace="0" border="0">
+</div>
+<div id="navigation">
+<div id="navlinksbg">
+<div class="headnavthemen">
+<a name="navlinks"></a>
+Bausteine
+</div>
+<ul class="liersteebene">
+<li class="lierste"><a href="../startseite_it_grundschutz/startseite.html" >Startseite IT-Grundschutz</a></li><li class="lierste"><a href="../allgemeines/neues/neues.html" >Allgemeines</a><ul class="lizweiteebene"><li class="lizweite"><a href="../allgemeines/vorwort/vorwort.html" >Vorwort</a></li><li class="lizweite"><a href="../allgemeines/neues/neues.html" >Neues im IT-Grundschutz-Kompendium</a></li><li class="lizweite"><a href="../allgemeines/danksagungen_1/danksagungen.html" >Dankesworte</a></li></ul></li><li class="lierste"><a href="../einstieg/einstieg.html" >1 IT-Grundschutz - Basis für die Informationssicherheit</a></li><li class="lierste"><a href="../modellierung/modellierung.html" >2 Schichtenmodell und Modellierung</a></li><li class="lierste"><a href="../rollendefinition/rollendefinition.html" >Rollendefinition</a></li><li class="lierste"><a href="../elementare_gefaehrdungen/elementare_gefaehrdung_projektion_1.html" >Elementare Gefährdungen</a></li><li class="liersteaktiv"><a href="kataloguebersicht.html" class="active" >Bausteine</a></li><li class="lierste"><a href="../glossar/glossar_1.html" >Glossar</a></li>
+</ul>
+</div>
+<div class="navabstandunten">&nbsp;</div>
+</div>
+<div id="content">
+<nav class="breadcrumb">
+<ol>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="../startseite_it_grundschutz/startseite.html" itemprop="url"><span itemprop="title">HTML</span></a><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="kataloguebersicht.html" itemprop="url"><span itemprop="title">Bausteine</span></a></li></li>
+<li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<span itemprop="title">SYS.3.2.2 Mobile Device Management (MDM)</span>
+</li>
+</ol>
+</nav>
+<a name="inhalt"></a>
+<h1>SYS.3.2.2 Mobile Device Management (MDM)</h1>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Inhaltsverzeichnis</h2>
+</div>
+<ul>
+<li class="toclevel-1">
+<a href="#22489_1">
+<span class="toctext">1 Beschreibung</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#22489_1.1">
+<span class="toctext">1.1 Einleitung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22489_1.2">
+<span class="toctext">1.2 Zielsetzung</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22489_1.3">
+<span class="toctext">1.3 Abgrenzung und Modellierung</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#22489_2">
+<span class="toctext">2 Gefährdungslage</span>
+</a>
+</li>
+<li class="toclevel-1">
+<a href="#22489_3">
+<span class="toctext">3 Anforderungen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#22489_3.1">
+<span class="toctext">3.1 Basis-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22489_3.2">
+<span class="toctext">3.2 Standard-Anforderungen</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22489_3.3">
+<span class="toctext">3.3 Anforderungen bei erhöhtem Schutzbedarf</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#22489_4">
+<span class="toctext">4 Weiterführende Informationen</span>
+</a>
+<ul>
+<li class="toclevel-2">
+<a href="#22489_4.1">
+<span class="toctext">4.1 Wissenswertes</span>
+</a>
+</li>
+<li class="toclevel-2">
+<a href="#22489_4.2">
+<span class="toctext">4.2 Literatur</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="toclevel-1">
+<a href="#22489_5">
+<span class="toctext">5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</span>
+</a>
+</li>
+</ul>
+</div>
+<a name="22489_1"></a>
+<h2>1 Beschreibung</h2>
+<a name="22489_1.1"></a>
+<h3>1.1 Einleitung</h3>
+<p>
+<p>Smartphones, Tablets und Phablets sind für viele Mitarbeiter ein nicht mehr wegzudenkender Teil ihrer Arbeit. Die IT-Abteilungen müssen jedoch immer mehr solcher Geräte in vielen unterschiedlichen Ausführungen bereitstellen und dabei gleichzeitig für eine angemessene Sicherheit sorgen. Hinzu kommt, dass mobile Endgeräte (Mobile Devices) besonderen Gefahren ausgesetzt sind und die Administration sich in grundlegenden Punkten von anderen IT-Systemen unterscheidet. </p>
+<p>Deswegen ist ein Mobile Device Management (MDM) besonders in Institutionen mit einer größeren Anzahl von Smartphones, Tablets und Phablets unabdingbar für einen geregelten und sicheren Betrieb dieser Geräte. Mit einer entsprechenden Software für das MDM können die Endgeräte zentral verwaltet werden, es lassen sich Sicherheitsregeln durchsetzen und es können Notfallaktionen ausgelöst werden. Ein MDM gewährleistet somit auf allen Geräten einen gleichen oder zumindest vergleichbaren Sicherheitsstandard.</p>
+</p>
+<a name="22489_1.2"></a>
+<h3>1.2 Zielsetzung</h3>
+<p>
+<p>Der Baustein zeigt auf, wie mit einem MDM mobile Endgeräte sicher von Institutionen genutzt und wie das MDM selber sicher betrieben werden kann.</p>
+</p>
+<a name="22489_1.3"></a>
+<h3>1.3 Abgrenzung und Modellierung</h3>
+<p>
+<p>Der Baustein SYS.3.2.2 <span style="font-style: italic">Mobile Device Management (MDM)</span> ist für den gesamten Informationsverbund einzusetzen, wenn ein Mobile Device Management (MDM) zur Verwaltung mobiler Endgeräte verwendet wird.</p>
+<p>Mobile Endgeräte (Mobile Devices) im Sinne dieses Bausteins sind Smartphones, Tablets und Phablets, auf denen mobile Betriebssysteme wie Android, iOS, Windows Phone sowie BlackBerry OS installiert sind. Die Sicherheitsanforderungen von Notebooks und Tablets mit Desktop-Betriebssystemen werden in anderen Bausteinen der Schicht SYS <span style="font-style: italic">IT-Systeme</span> beschrieben. Die Anforderungen aus SYS.3.2.1 <span style="font-style: italic">Allgemeine Smartphones und Tablets</span> müssen ebenfalls berücksichtigt werden, wenn ein MDM verwendet wird. Wie die Smartphones, Tablets und Phablets verschiedener Hersteller spezifisch abgesichert werden, wird zusätzlich detailliert in den Bausteinen für die jeweiligen Betriebssysteme beschrieben, z. B. in SYS.3.2.3 <span style="font-style: italic">iOS (for Enterprise)</span> oder SYS.3.2.4 <span style="font-style: italic">Android.</span></p>
+</p>
+<a name="22489_2"></a>
+<h2>2 Gefährdungslage</h2>
+<p>
+<p>Die folgenden spezifischen Bedrohungen und Schwachstellen sind für den Baustein SYS.3.2.2 <span style="font-style: italic">Mobile Device Management (MDM)</span> von besonderer Bedeutung:</p>
+</p>
+<h3>2.1 Keine ausreichende Synchronisation mit dem MDM</h3>
+<p>
+<p>Damit das MDM die von den Verantwortlichen definierten Regelungen auf den mobilen Endgeräten durchsetzen kann, müssen die Geräte regelmäßig mit dem MDM synchronisiert werden. Wenn ein Gerät über einen längeren Zeitraum nicht mit dem MDM verbunden ist, können beispielsweise neue oder aktualisierte Regelungen nicht aufgespielt werden. Auch können, wenn zu einem verlorenen Gerät keine Verbindung besteht, die Daten nicht mehr aus der Ferne gelöscht werden.</p>
+</p>
+<h3>2.2 Fehlerhafte Administration des MDM</h3>
+<p>
+<p>MDM-Lösungen sind komplexe Anwendungen mit typischerweise mehreren Hundert unterschiedlichen Regeln. Nicht alle Regeln sind dabei miteinander kombinierbar und umgekehrt hängen viele Regeln voneinander ab. Durch Fehler bei der Administration können die Endgeräte diversen Gefahren ausgesetzt sein, die sich direkt oder indirekt auf die Vertraulichkeit, Verfügbarkeit oder Integrität der Daten und Anwendungen auswirken.</p>
+</p>
+<h3>2.3 Ungeeignetes Rechtemanagement im MDM</h3>
+<p>
+<p>Das Rechtemanagement des MDM entscheidet, wer welche Einstellungen vornehmen und wer auf welche Daten zugreifen darf. Wenn einem Mitarbeiter eine falsche Rolle zugeordnet wird, besteht die Gefahr, dass ihm zu hohe Rechte eingeräumt werden. So könnte er beispielsweise Daten unbefugt einsehen oder Einstellungen am Gerät verändern. Auch wäre es möglich, dass er Apps installiert und benutzt, die in der Institution nicht zugelassen sind, beispielsweise zur Nutzung von Cloud-Speicherdiensten. Dadurch können schützenswerte Daten aus der Institution abfließen oder es wird gegen die gesetzlichen Datenschutzbestimmungen verstoßen.</p>
+</p>
+<h3>2.4 Keine oder schwache Verschlüsselung der Kommunikation zwischen MDM und Endgerät</h3>
+<p>
+<p>Wird die Datenverbindung zwischen dem mobilen Endgerät und dem MDM-Server gar nicht oder mit veralteten Algorithmen verschlüsselt, oder werden nicht ausreichende Schlüssellängen eingesetzt, ist die Vertraulichkeit und Integrität aller übertragenen Daten gefährdet. Zum Beispiel könnte ein Angreifer dadurch sein IT-System als MDM-Server ausgeben und so an schützenswerte Informationen gelangen oder auch Einstellungen auf allen mobilen Endgeräten der Institution verändern.</p>
+</p>
+<h3>2.5 Unberechtigte Erstellung von Bewegungsprofilen durch das MDM</h3>
+<p>
+<p>Mit den meisten MDM-Produkten lässt sich ermitteln, wo sich ein Gerät gerade befindet, und es können standortabhängig Daten oder Apps freigegeben bzw. gesperrt werden (sogenanntes „Geofencing“). Dadurch entstehen detailierte Bewegungsprofile der Geräte und somit auch der Benutzer. Werden diese Daten erhoben, ohne den Benutzer in geeigneter Weise darüber zu informieren, verstoßen die Verantwortlichen unter Umständen gegen datenschutzrechtliche Bestimmungen. Auch besteht die Gefahr, dass Angreifer an diese Daten gelangen. Ebenso kann Geofencing dazu missbraucht werden, um Mitarbeiter unzulässig zu kontrollieren.</p>
+</p>
+<a name="22489_3"></a>
+<h2>3 Anforderungen</h2>
+<p>
+<p>Im Folgenden sind die spezifischen Anforderungen des Bausteins SYS.3.2.2 <span style="font-style: italic">Mobile Device Management (MDM) </span>aufgeführt. Grundsätzlich ist der IT-Betrieb für die Erfüllung der Anforderungen zuständig. Der Informationssicherheitsbeauftragte (ISB) ist bei strategischen Entscheidungen stets einzubeziehen. Außerdem ist der ISB dafür zuständig, dass alle Anforderungen gemäß dem festgelegten Sicherheitskonzept erfüllt und überprüft werden. Zusätzlich kann es noch andere Rollen geben, die weitere Zuständigkeiten bei der Umsetzung von Anforderungen haben. Diese sind dann jeweils explizit in eckigen Klammern in der Überschrift der jeweiligen Anforderungen aufgeführt.</p>
+</p>
+<table>
+<tr>
+<th>Grundsätzlich zuständig</th>
+<td>IT-Betrieb</td>
+</tr>
+</table>
+<a name="22489_3.1"></a>
+<h3>3.1 Basis-Anforderungen</h3>
+<p>Die folgenden Anforderungen MÜSSEN für den Baustein SYS.3.2.2<em>Mobile Device Management (MDM)</em> vorrangig erfüllt werden.</p>
+<ul>
+<li><h4>SYS.3.2.2.A1 Festlegung einer Strategie für das Mobile Device Management (B)</h4>
+<p>Es MUSS eine Strategie erarbeitet werden, die festlegt, wie Mitarbeiter mobile Endgeräte benutzen dürfen und wie die Geräte in die IT-Strukturen der Institution integriert sind. Grundlage MUSS dabei der Schutzbedarf der zu verarbeitenden Informationen sein. Die Strategie MUSS mindestens folgende Aspekte abdecken:</p>
+<ul><li>Darf das MDM als Cloud-Dienst betrieben werden?</li><li>Soll das MDM durch die Institution selbst betrieben werden?</li><li>Welche Anforderungen bezüglich Supportleistungen und Reaktionszeiten sind an den Anbieter des MDM zu stellen?</li><li>Welche Compliance-Anforderungen müssen durchgesetzt werden?</li><li>Welche mobilen Geräte und welche Betriebssysteme muss das MDM unterstützen?</li><li>Muss die MDM-Lösung mandantenfähig sein? Gewährleistet sie die notwendige Mandantentrennung?</li><li>Müssen Cloud-Dienste eingebunden werden?</li><li>Müssen Dokumentenmanagementsysteme eingebunden werden?</li><li>Muss das MDM auch Peripheriegeräte einbinden und verwalten?</li><li>Welches Betriebsmodell soll eingesetzt werden: private Endgeräte (Bring Your Own Device, BYOD), personalisierte Endgeräte (Eigentum der Institution) oder nicht personalisierte Endgeräte (Eigentum der Institution, gemeinsam genutzt)?</li></ul>
+<p>Die Strategie MUSS schriftlich fixiert und vom ISB freigegeben werden.</p>
+</li>
+<li><h4>SYS.3.2.2.A2 Festlegung erlaubter mobiler Endgeräte (B)</h4>
+<p>Es MUSS festgelegt werden, welche mobilen Endgeräte und Betriebssysteme in der Institution zugelassen sind. Alle erlaubten Geräte und Betriebssysteme MÜSSEN den Anforderungen der MDM-Strategie genügen und die technischen Sicherheitsanforderungen der Institution vollständig erfüllen. Das MDM MUSS so konfiguriert werden, dass nur mit freigegebenen Geräten auf Informationen der Institution zugegriffen werden kann. Es DÜRFEN nur von der Institution zugelassene mobile Endgeräte beschafft werden.</p>
+</li>
+<li><h4>SYS.3.2.2.A3 Auswahl eines MDM-Produkts (B)</h4>
+<p>Wenn eine geeignete MDM-Software beschafft werden soll, MUSS sichergestellt sein, dass sich mit ihr alle in der MDM-Strategie festgelegten Anforderungen erfüllen lassen. Auch MUSS sie sämtliche technischen und organisatorischen Sicherheitsmaßnahmen umsetzen können und alle zugelassenen mobilen Endgeräte unterstützen.</p>
+</li>
+<li><h4>SYS.3.2.2.A4 Verteilung der Grundkonfiguration auf mobile Endgeräte (B)</h4>
+<p>Alle mobilen Endgeräte MÜSSEN so schnell wie möglich in das MDM integriert werden, damit sie nach den Richtlinien der Institution konfiguriert und verwaltet werden können. Wenn die Geräte die Grundkonfiguration erhalten, MÜSSEN sie sich im Werkszustand befinden. Bei bereits benutzten Geräten MÜSSEN vorher alle institutionsbezogenen Daten gelöscht werden. Ein nicht über MDM konfiguriertes Endgerät DARF NICHT auf Informationen der Institution zugreifen können.</p>
+</li>
+<li><h4>SYS.3.2.2.A5 Sichere Grundkonfiguration für mobile Endgeräte (B)</h4>
+<p>Alle mobilen Endgeräte MÜSSEN so konfiguriert sein, dass sie den Schutzbedarf angemessen erfüllen. Dafür MUSS eine passende Grundkonfiguration zusammengestellt und dokumentiert werden. Wenn mobile Endgeräte an Mitarbeiter übergeben werden, MUSS darauf bereits der MDM-Client installiert sein. Andernfalls MUSS es den Benutzern selbst möglich sein, den Client zu installieren. </p>
+</li>
+<li><h4>SYS.3.2.2.A6 Protokollierung und Gerätestatus (B)</h4>
+<p>Das MDM MUSS alle sicherheitsrelevanten Ereignisse und Konfigurationsänderungen protokollieren. Die erhobenen Daten DÜRFEN NICHT von unbefugten Personen eingesehen werden und MÜSSEN unveränderbar gespeichert werden. Auch MÜSSEN bei der Protokollierung gesetzliche und interne Regelungen eingehalten werden. Die vom MDM erzeugten Protokolle MÜSSEN regelmäßig auf ungewöhnliche Einträge überprüft werden. Der Lebenszyklus einschließlich der Konfigurationshistorie eines mobilen Endgerätes SOLLTE ausreichend protokolliert und zentral abrufbar sein. Bei Bedarf SOLLTE der aktuelle Status der verwalteten Endgeräte durch den Administrator ermittelt werden können (Device Audit).</p>
+</li>
+<li><h4>SYS.3.2.2.A20 Regelmäßige Überprüfung des MDM (B)</h4>
+<p>Sicherheitseinstellungen MÜSSEN regelmäßig überprüft werden. Bei neuen Betriebssystemversionen der mobilen Endgeräte MUSS vorab geprüft werden, ob das MDM diese vollständig unterstützt und die Konfigurationsprofile und Sicherheitseinstellungen weiterhin wirksam und ausreichend sind. Abweichungen MÜSSEN korrigiert werden. Die zugeteilten Berechtigungen für Benutzer und Administratoren MÜSSEN regelmäßig daraufhin überprüft werden, ob sie weiterhin angemessen sind (Minimalprinzip).</p>
+</li>
+</ul>
+<a name="22489_3.2"></a>
+<h3>3.2 Standard-Anforderungen</h3>
+<p>Gemeinsam mit den Basis-Anforderungen entsprechen die folgenden Anforderungen dem Stand der Technik für den Baustein SYS.3.2.2<em>Mobile Device Management (MDM)</em>. Sie SOLLTEN grundsätzlich erfüllt werden.</p>
+<ul>
+<li><h4>SYS.3.2.2.A7 Auswahl und Freigabe von Apps (S)</h4>
+<p>Apps aus öffentlichen App-Stores SOLLTEN durch die Verantwortlichen geprüft und freigegeben werden. Dazu SOLLTE ein Freigabeprozess entwickelt werden, in dem auch geeignete Bewertungskriterien definiert sind. Alle freigegebenen Apps SOLLTEN intern in einem Standardkatalog veröffentlicht werden und dort für die Benutzer verfügbar sein. Apps SOLLTEN gemäß den Anforderungen des geplanten Einsatzszenarios über das MDM installiert, deinstalliert und aktualisiert werden. Das MDM SOLLTE die Installation, Deinstallation und Aktualisierung erzwingen, sobald eine Verbindung zum mobilen Endgerät besteht.</p>
+</li>
+<li><h4>SYS.3.2.2.A8 Festlegung erlaubter Informationen auf mobilen Endgeräten (S)</h4>
+<p>Die Institution SOLLTE festlegen, welche Informationen die mobilen Endgeräte unter welchen Bedingungen verarbeiten dürfen. Grundlage für die Regelung SOLLTEN einerseits die Klassifikation bzw. der Schutzbedarf der Informationen sein und andererseits die Bedingungen, unter denen die Daten auf den Geräten verarbeitet werden, etwa in abgeschotteten Containern. Die Verantwortlichen SOLLTEN das MDM auf Basis dieser Regeln konfigurieren, sodass es diese auf allen mobilen Endgeräten durchsetzen kann. Den Benutzern SOLLTEN die Regeln in geeigneter Weise bekannt gegeben werden.</p>
+</li>
+<li><h4>SYS.3.2.2.A9 Auswahl und Installation von Sicherheits-Apps (S)</h4>
+<p>Für das Endgerät SOLLTEN geeignete Sicherheits-Apps ausgewählt werden. Die Sicherheits-Apps SOLLTEN durch das MDM automatisch installiert werden.</p>
+</li>
+<li><h4>SYS.3.2.2.A10 Sichere Anbindung der mobilen Endgeräte an die Institution (S)</h4>
+<p>Die Verbindung der mobilen Endgeräte zum MDM SOLLTE angemessen abgesichert werden. Die Verbindung der mobilen Endgeräte ins Netz der Institution SOLLTE angemessen abgesichert werden. Wenn Daten zwischen den mobilen Endgeräten und dem IT-Netz der Institution übertragen werden, SOLLTE durch geeignete Maßnahmen (z. B. VPN) verhindert werden, dass Unbefugte sie verändern oder einsehen können.</p>
+</li>
+<li><h4>SYS.3.2.2.A11 Berechtigungsmanagement im MDM (S)</h4>
+<p>Für das MDM SOLLTE ein Berechtigungskonzept erstellt, dokumentiert und angewendet werden. Den Benutzergruppen und Administratoren SOLLTE das MDM nur so viele Berechtigungen einräumen wie für die Aufgabenerfüllung notwendig sind (Minimalprinzip). Es SOLLTE regelmäßig überprüft werden, ob die zugeteilten Rechte noch angemessen sind und den Aufgaben entsprechen.</p>
+</li>
+<li><h4>SYS.3.2.2.A12 Absicherung der MDM-Betriebsumgebung (S)</h4>
+<p>Das MDM selbst SOLLTE durch technische Maßnahmen abgesichert werden, um dem Schutzbedarf der hinterlegten oder verarbeiteten Informationen zu genügen. Das zugrundeliegende Betriebssystem SOLLTE gehärtet werden. Alle notwendigen Patches SOLLTEN eingespielt werden. Zugriffsberechtigungen und -wege SOLLTEN gemäß dem festgelegten Sicherheitskonzept der Institution konfiguriert werden.</p>
+</li>
+<li><h4>SYS.3.2.2.A21 Verwaltung von Zertifikaten (S)</h4>
+<p>Zertifikate zur Nutzung von Diensten auf dem mobilen Endgerät SOLLTEN zentral über das MDM installiert, deinstalliert und aktualisiert werden. Die Installation von nicht vertrauenswürdigen und nicht verifizierbaren (Root-) Zertifikaten durch den Benutzer SOLLTE durch das MDM verhindert werden. Das MDM SOLLTE Mechanismen unterstützen, um die Gültigkeit von Zertifikaten zu überprüfen.</p>
+</li>
+<li><h4>SYS.3.2.2.A22 Fernlöschung und Außerbetriebnahme von Endgeräten (S)</h4>
+<p>Das MDM SOLLTE sicherstellen, dass sämtliche Daten auf dem mobilen Endgerät aus der Ferne gelöscht werden können (Remote Wipe bei bestehender Datenverbindung). Werden in dem mobilen Endgerät externe Speicher genutzt, SOLLTE geprüft werden, ob diese bei einem Remote Wipe ebenfalls gelöscht werden sollen. Diese Funktion SOLLTE vom MDM unterstützt werden.</p>
+<p>Der Prozess zur Außerbetriebnahme des mobilen Endgerätes (Unenrollment) SOLLTE sicherstellen, dass keine schutzbedürftigen Daten auf dem mobilen Endgerät oder eingebundenen Speichermedien verbleiben. Dies SOLLTE insbesondere dann gelten, wenn das Unenrollment aus der Ferne ausgeführt wird.</p>
+</li>
+</ul>
+<a name="22489_3.3"></a>
+<h3>3.3 Anforderungen bei erhöhtem Schutzbedarf</h3>
+<p>Im Folgenden sind für den Baustein SYS.3.2.2<em>Mobile Device Management (MDM)</em> exemplarische Vorschläge für Anforderungen aufgeführt, die über das dem Stand der Technik entsprechende Schutzniveau hinausgehen und BEI ERHÖHTEM SCHUTZBEDARF in Betracht gezogen werden SOLLTEN. Die konkrete Festlegung erfolgt im Rahmen einer Risikoanalyse.</p>
+<ul>
+<li><h4>SYS.3.2.2.A13 ENTFALLEN (H)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.3.2.2.A14 Benutzung externer Reputation-Services für Apps (H)</h4>
+<p>Wenn die Administratoren einer Institution die erlaubten Apps nicht selbst auswählen können und Benutzer selbstständig Apps auf ihren Geräten installieren dürfen, SOLLTE ein sogenannter Reputation-Service eingesetzt werden. Das MDM SOLLTE dann mithilfe dieser Informationen aus dem Reputation-Service die Installation von Apps zumindest einschränken.</p>
+</li>
+<li><h4>SYS.3.2.2.A15 ENTFALLEN (H)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.3.2.2.A16 ENTFALLEN (H)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.3.2.2.A17 Kontrolle der Nutzung von mobilen Endgeräten (H)</h4>
+<p>Es SOLLTEN angemessene Kriterien definiert werden, aufgrund derer die Geräte zu überwachen sind, ohne gegen gesetzliche oder interne Regelungen zu verstoßen.</p>
+</li>
+<li><h4>SYS.3.2.2.A18 ENTFALLEN (H)</h4>
+<p>Diese Anforderung ist entfallen.</p>
+</li>
+<li><h4>SYS.3.2.2.A19 Einsatz von Geofencing (H)</h4>
+<p>Durch die Hinterlegung einer Geofencing-Richtlinie SOLLTE sichergestellt werden, dass Geräte mit schutzbedürftigen Informationen nicht außerhalb eines zuvor festgelegten geografischen Bereichs verwendet werden können. Wird der geografische Bereich verlassen, SOLLTE eine selektive Löschung der klassifizierten Informationen oder eine vollständige Löschung des Geräts erfolgen. Bevor das Gerät selektiv oder vollständig gelöscht wird, SOLLTEN die verantwortlichen Administratoren und das Sicherheitsmanagement sowie der Benutzer informiert werden. Die Löschung SOLLTE erst mit einer angemessenen zeitlichen Verzögerung erfolgen. Mithilfe einer Schutzbedarfsanalyse SOLLTEN Bereiche identifiziert werden, an denen diese zusätzlichen Sicherheitsmaßnahmen nötig sind. Anschließend SOLLTEN sie unter Beachtung gesetzlicher und interner Regelungen umgesetzt werden.</p>
+</li>
+<li><h4>SYS.3.2.2.A23 Durchsetzung von Compliance-Anforderungen (H)</h4>
+<p>Es SOLLTE eine vom MDM-Anbieter bereitgestellte Lösung verwendet werden, um Verstöße gegen die Regelungen der Institution oder sogar eine Manipulation des Betriebssystems zu erkennen. Die folgenden Aktionen SOLLTEN bei Verdacht auf Verstoß gegen Regelungen oder Manipulation des Betriebssystems ausgeführt werden. Hierzu SOLLTEN entsprechende Funktionen bereitgestellt werden:</p>
+<ol><li>selbstständiges Versenden von Warnhinweisen,</li><li>selbstständiges Sperren des Geräts,</li><li>Löschen der vertraulichen Informationen der Institution,</li><li>Löschen des kompletten Geräts,</li><li>Verhindern des Zugangs zu Unternehmens-Apps sowie</li><li>Verhindern des Zugangs zu den Systemen und Informationen der Institution.</li></ol>
+<p>Bei Verdacht auf einen Verstoß oder eine Manipulation SOLLTE ein Alarm an die verantwortlichen Administratoren und das Sicherheitsmanagement in der Institution gesandt werden.</p>
+</li>
+</ul>
+<a name="22489_4"></a>
+<h2>4 Weiterführende Informationen</h2>
+<p>Das BSI hat in den „BSI-Veröffentlichungen zur Cyber-Sicherheit“ das Dokument BSI-CS 052: „Mobile Device Management“ veröffentlicht. Außerdem bietet das BSI das „Überblickspapier Consumerisation und BYOD“ (Stand 2013) an.</p>
+<p>Das National Institute of Standards and Technology (NIST) stellt das Dokument „Guidelines for Managing the Security of Mobile Devices in the Enterprise: NIST Special Publication 800-124“, Revision 1, Juni 2013 zur Verfügung.</p>
+<a name="22489_5"></a>
+<h2>5 Anlage: Kreuzreferenztabelle zu elementaren Gefährdungen</h2>
+<p>Die Kreuzreferenztabelle enthält die Zuordnung von elementaren Gefährdungen zu den Anforderungen. Anhand dieser Tabelle lässt sich ermitteln, welche elementaren Gefährdungen durch welche Anforderungen abgedeckt sind. Durch die Umsetzung der aus den Anforderungen abgeleiteten Sicherheitsmaßnahmen wird den entsprechenden elementaren Gefährdungen entgegengewirkt. Die Buchstaben in der zweiten Spalte (C = Vertraulichkeit, I = Integrität, A = Verfügbarkeit) zeigen an, welche Grundwerte der Informationssicherheit durch die Anforderung vorrangig geschützt werden. Die folgenden elementaren Gefährdungen sind für den Baustein SYS.3.2.2 <em>Mobile Device Management (MDM)</em> von Bedeutung.</p>
+<ul>
+<li>G 0.11 Ausfall oder Störung von Dienstleistern</li>
+<li>G 0.13 Abfangen kompromittierender Strahlung</li>
+<li>G 0.14 Ausspähen von Informationen (Spionage)</li>
+<li>G 0.15 Abhören</li>
+<li>G 0.16 Diebstahl von Geräten, Datenträgern oder Dokumenten</li>
+<li>G 0.17 Verlust von Geräten, Datenträgern oder Dokumenten</li>
+<li>G 0.18 Fehlplanung oder fehlende Anpassung</li>
+<li>G 0.19 Offenlegung schützenswerter Informationen</li>
+<li>G 0.21 Manipulation von Hard- oder Software</li>
+<li>G 0.22 Manipulation von Informationen</li>
+<li>G 0.23 Unbefugtes Eindringen in IT-Systeme</li>
+<li>G 0.24 Zerstörung von Geräten oder Datenträgern</li>
+<li>G 0.25 Ausfall von Geräten oder Systemen</li>
+<li>G 0.28 Software-Schwachstellen oder -Fehler</li>
+<li>G 0.29 Verstoß gegen Gesetze oder Regelungen</li>
+<li>G 0.30 Unberechtigte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.31 Fehlerhafte Nutzung oder Administration von Geräten und Systemen</li>
+<li>G 0.32 Missbrauch von Berechtigungen</li>
+<li>G 0.36 Identitätsdiebstahl</li>
+<li>G 0.37 Abstreiten von Handlungen</li>
+<li>G 0.38 Missbrauch personenbezogener Daten</li>
+<li>G 0.39 Schadprogramme</li>
+<li>G 0.45 Datenverlust</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>
+Elementare Gefährdungen<br>Anforderungen
+</th>
+<th>
+CIA
+</th>
+<th>G 0.11</th>
+<th>G 0.13</th>
+<th>G 0.14</th>
+<th>G 0.15</th>
+<th>G 0.16</th>
+<th>G 0.17</th>
+<th>G 0.18</th>
+<th>G 0.19</th>
+<th>G 0.21</th>
+<th>G 0.22</th>
+<th>G 0.23</th>
+<th>G 0.24</th>
+<th>G 0.25</th>
+<th>G 0.28</th>
+<th>G 0.29</th>
+<th>G 0.30</th>
+<th>G 0.31</th>
+<th>G 0.32</th>
+<th>G 0.36</th>
+<th>G 0.37</th>
+<th>G 0.38</th>
+<th>G 0.39</th>
+<th>G 0.45</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SYS.3.2.2.A1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A3</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A4</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A5</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A7</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A8</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A9</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A13</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A14</td>
+<td>CI</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A15</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A16</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A17</td>
+<td>I</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A18</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A19</td>
+<td>CI</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A20</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A21</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A22</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SYS.3.2.2.A23</td>
+<td>CI</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="linievorcopy" style="width: 730px;">
+<div class="copyright">© Bundesamt für Sicherheit in der Informationstechnik. All rights reserved</div>
+<a class="toTop" href="#top">nach oben</a>
+</body>
+</html>
