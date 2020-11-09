@@ -95,7 +95,7 @@
                                             {% set count.value = count.value + checklist.high_count|int -%}
                                             <tr>
                                                 <td>{{loop.index}}</td>
-                                                <td>{{checklist.name}}</td>
+                                                <td><a href="{{ url_for('main.checklist', checklist_id=checklist.id) }}">{{checklist.name}}</a></td>
                                                 <td>{{checklist.prio}}</td>
                                                 <td>{%  if (count.value) > 0 -%}
                                                             {{count.value}}

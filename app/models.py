@@ -590,6 +590,7 @@ class Checklist(db.Model):
     name = db.Column(db.String(128), index=True)
 
     infodomain_id = db.Column(db.Integer, db.ForeignKey('infodomain.id'))
+    infodomain = db.relationship('Infodomain', backref='checklists')
     
     gsmodelbase_id = db.Column(db.Integer, db.ForeignKey('gsmodelbase.id'))
     gsmodelbase = db.relationship('GsModelBase', backref='checklists')

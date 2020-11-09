@@ -1,0 +1,129 @@
+{% extends "layouts/base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %} {{ title }} {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+<style>
+DIV.table 
+{
+    display:table;
+}
+DIV.thead 
+{
+    display: table-header-group;
+}
+DIV.tbody 
+{
+    display: table-row-group;
+}
+FORM.tr, DIV.tr
+{
+    display:table-row;
+}
+SPAN.td, DIV.th
+{
+    display:table-cell;
+    padding:6px 8px  !important;
+}
+
+.odd {
+    background-color:#f9f9f9;
+    
+}
+
+.even {
+    border-color: #ddd;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+</style>
+{% endblock stylesheets %}
+
+{% block content %}
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<div class="row">
+    <div class="col-md-12">
+    {% for message in messages %}
+    <div class="alert alert-info" role="alert">{{ message }}</div>
+    {% endfor %}
+    </div>
+</div>
+{% endif %}
+{% endwith %}
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-profile">
+                <div class="card-body">
+                    <h6 class="card-category text-gray">Checkliste</h6>
+                    <h4 class="card-title">{{checklist.name}}</h4>
+                    <div class="text-left align-text-top">
+                        <div class="table table-striped table-hover">
+                            <div class="thead">
+                                <div class="tr">
+                                    <div class="th">#</div>
+                                    <div class="th">Anforderung</div>
+                                    <div class="th">Niveau</div>
+                                    <div class="th">Umsetzung</div>
+                                    <div class="th">Status</div>
+                                    <div class="th">Verantwortlich</div>
+                                    <div class="th">Kommentar</div>
+                                    <div class="th">Betrag</div>
+                                    <div class="th">Fertig bis </div>
+                                    <div class="th">&nbsp</div>
+                                </div>
+                            </div>
+                            <div class="tbody">
+                            {% for item in checklist.checklistitems -%}
+                                <form class="tr form-group has-default bmd-form-group {{ loop.cycle('odd', 'even') }}" method="post" action="{{ url_for('main.checklistitem', checklistitem_id=item.id) }}">
+                                {{ form.hidden_tag() }}
+                                    <span class="td text-left align-text-top">{{item.id}}</span>
+                                    <span class="td text-left align-text-top">{{item.requirement.name}}</span>
+                                    <span class="td text-left align-text-top">{{item.requirement.protection_level.value}}</span>
+                                    <span class="td text-left align-text-top">
+                                        <select class="form-control" name="implementation_decision">
+                                            <option value="NA" {% if item.implementation_decision.name=="NA"-%}selected{% endif-%}>n. zutreff.</option>
+                                            <option value="YES" {% if item.implementation_decision.name=="YES"-%}selected{% endif-%}>ja</option>
+                                            <option value="PART" {% if item.implementation_decision.name=="PART"-%}selected{% endif-%}>teilw.</option>
+                                            <option value="NO" {% if item.implementation_decision.name=="NO"-%}selected{% endif-%}>nein</option>
+                                        </select>
+                                    </span>
+                                    <span class="td text-left align-text-top">
+                                        <select class="form-control" name="implementation_status">
+                                            <option value="OPEN">{{item.implementation_status.value}}</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </span>
+                                    <span class="td text-left align-text-top"><input class="form-control" type="text" name="" disabled placeholder="Name" value="{% if item.responsible is not none %}{{item.responsible}}{% endif -%}"/></span>
+                                    <span class="td text-left align-text-top">
+                                        <input class="form-control" type="text" placeholder="Kommentar" name="comments" value="{% if item.comments is not none %}{{item.comments}}{% endif -%}"/>
+                                    </span>
+                                    <span class="td text-left align-text-top">
+                                        <input class="form-control" type="text" placeholder="00,00" name="est_amount" value="{% if item.est_amount is not none %}{{item.est_amount}}{% endif -%}"/>
+                                    </span>
+                                    <span class="td text-left align-text-top">
+                                        <input class="form-control" type="text" placeholder="Datum" name="target_date" value="{% if item.target_date is not none %}{{item.target_date}}{% endif -%}"/>
+                                    </span>
+                                    <span class="td text-left align-text-top">
+                                        <button class="btn btn-sm btn-primary" type="submit" value="updateitem"><i class="material-icons" aria-hidden="true">save</i></button>
+                                    </span>
+                                </form>
+                            {% endfor -%}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

@@ -150,3 +150,12 @@ class GsModelAppQuickselectForm(FlaskForm):
     buildingblock_id = SelectField("", validators=[DataRequired()])
     implementation_decision = SelectField('', validators=[DataRequired()])
     submit_appq = SubmitField('Verknüpfen')
+
+class ChecklistItemForm(FlaskForm):
+    id = IntegerField(validators=[DataRequired()])
+    implementation_decision = StringField()
+    responsible = IntegerField()
+    comments = StringField()
+    est_amount = StringField()
+    target_date = StringField()
+    implementation_status = StringField()

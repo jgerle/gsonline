@@ -8,7 +8,8 @@ from app import db
 from app.main.forms import EditProfileForm, EmptyForm, PostForm, SearchForm, \
         MessageForm, OpenGsGenericFlaskForm, OpenGsInfodomainForm, OpenGsOrganizationForm, \
         OpenGsCatalogueForm, OpenGsBuildingBlockGroupForm, OpenGsBuildingBlockForm, DeleteForm, OpenGsRequirementForm, OpenGsSystemForm, \
-        OpenGsProcAppRelationForm, OpenGsAppSysRelationForm, OpenGsSysNetRelationForm, GsModelDomPreselectForm, GsModelSysQuickselectForm, GsModelAppQuickselectForm
+        OpenGsProcAppRelationForm, OpenGsAppSysRelationForm, OpenGsSysNetRelationForm, GsModelDomPreselectForm, GsModelSysQuickselectForm, GsModelAppQuickselectForm, \
+        ChecklistItemForm
 from app.models import Requirement, User, Post, Message, Notification, \
         Organization, Infodomain, Coreprocess, Application, System, Network, Room, Person, Document, \
         Catalogue, BuildingBlockGroup, BuildingBlock, AssociationProcApp, AssociationAppSys, AssociationSysNet, \
@@ -985,4 +986,42 @@ def autocreate_checklistitems(checklist_id):
         db.session.commit()
         return redirect(url_for('main.dom_checklists', dom_id=checklist.infodomain_id))
 
-    return render_template('confirm_create_checklistitems.html', title="Checklist befüllen", checklist_id=checklist_id)    
+    return render_template('confirm_create_checklistitems.html', title="Checklist befüllen", checklist_id=checklist_id)
+
+@bp.route('/checklist/<checklist_id>')
+@login_required
+def checklist(checklist_id):
+    checklist = Checklist.query.filter_by(id=checklist_id).first_or_404()
+
+    checklist.infodomain.org_id
+
+    breadcrumbs = [{'link': url_for('main.organization', org_id=checklist.infodomain.org_id), 'title': checklist.infodomain.organization.name}, 
+                {'link': url_for('main.infodomain', infodomain_id=checklist.infodomain_id), 'title': checklist.infodomain.name},
+                {'link': url_for('main.dom_checklists', dom_id=checklist.infodomain_id), 'title': 'Checklisten'}]
+
+    form = ChecklistItemForm()
+    return render_template('checklist.html', title="Checkliste "+checklist.name, breadcrumbs=breadcrumbs, checklist=checklist, form=form)
+
+@bp.route('/checklistitem/<checklistitem_id>', methods=['GET', 'POST'])
+@login_required
+def checklistitem(checklistitem_id):
+    checklistitem = ChecklistItem.query.filter_by(id=checklistitem_id).one()
+    form = ChecklistItemForm(obj=checklistitem)
+
+    if form.validate_on_submit():
+        if form.est_amount.data == "":
+            form.est_amount.data = None
+
+        if form.target_date.data == "":
+            form.target_date.data = None
+
+        form.populate_obj(checklistitem)
+        db.session.add(checklistitem)
+
+        db.session.commit()
+        flash(Markup('Eintrag gespeichert'), 'success')
+    
+    for error in form.errors:
+        current_app.logger.info(error)
+
+    return redirect(url_for('main.checklist', checklist_id=checklistitem.checklist_id))
