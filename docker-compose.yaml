@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  opengs:
+    image: gsonline:dev
+    ports:
+      - "5000:5000"
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      SECRET_KEY: ${SECRET_KEY}
+    depends_on:
+      - mysql
+  mysql:
+    image: mysql:8.0.31
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    volumes:
+      - gsonline-db-data:/var/lib/mysql
+
+volumes:
+  gsonline-db-data:
