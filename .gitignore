@@ -35,6 +35,10 @@ nosetests.xml
 .project
 .pydevproject
 
+# Gsonline app specific stuff
 venv
 app.db
 gsonline.log*
+
+# Docker environment
+.env
