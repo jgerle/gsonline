@@ -35,13 +35,15 @@ nosetests.xml
 .project
 .pydevproject
 
+# IDE
+.vscode
+.idea
+
 # Gsonline app specific stuff
 venv
+.venv
 app.db
 gsonline.log*
 
 # Docker environment
 .env
-
-# VScode
-.vscode
