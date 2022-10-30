@@ -2,15 +2,13 @@
 
 A neat little tool to document your IT environment in a structured way and map your system to the *BSI Grundschutz* requirements.
 
-As a result you can see which requirements you need to fullfill.
+Basically any set of structured requirements can be mapped.
+
+As a result you can see which requirements you need to fulfill.
 
 ## How to run it
 
-### Docker Compose
-
-1) Build the app container with `docker build -t gsonline:dev .`
-
-2) Create an `.env` file like so:
+### Create an `.env` file in the base dir
 ```
 MYSQL_ROOT_PASSWORD=YourAppPassWordHere
 MYSQL_USER=gsonline
@@ -26,9 +24,25 @@ MAIL_PORT=8025
 ADMINS = ['your@email.here']
 ```
 
-3) Execute `docker-compose up -d`
+### Option A: Run it from source on your machine
 
-4) Access the app at <http://localhost:5000>. Register a user, login and go for it :)
+You need to have a MySQL server available and accessible for the app. The db user needs permissions to create and modify
+tables.
+
+1) Create a virtual environment: `python -m venv .venv`
+2) Activate the environment: `.\.venv\Scripts\activate`
+3) Install packages: `pip install -r requirements.txt`
+4) Create db and populate it: `flask db init && flask db upgrade`
+5) Start the app: `flask run`
+
+### Option B: Docker Compose
+
+1) Build the app container with `docker build -t gsonline:dev .`
+2) Execute `docker-compose up -d`
+
+### Access the web app
+
+Either way, access the app at <http://localhost:5000>. Register a user, login and go for it :)
 
 ## BSI Grundschutz Kompendium 2022
 
