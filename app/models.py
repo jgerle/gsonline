@@ -606,7 +606,7 @@ class ChecklistItem(db.Model):
     __tablename__ = 'checklistitem'
 
     id = db.Column(db.Integer, primary_key=True)
-    
+
     checklist_id = db.Column(db.Integer, db.ForeignKey('checklist.id'))
     checklist = db.relationship('Checklist', backref='checklistitems')
 

@@ -865,9 +865,9 @@ def model_infodomain(id):
 @bp.route('/infodomain/<id>/model/create_base', methods=['GET', 'POST'])
 @login_required
 def create_basemodel(id):
-    
+
     dom_id=id
-    
+
     if request.form.get('confirm'):
         base_dom_buildingblocks = [
             16,17,18,19,20,21,
@@ -880,7 +880,6 @@ def create_basemodel(id):
             basemodel = GsModelDom(
                 dom_id=id,
                 bb_id=x,
-                implementation_decision='YES'
             )
             db.session.add(basemodel)
         db.session.commit()
