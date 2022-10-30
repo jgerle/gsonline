@@ -42,3 +42,6 @@ gsonline.log*
 
 # Docker environment
 .env
+
+# VScode
+.vscode
