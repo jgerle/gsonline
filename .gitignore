@@ -45,5 +45,8 @@ venv
 app.db
 gsonline.log*
 
+# Flask environment
+.flaskenv
+
 # Docker environment
 .env
